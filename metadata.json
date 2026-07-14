@@ -1,0 +1,27 @@
+{
+  "title": "CLIENT-A Portal",
+  "description": "Welcome to the custom portal for client-a.",
+  "icons": {
+    "icon": "https://raw.githubusercontent.com/your-username/client-assets/main/client-a/favicon.ico",
+    "apple": "https://raw.githubusercontent.com/your-username/client-assets/main/client-a/apple-touch-icon.png"
+  },
+  "openGraph": {
+    "title": "CLIENT-A - Home",
+    "description": "Official portal for client-a",
+    "images": [
+      {
+        "url": "https://raw.githubusercontent.com/your-username/client-assets/main/client-a/og-image.png",
+        "width": 1200,
+        "height": 630,
+        "alt": "client-a Portal Cover"
+      }
+    ]
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "CLIENT-A Portal",
+    "images": [
+      "https://raw.githubusercontent.com/your-username/client-assets/main/client-a/og-image.png"
+    ]
+  }
+}
