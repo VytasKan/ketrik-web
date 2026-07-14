@@ -1,0 +1,2271 @@
+{
+	"schemas": {
+		"$root$": {
+			"data": {
+				"hero": {
+					"background": {
+						"style": {
+							"--bg-image": "url(https://www.ketrik.com/pattern7.png)",
+							"--bg-image-dark": "url(https://www.ketrik.com/pattern8.png)"
+						}
+					},
+					"button": {
+						"href": "/portal",
+						"text": "Get In Touch"
+					},
+					 
+					"subtitle1": {
+						"text": [
+							{
+								"phrases": [
+									"We combine the speed of AI-assisted “Vibe Coding” with the structural integrity of enterprise-grade architecture to transform your vision into a scalable cloud platform.",
+									"By leveraging our library of validated components, we deliver from MUI-based MVPs to secure, production-ready environments built on Firebase and extended via AWS or Google Cloud, ensuring a fastest time-to-market.",
+									"We prioritize deep partnerships over high-volume projects, choosing to invest our expertise into the visions we find truly compelling. Every engagement is bespoke and project-based, tailored specifically to the platforms we believe in most."
+								],
+
+								"variantOptions": {
+									"maxWidth": "lg",
+									"center": false
+								}
+							},
+							{
+								"text": "By leveraging our library of validated components, we deliver everything from MUI-based MVPs to secure, production-ready environments built on Firebase and extended via AWS or Google Cloud, ensuring the fastest time-to-market in the industry.",
+								"variantOptions": {
+									"maxWidth": "lg",
+									"center": false
+								}
+							},
+							{
+								"text": "We prioritize deep partnerships over high-volume projects, choosing to invest our expertise into the visions we find truly compelling. Every engagement is bespoke and project-based, tailored specifically to the platforms we believe in most.",
+								"variantOptions": {
+									"maxWidth": "lg",
+									"center": false
+								}
+							}
+						]
+					},
+					"title": {
+						"text": [
+							{
+								"text": "We build the tech, you own the future.",
+
+								"vx": {
+									"size": "lg",
+									"lineBreak": true
+								}
+							},
+							{
+								"phrases": [
+									"Stop Prototyping. Start Scaling.",
+									"Offload the Infrastructure. Own the Innovation.",
+									"Rapid Launch. Zero Delay."
+								],
+								"intensity": 0.4,
+								"pauseTime": 10000,
+								"variant": "typewriter",
+								"vx": {
+									"size": "sm",
+									"color": "blue"
+								}
+							}
+						]
+					}
+				},
+				"subHero": {
+					"featuresGrid": {
+						"ds": [
+							{
+								"title": "Vision to Production",
+								"icon": "AutoAwesome",
+								"description": "We transform your vision into a production-ready cloud architecture, bridging the gap between high-speed prototyping and enterprise-grade scalability."
+							},
+							{
+								"title": "Rapid Cloud Deployment",
+								"icon": "Speed",
+								"description": "We deploy enterprise environments and MVPs via a validated component library on Firebase, AWS, and GCP for the fastest time-to-market."
+							},
+							{
+								"title": "AI-Native Strategy",
+								"icon": "Psychology",
+								"description": "We don't just use AI to build; we integrate intelligent systems into your product to give your venture a modern competitive edge."
+							},
+							{
+								"title": "Boutique Lab Partnership",
+								"icon": "Handshake",
+								"description": "We choose conviction over volume, investing technical leadership into a select few bespoke ventures at a time."
+							}
+						],
+
+						"ds1": [
+							{
+								"description": "We combine the speed of AI-assisted “Vibe Coding” with the structural integrity of enterprise-grade architecture to transform your vision into a scalable cloud platform.",
+								"icon": "AutoAwesome",
+								"title": "Vibe Coding, Enterprise Logic"
+							},
+							{
+								"description": "By leveraging our library of validated components, we deliver from MUI-based MVPs to secure, production-ready environments built on Firebase and extended via AWS or Google Cloud, ensuring a fastest time-to-market.",
+								"icon": "Speed",
+								"title": "Record-Breaking Time-to-Market"
+							},
+							{
+								"description": "We prioritize deep partnerships over high-volume projects, choosing to invest our expertise into the visions we find truly compelling. Every engagement is bespoke and project-based, tailored specifically to the platforms we believe in most.",
+								"icon": "Handshake",
+								"title": "Selective, Partner-First Model"
+							}
+						]
+					}
+				},
+
+				"advantage": {
+					"comparisonTable": {
+						"ds": [
+							{
+								"feature": "Feature",
+								"traditional": "Traditional Agency",
+								"vibe": "Vibe Coding (AI-Only)",
+								"approach": "Our Managed Approach"
+							},
+							{
+								"feature": "Delivery Speed",
+								"traditional": "Slow (Months)",
+								"vibe": "Instant (Hours)",
+								"approach": "Rapid (1-3 Weeks)"
+							},
+							{
+								"feature": "Build Quality",
+								"traditional": "Custom / Manual",
+								"vibe": "Unpredictable",
+								"approach": "Enterprise"
+							},
+							{
+								"feature": "Foundation",
+								"traditional": "High Stability",
+								"vibe": "High Fragility",
+								"approach": "Modular & Robust"
+							},
+							{
+								"feature": "Infrastructure",
+								"traditional": "Manual Hand-off",
+								"vibe": "DIY / Unstable",
+								"approach": "Expert AWS/Firebase"
+							},
+							{
+								"feature": "Deployment",
+								"traditional": "Professional",
+								"vibe": "Local / Manual",
+								"approach": "Production (CI/CD)"
+							},
+							{
+								"feature": "Maintenance",
+								"traditional": "Hourly Fees",
+								"vibe": "You are the debugger",
+								"approach": "Included Support"
+							},
+
+							{
+								"feature": "Future Cost",
+								"traditional": "High (Labor)",
+								"vibe": "High (Total Rewrite)",
+								"approach": "Low (Easy Pivots)"
+							},
+							{
+								"feature": "Scale Potential",
+								"traditional": "Expensive",
+								"vibe": "Low / Technical Debt",
+								"approach": "High / Compoundable"
+							}
+						],
+						"ds1": [
+							{
+								"feature": "Feature",
+								"traditional": "Traditional Agency Build",
+								"vibe": "Vibe Coding (AI-Only)",
+								"modular": "Our Managed Modular Approach"
+							},
+							{
+								"feature": "Speed",
+								"traditional": "Slow (Months of dev)",
+								"vibe": "Instant (Days/Hours)",
+								"modular": "Rapid (2-4 Weeks for MVP)"
+							},
+							{
+								"feature": "Code Quality",
+								"traditional": "Custom (often bloated)",
+								"vibe": "Unpredictable / Hallucinated",
+								"modular": "Enterprise (MUI & Logic Libraries)"
+							},
+							{
+								"feature": "Maintenance",
+								"traditional": "Hourly \"Ticket\" fees",
+								"vibe": "You are the debugger",
+								"modular": "Fully Managed Monthly Support"
+							},
+							{
+								"feature": "Infrastructure",
+								"traditional": "Manual Hand-off",
+								"vibe": "DIY (Firebase/Vercel)",
+								"modular": "Expert AWS/Firebase Architecture"
+							},
+							{
+								"feature": "Scalability",
+								"traditional": "High (but expensive)",
+								"vibe": "Low (Technical debt builds fast)",
+								"modular": "High (Built on Scalable Modules)"
+							},
+							{
+								"feature": "Ownership",
+								"traditional": "Proprietary Lock-in",
+								"vibe": "Full (but messy)",
+								"modular": "100% Open-Source Standards"
+							}
+						]
+					},
+
+					"title1": {
+						"text": [
+							{
+								"text": "From Idea to Scale"
+							}
+						]
+					},
+					"subtitle1": {
+						"text": [
+							{
+								"text": "The table breaks down how the Managed Modular Approach solves the fragility of AI-only \"Vibe Coding\" while avoiding the slow, high-cost hurdles of a Traditional Agency."
+							}
+						]
+					}
+				},
+
+				"vibe": {
+					"backgroun": {
+						"style": {
+							"backgroundImage": "repeating-linear-gradient(0deg, transparent, transparent 19px, rgba(75, 85, 99, 0.08) 19px, rgba(75, 85, 99, 0.08) 20px, transparent 20px, transparent 39px, rgba(75, 85, 99, 0.08) 39px, rgba(75, 85, 99, 0.08) 40px),repeating-linear-gradient(90deg, transparent, transparent 19px, rgba(75, 85, 99, 0.08) 19px, rgba(75, 85, 99, 0.08) 20px, transparent 20px, transparent 39px, rgba(75, 85, 99, 0.08) 39px, rgba(75, 85, 99, 0.08) 40px), radial-gradient(circle at 20px 20px, rgba(55, 65, 81, 0.12) 2px, transparent 2px), radial-gradient(circle at 40px 40px, rgba(55, 65, 81, 0.12) 2px, transparent 2px)",
+							"backgroundSize": "40px 40px, 40px 40px, 40px 40px, 40px 40px"
+						}
+					},
+
+					"title": {
+						"text": [
+							{
+								"text": "From Vision to Production Architecture",
+								"vx": {}
+							}
+						]
+					},
+					"subtitle": {
+						"text": [
+							{
+								"text": "Think of it like a high-stakes expedition. 'Vibe coding' is a great way to start moving, but without professional-grade equipment, you'll stall as soon as the terrain gets tough. We provide the technical durability that allows you to pivot and scale as the market changes. By reinforcing your vision with resilient architecture, we ensure your platform stays fast and stable—whether you're serving ten users or ten thousand.",
+
+								"text2": "Think of it like an expedition. 'Vibe coding' is a fast start, but if you don't have the right equipment, you'll stall as soon as the terrain gets tough. We provide the technical durability that allows you to pivot and scale as the market changes. We ensure your foundation is resilient, so whether you're serving ten users or ten thousand, your platform remains fast, stable, and ready for the road ahead."
+							}
+						]
+					}
+				},
+
+				"stories": {
+					"title": {
+						"text": [
+							{
+								"text": "Success Stories"
+							}
+						]
+					},
+					"subtitle": {
+						"text": [
+							{
+								"text": ""
+							}
+						]
+					}
+				},
+
+				"panel1": {
+					"featuresGrid": {
+						"ds": [
+							{
+								"description": "We bypass the \"grunt work\" using our MUI library to launch your custom platform faster.",
+								"icon": "RocketLaunch",
+								"title": "1. Accelerated MVP Assembly"
+							},
+							{
+								"description": "We design a \"bulletproof\" brain, mapping data and APIs for maximum logic and speed.",
+								"icon": "Psychology",
+								"title": "2. High-Performance Architecture"
+							},
+							{
+								"description": "We handle AWS/Firebase, security, and 24/7 monitoring so you can scale without the stress.",
+								"icon": "CloudDone",
+								"title": "3. Zero-Ops Managed Hosting"
+							},
+							{
+								"description": "We provide the ongoing roadmap and iterations to ensure your product grows as fast as your vision.",
+								"icon": "Timeline",
+								"title": "4. Strategic Product Evolution"
+							}
+						],
+
+						"ds1": [
+							{
+								"description": "We conduct an intensive deep-dive into your business goals, current tech stack, and future scaling requirements.",
+								"icon": "",
+								"title": "1. Define & Design"
+							},
+							{
+								"description": "We build the platform using cloud solutions, focusing on security, stability, and reproducibility.",
+								"icon": "",
+								"title": "2. Implement & Automate"
+							},
+							{
+								"description": "We conduct rigorous testing, performance tuning, and operational stabilization.",
+								"title": "3. Stabilize & Transfer"
+							},
+							{
+								"description": "Architectures built with high availability, redundancy, and automated failover baked in, leveraging best practices.",
+								"title": "4. Designed for Uptime"
+							}
+						]
+					},
+					"image": {
+						"src": "https://www.ketrik.com/screenshot.jpg"
+					},
+					"subtitle1": {
+						"text": [
+							{
+								"text": "We build the operational backbone your platform needs to scale, clearing the path for your team to focus entirely on innovation."
+							}
+						]
+					},
+					"title": {
+						"text": [
+							{
+								"text": "Why Us ",
+								"vx": {
+									"lineBreak": true
+								}
+							},
+							{
+								"text": "Operational certainty from day one",
+								"vx": {
+									"size": "sm",
+									"color": "blue"
+								}
+							}
+						]
+					}
+				},
+				"panel2": {
+					"background1": {
+						"style": {
+							"backgroundImage": "repeating-linear-gradient(0deg, transparent, transparent 19px, rgba(75, 85, 99, 0.08) 19px, rgba(75, 85, 99, 0.08) 20px, transparent 20px, transparent 39px, rgba(75, 85, 99, 0.08) 39px, rgba(75, 85, 99, 0.08) 40px),repeating-linear-gradient(90deg, transparent, transparent 19px, rgba(75, 85, 99, 0.08) 19px, rgba(75, 85, 99, 0.08) 20px, transparent 20px, transparent 39px, rgba(75, 85, 99, 0.08) 39px, rgba(75, 85, 99, 0.08) 40px), radial-gradient(circle at 20px 20px, rgba(55, 65, 81, 0.12) 2px, transparent 2px), radial-gradient(circle at 40px 40px, rgba(55, 65, 81, 0.12) 2px, transparent 2px)",
+							"backgroundSize": "40px 40px, 40px 40px, 40px 40px, 40px 40px"
+						}
+					},
+					"featuresGrid": {
+						"ds": [
+							{
+								"description": "It starts with a project submission. We review your vision, technical requirements, and market goals to ensure they align with our Lab’s expertise and current capacity.",
+								"icon": "",
+								"title": "1. Venture Intake"
+							},
+							{
+								"description": "We map out your 'Vibe-to-Architecture' path. For startups, we focus on market entry; for Enterprise partners, we focus on cloud modernization, security compliance, and seamless integration with existing AWS or Google Cloud ecosystems.",
+								"icon": "",
+								"title": "2. The Deep-Dive Session"
+							},
+							{
+								"description": "No two ventures are the same. We define a custom engagement model—ranging from rapid-prototype MVP builds to Enterprise-level SOWs (Statements of Work)—tailored to your internal procurement and roadmap requirements.",
+								"title": "3. Bespoke Structuring"
+							},
+							{
+								"description": "We move into high-velocity development. Using our validated component library, we transform your concept into a secure, launch-ready environment that meets enterprise-grade standards for audit and scale.",
+								"title": "4. Lab Execution"
+							}
+						]
+					},
+					"subtitle": {
+						"text": [
+							{
+								"text": "Why we built a Lab, not an Agency? We believe the best products are born from the intersection of creative intuition and rigorous engineering. In the Lab, we don't just solve tickets; we solve for the venture’s future.",
+								"vx": {},
+								"text1": "Beyond code, we invest our conviction. We are a boutique studio that prioritizes deep technical involvement in projects that challenge the status quo."
+							}
+						]
+					},
+
+					"title": {
+						"text": [
+							{
+								"text": "Work With Us",
+								"vx": {
+									"lineBreak": true
+								}
+							},
+							{
+								"text": "We are a boutique venture lab",
+								"text1": "We prioritize deep partnerships over high-volume projects",
+								"vx": {
+									"size": "sm",
+									"color": "blue"
+								}
+							}
+						]
+					}
+				},
+
+				"panel3": {
+					"subtitle": {
+						"text": [
+							{
+								"text": "The difference between a successful market launch and a stalled project is speed, expertise, and predictability. Outsource the build, mitigate the risk, and achieve revenue goals months ahead of your competition.",
+								"vx": {
+									"center": true,
+									"maxWidth": "md"
+								}
+							}
+						]
+					},
+					"title": {
+						"text": [
+							{
+								"text": "Stop delaying ",
+								"vx": {
+									"lineBreak": true
+								}
+							},
+							{
+								"text": "your next great product",
+								"vx": {
+									"size": "sm",
+									"color": "blue"
+								}
+							}
+						]
+					},
+					"button": {
+						"href": "/portal",
+						"text": "Reach out"
+					}
+				}
+			},
+			"config": {
+				"disableGutter": true,
+
+				"groups": [
+					{
+						"itemSize": { "sm": 12 },
+
+						"items": [
+							{
+								"cardConfig": [
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "hero",
+
+											"vx": {
+												"sideImage": {
+													"isBlurred": false,
+													"isZoomed": true,
+													"shadow": "sm"
+												},
+												"subtitle": {},
+												"title": {},
+												"titleWrapper": {},
+												"button": {
+													"color": "primary",
+													"radius": "full",
+													"size": "lg"
+												}
+											},
+											"sx": {
+												"titleWrapper": {
+													"minHeight": {
+														"xs": "190px",
+														"sm": "130px",
+														"md": "auto"
+													}
+												}
+											}
+										},
+										"dataKey": "hero",
+										"type": "cardContent"
+									},
+
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "basic",
+											"vx": {
+												"featuresGrid": {
+													"color": "blue"
+												}
+											}
+										},
+										"dataKey": "subHero",
+										"type": "cardContent"
+									},
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "basic",
+											"id": "work",
+											"vx": {
+												"featuresGrid": {
+													"size": 2,
+													"color": "blue"
+												}
+											}
+										},
+										"dataKey": "panel2",
+										"type": "cardContent"
+									}
+								],
+								"cardType": "noCard"
+							},
+							{
+								"cardConfig": [
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "basic",
+											"vx": {
+												"sectionWrapper": {
+													"isBlurred": true
+												},
+												"subtitle": {
+													"center": true,
+													"maxWidth": "md",
+													"italic": true
+												},
+												"titleWrapper": {
+													"center": true,
+													"isVertical": true
+												}
+											}
+										},
+										"dataKey": "vibe",
+										"type": "cardContent"
+									},
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "basic",
+											"id": "solutions",
+
+											"vx": {
+												"image": {
+													"isBlurred": true,
+													"isZoomed": true,
+													"shadow": "sm"
+												}
+											}
+										},
+										"dataKey": "panel1",
+										"type": "cardContent"
+									},
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "basic",
+											"vx": {
+												"title": {
+													"size": "sm"
+												}
+											}
+										},
+										"dataKey": "advantage",
+										"type": "cardContent"
+									},
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "basic",
+
+											"vx": {
+												"titleWrapper": {
+													"center": true,
+													"isVertical": false
+												},
+												"buttonWrapper": {
+													"center": true
+												},
+												"button": {
+													"color": "primary",
+													"radius": "full",
+													"size": "lg"
+												}
+											}
+										},
+										"dataKey": "panel3",
+										"type": "cardContent"
+									}
+								],
+								"cardType": "noCard"
+							}
+						]
+					}
+				],
+				"hideFullSizeToggle": true,
+				"isFullSize": false
+			}
+		},
+
+		"membership": {
+			"renderComponent": "Membership"
+		},
+
+		"profile": {
+			"data": {
+				"profile": {
+					"name": "Vytas",
+					"startDate": "2026-10-10"
+				}
+			},
+
+			"config": {
+				"childComponent": "DisplayCards",
+				"header": "Profile",
+				"isFullSize": false,
+				"maxWidth": "md",
+				"groups": [
+					{
+						"id": "profile",
+						"itemSize": 12,
+						"items": [
+							{
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"dataKey": "profile",
+										"actionConfig": {
+											"type": "SAVE_TO_FIRESTORE",
+											"collection": "users",
+											"document": "${uid}"
+										},
+										"contentConfig": {
+											"contentType": "DataForm",
+											"schema": {
+												"properties": {
+													"endDate": {
+														"format": "date",
+														"title": "To",
+														"type": "string"
+													},
+													"startDate": {
+														"format": "date",
+														"title": "From",
+														"type": "string"
+													}
+												},
+												"required": ["endDate", "startDate"],
+												"type": "object"
+											},
+											"uiSchema": {
+												"endDate": {
+													"ui:options": {
+														"label": true
+													},
+													"ui:placeholder": "End Date"
+												},
+												"startDate": {
+													"ui:options": {
+														"label": true
+													},
+													"ui:placeholder": "Start Date"
+												},
+												"ui:order": ["startDate", "endDate"]
+											}
+										}
+									}
+								]
+							},
+							{
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"dataKey": "profile",
+										"contentConfig": {
+											"contentType": "DataForm",
+											"schema": {
+												"title": "Firebase Auth Settings",
+												"type": "object",
+												"required": ["apiKey", "authDomain", "projectId"],
+												"properties": {
+													"apiKey": {
+														"type": "string",
+														"title": "API Key",
+														"default": ""
+													},
+													"authDomain": {
+														"type": "string",
+														"title": "Auth Domain",
+														"examples": ["your-app.firebaseapp.com"]
+													},
+													"projectId": {
+														"type": "string",
+														"title": "Project ID"
+													},
+													"storageBucket": {
+														"type": "string",
+														"title": "Storage Bucket"
+													},
+													"messagingSenderId": {
+														"type": "string",
+														"title": "Messaging Sender ID"
+													},
+													"appId": {
+														"type": "string",
+														"title": "App ID"
+													},
+													"persistenceType": {
+														"type": "string",
+														"title": "Auth Persistence",
+														"enum": ["LOCAL", "SESSION", "NONE"],
+														"default": "LOCAL"
+													},
+													"enableEmailPassword": {
+														"type": "boolean",
+														"title": "Enable Email/Password Login",
+														"default": true
+													},
+													"mfaRequired": {
+														"type": "boolean",
+														"title": "Require Multi-Factor Authentication",
+														"default": false
+													}
+												}
+											},
+											"uiSchema": {
+												"apiKey": {
+													"ui:widget": "password",
+													"ui:help": "Found in your Firebase Console project settings.",
+													"ui:placeholder": "AIzaSy..."
+												},
+												"authDomain": {
+													"ui:placeholder": "project-id.firebaseapp.com"
+												},
+												"persistenceType": {
+													"ui:widget": "radio",
+													"ui:options": {
+														"inline": true
+													}
+												},
+												"enableEmailPassword": {
+													"ui:widget": "checkbox"
+												},
+												"ui:order": [
+													"projectId",
+													"apiKey",
+													"authDomain",
+													"appId",
+													"storageBucket",
+													"messagingSenderId",
+													"persistenceType",
+													"*",
+													"mfaRequired"
+												]
+											}
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		"tripadvisor_marketing_2026": {
+			"dataPath": {
+				"path": "marketing_metrics",
+				"filters": [
+					{
+						"sort": ["timestamp", "desc"],
+						"disable": false
+					},
+					{
+						"limit": 1,
+						"disable": false
+					}
+				]
+			},
+			"data": {
+				"overview_stats": {
+					"v": 125400.85,
+					"v0": 110000,
+					"change": 14,
+					"last_sync": "April 2026"
+				},
+				"conversion_data": {
+					"v": 0.084,
+					"v0": 0.091,
+					"change": -7.7
+				},
+				"hero_content": {
+					"banner_url": "https://images.unsplash.com/photo-1503220317375-aaad61436b1b",
+					"headline": "TripAdvisor Partner Portal"
+				}
+			},
+			"config": {
+				"childComponent": "DisplayCards",
+				"header": "Global Marketing Performance",
+				"groups": [
+					{
+						"id": "hero_group",
+						"itemSize": 12,
+						"items": [
+							{
+								"cardType": "noCard",
+								"cardConfig": [
+									{
+										"type": "cardMedia",
+										"dataKey": "hero_content",
+										"map": { "banner_url": "image" },
+										"component": "img",
+										"height": 300,
+										"sx": { "borderRadius": 4, "mb": 2 }
+									},
+									{
+										"type": "cardHeader",
+										"dataKey": "hero_content",
+										"map": { "headline": "title" },
+										"subheader": "Real-time Campaign Analytics",
+										"sx": { "px": 0 }
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "kpi_grid",
+						"header": "Core Metrics",
+						"itemSize": { "xs": 12, "sm": 6, "md": 4 },
+						"itemDefaults": {
+							"cardType": "card",
+							"cardProps": { "raised": true, "sx": { "height": "100%" } }
+						},
+						"items": [
+							{
+								"cardConfig": [
+									{
+										"type": "cardHeader",
+										"title": "Gross Revenue",
+										"dataKey": "overview_stats",
+										"map": { "last_sync": "subheader" }
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "overview_stats",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TrendSub",
+											"title": "Total Bookings",
+											"sub": "vs. previous period",
+											"format": {
+												"style": "currency",
+												"currency": "USD",
+												"notation": "compact"
+											},
+											"trendFormat": { "style": "percent" }
+										}
+									}
+								]
+							},
+							{
+								"cardConfig": [
+									{
+										"type": "cardHeader",
+										"title": "Booking Conversion"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "conversion_data",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TrendSub",
+											"title": "CTR to Checkout",
+											"sub": "target avg",
+											"format": {
+												"style": "percent",
+												"maximumFractionDigits": 2
+											},
+											"trendFormat": { "style": "percent" },
+											"trendUpper": 2,
+											"trendLower": -2
+										}
+									},
+									{
+										"type": "cardAction",
+										"buttons": [
+											{
+												"label": "Optimization Tips",
+												"variant": "outlined",
+												"color": "info",
+												"actionType": "nav"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		"liquidity_risk_gs_2026": {
+			"dataPath": {
+				"path": "risk_management_liquidity",
+				"filters": [
+					{ "sort": ["timestamp", "desc"], "disable": false },
+					{ "limit": 1, "disable": false }
+				]
+			},
+			"data": {
+				"lcr_metric": {
+					"v": 1.32,
+					"v0": 1.28,
+					"change": 3.1
+				},
+				"nsfr_metric": {
+					"v": 1.18,
+					"v0": 1.16,
+					"change": 1.7
+				},
+				"gcla_buffer": {
+					"v": 395000000000,
+					"v0": 410000000000,
+					"change": -3.6
+				},
+				"funding_gap": {
+					"v": 0.042,
+					"v0": 0.038,
+					"change": 10.5
+				},
+				"risk_hero": {
+					"headline": "Liquidity & Funding Risk Profile",
+					"sub": "Tier 1 Regulatory Compliance Status",
+					"lastAudit": "Q1 2026 Internal Audit"
+				}
+			},
+			"config": {
+				"childComponent": "DisplayCards",
+				"header": "Goldman Sachs Liquidity Oversight",
+				"groups": [
+					{
+						"id": "regulatory_ratios",
+						"header": "Basel III Regulatory Ratios",
+						"itemSize": { "xs": 12, "md": 6 },
+						"itemDefaults": {
+							"cardType": "card",
+							"cardProps": {
+								"raised": true,
+								"sx": { "borderLeft": "5px solid #1a237e" }
+							}
+						},
+						"items": [
+							{
+								"cardConfig": [
+									{
+										"type": "cardHeader",
+										"title": "Liquidity Coverage Ratio (LCR)",
+										"subheader": "30-Day Stress Resilience"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "lcr_metric",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TrendSub",
+											"title": "Current LCR",
+											"sub": "Regulatory Min: 100%",
+											"format": {
+												"style": "percent",
+												"maximumFractionDigits": 1
+											},
+											"trendFormat": { "style": "percent" }
+										}
+									}
+								]
+							},
+							{
+								"cardConfig": [
+									{
+										"type": "cardHeader",
+										"title": "Net Stable Funding Ratio (NSFR)",
+										"subheader": "1-Year Funding Stability"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "nsfr_metric",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TrendSub",
+											"title": "Current NSFR",
+											"sub": "Target Internal: 115%",
+											"format": {
+												"style": "percent",
+												"maximumFractionDigits": 1
+											},
+											"trendFormat": { "style": "percent" }
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "asset_buffers",
+						"header": "Liquidity Buffer Composition",
+						"itemSize": { "xs": 12, "md": 6 },
+						"items": [
+							{
+								"cardType": "card",
+								"cardConfig": [
+									{
+										"type": "cardHeader",
+										"title": "Global Core Liquid Assets (GCLA)",
+										"dataKey": "risk_hero",
+										"map": { "lastAudit": "subheader" }
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "gcla_buffer",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TextSub",
+											"title": "Total Unencumbered Assets",
+											"sub": "Cash & Govt Bonds",
+											"format": {
+												"style": "currency",
+												"currency": "USD",
+												"notation": "compact"
+											},
+											"trendFormat": { "style": "percent" }
+										}
+									}
+								]
+							},
+							{
+								"cardType": "actionCard",
+								"cardActionUrl": "/risk/stress-testing",
+								"cardConfig": [
+									{
+										"type": "cardHeader",
+										"title": "Simulated Funding Gap",
+										"subheader": "Contractual Maturity Mismatch"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "funding_gap",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TrendSub",
+											"title": "1-Day Gap Ratio",
+											"sub": "Max Tolerance: 5%",
+											"format": {
+												"style": "percent",
+												"maximumFractionDigits": 2
+											},
+											"trendFormat": { "style": "percent" },
+											"trendUpper": 5,
+											"trendLower": 0
+										}
+									},
+									{
+										"type": "cardAction",
+										"buttons": [
+											{
+												"label": "Run Stress Scenario",
+												"variant": "contained",
+												"color": "primary",
+												"actionType": "nav"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+
+		"sales_pipeline_2026": {
+			"dataPath": {
+				"path": "sales_leads_v3",
+				"filters": [
+					{
+						"where": ["status", "==", "active"],
+						"disable": false
+					},
+					{
+						"sort": ["deal_value", "desc"],
+						"disable": false
+					}
+				]
+			},
+			"data": {
+				"pipeline_value": {
+					"v": 2450000,
+					"v0": 2100000,
+					"change": 0.166
+				},
+				"lead_velocity": {
+					"v": 450,
+					"v0": 380,
+					"change": 0.184
+				},
+				"win_rate": {
+					"v": 0.28,
+					"v0": 0.24,
+					"change": 0.04
+				},
+				"sales_hero": {
+					"title": "Global Sales Velocity",
+					"subtitle": "Q2 Performance Tracking",
+					"cover": "https://images.unsplash.com/photo-1557804506-669a67965ba0"
+				}
+			},
+			"config": {
+				"childComponent": "DisplayCards",
+				"header": "TripAdvisor B2B Sales Portal",
+				"groups": [
+					{
+						"id": "sales_overview",
+						"itemSize": 12,
+						"items": [
+							{
+								"cardType": "noCard",
+								"cardProps": { "sx": { "mb": 2 } },
+								"cardConfig": [
+									{
+										"type": "cardMedia",
+										"dataKey": "sales_hero",
+										"map": { "cover": "image" },
+										"component": "img",
+										"height": 220,
+										"sx": { "borderRadius": "16px" }
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "sales_kpis",
+						"header": "Performance Benchmarks",
+						"itemSize": { "xs": 12, "sm": 6, "md": 4 },
+						"itemDefaults": {
+							"cardType": "card",
+							"cardProps": {
+								"raised": true,
+								"sx": { "height": "100%", "borderRadius": 3 }
+							}
+						},
+						"items": [
+							{
+								"cardConfig": [
+									{
+										"type": "cardHeader",
+										"title": "Pipeline Value",
+										"subheader": "Active Negotiations"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "pipeline_value",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TrendSub",
+											"title": "Total Forecast",
+											"sub": "vs last month",
+											"format": {
+												"style": "currency",
+												"currency": "USD",
+												"notation": "compact"
+											},
+											"trendFormat": { "style": "percent" }
+										}
+									}
+								]
+							},
+							{
+								"cardConfig": [
+									{
+										"type": "cardHeader",
+										"title": "New Leads",
+										"subheader": "Weekly Acquisition"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "lead_velocity",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TrendSub",
+											"title": "Inbound Leads",
+											"sub": "standard growth",
+											"format": {
+												"style": "decimal",
+												"notation": "standard"
+											},
+											"trendFormat": { "style": "percent" }
+										}
+									}
+								]
+							},
+							{
+								"cardConfig": [
+									{
+										"type": "cardHeader",
+										"title": "Win Rate",
+										"subheader": "Closed-Won Deals"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "win_rate",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TrendSub",
+											"title": "Closing Ratio",
+											"sub": "target 25%",
+											"format": {
+												"style": "percent",
+												"maximumFractionDigits": 1
+											},
+											"trendFormat": { "style": "percent" },
+											"trendUpper": 5,
+											"trendLower": -2
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "quick_actions",
+						"header": "CRM Actions",
+						"itemSize": { "xs": 12, "md": 6 },
+						"items": [
+							{
+								"cardConfig": [
+									{
+										"type": "cardHeader",
+										"title": "Create New Lead",
+										"subheader": "Add a prospective partner to the funnel"
+									},
+									{
+										"type": "cardAction",
+										"buttons": [
+											{
+												"size": "small",
+												"children": "Open Lead Form",
+												"color": "success",
+												"href": "/sales/leads/add",
+												"variant": "outlined",
+												"startIcon": "Add"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+
+		"policy_route": {
+			"data": "# TripAdvisor Privacy Policy\nLast updated: **April 2026**\n\nYour data is secure with us.",
+			"renderComponent": {
+				"component": "Markdown",
+				"container": {
+					"maxWidth": "md",
+					"sx": { "mt": 10, "mb": 10 }
+				}
+			}
+		},
+
+		"marketing_dashboard": {
+			"dataPath": {
+				"path": "partner_metrics_v2",
+				"filters": [
+					{
+						"sort": ["timestamp", "desc"],
+						"disable": false
+					},
+					{
+						"limit": 1,
+						"disable": false
+					}
+				]
+			},
+			"data": {
+				"campaign_performance": { "v": 84200, "v0": 71000, "change": 18.5 },
+				"booking_conversion": { "v": 0.124, "v0": 0.118, "change": 5.08 },
+				"ad_efficiency": { "v": 4.2, "v0": 4.8, "change": -12.5 },
+				"review_sentiment": { "v": 4.8, "v0": 4.5, "change": 6.6 },
+				"hero_banner": {
+					"title": "Global Partner Performance",
+					"lastUpdate": "Updated 2 minutes ago",
+					"img": "https://images.unsplash.com/photo-1503220317375-aaad61436b1b"
+				}
+			},
+			"config": {
+				"childComponent": "DisplayCards",
+				"header": "Trip Advisor Marketing Hub",
+				"groups": [
+					{
+						"id": "header-section",
+						"itemSize": 12,
+						"items": [
+							{
+								"cardType": "noCard",
+								"cardConfig": [
+									{
+										"type": "cardHeader",
+										"dataKey": "hero_banner",
+										"map": { "lastUpdate": "subheader" },
+										"sx": { "px": 0, "pt": 0 }
+									},
+									{
+										"type": "cardMedia",
+										"dataKey": "hero_banner",
+										"map": { "img": "image" },
+										"height": "240",
+										"sx": { "borderRadius": "12px", "mb": 4 }
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "core-metrics",
+						"groupHeader": "Growth & Conversion",
+						"itemSize": { "xs": 12, "sm": 6, "md": 3 },
+						"itemDefaults": {
+							"cardType": "card",
+							"isRaised": true,
+							"styleOverrides": {
+								"height": "100%",
+								"display": "flex",
+								"flexDirection": "column"
+							}
+						},
+						"items": [
+							{
+								"header": "Revenue",
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"dataKey": "campaign_performance",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TrendSub",
+											"title": "Attributed Revenue",
+											"sub": "prev. month",
+											"format": {
+												"style": "currency",
+												"currency": "USD",
+												"notation": "compact"
+											},
+											"trendFormat": { "style": "percent" }
+										}
+									}
+								]
+							},
+							{
+								"header": "Conversion",
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"dataKey": "booking_conversion",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TrendSub",
+											"title": "Booking CTR",
+											"sub": "avg",
+											"format": {
+												"style": "percent",
+												"maximumFractionDigits": 1
+											},
+											"trendFormat": { "style": "percent" }
+										}
+									}
+								]
+							},
+							{
+								"header": "Efficiency",
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"dataKey": "ad_efficiency",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TrendSub",
+											"title": "ROAS",
+											"sub": "target 5.0",
+											"format": {
+												"style": "decimal",
+												"maximumFractionDigits": 1
+											},
+											"trendFormat": { "style": "percent" },
+											"trendUpper": 0,
+											"trendLower": -5
+										}
+									}
+								]
+							},
+							{
+								"header": "Sentiment",
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"dataKey": "review_sentiment",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TrendSub",
+											"title": "Review Score",
+											"sub": "baseline",
+											"format": {
+												"style": "decimal",
+												"maximumFractionDigits": 1
+											},
+											"trendFormat": { "style": "percent" }
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "action-center",
+						"groupHeader": "Marketing Actions",
+						"itemSize": { "xs": 12, "md": 6 },
+						"items": [
+							{
+								"cardType": "actionCard",
+								"cardActionUrl": "/campaigns/new",
+								"cardConfig": [
+									{
+										"type": "cardHeader",
+										"title": "Launch New Campaign",
+										"subheader": "Boost visibility in high-demand regions",
+										"styleOverrides": { "cursor": "pointer" }
+									},
+									{
+										"type": "cardAction",
+										"buttons": [
+											{
+												"label": "Get Started",
+												"themeColor": "primary",
+												"variant": "filled",
+												"actionType": "navigate"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		"privacy_policy_v2": {
+			"data": {
+				"legalText": "# Privacy Policy\nYour data is **safe** with us. We follow NASA-grade encryption.",
+				"policyId": "POL-2024"
+			},
+			"config": {
+				"childComponent": "DisplayCards",
+				"header": "Legal Center",
+				"groups": [
+					{
+						"items": [
+							{
+								"header": "Privacy Overview",
+								"cardType": "noCard",
+
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"dataKey": "legalText",
+										"contentConfig": {
+											"contentType": "Markdown"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+
+		"performance_dashboard": {
+			"data": {
+				"main_metric": { "v": 45200, "v0": 40000, "change": 13 },
+				"conversion_rate": { "v": 0.032, "v0": 0.028, "change": 14.2 },
+				"server_status": { "v": 0.999, "v0": 0.995, "change": 0.4 },
+				"hero_banner": {
+					"title": "System Performance",
+					"subtitle": "Real-time analytics for the current sprint",
+					"image": "https://www.ketrik.com/pattern7.png"
+				}
+			},
+			"config": {
+				"childComponent": "DisplayCards",
+				"header": "Executive Overview",
+				"groups": [
+					{
+						"id": "hero-section",
+						"itemSize": 12,
+						"items": [
+							{
+								"cardType": "noCard",
+								"cardProps": { "sx": { "mb": 2 } },
+								"cardConfig": [
+									{
+										"type": "cardHeader",
+										"dataKey": "hero_banner",
+										"sx": { "textAlign": "center" },
+										"disableTypography": false
+									},
+									{
+										"type": "cardMedia",
+										"dataKey": "hero_banner",
+										"component": "img",
+										"height": "200",
+										"sx": { "borderRadius": 2 }
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "stats-grid",
+						"groupHeader": "Key Performance Indicators",
+						"itemSize": { "xs": 12, "sm": 6, "md": 4 },
+						"itemDefaults": {
+							"cardType": "card",
+							"cardProps": { "raised": true }
+						},
+						"items": [
+							{
+								"header": "Revenue Card",
+								"cardConfig": [
+									{
+										"type": "cardHeader",
+										"title": "Total Revenue",
+										"sx": { "pb": 0 },
+										"disableTypography": false
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "main_metric",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TrendSub",
+											"title": "ARR",
+											"sub": "vs. prev month",
+											"format": {
+												"style": "currency",
+												"currency": "USD",
+												"notation": "compact"
+											},
+											"trendFormat": { "style": "percent" }
+										}
+									},
+									{
+										"type": "cardAction",
+										"sx": { "justifyContent": "flex-end" },
+										"buttons": [
+											{
+												"label": "View Report",
+												"variant": "text",
+												"color": "primary"
+											}
+										]
+									}
+								]
+							},
+							{
+								"header": "Conversion Card",
+								"cardConfig": [
+									{
+										"type": "cardHeader",
+										"title": "Conversion",
+										"sx": { "pb": 0 },
+										"disableTypography": true
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "conversion_rate",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TrendSub",
+											"title": "Checkout Rate",
+											"sub": "baseline",
+											"format": {
+												"style": "percent",
+												"maximumFractionDigits": 2
+											},
+											"trendFormat": { "style": "percent" }
+										}
+									}
+								]
+							},
+							{
+								"header": "Status Card",
+								"cardActionUrl": "/system/health",
+								"cardType": "actionCard",
+								"cardConfig": [
+									{
+										"type": "cardHeader",
+										"title": "Uptime",
+										"sx": { "pb": 0 },
+										"disableTypography": false
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "server_status",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TrendSub",
+											"title": "SLA Metrics",
+											"sub": "target 99.9%",
+											"format": {
+												"style": "percent",
+												"maximumFractionDigits": 3
+											},
+											"trendFormat": { "style": "percent" }
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+
+		"performance_tracking": {
+			"data": {
+				"revenue": { "v": 125400, "v0": 100000, "change": 25.4 },
+				"active_users": { "v": 8500, "v0": 7200, "change": 18.05 },
+				"transaction_fees": { "v": 0.045, "v0": 0.038, "change": 18.42 },
+				"storage_used": { "v": 950.5, "v0": 800, "change": 18.81 },
+				"response_time": { "v": 120, "v0": 150, "change": -20 }
+			},
+			"config": {
+				"childComponent": "DisplayCards",
+				"header": "System Health & Revenue",
+				"groups": [
+					{
+						"header": "Top Line",
+						"items": [
+							{
+								"cardType": "card",
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"dataKey": "revenue",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TrendSub",
+											"title": "Gross Revenue",
+											"sub": "vs. prev period",
+											"format": {
+												"style": "currency",
+												"currency": "USD",
+												"notation": "compact"
+											},
+											"trendFormat": {
+												"style": "percent",
+												"maximumFractionDigits": 1
+											}
+										}
+									}
+								]
+							},
+							{
+								"header": "User Growth",
+								"cardType": "card",
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"dataKey": "active_users",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TrendSub",
+											"title": "Monthly Actives",
+											"sub": "target",
+											"format": {
+												"style": "decimal",
+												"notation": "standard"
+											},
+											"trendFormat": { "style": "percent" }
+										}
+									}
+								]
+							},
+							{
+								"header": "Blockchain Info",
+								"cardType": "card",
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"dataKey": "transaction_fees",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TrendSub",
+											"title": "Avg Fee",
+											"sub": "yesterday",
+											"format": {
+												"style": "currency",
+												"currency": "ETH",
+												"maximumFractionDigits": 3
+											},
+											"trendFormat": { "style": "percent" }
+										}
+									}
+								]
+							},
+							{
+								"header": "Infrastructure",
+								"cardType": "card",
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"dataKey": "storage_used",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TextSub",
+											"title": "Storage (GB)",
+											"sub": "limit",
+											"format": {
+												"style": "decimal",
+												"maximumFractionDigits": 1
+											},
+											"trendFormat": { "style": "percent" }
+										}
+									}
+								]
+							},
+							{
+								"header": "Latency",
+								"cardType": "card",
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"dataKey": "response_time",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TrendSub",
+											"title": "API P99",
+											"sub": "p50 baseline",
+											"format": { "style": "decimal" },
+											"trendFormat": { "style": "percent" },
+											"trendUpper": 0,
+											"trendLower": -10
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		"analytics_dashboard": {
+			"data": {
+				"nmi_data": { "v": 12540.789, "v0": 11000, "change": 14.2 },
+				"churn_data": { "v": 0.021, "change": -0.005 },
+				"revenue_data": { "v": 1450000, "v0": 1400000, "change": 3.57 },
+				"uptime_data": { "v": 0.9998, "change": 0.0001 },
+				"acquisition_cost": { "v": 45.2, "v0": 50.0, "change": -9.6 }
+			},
+			"config": {
+				"childComponent": "DisplayCards",
+				"header": "Executive Summary",
+				"groups": [
+					{
+						"items": [
+							{
+								"header": "Market Index",
+								"cardType": "card",
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"dataKey": "nmi_data",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TrendSub",
+											"title": "Daily NMI",
+											"format": {
+												"style": "currency",
+												"currency": "USD",
+												"notation": "compact",
+												"maximumFractionDigits": 3
+											},
+											"trendUpper": 5,
+											"trendLower": -5,
+											"trendFormat": {
+												"style": "percent",
+												"maximumFractionDigits": 1
+											}
+										}
+									}
+								]
+							},
+							{
+								"header": "Retention",
+								"cardType": "card",
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"dataKey": "churn_data",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TrendSub",
+											"title": "User Churn",
+											"format": {
+												"style": "percent",
+												"maximumFractionDigits": 2
+											},
+											"trendUpper": 0.01,
+											"trendLower": -0.01,
+											"trendFormat": { "style": "percent" }
+										}
+									}
+								]
+							},
+							{
+								"header": "Growth",
+								"cardType": "actionCard",
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"dataKey": "revenue_data",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TextSub",
+											"title": "Total Revenue",
+											"sub": "Monthly Target reached",
+											"format": {
+												"style": "currency",
+												"currency": "USD",
+												"notation": "compact"
+											},
+											"trendFormat": {
+												"style": "percent",
+												"maximumFractionDigits": 2
+											}
+										}
+									}
+								]
+							},
+							{
+								"header": "Reliability",
+								"cardType": "card",
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"dataKey": "uptime_data",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TrendSub",
+											"title": "System Uptime",
+											"format": {
+												"style": "percent",
+												"maximumFractionDigits": 4
+											},
+											"trendUpper": 0,
+											"trendFormat": {
+												"style": "decimal",
+												"maximumFractionDigits": 4
+											}
+										}
+									}
+								]
+							},
+							{
+								"header": "Marketing Efficiency",
+								"cardType": "card",
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"dataKey": "acquisition_cost",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TrendSub",
+											"title": "CAC",
+											"format": {
+												"style": "currency",
+												"currency": "USD"
+											},
+											"trendUpper": 0,
+											"trendLower": -10,
+											"trendFormat": { "style": "percent" }
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		"financial_dashboard": {
+			"data": {
+				"daily_nmi": {
+					"v": 12540.789,
+					"v0": 1
+				},
+				"conversion_rate": 0.0452,
+				"total_revenue": 1450000,
+				"active_users": 8420,
+				"burn_rate": -15000.5
+			},
+			"config": {
+				"childComponent": "DisplayCards",
+				"header": "Performance Overview",
+				"groups": [
+					{
+						"groupHeader": "Key Metrics",
+						"items": [
+							{
+								"header": "NMI Tracking",
+								"cardType": "card",
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"dataKey": "daily_nmi",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TrendSub",
+											"title": "Daily NMI",
+											"format": {
+												"notation": "compact",
+												"currency": "USD",
+												"style": "currency",
+												"maximumFractionDigits": 3
+											},
+											"sub": "vs. 7d average"
+										}
+									}
+								]
+							},
+							{
+								"header": "Efficiency",
+								"cardType": "card",
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"dataKey": "conversion_rate",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "SimpleSub",
+											"title": "Conversion Rate",
+											"format": {
+												"style": "percent",
+												"maximumFractionDigits": 2
+											},
+											"sub": "Across all channels"
+										}
+									}
+								]
+							},
+							{
+								"header": "Revenue",
+								"cardType": "actionCard",
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"dataKey": "total_revenue",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "NoSub",
+											"title": "Gross Revenue",
+											"format": {
+												"notation": "compact",
+												"currency": "USD",
+												"style": "currency"
+											}
+										}
+									}
+								]
+							},
+							{
+								"header": "Engagement",
+								"cardType": "card",
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"dataKey": "active_users",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "TrendSub",
+											"title": "Daily Active Users",
+											"format": {
+												"notation": "standard",
+												"style": "decimal"
+											},
+											"sub": "+12% from yesterday"
+										}
+									}
+								]
+							},
+							{
+								"header": "Cash Flow",
+								"cardType": "card",
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"dataKey": "burn_rate",
+										"contentConfig": {
+											"contentType": "StatContent",
+											"subVariant": "SimpleSub",
+											"title": "Monthly Burn",
+											"format": {
+												"currency": "USD",
+												"style": "currency",
+												"maximumFractionDigits": 0
+											},
+											"sub": "Estimated"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		"user_profile_feature": {
+			"data": {
+				"userName": "Pluto Explorer",
+				"userBio": "# About Me\nInterested in the **Kuiper Belt** and deep space missions.",
+				"avatarUrl": "https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/pluto-charon.jpg",
+				"userId": "NASA-001",
+				"lastActive": "2024-05-20"
+			},
+			"config": {
+				"childComponent": "DisplayCards",
+				"header": "Explorer Profile",
+				"groups": [
+					{
+						"items": [
+							{
+								"header": "Personal Info",
+								"cardType": "card",
+								"cardProps": {
+									"gridSpan": 6,
+									"elevation": 2
+								},
+								"cardConfig": [
+									{
+										"type": "cardHeader",
+										"dataKey": "userName",
+										"contentConfig": {
+											"contentType": "Text",
+											"variant": "h5"
+										}
+									},
+									{
+										"type": "cardMedia",
+										"dataKey": "avatarUrl",
+										"contentConfig": {
+											"contentType": "Image",
+											"aspectRatio": "1:1"
+										}
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "userBio",
+										"contentConfig": {
+											"contentType": "Markdown",
+											"style": "full"
+										}
+									},
+									{
+										"type": "cardAction",
+										"dataKey": "userId",
+										"contentConfig": {
+											"contentType": "Button",
+											"label": "View Mission Details",
+											"variant": "contained"
+										}
+									}
+								],
+								"cardActionUrl": "/missions/details",
+								"cardActionIdKey": "userId"
+							}
+						]
+					}
+				]
+			}
+		},
+
+		"privacy": {
+			"data": "# Hi, *Pluto*! Just a link: www.nasa.gov. \n * [Python](/downloads/)",
+			"renderComponent": {
+				"component": "Markdown",
+				"container": {
+					"maxWidth": "md",
+					"sx": { "mt": 5 }
+				},
+				"props": {}
+			}
+		},
+
+		"privacy1": {
+			"data": {
+				"privacy": {
+					"type": "remote",
+					"url": "https://raw.githubusercontent.com/smacken/dollar-cost-average/refs/heads/master/README.md"
+				},
+				"privacy1": "# Hi, *Pluto*! Just a link: www.nasa.gov."
+			},
+			"config": {
+				"childComponent": "DisplayCards",
+				"header": "Privacy 22",
+				"groups": [
+					{
+						"items": [
+							{
+								"cardType": "card",
+								"cardProps": {
+									"raised": false
+								},
+								"cardConfig": [
+									{
+										"dataKey": "privacy1",
+										"type": "cardContent",
+										"contentConfig": {
+											"contentType": "Markdown"
+										}
+									}
+								]
+							},
+							{
+								"cardType": "card",
+								"cardProps": {
+									"raised": false,
+									"square": true,
+									"variant": "elevation"
+								},
+								"cardConfig": [
+									{
+										"dataKey": "privacy1",
+										"type": "cardContent",
+										"contentConfig": {
+											"contentType": "Markdown"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"navs": {
+		"accountMenu": [
+			{
+				"title": "Profile",
+				"segment": "profile",
+				"icon": "Person"
+			},
+			{
+				"title": "Settings",
+				"segment": "settings",
+				"icon": "Settings"
+			}
+		],
+		"topbar": [
+			{
+				"title": "Dashboard",
+				"segment": "dashboard",
+				"icon": "Dashboard"
+			},
+			{
+				"title": "Analytics",
+				"segment": "analytics",
+				"icon": "BarChart"
+			},
+			{
+				"title": "Settings",
+				"segment": "settings",
+				"icon": "Settings"
+			}
+		],
+		"actions": [
+			{
+				"type": "authButton",
+				"preAuthLabel": "Get In Touch",
+				"authLabel": "Get In Touch",
+				"url": "/dashboard",
+				"color": "primary"
+			},
+			{
+				"type": "themeSwitcher"
+			}
+		],
+		"footer": [
+			{
+				"title": "Privacy",
+				"segment": "privacy"
+			},
+			{
+				"title": "Terms",
+				"segment": "terms"
+			}
+		]
+	},
+
+  
+	"configs": {
+		"authConfig": {
+			"emailVerifyEnabled": true,
+			"mfaRequired": true
+		},
+		"authProviders": [
+			"credentials",
+			"google"
+		],
+		"logo":   "https://www.ketrik.com/ketrik-13.png",
+
+		"title": {
+			"main": "Company ",
+			"secondary": "Console"
+		},
+
+		"dashboardUrl": "/dashboard",
+
+		"passwordResetUrl": "/auth/password",
+		 
+
+		"rememberMeEnabled": true,
+		"remmeberMeLabel": "Remember me",
+		"forgotPasswordEnabled": true,
+		"forgotPasswordLabel": "Forgot password?",
+
+		"_layoutSidebarType": "default",
+		"_layoutHeaderType": "default",
+		"_layoutVariant": "row",
+		"_layoutWithFooter": false,
+		"layoutStickyStackEnabled": true,
+
+		"dashboardDefaults": {
+			"config": {
+				"isFullSize": true
+			}
+		}
+	},
+	 
+ 
+
+
+		
+	
+}
