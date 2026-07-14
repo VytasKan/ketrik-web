@@ -1,16 +1,16 @@
 {
-  "title": "CLIENT-A Portal",
-  "description": "Welcome to the custom portal for client-a.",
+  "title": "Ketrik",
+  "description": "Welcome to the Ketrik.",
   "icons": {
-    "icon": "https://raw.githubusercontent.com/your-username/client-assets/main/client-a/favicon.ico",
-    "apple": "https://raw.githubusercontent.com/your-username/client-assets/main/client-a/apple-touch-icon.png"
+    "icon": "https://raw.githubusercontent.com/VytasKan/ketrik-web/refs/heads/main/favicon.ico",
+    "apple": "https://raw.githubusercontent.com/VytasKan/ketrik-web/refs/heads/main/apple-touch-icon.png"
   },
   "openGraph": {
-    "title": "CLIENT-A - Home",
-    "description": "Official portal for client-a",
+    "title": "Ketrik - Home",
+    "description": "Ketrik website",
     "images": [
       {
-        "url": "https://raw.githubusercontent.com/your-username/client-assets/main/client-a/og-image.png",
+        "url": "https://raw.githubusercontent.com/VytasKan/ketrik-web/refs/heads/main/og-image.png",
         "width": 1200,
         "height": 630,
         "alt": "client-a Portal Cover"
@@ -19,9 +19,9 @@
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "CLIENT-A Portal",
+    "title": "Ketrik",
     "images": [
-      "https://raw.githubusercontent.com/your-username/client-assets/main/client-a/og-image.png"
+      "https://raw.githubusercontent.com/VytasKan/ketrik-web/refs/heads/main/og-image.png"
     ]
   }
 }
