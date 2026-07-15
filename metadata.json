@@ -2,15 +2,15 @@
   "title": "Ketrik",
   "description": "Welcome to the Ketrik.",
   "icons": {
-    "icon": "/assets/favicon.ico",
-    "apple": "/assets/apple-touch-icon.png"
+    "icon": "/_assets/favicon.ico",
+    "apple": "/_assets/apple-touch-icon.png"
   },
   "openGraph": {
     "title": "Ketrik - Home",
     "description": "Ketrik website",
     "images": [
       {
-        "url": "/assets/og-image.png",
+        "url": "/_assets/og-image.png",
         "width": 1200,
         "height": 630,
         "alt": "client-a Portal Cover"
@@ -21,7 +21,7 @@
     "card": "summary_large_image",
     "title": "Ketrik",
     "images": [
-      "/assets/og-image.png"
+      "/_assets/og-image.png"
     ]
   }
 }
