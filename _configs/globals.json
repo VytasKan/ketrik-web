@@ -2237,8 +2237,8 @@
 
 		"title": {
 			"main": "Ketrik ",
-			"secondary": "Services",
-			"sub": "Operational Intelligence"
+			"secondary1": "Services",
+			"sub": "Pulse Intelligence"
 		},
 
 		"dashboardUrl": "/dashboard",
