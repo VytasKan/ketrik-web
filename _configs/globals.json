@@ -2236,8 +2236,9 @@
 		"logo":   "https://www.ketrik.com/ketrik-13.png",
 
 		"title": {
-			"main": "Company ",
-			"secondary": "Console"
+			"main": "Ketrik ",
+			
+			"sub": "AI platform provider"
 		},
 
 		"dashboardUrl": "/dashboard",
