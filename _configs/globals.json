@@ -44,6 +44,19 @@
 							}
 						]
 					},
+
+					"subtitle": {
+						"text": [
+							{ "text": "Most AI sits in slides. Ketrik applies it to your actual operations — generating workflows, building dashboards, and extending your platform as your business evolves.",
+							"variantOptions": {
+									"maxWidth": "lg",
+									"center": false
+								}
+							}
+						]
+						
+					},
+					
 					"title": {
 						"text": [
 							{
@@ -57,23 +70,33 @@
 							{
 								"phrases": [
   "Data Flows",
-  "Your Pipelines",
   "Operational Visibility",
-  "Live Dashboards",
   "Command Centers",
-  "Multi-Tenant Operations",
   "Business Operations",
   "Real-Time Command",
   "Metric Delivery",
   "Infrastructure",
-  "Risk Monitoring",
+  "Orchestration",
   "Instant Operations",
   "Complex Data",
-  "Orchestration",
-  "Growing Operations"
+  "Growing Operations",
+  "Your Pipelines",
+  "Live Dashboards",
+  "Multi-Tenant Operations",
+  "Workflow Automation",
+  "Real-Time Analytics",
+  "Mission Control",
+  "Operational Intelligence",
+  "Data Integration",
+  "Alert Management",
+  "Client Operations",
+  "Decision Intelligence",
+  "Event Response",
+  "Platform Extension",
+  "Risk Monitoring"
 ],
 								"intensity": 0.4,
-								"pauseTime": 10000,
+								"pauseTime": 5000,
 								"variant": "typewriter",
 								"vx": {
 									"size": "lg",
