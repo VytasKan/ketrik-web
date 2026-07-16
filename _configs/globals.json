@@ -88,7 +88,7 @@
 								}
 							},
 							{
-							"text": "Business operations run on systems designed for reporting, not for acting.", 					
+					         "text": "Operations run on systems built for a moment that already passed.",
 								"vx": {
 									"size": "md",
 									"color": "blue"
@@ -100,27 +100,27 @@
 					
 					 
 					
-					 "featuresGrid": {
+				 "featuresGrid": {
             "ds": [
                 {
-                    "title": "Grafana Shows What Already Happened",
+                    "title": "Workflows",
                     "icon": "UpdateDisabled",
-                    "description": "Grafana visualizes static storage. It cannot generate dynamic layouts on the fly when new events fire. You see the post-mortem, not the active operational threat."
+                    "description": "Your pipeline was built for the data sources you had. A new feed appears. A schema shifts. A requirement evolves. The workflow stops. Engineering goes back to the drawing board. The business waits."
                 },
                 {
-                    "title": "Tableau Answers Questions. It Cannot Act.",
+                    "title": "Dashboards",
                     "icon": "LinkOff",
-                    "description": "Tableau is built for retrospective analysis, not runtime operations. It cannot render instant, context-aware, and actionable layouts the second an anomaly spikes."
+                    "description": "Your view was built for the metric you needed six months ago. The business asks something new \u2014 a different angle, a live crisis, a client-specific drill-down. The dashboard cannot generate itself. You build another one. The backlog grows."
                 },
                 {
-                    "title": "Internal Builds Become a Maintenance Tax",
-                    "icon": "ConfirmationNumber",
-                    "description": "The custom dashboards your engineers shipped six months ago now eat 40% of their bandwidth just to keep alive. New telemetry? New sprint. New view? New ticket."
-                },
-                { 
-                    "title": "The Decision Window Closes Instantly",
+                    "title": "Command",
                     "icon": "Engineering",
-                    "description": "By the time a static layout is hardcoded, compiled, and deployed, the market has moved or the risk has materialized. You are forever reacting to yesterday's state."
+                    "description": "New client. New market. New operational requirement. Every change goes into the engineering queue. Weeks become months. The command center you have is the command center you are stuck with."
+                },
+                {
+                    "title": "Operations",
+                    "icon": "ConfirmationNumber",
+                    "description": "Alert fires. Someone files a ticket. The decision window closes before the view is built, the workflow is updated, or the operator can intervene. The system reports what happened. It does not enable what happens next."
                 }
             ]
         }
