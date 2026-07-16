@@ -518,9 +518,7 @@
 											"sx": {
 												"titleWrapper": {
 													"minHeight": {
-														"xs": "190px",
-														"sm": "130px",
-														"md": "auto"
+														"xs": "auto"
 													}
 												}
 											}
