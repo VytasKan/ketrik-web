@@ -47,9 +47,10 @@
 
 					"subtitle": {
 						"text": [
-							{ "text": "Most AI sits in slides. Ketrik applies it to your actual operations — generating workflows, building dashboards, and extending your platform as your business evolves.",
+							{ "text": "Most AI sits in chats. Ketrik applies it to your actual operations — generating workflows, building dashboards, and extending your platform as your business evolves.",
 							"vx": {
-									"maxWidth": "lg",
+									"size": "md",
+									"maxWidth": "md",
 									"center": false
 								}
 							}
