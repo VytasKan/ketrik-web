@@ -90,7 +90,7 @@
 							{
 					         "text": "The software you built two years ago can't keep up with the business you run today",
 								"vx": {
-									"size": "md",
+									"size": "sm",
 									"color": "blue"
 								}
 							}
