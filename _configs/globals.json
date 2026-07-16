@@ -13,38 +13,7 @@
 						"href": "/portal",
 						"text": "Get In Touch"
 					},
-					 
-					"subtitle1": {
-						"text": [
-							{
-								"phrases": [
-									"We combine the speed of AI-assisted “Vibe Coding” with the structural integrity of enterprise-grade architecture to transform your vision into a scalable cloud platform.",
-									"By leveraging our library of validated components, we deliver from MUI-based MVPs to secure, production-ready environments built on Firebase and extended via AWS or Google Cloud, ensuring a fastest time-to-market.",
-									"We prioritize deep partnerships over high-volume projects, choosing to invest our expertise into the visions we find truly compelling. Every engagement is bespoke and project-based, tailored specifically to the platforms we believe in most."
-								],
-
-								"variantOptions": {
-									"maxWidth": "lg",
-									"center": false
-								}
-							},
-							{
-								"text": "By leveraging our library of validated components, we deliver everything from MUI-based MVPs to secure, production-ready environments built on Firebase and extended via AWS or Google Cloud, ensuring the fastest time-to-market in the industry.",
-								"variantOptions": {
-									"maxWidth": "lg",
-									"center": false
-								}
-							},
-							{
-								"text": "We prioritize deep partnerships over high-volume projects, choosing to invest our expertise into the visions we find truly compelling. Every engagement is bespoke and project-based, tailored specifically to the platforms we believe in most.",
-								"variantOptions": {
-									"maxWidth": "lg",
-									"center": false
-								}
-							}
-						]
-					},
-
+				 
 					"subtitle": {
 						"text": [
 							{ "text": "Most AI sits in chats. Ketrik applies it to your actual operations — generating workflows, building dashboards, and extending your platform as your business evolves.",
@@ -108,48 +77,45 @@
 					}
 				},
 				"subHero": {
-					"featuresGrid": {
-						"ds": [
+"title": {
+						"text": [
 							{
-								"title": "Vision to Production",
-								"icon": "AutoAwesome",
-								"description": "We transform your vision into a production-ready cloud architecture, bridging the gap between high-speed prototyping and enterprise-grade scalability."
-							},
-							{
-								"title": "Rapid Cloud Deployment",
-								"icon": "Speed",
-								"description": "We deploy enterprise environments and MVPs via a validated component library on Firebase, AWS, and GCP for the fastest time-to-market."
-							},
-							{
-								"title": "AI-Native Strategy",
-								"icon": "Psychology",
-								"description": "We don't just use AI to build; we integrate intelligent systems into your product to give your venture a modern competitive edge."
-							},
-							{
-								"title": "Boutique Lab Partnership",
-								"icon": "Handshake",
-								"description": "We choose conviction over volume, investing technical leadership into a select few bespoke ventures at a time."
+								"text": "The Problem"
 							}
-						],
-
-						"ds1": [
+						]
+					},
+					"subtitle": {
+						"text": [
 							{
-								"description": "We combine the speed of AI-assisted “Vibe Coding” with the structural integrity of enterprise-grade architecture to transform your vision into a scalable cloud platform.",
-								"icon": "AutoAwesome",
-								"title": "Vibe Coding, Enterprise Logic"
-							},
-							{
-								"description": "By leveraging our library of validated components, we deliver from MUI-based MVPs to secure, production-ready environments built on Firebase and extended via AWS or Google Cloud, ensuring a fastest time-to-market.",
-								"icon": "Speed",
-								"title": "Record-Breaking Time-to-Market"
-							},
-							{
-								"description": "We prioritize deep partnerships over high-volume projects, choosing to invest our expertise into the visions we find truly compelling. Every engagement is bespoke and project-based, tailored specifically to the platforms we believe in most.",
-								"icon": "Handshake",
-								"title": "Selective, Partner-First Model"
+								"text": "Static Platforms Don't Move"
 							}
 						]
 					}
+					
+					 "featuresGrid": {
+        "ds": [
+            {
+                "title": "Dashboards Go Stale",
+                "icon": "UpdateDisabled",
+                "description": "Hard-coded dashboards lose relevance within weeks, becoming shelfware instead of decision-making tools."
+            },
+            {
+                "title": "Fixed Data Sources",
+                "icon": "LinkOff",
+                "description": "Locked-in integrations miss new feeds, new markets, and emerging risks before you even know they exist."
+            },
+            {
+                "title": "Ticket-Driven Changes",
+                "icon": "ConfirmationNumber",
+                "description": "\"File a ticket for changes\" — three sprints later, the critical moment is gone and the window is closed."
+            },
+            {
+                "title": "Engineer Dependency",
+                "icon": "Engineering",
+                "description": "Engineers required for every update — backlog grows, platform falls behind, and business moves on without you."
+            }
+        ]
+    }
 				},
 
 				"advantage": {
