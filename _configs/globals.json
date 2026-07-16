@@ -83,14 +83,14 @@
 								"text": "The Problem",
 								"vx": {
 									"size": "sm",
-									"color": "grey",
+									"color": "gray",
 									"lineBreak": true
 								}
 							},
 							{
-								"text": "Static Platforms Don't Move",
+								"text": "Your dashboards were built for a moment that already passed.",
  								"vx": {
-									"size": "lg",
+									"size": "md",
 									"color": "blue"
 								}
 							}
@@ -101,29 +101,29 @@
 					 
 					
 					 "featuresGrid": {
-        "ds": [
-            {
-                "title": "Dashboards Go Stale",
-                "icon": "UpdateDisabled",
-                "description": "Hard-coded dashboards lose relevance within weeks, becoming shelfware instead of decision-making tools."
-            },
-            {
-                "title": "Fixed Data Sources",
-                "icon": "LinkOff",
-                "description": "Locked-in integrations miss new feeds, new markets, and emerging risks before you even know they exist."
-            },
-            {
-                "title": "Ticket-Driven Changes",
-                "icon": "ConfirmationNumber",
-                "description": "\"File a ticket for changes\" — three sprints later, the critical moment is gone and the window is closed."
-            },
-            {
-                "title": "Engineer Dependency",
-                "icon": "Engineering",
-                "description": "Engineers required for every update — backlog grows, platform falls behind, and business moves on without you."
-            }
-        ]
-    }
+            "ds": [
+                {
+                    "title": "Grafana Shows What Already Happened",
+                    "icon": "UpdateDisabled",
+                    "description": "Grafana visualizes static storage. It cannot generate dynamic layouts on the fly when new events fire. You see the post-mortem, not the active operational threat."
+                },
+                {
+                    "title": "Tableau Answers Questions. It Cannot Act.",
+                    "icon": "LinkOff",
+                    "description": "Tableau is built for retrospective analysis, not runtime operations. It cannot render instant, context-aware, and actionable layouts the second an anomaly spikes."
+                },
+                {
+                    "title": "Internal Builds Become a Maintenance Tax",
+                    "icon": "ConfirmationNumber",
+                    "description": "The custom dashboards your engineers shipped six months ago now eat 40% of their bandwidth just to keep alive. New telemetry? New sprint. New view? New ticket."
+                },
+                {
+                    "title": "The Decision Window Closes Instantly",
+                    "icon": "Engineering",
+                    "description": "By the time a static layout is hardcoded, compiled, and deployed, the market has moved or the risk has materialized. You are forever reacting to yesterday's state."
+                }
+            ]
+        }
 				},
 
 				"advantage": {
