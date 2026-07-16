@@ -82,14 +82,14 @@
 							{
 								"text": "The Problem",
 								"vx": {
-									"size": "sm",
+									"size": "xs",
 									"color": "gray",
 									"lineBreak": true
 								}
 							},
 							{
-								"text": "Your dashboards were built for a moment that already passed.",
- 								"vx": {
+							"text": "Business operations run on systems designed for reporting, not for acting.", 					
+								"vx": {
 									"size": "md",
 									"color": "blue"
 								}
@@ -117,7 +117,7 @@
                     "icon": "ConfirmationNumber",
                     "description": "The custom dashboards your engineers shipped six months ago now eat 40% of their bandwidth just to keep alive. New telemetry? New sprint. New view? New ticket."
                 },
-                {
+                { 
                     "title": "The Decision Window Closes Instantly",
                     "icon": "Engineering",
                     "description": "By the time a static layout is hardcoded, compiled, and deployed, the market has moved or the risk has materialized. You are forever reacting to yesterday's state."
