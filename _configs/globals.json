@@ -5,7 +5,7 @@
 				"hero": {
 					"background": {
 						"style": {
-							"--bg-image": "url(https://www.ketrik.com/pattern7.png)",
+							"--bg-image": "url(https://images.unsplash.com/photo-1674471361410-99b7cbb8ffda?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
 							"--bg-image-dark": "url(https://www.ketrik.com/pattern8.png)"
 						}
 					},
@@ -48,7 +48,7 @@
 					"subtitle": {
 						"text": [
 							{ "text": "Most AI sits in slides. Ketrik applies it to your actual operations — generating workflows, building dashboards, and extending your platform as your business evolves.",
-							"variantOptions": {
+							"vx": {
 									"maxWidth": "md",
 									"center": false
 								}
