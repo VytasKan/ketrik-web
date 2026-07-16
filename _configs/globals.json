@@ -80,7 +80,11 @@
 "title": {
 						"text": [
 							{
-								"text": "The Problem"
+								"text": "The Problem",
+								"vx": {
+									"size": "sm",
+									"color": "green"
+								}
 							}
 						]
 					},
@@ -88,6 +92,7 @@
 						"text": [
 							{
 								"text": "Static Platforms Don't Move"
+								"size": "lg",
 							}
 						]
 					},
