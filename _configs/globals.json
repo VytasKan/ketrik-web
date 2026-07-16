@@ -2277,7 +2277,7 @@
 			"sub": "AI Applied"
 		},
 
-		"dashboardUrl": "/dashboard",
+		"dashboardUrl": "/",
 
 		"passwordResetUrl": "/auth/password",
 		 
