@@ -5,7 +5,7 @@
 				"hero": {
 					"background": {
 						"style": {
-							"--bg-image": "url(/_assets/network_pattern_hd.png"),
+							"--bg-image": "url(/_assets/network_pattern_hd.png)",
 							"--bg-image-dark": "url(/_assets/network_pattern_dark_hd.png)"
 						}
 					},
