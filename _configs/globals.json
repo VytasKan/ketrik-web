@@ -83,7 +83,7 @@
 								"text": "The Problem",
 								"vx": {
 									"size": "sm",
-									"color": "green"
+									"color": "grey"
 								}
 							}
 						]
@@ -91,8 +91,11 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "Static Platforms Don't Move"
-								"size": "lg",
+								"text": "Static Platforms Don't Move",
+								"vx": {
+									"size": "lg"
+								}
+								
 							}
 						]
 					},
