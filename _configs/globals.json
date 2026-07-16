@@ -78,27 +78,27 @@
 				},
 				"subHero": {
 "title": {
-						"text": [
+					"text": [
 							{
 								"text": "The Problem",
 								"vx": {
 									"size": "sm",
-									"color": "grey"
+									"color": "grey",
+									"lineBreak": true
 								}
-							}
-						]
-					},
-					"subtitle": {
-						"text": [
+							},
 							{
 								"text": "Static Platforms Don't Move",
-								"vx": {
-									"size": "lg"
+ 								"vx": {
+									"size": "lg",
+									"color": "blue"
 								}
-								
 							}
 						]
-					},
+},
+					
+					
+					 
 					
 					 "featuresGrid": {
         "ds": [
