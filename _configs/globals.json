@@ -88,7 +88,7 @@
 								}
 							},
 							{
-					         "text": "Static software architectures fail dynamic operational realities",
+					         "text": "The software you built two years ago can't keep up with the business you run today",
 								"vx": {
 									"size": "md",
 									"color": "blue"
@@ -101,29 +101,29 @@
 					 
 					
 				 "featuresGrid": {
-            "ds": [
-                {
-                    "title": "Workflows",
-                    "icon": "UpdateDisabled",
-                    "description": "Your pipeline was built for the data sources you had. A new feed appears. A schema shifts. A requirement evolves. The workflow stops. Engineering goes back to the drawing board. The business waits."
-                },
-                {
-                    "title": "Dashboards",
-                    "icon": "LinkOff",
-                    "description": "Your view was built for the metric you needed six months ago. The business asks something new \u2014 a different angle, a live crisis, a client-specific drill-down. The dashboard cannot generate itself. You build another one. The backlog grows."
-                },
-                {
-                    "title": "Command",
-                    "icon": "Engineering",
-                    "description": "New client. New market. New operational requirement. Every change goes into the engineering queue. Weeks become months. The command center you have is the command center you are stuck with."
-                },
-                {
-                    "title": "Operations",
-                    "icon": "ConfirmationNumber",
-                    "description": "Alert fires. Someone files a ticket. The decision window closes before the view is built, the workflow is updated, or the operator can intervene. The system reports what happened. It does not enable what happens next."
-                }
-            ]
+    "ds": [
+        {
+            "title": "Workflows",
+            "icon": "UpdateDisabled",
+            "description": "Workflows aren't a one-time build — they need to keep changing as your business changes. Keeping them current is what keeps the business running smoothly."
+        },
+        {
+            "title": "Dashboards",
+            "icon": "LinkOff",
+            "description": "The questions your business needs answered change all the time. A dashboard only has value if it can keep up and show you what matters right now."
+        },
+        {
+            "title": "Command",
+            "icon": "Engineering",
+            "description": "As you grow into new markets and take on new clients, your command center has to grow with you. It only works if it's built to keep pace."
+        },
+        {
+            "title": "Operations",
+            "icon": "ConfirmationNumber",
+            "description": "Operations run on being able to respond in the moment. That only happens when the system is always current, not playing catch-up."
         }
+    ]
+}
 				},
 
 				"advantage": {
