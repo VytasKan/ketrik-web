@@ -47,24 +47,36 @@
 					"title": {
 						"text": [
 							{
-								"text": "We build the tech, you own the future.",
+								"text": "AI Applied to",
 
 								"vx": {
 									"size": "lg",
-									"lineBreak": true
+									"lineBreak": false
 								}
 							},
 							{
 								"phrases": [
-									"Stop Prototyping. Start Scaling.",
-									"Offload the Infrastructure. Own the Innovation.",
-									"Rapid Launch. Zero Delay."
-								],
+  "Data Flows",
+  "Your Pipelines",
+  "Operational Visibility",
+  "Live Dashboards",
+  "Command Centers",
+  "Multi-Tenant Operations",
+  "Business Operations",
+  "Real-Time Command",
+  "Metric Delivery",
+  "Infrastructure",
+  "Risk Monitoring",
+  "Instant Operations",
+  "Complex Data",
+  "Orchestration",
+  "Growing Operations"
+],
 								"intensity": 0.4,
 								"pauseTime": 10000,
 								"variant": "typewriter",
 								"vx": {
-									"size": "sm",
+									"size": "lg",
 									"color": "blue"
 								}
 							}
