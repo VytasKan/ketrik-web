@@ -49,7 +49,7 @@
 						"text": [
 							{ "text": "Most AI sits in slides. Ketrik applies it to your actual operations — generating workflows, building dashboards, and extending your platform as your business evolves.",
 							"variantOptions": {
-									"maxWidth": "lg",
+									"maxWidth": "md",
 									"center": false
 								}
 							}
