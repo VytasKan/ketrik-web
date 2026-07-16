@@ -6,7 +6,7 @@
 					"background": {
 						"style": {
 							"--bg-image": "url(/_assets/network_pattern_hd.png)",
-							"--bg-image-dark": "url(/_assets/network_pattern_dark_hd.png)"
+							"--bg-image-dark": "url(/_assets/network_pattern_121212_hd.png)"
 						}
 					},
 					"button": {
