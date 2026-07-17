@@ -484,7 +484,7 @@
 												"title": {},
 												"titleWrapper": {},
 												"button": {
-													"color": "primary",
+													"color": "red",
 													"radius": "full",
 													"size": "lg"
 												}
