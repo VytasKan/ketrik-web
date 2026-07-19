@@ -2439,6 +2439,187 @@
 				"title": "Terms",
 				"segment": "terms"
 			}
+		],
+		"demo": [
+			{
+				"kind": "header",
+				"title": "Data Visualization"
+			},
+			{
+				"icon": "Dashboard",
+				"segment": "cards",
+				"title": "Cards"
+			},
+			{
+				"action": {
+					"color": "warning",
+					"label": "new",
+					"size": "small",
+					"variant": "outlined"
+				},
+				"icon": "AutoGraphOutlined",
+				"segment": "charts-demo",
+				"title": "Charts"
+			},
+			{
+				"action": {
+					"color": "warning",
+					"label": "new",
+					"size": "small",
+					"variant": "outlined"
+				},
+				"icon": "TableChartOutlined",
+				"segment": "tables",
+				"title": "Tables"
+			},
+			{
+				"kind": "divider"
+			},
+			{
+				"kind": "header",
+				"title": "Selectors"
+			},
+			{
+				"icon": "AutoGraph",
+				"segment": "demo",
+				"title": "Basic Selectors"
+			},
+			{
+				"action": {
+					"color": "warning",
+					"label": "new",
+					"size": "small",
+					"variant": "outlined"
+				},
+				"icon": "GridView",
+				"segment": "table-selector",
+				"title": "Table Selector"
+			},
+			{
+				"action": {
+					"color": "error",
+					"label": "new",
+					"size": "small",
+					"variant": "outlined"
+				},
+				"icon": "AutoGraphTwoTone",
+				"segment": "chartselector",
+				"title": "Chart Selector"
+			},
+			{
+				"action": {
+					"color": "error",
+					"label": "new",
+					"size": "small",
+					"variant": "outlined"
+				},
+				"icon": "SiPlotly",
+				"segment": "plotly-selector",
+				"title": "Plotly Selector"
+			},
+			{
+				"kind": "divider"
+			},
+			{
+				"kind": "header",
+				"title": "Navigation"
+			},
+			{
+				"icon": "ImageOutlined",
+				"segment": "data",
+				"pattern": "data{/:id}*",
+				"title": "Media List"
+			},
+			{
+				"icon": "Lan",
+				"segment": "dt",
+				"pattern": "dt{/:id}*",
+				"title": "Data List"
+			},
+			{
+				"kind": "divider"
+			},
+			{
+				"kind": "header",
+				"title": "Specialized Components"
+			},
+			{
+				"action": {
+					"color": "warning",
+					"label": "new",
+					"size": "small",
+					"variant": "outlined"
+				},
+				"icon": "Widgets",
+				"segment": "lwwidgets",
+				"title": "Tradingview Widgets"
+			},
+			{
+				"action": {
+					"color": "primary",
+					"label": "new",
+					"size": "small",
+					"variant": "outlined"
+				},
+				"icon": "ThreeP",
+				"segment": "chat",
+				"title": "Chat"
+			},
+			{
+				"action": {
+					"color": "primary",
+					"label": "new",
+					"size": "small",
+					"variant": "outlined"
+				},
+				"icon": "ChatBubble",
+				"segment": "chatbot",
+				"title": "Chatbot"
+			},
+			{
+				"action": {
+					"color": "primary",
+					"label": "new",
+					"size": "small",
+					"variant": "outlined"
+				},
+				"icon": "DataArray",
+				"segment": "jsonviewer",
+				"title": "JSON View"
+			},
+			{
+				"action": {
+					"color": "primary",
+					"label": "new",
+					"size": "small",
+					"variant": "outlined"
+				},
+				"icon": "Wysiwyg",
+				"segment": "jsoneditor",
+				"title": "JSON Editor"
+			},
+			{
+				"action": {
+					"color": "primary",
+					"label": "new",
+					"size": "small",
+					"variant": "outlined"
+				},
+				"icon": "HomeMax",
+				"segment": "multi",
+				"title": "Multi View"
+			},
+			{
+				"action": {
+					"color": "primary",
+					"label": "new",
+					"size": "small",
+					"variant": "outlined"
+				},
+				"icon": "IconStack3",
+				"segment": "icons",
+				"title": "Icons"
+			}
 		]
 	},
 	"configs": {
@@ -2460,8 +2641,8 @@
 				"key": "Administration"
 			},
 			{
-				"value": "settings",
-				"key": "Developer Tools"
+				"value": "demo",
+				"key": "Demo Menu"
 			}
 		],
 		"logo": "https://www.ketrik.com/ketrik-13.png",
