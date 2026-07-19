@@ -13,25 +13,22 @@
 						"href": "/portal",
 						"text": "Get In Touch"
 					},
-				 
 					"subtitle": {
 						"text": [
-							{ "text": "Most AI sits in chats. Ketrik applies it to your actual operations — generating workflows, building dashboards, and extending your platform as your business evolves.",
-							"vx": {
+							{
+								"text": "Most AI sits in chats. Ketrik applies it to your actual operations — generating workflows, building dashboards, and extending your platform as your business evolves.",
+								"vx": {
 									"size": "lg",
 									"maxWidth": "md",
 									"center": false
 								}
 							}
 						]
-						
 					},
-					
 					"title": {
 						"text": [
 							{
 								"text": "AI Applied to",
-
 								"vx": {
 									"size": "lg",
 									"lineBreak": false
@@ -39,32 +36,32 @@
 							},
 							{
 								"phrases": [
-  "Data Flows",
-  "Operational Visibility",
-  "Command Centers",
-  "Business Operations",
-  "Real-Time Command",
-  "Metric Delivery",
-  "Infrastructure",
-  "Orchestration",
-  "Instant Operations",
-  "Complex Data",
-  "Growing Operations",
-  "Your Pipelines",
-  "Live Dashboards",
-  "Multi-Tenant Operations",
-  "Workflow Automation",
-  "Real-Time Analytics",
-  "Mission Control",
-  "Operational Intelligence",
-  "Data Integration",
-  "Alert Management",
-  "Client Operations",
-  "Decision Intelligence",
-  "Event Response",
-  "Platform Extension",
-  "Risk Monitoring"
-],
+									"Data Flows",
+									"Operational Visibility",
+									"Command Centers",
+									"Business Operations",
+									"Real-Time Command",
+									"Metric Delivery",
+									"Infrastructure",
+									"Orchestration",
+									"Instant Operations",
+									"Complex Data",
+									"Growing Operations",
+									"Your Pipelines",
+									"Live Dashboards",
+									"Multi-Tenant Operations",
+									"Workflow Automation",
+									"Real-Time Analytics",
+									"Mission Control",
+									"Operational Intelligence",
+									"Data Integration",
+									"Alert Management",
+									"Client Operations",
+									"Decision Intelligence",
+									"Event Response",
+									"Platform Extension",
+									"Risk Monitoring"
+								],
 								"intensity": 0.4,
 								"pauseTime": 5000,
 								"variant": "typewriter",
@@ -77,8 +74,8 @@
 					}
 				},
 				"subHero": {
-"title": {
-					"text": [
+					"title": {
+						"text": [
 							{
 								"text": "The Problem",
 								"vx": {
@@ -88,44 +85,39 @@
 								}
 							},
 							{
-					         "text": "The software you built two years ago can't keep up with the business you run today",
+								"text": "The software you built two years ago can't keep up with the business you run today",
 								"vx": {
 									"size": "sm",
 									"color": "blue"
 								}
 							}
 						]
-},
-					
-					
-					 
-					
-				 "featuresGrid": {
-    "ds": [
-        {
-            "title": "Workflows",
-            "icon": "UpdateDisabled",
-            "description": "Workflows aren't a one-time build — they need to keep changing as your business changes. Keeping them current is what keeps the business running smoothly."
-        },
-        {
-            "title": "Dashboards",
-            "icon": "LinkOff",
-            "description": "The questions your business needs answered change all the time. A dashboard only has value if it can keep up and show you what matters right now."
-        },
-        {
-            "title": "Command",
-            "icon": "Engineering",
-            "description": "As you grow into new markets and take on new clients, your command center has to grow with you. It only works if it's built to keep pace."
-        },
-        {
-            "title": "Operations",
-            "icon": "ConfirmationNumber",
-            "description": "Operations run on being able to respond in the moment. That only happens when the system is always current, not playing catch-up."
-        }
-    ]
-}
+					},
+					"featuresGrid": {
+						"ds": [
+							{
+								"title": "Workflows",
+								"icon": "UpdateDisabled",
+								"description": "Workflows aren't a one-time build — they need to keep changing as your business changes. Keeping them current is what keeps the business running smoothly."
+							},
+							{
+								"title": "Dashboards",
+								"icon": "LinkOff",
+								"description": "The questions your business needs answered change all the time. A dashboard only has value if it can keep up and show you what matters right now."
+							},
+							{
+								"title": "Command",
+								"icon": "Engineering",
+								"description": "As you grow into new markets and take on new clients, your command center has to grow with you. It only works if it's built to keep pace."
+							},
+							{
+								"title": "Operations",
+								"icon": "ConfirmationNumber",
+								"description": "Operations run on being able to respond in the moment. That only happens when the system is always current, not playing catch-up."
+							}
+						]
+					}
 				},
-
 				"advantage": {
 					"comparisonTable": {
 						"ds": [
@@ -171,7 +163,6 @@
 								"vibe": "You are the debugger",
 								"approach": "Included Support"
 							},
-
 							{
 								"feature": "Future Cost",
 								"traditional": "High (Labor)",
@@ -230,7 +221,6 @@
 							}
 						]
 					},
-
 					"title1": {
 						"text": [
 							{
@@ -246,7 +236,6 @@
 						]
 					}
 				},
-
 				"vibe": {
 					"backgroun": {
 						"style": {
@@ -254,7 +243,6 @@
 							"backgroundSize": "40px 40px, 40px 40px, 40px 40px, 40px 40px"
 						}
 					},
-
 					"title": {
 						"text": [
 							{
@@ -267,13 +255,11 @@
 						"text": [
 							{
 								"text": "Think of it like a high-stakes expedition. 'Vibe coding' is a great way to start moving, but without professional-grade equipment, you'll stall as soon as the terrain gets tough. We provide the technical durability that allows you to pivot and scale as the market changes. By reinforcing your vision with resilient architecture, we ensure your platform stays fast and stable—whether you're serving ten users or ten thousand.",
-
 								"text2": "Think of it like an expedition. 'Vibe coding' is a fast start, but if you don't have the right equipment, you'll stall as soon as the terrain gets tough. We provide the technical durability that allows you to pivot and scale as the market changes. We ensure your foundation is resilient, so whether you're serving ten users or ten thousand, your platform remains fast, stable, and ready for the road ahead."
 							}
 						]
 					}
 				},
-
 				"stories": {
 					"title": {
 						"text": [
@@ -290,7 +276,6 @@
 						]
 					}
 				},
-
 				"panel1": {
 					"featuresGrid": {
 						"ds": [
@@ -315,7 +300,6 @@
 								"title": "4. Strategic Product Evolution"
 							}
 						],
-
 						"ds1": [
 							{
 								"description": "We conduct an intensive deep-dive into your business goals, current tech stack, and future scaling requirements.",
@@ -403,7 +387,6 @@
 							}
 						]
 					},
-
 					"title": {
 						"text": [
 							{
@@ -423,7 +406,6 @@
 						]
 					}
 				},
-
 				"panel3": {
 					"subtitle": {
 						"text": [
@@ -461,11 +443,11 @@
 			},
 			"config": {
 				"disableGutter": true,
-
 				"groups": [
 					{
-						"itemSize": { "sm": 12 },
-
+						"itemSize": {
+							"sm": 12
+						},
 						"items": [
 							{
 								"cardConfig": [
@@ -473,7 +455,6 @@
 										"contentConfig": {
 											"contentType": "Marketing",
 											"panel": "hero",
-
 											"vx": {
 												"sideImage": {
 													"isBlurred": false,
@@ -500,7 +481,6 @@
 										"dataKey": "hero",
 										"type": "cardContent"
 									},
-
 									{
 										"contentConfig": {
 											"contentType": "Marketing",
@@ -561,7 +541,6 @@
 											"contentType": "Marketing",
 											"panel": "basic",
 											"id": "solutions",
-
 											"vx": {
 												"image": {
 													"isBlurred": true,
@@ -590,7 +569,6 @@
 										"contentConfig": {
 											"contentType": "Marketing",
 											"panel": "basic",
-
 											"vx": {
 												"titleWrapper": {
 													"center": true,
@@ -619,11 +597,9 @@
 				"isFullSize": false
 			}
 		},
-
 		"membership": {
 			"renderComponent": "Membership"
 		},
-
 		"profile": {
 			"data": {
 				"profile": {
@@ -631,7 +607,6 @@
 					"startDate": "2026-10-10"
 				}
 			},
-
 			"config": {
 				"childComponent": "DisplayCards",
 				"header": "Profile",
@@ -667,7 +642,10 @@
 														"type": "string"
 													}
 												},
-												"required": ["endDate", "startDate"],
+												"required": [
+													"endDate",
+													"startDate"
+												],
 												"type": "object"
 											},
 											"uiSchema": {
@@ -683,7 +661,10 @@
 													},
 													"ui:placeholder": "Start Date"
 												},
-												"ui:order": ["startDate", "endDate"]
+												"ui:order": [
+													"startDate",
+													"endDate"
+												]
 											}
 										}
 									}
@@ -699,7 +680,11 @@
 											"schema": {
 												"title": "Firebase Auth Settings",
 												"type": "object",
-												"required": ["apiKey", "authDomain", "projectId"],
+												"required": [
+													"apiKey",
+													"authDomain",
+													"projectId"
+												],
 												"properties": {
 													"apiKey": {
 														"type": "string",
@@ -709,7 +694,9 @@
 													"authDomain": {
 														"type": "string",
 														"title": "Auth Domain",
-														"examples": ["your-app.firebaseapp.com"]
+														"examples": [
+															"your-app.firebaseapp.com"
+														]
 													},
 													"projectId": {
 														"type": "string",
@@ -730,7 +717,11 @@
 													"persistenceType": {
 														"type": "string",
 														"title": "Auth Persistence",
-														"enum": ["LOCAL", "SESSION", "NONE"],
+														"enum": [
+															"LOCAL",
+															"SESSION",
+															"NONE"
+														],
 														"default": "LOCAL"
 													},
 													"enableEmailPassword": {
@@ -789,7 +780,10 @@
 				"path": "marketing_metrics",
 				"filters": [
 					{
-						"sort": ["timestamp", "desc"],
+						"sort": [
+							"timestamp",
+							"desc"
+						],
 						"disable": false
 					},
 					{
@@ -829,17 +823,26 @@
 									{
 										"type": "cardMedia",
 										"dataKey": "hero_content",
-										"map": { "banner_url": "image" },
+										"map": {
+											"banner_url": "image"
+										},
 										"component": "img",
 										"height": 300,
-										"sx": { "borderRadius": 4, "mb": 2 }
+										"sx": {
+											"borderRadius": 4,
+											"mb": 2
+										}
 									},
 									{
 										"type": "cardHeader",
 										"dataKey": "hero_content",
-										"map": { "headline": "title" },
+										"map": {
+											"headline": "title"
+										},
 										"subheader": "Real-time Campaign Analytics",
-										"sx": { "px": 0 }
+										"sx": {
+											"px": 0
+										}
 									}
 								]
 							}
@@ -848,10 +851,19 @@
 					{
 						"id": "kpi_grid",
 						"header": "Core Metrics",
-						"itemSize": { "xs": 12, "sm": 6, "md": 4 },
+						"itemSize": {
+							"xs": 12,
+							"sm": 6,
+							"md": 4
+						},
 						"itemDefaults": {
 							"cardType": "card",
-							"cardProps": { "raised": true, "sx": { "height": "100%" } }
+							"cardProps": {
+								"raised": true,
+								"sx": {
+									"height": "100%"
+								}
+							}
 						},
 						"items": [
 							{
@@ -860,7 +872,9 @@
 										"type": "cardHeader",
 										"title": "Gross Revenue",
 										"dataKey": "overview_stats",
-										"map": { "last_sync": "subheader" }
+										"map": {
+											"last_sync": "subheader"
+										}
 									},
 									{
 										"type": "cardContent",
@@ -875,7 +889,9 @@
 												"currency": "USD",
 												"notation": "compact"
 											},
-											"trendFormat": { "style": "percent" }
+											"trendFormat": {
+												"style": "percent"
+											}
 										}
 									}
 								]
@@ -898,7 +914,9 @@
 												"style": "percent",
 												"maximumFractionDigits": 2
 											},
-											"trendFormat": { "style": "percent" },
+											"trendFormat": {
+												"style": "percent"
+											},
 											"trendUpper": 2,
 											"trendLower": -2
 										}
@@ -925,8 +943,17 @@
 			"dataPath": {
 				"path": "risk_management_liquidity",
 				"filters": [
-					{ "sort": ["timestamp", "desc"], "disable": false },
-					{ "limit": 1, "disable": false }
+					{
+						"sort": [
+							"timestamp",
+							"desc"
+						],
+						"disable": false
+					},
+					{
+						"limit": 1,
+						"disable": false
+					}
 				]
 			},
 			"data": {
@@ -963,12 +990,17 @@
 					{
 						"id": "regulatory_ratios",
 						"header": "Basel III Regulatory Ratios",
-						"itemSize": { "xs": 12, "md": 6 },
+						"itemSize": {
+							"xs": 12,
+							"md": 6
+						},
 						"itemDefaults": {
 							"cardType": "card",
 							"cardProps": {
 								"raised": true,
-								"sx": { "borderLeft": "5px solid #1a237e" }
+								"sx": {
+									"borderLeft": "5px solid #1a237e"
+								}
 							}
 						},
 						"items": [
@@ -991,7 +1023,9 @@
 												"style": "percent",
 												"maximumFractionDigits": 1
 											},
-											"trendFormat": { "style": "percent" }
+											"trendFormat": {
+												"style": "percent"
+											}
 										}
 									}
 								]
@@ -1015,7 +1049,9 @@
 												"style": "percent",
 												"maximumFractionDigits": 1
 											},
-											"trendFormat": { "style": "percent" }
+											"trendFormat": {
+												"style": "percent"
+											}
 										}
 									}
 								]
@@ -1025,7 +1061,10 @@
 					{
 						"id": "asset_buffers",
 						"header": "Liquidity Buffer Composition",
-						"itemSize": { "xs": 12, "md": 6 },
+						"itemSize": {
+							"xs": 12,
+							"md": 6
+						},
 						"items": [
 							{
 								"cardType": "card",
@@ -1034,7 +1073,9 @@
 										"type": "cardHeader",
 										"title": "Global Core Liquid Assets (GCLA)",
 										"dataKey": "risk_hero",
-										"map": { "lastAudit": "subheader" }
+										"map": {
+											"lastAudit": "subheader"
+										}
 									},
 									{
 										"type": "cardContent",
@@ -1049,7 +1090,9 @@
 												"currency": "USD",
 												"notation": "compact"
 											},
-											"trendFormat": { "style": "percent" }
+											"trendFormat": {
+												"style": "percent"
+											}
 										}
 									}
 								]
@@ -1075,7 +1118,9 @@
 												"style": "percent",
 												"maximumFractionDigits": 2
 											},
-											"trendFormat": { "style": "percent" },
+											"trendFormat": {
+												"style": "percent"
+											},
 											"trendUpper": 5,
 											"trendLower": 0
 										}
@@ -1098,17 +1143,23 @@
 				]
 			}
 		},
-
 		"sales_pipeline_2026": {
 			"dataPath": {
 				"path": "sales_leads_v3",
 				"filters": [
 					{
-						"where": ["status", "==", "active"],
+						"where": [
+							"status",
+							"==",
+							"active"
+						],
 						"disable": false
 					},
 					{
-						"sort": ["deal_value", "desc"],
+						"sort": [
+							"deal_value",
+							"desc"
+						],
 						"disable": false
 					}
 				]
@@ -1145,15 +1196,23 @@
 						"items": [
 							{
 								"cardType": "noCard",
-								"cardProps": { "sx": { "mb": 2 } },
+								"cardProps": {
+									"sx": {
+										"mb": 2
+									}
+								},
 								"cardConfig": [
 									{
 										"type": "cardMedia",
 										"dataKey": "sales_hero",
-										"map": { "cover": "image" },
+										"map": {
+											"cover": "image"
+										},
 										"component": "img",
 										"height": 220,
-										"sx": { "borderRadius": "16px" }
+										"sx": {
+											"borderRadius": "16px"
+										}
 									}
 								]
 							}
@@ -1162,12 +1221,19 @@
 					{
 						"id": "sales_kpis",
 						"header": "Performance Benchmarks",
-						"itemSize": { "xs": 12, "sm": 6, "md": 4 },
+						"itemSize": {
+							"xs": 12,
+							"sm": 6,
+							"md": 4
+						},
 						"itemDefaults": {
 							"cardType": "card",
 							"cardProps": {
 								"raised": true,
-								"sx": { "height": "100%", "borderRadius": 3 }
+								"sx": {
+									"height": "100%",
+									"borderRadius": 3
+								}
 							}
 						},
 						"items": [
@@ -1191,7 +1257,9 @@
 												"currency": "USD",
 												"notation": "compact"
 											},
-											"trendFormat": { "style": "percent" }
+											"trendFormat": {
+												"style": "percent"
+											}
 										}
 									}
 								]
@@ -1215,7 +1283,9 @@
 												"style": "decimal",
 												"notation": "standard"
 											},
-											"trendFormat": { "style": "percent" }
+											"trendFormat": {
+												"style": "percent"
+											}
 										}
 									}
 								]
@@ -1239,7 +1309,9 @@
 												"style": "percent",
 												"maximumFractionDigits": 1
 											},
-											"trendFormat": { "style": "percent" },
+											"trendFormat": {
+												"style": "percent"
+											},
 											"trendUpper": 5,
 											"trendLower": -2
 										}
@@ -1251,7 +1323,10 @@
 					{
 						"id": "quick_actions",
 						"header": "CRM Actions",
-						"itemSize": { "xs": 12, "md": 6 },
+						"itemSize": {
+							"xs": 12,
+							"md": 6
+						},
 						"items": [
 							{
 								"cardConfig": [
@@ -1280,24 +1355,28 @@
 				]
 			}
 		},
-
 		"policy_route": {
 			"data": "# TripAdvisor Privacy Policy\nLast updated: **April 2026**\n\nYour data is secure with us.",
 			"renderComponent": {
 				"component": "Markdown",
 				"container": {
 					"maxWidth": "md",
-					"sx": { "mt": 10, "mb": 10 }
+					"sx": {
+						"mt": 10,
+						"mb": 10
+					}
 				}
 			}
 		},
-
 		"marketing_dashboard": {
 			"dataPath": {
 				"path": "partner_metrics_v2",
 				"filters": [
 					{
-						"sort": ["timestamp", "desc"],
+						"sort": [
+							"timestamp",
+							"desc"
+						],
 						"disable": false
 					},
 					{
@@ -1307,10 +1386,26 @@
 				]
 			},
 			"data": {
-				"campaign_performance": { "v": 84200, "v0": 71000, "change": 18.5 },
-				"booking_conversion": { "v": 0.124, "v0": 0.118, "change": 5.08 },
-				"ad_efficiency": { "v": 4.2, "v0": 4.8, "change": -12.5 },
-				"review_sentiment": { "v": 4.8, "v0": 4.5, "change": 6.6 },
+				"campaign_performance": {
+					"v": 84200,
+					"v0": 71000,
+					"change": 18.5
+				},
+				"booking_conversion": {
+					"v": 0.124,
+					"v0": 0.118,
+					"change": 5.08
+				},
+				"ad_efficiency": {
+					"v": 4.2,
+					"v0": 4.8,
+					"change": -12.5
+				},
+				"review_sentiment": {
+					"v": 4.8,
+					"v0": 4.5,
+					"change": 6.6
+				},
 				"hero_banner": {
 					"title": "Global Partner Performance",
 					"lastUpdate": "Updated 2 minutes ago",
@@ -1331,15 +1426,25 @@
 									{
 										"type": "cardHeader",
 										"dataKey": "hero_banner",
-										"map": { "lastUpdate": "subheader" },
-										"sx": { "px": 0, "pt": 0 }
+										"map": {
+											"lastUpdate": "subheader"
+										},
+										"sx": {
+											"px": 0,
+											"pt": 0
+										}
 									},
 									{
 										"type": "cardMedia",
 										"dataKey": "hero_banner",
-										"map": { "img": "image" },
+										"map": {
+											"img": "image"
+										},
 										"height": "240",
-										"sx": { "borderRadius": "12px", "mb": 4 }
+										"sx": {
+											"borderRadius": "12px",
+											"mb": 4
+										}
 									}
 								]
 							}
@@ -1348,7 +1453,11 @@
 					{
 						"id": "core-metrics",
 						"groupHeader": "Growth & Conversion",
-						"itemSize": { "xs": 12, "sm": 6, "md": 3 },
+						"itemSize": {
+							"xs": 12,
+							"sm": 6,
+							"md": 3
+						},
 						"itemDefaults": {
 							"cardType": "card",
 							"isRaised": true,
@@ -1375,7 +1484,9 @@
 												"currency": "USD",
 												"notation": "compact"
 											},
-											"trendFormat": { "style": "percent" }
+											"trendFormat": {
+												"style": "percent"
+											}
 										}
 									}
 								]
@@ -1395,7 +1506,9 @@
 												"style": "percent",
 												"maximumFractionDigits": 1
 											},
-											"trendFormat": { "style": "percent" }
+											"trendFormat": {
+												"style": "percent"
+											}
 										}
 									}
 								]
@@ -1415,7 +1528,9 @@
 												"style": "decimal",
 												"maximumFractionDigits": 1
 											},
-											"trendFormat": { "style": "percent" },
+											"trendFormat": {
+												"style": "percent"
+											},
 											"trendUpper": 0,
 											"trendLower": -5
 										}
@@ -1437,7 +1552,9 @@
 												"style": "decimal",
 												"maximumFractionDigits": 1
 											},
-											"trendFormat": { "style": "percent" }
+											"trendFormat": {
+												"style": "percent"
+											}
 										}
 									}
 								]
@@ -1447,7 +1564,10 @@
 					{
 						"id": "action-center",
 						"groupHeader": "Marketing Actions",
-						"itemSize": { "xs": 12, "md": 6 },
+						"itemSize": {
+							"xs": 12,
+							"md": 6
+						},
 						"items": [
 							{
 								"cardType": "actionCard",
@@ -1457,7 +1577,9 @@
 										"type": "cardHeader",
 										"title": "Launch New Campaign",
 										"subheader": "Boost visibility in high-demand regions",
-										"styleOverrides": { "cursor": "pointer" }
+										"styleOverrides": {
+											"cursor": "pointer"
+										}
 									},
 									{
 										"type": "cardAction",
@@ -1491,7 +1613,6 @@
 							{
 								"header": "Privacy Overview",
 								"cardType": "noCard",
-
 								"cardConfig": [
 									{
 										"type": "cardContent",
@@ -1507,12 +1628,23 @@
 				]
 			}
 		},
-
 		"performance_dashboard": {
 			"data": {
-				"main_metric": { "v": 45200, "v0": 40000, "change": 13 },
-				"conversion_rate": { "v": 0.032, "v0": 0.028, "change": 14.2 },
-				"server_status": { "v": 0.999, "v0": 0.995, "change": 0.4 },
+				"main_metric": {
+					"v": 45200,
+					"v0": 40000,
+					"change": 13
+				},
+				"conversion_rate": {
+					"v": 0.032,
+					"v0": 0.028,
+					"change": 14.2
+				},
+				"server_status": {
+					"v": 0.999,
+					"v0": 0.995,
+					"change": 0.4
+				},
 				"hero_banner": {
 					"title": "System Performance",
 					"subtitle": "Real-time analytics for the current sprint",
@@ -1529,12 +1661,18 @@
 						"items": [
 							{
 								"cardType": "noCard",
-								"cardProps": { "sx": { "mb": 2 } },
+								"cardProps": {
+									"sx": {
+										"mb": 2
+									}
+								},
 								"cardConfig": [
 									{
 										"type": "cardHeader",
 										"dataKey": "hero_banner",
-										"sx": { "textAlign": "center" },
+										"sx": {
+											"textAlign": "center"
+										},
 										"disableTypography": false
 									},
 									{
@@ -1542,7 +1680,9 @@
 										"dataKey": "hero_banner",
 										"component": "img",
 										"height": "200",
-										"sx": { "borderRadius": 2 }
+										"sx": {
+											"borderRadius": 2
+										}
 									}
 								]
 							}
@@ -1551,10 +1691,16 @@
 					{
 						"id": "stats-grid",
 						"groupHeader": "Key Performance Indicators",
-						"itemSize": { "xs": 12, "sm": 6, "md": 4 },
+						"itemSize": {
+							"xs": 12,
+							"sm": 6,
+							"md": 4
+						},
 						"itemDefaults": {
 							"cardType": "card",
-							"cardProps": { "raised": true }
+							"cardProps": {
+								"raised": true
+							}
 						},
 						"items": [
 							{
@@ -1563,7 +1709,9 @@
 									{
 										"type": "cardHeader",
 										"title": "Total Revenue",
-										"sx": { "pb": 0 },
+										"sx": {
+											"pb": 0
+										},
 										"disableTypography": false
 									},
 									{
@@ -1579,12 +1727,16 @@
 												"currency": "USD",
 												"notation": "compact"
 											},
-											"trendFormat": { "style": "percent" }
+											"trendFormat": {
+												"style": "percent"
+											}
 										}
 									},
 									{
 										"type": "cardAction",
-										"sx": { "justifyContent": "flex-end" },
+										"sx": {
+											"justifyContent": "flex-end"
+										},
 										"buttons": [
 											{
 												"label": "View Report",
@@ -1601,7 +1753,9 @@
 									{
 										"type": "cardHeader",
 										"title": "Conversion",
-										"sx": { "pb": 0 },
+										"sx": {
+											"pb": 0
+										},
 										"disableTypography": true
 									},
 									{
@@ -1616,7 +1770,9 @@
 												"style": "percent",
 												"maximumFractionDigits": 2
 											},
-											"trendFormat": { "style": "percent" }
+											"trendFormat": {
+												"style": "percent"
+											}
 										}
 									}
 								]
@@ -1629,7 +1785,9 @@
 									{
 										"type": "cardHeader",
 										"title": "Uptime",
-										"sx": { "pb": 0 },
+										"sx": {
+											"pb": 0
+										},
 										"disableTypography": false
 									},
 									{
@@ -1644,7 +1802,9 @@
 												"style": "percent",
 												"maximumFractionDigits": 3
 											},
-											"trendFormat": { "style": "percent" }
+											"trendFormat": {
+												"style": "percent"
+											}
 										}
 									}
 								]
@@ -1654,14 +1814,33 @@
 				]
 			}
 		},
-
 		"performance_tracking": {
 			"data": {
-				"revenue": { "v": 125400, "v0": 100000, "change": 25.4 },
-				"active_users": { "v": 8500, "v0": 7200, "change": 18.05 },
-				"transaction_fees": { "v": 0.045, "v0": 0.038, "change": 18.42 },
-				"storage_used": { "v": 950.5, "v0": 800, "change": 18.81 },
-				"response_time": { "v": 120, "v0": 150, "change": -20 }
+				"revenue": {
+					"v": 125400,
+					"v0": 100000,
+					"change": 25.4
+				},
+				"active_users": {
+					"v": 8500,
+					"v0": 7200,
+					"change": 18.05
+				},
+				"transaction_fees": {
+					"v": 0.045,
+					"v0": 0.038,
+					"change": 18.42
+				},
+				"storage_used": {
+					"v": 950.5,
+					"v0": 800,
+					"change": 18.81
+				},
+				"response_time": {
+					"v": 120,
+					"v0": 150,
+					"change": -20
+				}
 			},
 			"config": {
 				"childComponent": "DisplayCards",
@@ -1710,7 +1889,9 @@
 												"style": "decimal",
 												"notation": "standard"
 											},
-											"trendFormat": { "style": "percent" }
+											"trendFormat": {
+												"style": "percent"
+											}
 										}
 									}
 								]
@@ -1732,7 +1913,9 @@
 												"currency": "ETH",
 												"maximumFractionDigits": 3
 											},
-											"trendFormat": { "style": "percent" }
+											"trendFormat": {
+												"style": "percent"
+											}
 										}
 									}
 								]
@@ -1753,7 +1936,9 @@
 												"style": "decimal",
 												"maximumFractionDigits": 1
 											},
-											"trendFormat": { "style": "percent" }
+											"trendFormat": {
+												"style": "percent"
+											}
 										}
 									}
 								]
@@ -1770,8 +1955,12 @@
 											"subVariant": "TrendSub",
 											"title": "API P99",
 											"sub": "p50 baseline",
-											"format": { "style": "decimal" },
-											"trendFormat": { "style": "percent" },
+											"format": {
+												"style": "decimal"
+											},
+											"trendFormat": {
+												"style": "percent"
+											},
 											"trendUpper": 0,
 											"trendLower": -10
 										}
@@ -1785,11 +1974,29 @@
 		},
 		"analytics_dashboard": {
 			"data": {
-				"nmi_data": { "v": 12540.789, "v0": 11000, "change": 14.2 },
-				"churn_data": { "v": 0.021, "change": -0.005 },
-				"revenue_data": { "v": 1450000, "v0": 1400000, "change": 3.57 },
-				"uptime_data": { "v": 0.9998, "change": 0.0001 },
-				"acquisition_cost": { "v": 45.2, "v0": 50.0, "change": -9.6 }
+				"nmi_data": {
+					"v": 12540.789,
+					"v0": 11000,
+					"change": 14.2
+				},
+				"churn_data": {
+					"v": 0.021,
+					"change": -0.005
+				},
+				"revenue_data": {
+					"v": 1450000,
+					"v0": 1400000,
+					"change": 3.57
+				},
+				"uptime_data": {
+					"v": 0.9998,
+					"change": 0.0001
+				},
+				"acquisition_cost": {
+					"v": 45.2,
+					"v0": 50.0,
+					"change": -9.6
+				}
 			},
 			"config": {
 				"childComponent": "DisplayCards",
@@ -1841,7 +2048,9 @@
 											},
 											"trendUpper": 0.01,
 											"trendLower": -0.01,
-											"trendFormat": { "style": "percent" }
+											"trendFormat": {
+												"style": "percent"
+											}
 										}
 									}
 								]
@@ -1912,7 +2121,9 @@
 											},
 											"trendUpper": 0,
 											"trendLower": -10,
-											"trendFormat": { "style": "percent" }
+											"trendFormat": {
+												"style": "percent"
+											}
 										}
 									}
 								]
@@ -2112,19 +2323,19 @@
 				]
 			}
 		},
-
 		"privacy": {
 			"data": "# Hi, *Pluto*! Just a link: www.nasa.gov. \n * [Python](/downloads/)",
 			"renderComponent": {
 				"component": "Markdown",
 				"container": {
 					"maxWidth": "md",
-					"sx": { "mt": 5 }
+					"sx": {
+						"mt": 5
+					}
 				},
 				"props": {}
 			}
 		},
-
 		"privacy1": {
 			"data": {
 				"privacy": {
@@ -2230,8 +2441,6 @@
 			}
 		]
 	},
-
-  
 	"configs": {
 		"authConfig": {
 			"emailVerifyEnabled": true,
@@ -2241,40 +2450,41 @@
 			"credentials",
 			"google"
 		],
-		"logo":   "https://www.ketrik.com/ketrik-13.png",
-
+		"sidebarSwitcher": [
+			{
+				"value": "sidebar",
+				"key": "Main Menu"
+			},
+			{
+				"value": "accountMenu",
+				"key": "Administration"
+			},
+			{
+				"value": "settings",
+				"key": "Developer Tools"
+			}
+		],
+		"logo": "https://www.ketrik.com/ketrik-13.png",
 		"title": {
 			"main": "Ketrik ",
 			"secondary1": "Services",
 			"sub": "AI Applied"
 		},
-
 		"dashboardUrl": "/",
-
 		"passwordResetUrl": "/auth/password",
-		 
-
 		"rememberMeEnabled": true,
 		"remmeberMeLabel": "Remember me",
 		"forgotPasswordEnabled": true,
 		"forgotPasswordLabel": "Forgot password?",
-
 		"_layoutSidebarType": "default",
 		"_layoutHeaderType": "default",
 		"_layoutVariant": "row",
 		"_layoutWithFooter": false,
 		"layoutStickyStackEnabled": true,
-
 		"dashboardDefaults": {
 			"config": {
 				"isFullSize": true
 			}
 		}
 	}
-	 
- 
-
-
-		
-	
 }
