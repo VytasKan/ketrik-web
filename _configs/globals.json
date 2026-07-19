@@ -2386,6 +2386,7629 @@
 					}
 				]
 			}
+		},
+		"multi": {
+			"renderPaths": [
+				{
+					"initPath": "cards",
+					"paths": [
+						"cards",
+						{
+							"header": "Selectors",
+							"value": "demo"
+						}
+					]
+				},
+				"tables",
+				"charts-demo"
+			]
+		},
+		"split1": {
+			"renderPaths": [
+				{
+					"initPath": "session",
+					"paths": [
+						{
+							"header": "Session",
+							"value": "session"
+						},
+						{
+							"header": "Alerts",
+							"value": "alerts"
+						},
+						"var"
+					]
+				},
+				{
+					"selector": {
+						"type": "SelectorTabs"
+					},
+					"initPath": "session",
+					"paths": [
+						"alerts",
+						"var"
+					]
+				},
+				"marketoverview"
+			]
+		},
+		"auth_login": {
+			"renderComponent": "SignIn"
+		},
+		"icons": {
+			"renderComponent": "Icons"
+		},
+		"jsoneditor": {
+			"renderComponent": "MonacoEditor"
+		},
+		"job": {
+			"job": {
+				"fn": "requestDeals_daterange",
+				"params": {},
+				"isParamsRequired": true
+			},
+			"renderForm": {
+				"formSelector": {
+					"schema": {
+						"type": "object",
+						"required": [
+							"endDate",
+							"startDate"
+						],
+						"properties": {
+							"startDate": {
+								"type": "string",
+								"format": "date",
+								"title": "From"
+							},
+							"endDate": {
+								"type": "string",
+								"format": "date",
+								"title": "To"
+							}
+						}
+					},
+					"uiSchema": {
+						"startDate": {
+							"ui:placeholder": "Start Date",
+							"ui:options": {
+								"label": true
+							}
+						},
+						"endDate": {
+							"ui:placeholder": "End Date",
+							"ui:options": {
+								"label": true
+							}
+						}
+					}
+				}
+			},
+			"config": {
+				"header": "Job based loader",
+				"groups": [
+					{
+						"header": "Stats Cards",
+						"itemDefaults": {
+							"format": {
+								"style": "currency",
+								"currency": "USD",
+								"currencyDisplay": "symbol",
+								"currencySign": "accounting",
+								"maximumFractionDigits": 0,
+								"notation": "compact"
+							}
+						},
+						"items": [
+							{
+								"type": "cardContent",
+								"contentConfig": {
+									"contentType": "StatContent"
+								},
+								"title": "P&L",
+								"dataKey": "pnl",
+								"sub": "vs. last session",
+								"subVariant": "TrendSub",
+								"trendFormat": {
+									"style": "percent"
+								}
+							},
+							{
+								"contentType": "StatContent",
+								"title": "P&L",
+								"dataKey": "pnl",
+								"showChip": true,
+								"sub": "P&L for the current session",
+								"trendUpper": 0.3,
+								"trendLower": -0.3
+							},
+							{
+								"contentType": "StatContent",
+								"title": "P&L",
+								"dataKey": "pnl",
+								"sub": "${value} vs. last session",
+								"subVariant": "ValueSub"
+							}
+						]
+					},
+					{
+						"header": "SparkLine",
+						"itemDefaults": {
+							"debugMetadata": true,
+							"contentConfig": {
+								"chartType": "SparkLine"
+							}
+						},
+						"items": [
+							{
+								"title": "P&L",
+								"sub": "vs. last session",
+								"dataKey: \"pnl\"": "pnl",
+								"subVariant": "TrendSub",
+								"format": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 0
+								},
+								"trendFormat": {
+									"style": "percent"
+								},
+								"chartOptions": {
+									"height": 50,
+									"area": false,
+									"showHighlight": true,
+									"showTooltip": true,
+									"curve": "natural",
+									"yAxis": {
+										"min": 100,
+										"max": 110
+									}
+								}
+							},
+							{
+								"cardType": "StatCard",
+								"title": "P&L",
+								"showChip": true,
+								"sub": "P&L for the current session",
+								"trendUpper": 0.3,
+								"trendLower": -0.3,
+								"dataKey": "pnl",
+								"format": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 2
+								},
+								"chartOptions": {
+									"height": 50,
+									"plotType": "bar",
+									"area": true,
+									"showHighlight": true,
+									"showTooltip": true
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		"task": {
+			"job": {
+				"fn": "requestDeals_daterange",
+				"params": {}
+			},
+			"dataPath2": {
+				"path": "dashboard/navigation/task",
+				"filters": [],
+				"isSnapshot": true,
+				"url": "api"
+			},
+			"dataPath3": {
+				"task": {
+					"isTaskEnabled": true,
+					"params": {}
+				}
+			},
+			"renderForm": {
+				"isParamsRequired": true,
+				"formSelector": {
+					"schema": {
+						"type": "object",
+						"properties": {
+							"searchQuery": {
+								"type": "string",
+								"title": "Search"
+							},
+							"category": {
+								"type": "string",
+								"title": "Category",
+								"enum": [
+									"Electronics",
+									"Clothing",
+									"Home"
+								]
+							}
+						}
+					},
+					"uiSchema": {
+						"searchQuery": {
+							"ui:grid": {
+								"xs": 12,
+								"md": 6
+							},
+							"ui:placeholder": "Keyword..."
+						},
+						"category": {
+							"ui:grid": {
+								"xs": 12,
+								"md": 4
+							}
+						},
+						"ui:submitButtonOptions": {
+							"norender": false,
+							"submitText": "Search",
+							"props": {
+								"variant": "contained",
+								"color": "primary",
+								"sx": {
+									"mt": 0
+								}
+							}
+						}
+					}
+				}
+			},
+			"config": {
+				"header": "Task based loader",
+				"formSelector1": {
+					"schema": {
+						"type": "object",
+						"properties": {
+							"searchQuery": {
+								"type": "string",
+								"title": "Search"
+							},
+							"category": {
+								"type": "string",
+								"title": "Category",
+								"enum": [
+									"Electronics",
+									"Clothing",
+									"Home"
+								]
+							}
+						}
+					},
+					"uiSchema": {
+						"ui:column-xs": 12,
+						"ui:column-md": 3,
+						"searchQuery": {
+							"ui:column-xs": 6,
+							"ui:placeholder": "Keyword..."
+						},
+						"category": {
+							"ui:column-xs": 6
+						},
+						"ui:submitButtonOptions": {
+							"norender": false,
+							"submitText": "Search",
+							"props": {
+								"variant": "contained",
+								"color": "primary",
+								"sx": {
+									"mt": 0
+								}
+							}
+						}
+					}
+				},
+				"groups": [
+					{
+						"header": "Stats Cards",
+						"itemDefaults": {
+							"format": {
+								"style": "currency",
+								"currency": "USD",
+								"currencyDisplay": "symbol",
+								"currencySign": "accounting",
+								"maximumFractionDigits": 0,
+								"notation": "compact"
+							}
+						},
+						"items": [
+							{
+								"type": "cardContent",
+								"contentConfig": {
+									"contentType": "StatContent"
+								},
+								"title": "P&L",
+								"dataKey": "pnl",
+								"sub": "vs. last session",
+								"subVariant": "TrendSub",
+								"trendFormat": {
+									"style": "percent"
+								}
+							},
+							{
+								"contentType": "StatContent",
+								"title": "P&L",
+								"dataKey": "pnl",
+								"showChip": true,
+								"sub": "P&L for the current session",
+								"trendUpper": 0.3,
+								"trendLower": -0.3
+							},
+							{
+								"contentType": "StatContent",
+								"title": "P&L",
+								"dataKey": "pnl",
+								"sub": "${value} vs. last session",
+								"subVariant": "ValueSub"
+							}
+						]
+					},
+					{
+						"header": "SparkLine",
+						"itemDefaults": {
+							"debugMetadata": true,
+							"contentConfig": {
+								"chartType": "SparkLine"
+							}
+						},
+						"items": [
+							{
+								"title": "P&L",
+								"sub": "vs. last session",
+								"dataKey": "pnl",
+								"subVariant": "TrendSub",
+								"format": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 0
+								},
+								"trendFormat": {
+									"style": "percent"
+								},
+								"chartOptions": {
+									"height": 50,
+									"area": false,
+									"showHighlight": true,
+									"showTooltip": true,
+									"curve": "natural",
+									"yAxis": {
+										"min": 100,
+										"max": 110
+									}
+								}
+							},
+							{
+								"cardType": "StatCard",
+								"title": "P&L",
+								"showChip": true,
+								"sub": "P&L for the current session",
+								"trendUpper": 0.3,
+								"trendLower": -0.3,
+								"dataKey: \"pnl\"": "pnl",
+								"format": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 2
+								},
+								"chartOptions": {
+									"height": 50,
+									"plotType": "bar",
+									"area": true,
+									"showHighlight": true,
+									"showTooltip": true
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		"chatbot": {
+			"data": {},
+			"config": {
+				"childComponent": "DisplayCards",
+				"groups": [
+					{
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"contentConfig": {
+											"contentType": "Chatbot",
+											"inputConfig": {
+												"initialMode": "auto",
+												"maxHeight": 280,
+												"placeholder": "Type your message..."
+											},
+											"systemPrompt": "You are a helpful AI assistant. Provide a concise and helpful response to the user's query. After your response, provide an array of 3 distinct, relevant, and short (1-5 words) follow-up questions the user might ask. The user's query is based on the following conversation history:",
+											"greetingsPrompt": "Hi, how can I help you today?"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		"chat": {
+			"renderComponent": "Chat"
+		},
+		"charts-demo": {
+			"data": {},
+			"config": {
+				"childComponent": "DemoCharts",
+				"header": "Charts",
+				"demoSelector": {
+					"metadata": [
+						{
+							"childComponent": "DisplayCards",
+							"header": "Muichart"
+						},
+						{
+							"childComponent": "DisplayCards",
+							"header": "Chartjs"
+						},
+						{
+							"childComponent": "DisplayCards",
+							"header": "GoogleChart"
+						},
+						{
+							"childComponent": "DisplayCards",
+							"header": "Rechart"
+						},
+						{
+							"childComponent": "DisplayCards",
+							"header": "LWChart"
+						},
+						{
+							"childComponent": "DisplayCards",
+							"header": "Plotly"
+						}
+					]
+				},
+				"groups": [
+					{}
+				]
+			}
+		},
+		"charts": {
+			"data": {
+				"ds1": [],
+				"ds": [
+					{
+						"day": "Day 1",
+						"likes": 225,
+						"comments": 64,
+						"shares": 53
+					},
+					{
+						"day": "Day 2",
+						"likes": 184,
+						"comments": 26,
+						"shares": 39
+					},
+					{
+						"day": "Day 3",
+						"likes": 371,
+						"comments": 77,
+						"shares": 46
+					},
+					{
+						"day": "Day 4",
+						"likes": 173,
+						"comments": 20,
+						"shares": 10
+					},
+					{
+						"day": "Day 5",
+						"likes": 186,
+						"comments": 54,
+						"shares": 38
+					},
+					{
+						"day": "Day 6",
+						"likes": 366,
+						"comments": 61,
+						"shares": 58
+					},
+					{
+						"day": "Day 7",
+						"likes": 288,
+						"comments": 38,
+						"shares": 10
+					}
+				],
+				"volume": [
+					{
+						"time": "2018-10-19",
+						"value": 52.89
+					},
+					{
+						"time": "2018-10-22",
+						"value": 55.22
+					},
+					{
+						"time": "2018-10-23",
+						"value": 57.21
+					},
+					{
+						"time": "2018-10-24",
+						"value": 57.42
+					},
+					{
+						"time": "2018-10-25",
+						"value": 56.43
+					},
+					{
+						"time": "2018-10-26",
+						"value": 55.51
+					},
+					{
+						"time": "2018-10-29",
+						"value": 56.48
+					},
+					{
+						"time": "2018-10-30",
+						"value": 58.18
+					},
+					{
+						"time": "2018-10-31",
+						"value": 57.09
+					},
+					{
+						"time": "2018-10-11",
+						"value": 56.05
+					},
+					{
+						"time": "2018-11-02",
+						"value": 56.63
+					},
+					{
+						"time": "2018-11-05",
+						"value": 57.21
+					},
+					{
+						"time": "2018-11-06",
+						"value": 57.21
+					},
+					{
+						"time": "2018-11-07",
+						"value": 57.65
+					},
+					{
+						"time": "2018-11-08",
+						"value": 58.27
+					},
+					{
+						"time": "2018-11-09",
+						"value": 58.46
+					},
+					{
+						"time": "2018-11-12",
+						"value": 58.72
+					},
+					{
+						"time": "2018-11-13",
+						"value": 58.66
+					},
+					{
+						"time": "2018-11-14",
+						"value": 58.94
+					},
+					{
+						"time": "2018-11-15",
+						"value": 59.08
+					},
+					{
+						"time": "2018-11-16",
+						"value": 60.21
+					},
+					{
+						"time": "2018-11-19",
+						"value": 60.62
+					},
+					{
+						"time": "2018-11-20",
+						"value": 59.46
+					},
+					{
+						"time": "2018-11-21",
+						"value": 59.16
+					},
+					{
+						"time": "2018-11-23",
+						"value": 58.64
+					},
+					{
+						"time": "2018-11-26",
+						"value": 59.17
+					},
+					{
+						"time": "2018-11-27",
+						"value": 60.65
+					},
+					{
+						"time": "2018-11-28",
+						"value": 60.06
+					},
+					{
+						"time": "2018-11-29",
+						"value": 59.45
+					},
+					{
+						"time": "2018-11-30",
+						"value": 60.3
+					},
+					{
+						"time": "2018-12-03",
+						"value": 58.16
+					},
+					{
+						"time": "2018-12-04",
+						"value": 58.09
+					},
+					{
+						"time": "2018-12-06",
+						"value": 58.08
+					},
+					{
+						"time": "2018-12-07",
+						"value": 57.68
+					},
+					{
+						"time": "2018-12-10",
+						"value": 58.27
+					},
+					{
+						"time": "2018-12-11",
+						"value": 58.85
+					},
+					{
+						"time": "2018-12-12",
+						"value": 57.25
+					},
+					{
+						"time": "2018-12-13",
+						"value": 57.09
+					},
+					{
+						"time": "2018-12-14",
+						"value": 57.08
+					},
+					{
+						"time": "2018-12-17",
+						"value": 55.95
+					},
+					{
+						"time": "2018-12-18",
+						"value": 55.65
+					},
+					{
+						"time": "2018-12-19",
+						"value": 55.86
+					},
+					{
+						"time": "2018-12-20",
+						"value": 55.07
+					},
+					{
+						"time": "2018-12-21",
+						"value": 54.92
+					},
+					{
+						"time": "2018-12-24",
+						"value": 53.05
+					}
+				]
+			},
+			"config": {
+				"childComponent": "DisplayCards",
+				"selector": {
+					"type": "SelectorTabs"
+				},
+				"debugMetadata": true,
+				"header": "Charts",
+				"groups": [
+					{
+						"header": "Chartjs",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "Chartsjs"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "volume",
+										"contentConfig": {
+											"contentType": "Chartjs",
+											"chartType": "line",
+											"chartOptions": {
+												"height": 500,
+												"options": {}
+											}
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"header": "Google Charts",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "Google Charts"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "volume",
+										"contentConfig": {
+											"contentType": "GoogleChart",
+											"chartType": "area",
+											"chartOptions": {
+												"theme": "amber",
+												"height": 500,
+												"chartProps": {
+													"baseValue": 54
+												},
+												"cartesianGridProps": {
+													"vertical": true,
+													"horizontal": true
+												}
+											}
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"header": "Area",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "Rechart"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "volume",
+										"contentConfig": {
+											"contentType": "Rechart",
+											"chartType": "area",
+											"chartOptions": {
+												"theme": "amber",
+												"height": 500,
+												"chartProps": {
+													"baseValue": 54
+												},
+												"cartesianGridProps": {
+													"vertical": true,
+													"horizontal": true
+												}
+											}
+										}
+									}
+								]
+							},
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "Muichart"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "volume",
+										"contentConfig": {
+											"contentType": "Muichart",
+											"chartType": "area",
+											"chartOptions": {
+												"height": 500
+											}
+										}
+									}
+								]
+							},
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "LWChart"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "volume",
+										"contentConfig": {
+											"contentType": "LWChart",
+											"chartType": "area",
+											"chartOptions": {
+												"height": 500
+											}
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"header": "Line",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "Rechart"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "volume",
+										"contentConfig": {
+											"contentType": "Rechart",
+											"chartType": "line",
+											"chartOptions": {
+												"theme": "amber",
+												"height": 500,
+												"cartesianGridProps": {
+													"vertical": true,
+													"horizontal": true
+												}
+											}
+										}
+									}
+								]
+							},
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "Muichart"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "volume",
+										"contentConfig": {
+											"contentType": "Muichart",
+											"chartType": "line",
+											"chartOptions": {
+												"height": 500
+											}
+										}
+									}
+								]
+							},
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "LWChart"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "volume",
+										"contentConfig": {
+											"contentType": "LWChart",
+											"chartType": "line",
+											"chartOptions": {
+												"height": 500
+											}
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"header": "Bar",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "Rechart"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "volume",
+										"contentConfig": {
+											"contentType": "Rechart",
+											"chartType": "bar",
+											"chartOptions": {
+												"theme": "amber",
+												"height": 500,
+												"cartesianGridProps": {
+													"vertical": true,
+													"horizontal": true
+												}
+											}
+										}
+									}
+								]
+							},
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "Muichart"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "volume",
+										"contentConfig": {
+											"contentType": "Muichart",
+											"chartType": "bar",
+											"chartOptions": {
+												"height": 500
+											}
+										}
+									}
+								]
+							},
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "LWChart"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "volume",
+										"contentConfig": {
+											"contentType": "LWChart",
+											"chartType": "bar",
+											"chartOptions": {
+												"height": 500
+											}
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"header": "Baseline",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "Rechart"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "volume",
+										"contentConfig": {
+											"contentType": "Rechart",
+											"chartType": "bar",
+											"chartOptions": {
+												"theme": "amber",
+												"height": 500,
+												"cartesianGridProps": {
+													"vertical": true,
+													"horizontal": true
+												}
+											}
+										}
+									}
+								]
+							},
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "Muichart"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "volume",
+										"contentConfig": {
+											"contentType": "Muichart",
+											"chartType": "bar",
+											"chartOptions": {
+												"height": 500
+											}
+										}
+									}
+								]
+							},
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "LWChart"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "volume",
+										"contentConfig": {
+											"contentType": "LWChart",
+											"chartType": "baseline",
+											"chartStyleOptions": {
+												"baseValue": {
+													"type": "price",
+													"price": 59
+												}
+											},
+											"chartOptions": {
+												"height": 500
+											}
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"header": "Pie",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "Rechart"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "volume",
+										"contentConfig": {
+											"contentType": "Rechart",
+											"chartType": "area",
+											"chartOptions": {
+												"theme": "amber",
+												"height": 500,
+												"chartProps": {
+													"baseValue": 54
+												},
+												"cartesianGridProps": {
+													"vertical": true,
+													"horizontal": true
+												}
+											}
+										}
+									}
+								]
+							},
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "Muichart"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "volume",
+										"contentConfig": {
+											"contentType": "Muichart",
+											"chartType": "area",
+											"chartOptions": {
+												"height": 500
+											}
+										}
+									}
+								]
+							},
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "LWChart"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "volume",
+										"contentConfig": {
+											"contentType": "LWChart",
+											"chartType": "area",
+											"chartOptions": {
+												"height": 500
+											}
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"header": "Bar",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "Basic",
+											"subheader": "Bar charts help visualize data comparisons across categories. They are effective for highlighting differences and trends using vertical or horizontal bars."
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "ds",
+										"contentConfig": {
+											"contentType": "Muichart",
+											"chartType": "Bar",
+											"chartOptions": {
+												"xAxis": [
+													{
+														"label": "Days",
+														"scaleType": "band",
+														"dataKey": "day"
+													}
+												],
+												"series": [
+													{
+														"label": "Likes",
+														"dataKey": "likes"
+													},
+													{
+														"label": "Comments",
+														"dataKey": "comments"
+													}
+												],
+												"height": 300,
+												"dataKey": "day",
+												"xAxisProps": {
+													"label": {
+														"value": "pv of page",
+														"angle": -90,
+														"position": "insideLeft"
+													},
+													"interval": 0
+												},
+												"config": {
+													"likes": {
+														"label": "Likes"
+													},
+													"comments": {
+														"label": "Comments"
+													},
+													"shares": {
+														"label": "Shares"
+													}
+												}
+											}
+										}
+									}
+								]
+							},
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "Basic",
+											"subheader": "Bar charts help visualize data comparisons across categories. They are effective for highlighting differences and trends using vertical or horizontal bars."
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "ds",
+										"contentConfig": {
+											"contentType": "Rechart",
+											"chartType": "Bar",
+											"chartOptions": {
+												"xAxis": [
+													{
+														"scaleType": "band",
+														"dataKey": "day"
+													}
+												],
+												"series": [
+													{
+														"label": "Likes",
+														"dataKey": "likes"
+													},
+													{
+														"label": "Comments",
+														"dataKey": "comments"
+													},
+													{
+														"label": "Shares",
+														"dataKey": "shares"
+													}
+												],
+												"height": 300,
+												"xAxisProps": {
+													"interval": 0
+												},
+												"config1": {
+													"likes": {
+														"label": "Likes"
+													},
+													"comments": {
+														"label": "Comments"
+													}
+												}
+											}
+										}
+									}
+								]
+							},
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "Basic",
+											"subheader": "Bar charts help visualize data comparisons across categories. They are effective for highlighting differences and trends using vertical or horizontal bars."
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"contentConfig": {
+											"contentType": "LWChart",
+											"chartType": "histogram",
+											"chartOptions": {
+												"xAxis": [
+													{
+														"scaleType": "band",
+														"dataKey": "day"
+													}
+												],
+												"series": [
+													{
+														"label": "Likes",
+														"dataKey": "likes"
+													},
+													{
+														"label": "Comments",
+														"dataKey": "comments"
+													},
+													{
+														"label": "Shares",
+														"dataKey": "shares"
+													}
+												],
+												"height": 300,
+												"xAxisProps": {
+													"interval": 0
+												},
+												"config1": {
+													"likes": {
+														"label": "Likes"
+													},
+													"comments": {
+														"label": "Comments"
+													}
+												}
+											}
+										}
+									}
+								]
+							},
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "Stacked",
+											"subheader": "Stacked bar charts let you compare parts of a whole across categories. Each bar stacks its values to show how they build up."
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "ds",
+										"contentConfig": {
+											"contentType": "Rechart",
+											"chartType": "BarChart",
+											"chartOptions": {
+												"style": {
+													"height": 500
+												},
+												"lineType": "basis",
+												"type": "stacked",
+												"dataKey": "day",
+												"xAxisProps": {
+													"interval": 0
+												},
+												"config": {
+													"likes": {
+														"label": "Likes"
+													},
+													"comments": {
+														"label": "Comments"
+													},
+													"shares": {
+														"label": "Shares"
+													}
+												}
+											}
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		"static": {
+			"data": {
+				"metric": {
+					"v": 100,
+					"v0": 95,
+					"chnage": 0.25,
+					"ds": []
+				}
+			},
+			"config": {
+				"childComponent": "DisplayCards",
+				"groups": [
+					{
+						"header": "Plotly render",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"dataKey": "metric",
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"dataKey": "metric"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "metric",
+										"contentConfig": {
+											"contentType": "Plotly"
+										}
+									}
+								]
+							},
+							{
+								"debugMetadata": true,
+								"dataKey": "metric",
+								"contentConfig": {
+									"contentType": "Plotly"
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		"lwcustoms": {
+			"data": {
+				"panes": {
+					"volume": [
+						{
+							"time": "2018-10-19",
+							"value": 52.89
+						},
+						{
+							"time": "2018-10-22",
+							"value": 55.22
+						},
+						{
+							"time": "2018-10-23",
+							"value": 57.21
+						},
+						{
+							"time": "2018-10-24",
+							"value": 57.42
+						},
+						{
+							"time": "2018-10-25",
+							"value": 56.43
+						},
+						{
+							"time": "2018-10-26",
+							"value": 55.51
+						},
+						{
+							"time": "2018-10-29",
+							"value": 56.48
+						},
+						{
+							"time": "2018-10-30",
+							"value": 58.18
+						},
+						{
+							"time": "2018-10-31",
+							"value": 57.09
+						},
+						{
+							"time": "2018-11-01",
+							"value": 56.05
+						},
+						{
+							"time": "2018-11-02",
+							"value": 56.63
+						},
+						{
+							"time": "2018-11-05",
+							"value": 57.21
+						},
+						{
+							"time": "2018-11-06",
+							"value": 57.21
+						},
+						{
+							"time": "2018-11-07",
+							"value": 57.65
+						},
+						{
+							"time": "2018-11-08",
+							"value": 58.27
+						},
+						{
+							"time": "2018-11-09",
+							"value": 58.46
+						},
+						{
+							"time": "2018-11-12",
+							"value": 58.72
+						},
+						{
+							"time": "2018-11-13",
+							"value": 58.66
+						},
+						{
+							"time": "2018-11-14",
+							"value": 58.94
+						},
+						{
+							"time": "2018-11-15",
+							"value": 59.08
+						},
+						{
+							"time": "2018-11-16",
+							"value": 60.21
+						},
+						{
+							"time": "2018-11-19",
+							"value": 60.62
+						},
+						{
+							"time": "2018-11-20",
+							"value": 59.46
+						},
+						{
+							"time": "2018-11-21",
+							"value": 59.16
+						},
+						{
+							"time": "2018-11-23",
+							"value": 58.64
+						},
+						{
+							"time": "2018-11-26",
+							"value": 59.17
+						},
+						{
+							"time": "2018-11-27",
+							"value": 60.65
+						},
+						{
+							"time": "2018-11-28",
+							"value": 60.06
+						},
+						{
+							"time": "2018-11-29",
+							"value": 59.45
+						},
+						{
+							"time": "2018-11-30",
+							"value": 60.3
+						},
+						{
+							"time": "2018-12-03",
+							"value": 58.16
+						},
+						{
+							"time": "2018-12-04",
+							"value": 58.09
+						},
+						{
+							"time": "2018-12-06",
+							"value": 58.08
+						},
+						{
+							"time": "2018-12-07",
+							"value": 57.68
+						},
+						{
+							"time": "2018-12-10",
+							"value": 58.27
+						},
+						{
+							"time": "2018-12-11",
+							"value": 58.85
+						},
+						{
+							"time": "2018-12-12",
+							"value": 57.25
+						},
+						{
+							"time": "2018-12-13",
+							"value": 57.09
+						},
+						{
+							"time": "2018-12-14",
+							"value": 57.08
+						},
+						{
+							"time": "2018-12-17",
+							"value": 55.95
+						},
+						{
+							"time": "2018-12-18",
+							"value": 55.65
+						},
+						{
+							"time": "2018-12-19",
+							"value": 55.86
+						},
+						{
+							"time": "2018-12-20",
+							"value": 55.07
+						},
+						{
+							"time": "2018-12-21",
+							"value": 54.92
+						},
+						{
+							"time": "2018-12-24",
+							"value": 53.05
+						}
+					],
+					"series": [
+						{
+							"time": "2018-10-19",
+							"open": 75.16,
+							"high": 82.84,
+							"low": 36.16,
+							"close": 45.72
+						},
+						{
+							"time": "2018-10-22",
+							"open": 72.16,
+							"high": 80.32,
+							"low": 32.18,
+							"close": 42.12
+						},
+						{
+							"time": "2018-10-23",
+							"open": 45.12,
+							"high": 53.9,
+							"low": 45.12,
+							"close": 48.09
+						},
+						{
+							"time": "2018-10-24",
+							"open": 60.71,
+							"high": 60.71,
+							"low": 53.39,
+							"close": 59.29
+						},
+						{
+							"time": "2018-10-25",
+							"open": 68.26,
+							"high": 68.26,
+							"low": 59.04,
+							"close": 60.5
+						},
+						{
+							"time": "2018-10-26",
+							"open": 67.71,
+							"high": 105.85,
+							"low": 66.67,
+							"close": 91.04
+						},
+						{
+							"time": "2018-10-29",
+							"open": 91.04,
+							"high": 121.4,
+							"low": 82.7,
+							"close": 111.4
+						},
+						{
+							"time": "2018-10-30",
+							"open": 111.51,
+							"high": 142.83,
+							"low": 103.34,
+							"close": 131.25
+						},
+						{
+							"time": "2018-10-31",
+							"open": 131.33,
+							"high": 151.17,
+							"low": 77.68,
+							"close": 96.43
+						},
+						{
+							"time": "2018-11-01",
+							"open": 106.33,
+							"high": 110.2,
+							"low": 90.39,
+							"close": 98.1
+						},
+						{
+							"time": "2018-11-02",
+							"open": 109.87,
+							"high": 114.69,
+							"low": 85.66,
+							"close": 111.26
+						},
+						{
+							"time": "2018-11-05",
+							"open": 56.02,
+							"high": 56.02,
+							"low": 56.02,
+							"close": 56.02
+						},
+						{
+							"time": "2018-11-06",
+							"open": 106.33,
+							"high": 110.2,
+							"low": 90.39,
+							"close": 98.1
+						},
+						{
+							"time": "2018-11-07",
+							"open": 109.87,
+							"high": 114.69,
+							"low": 85.66,
+							"close": 111.26
+						},
+						{
+							"time": "2018-11-09",
+							"open": 58.46,
+							"high": 53.9,
+							"low": 32.18,
+							"close": 42.12
+						},
+						{
+							"time": "2018-11-12",
+							"open": 45.12,
+							"high": 60.71,
+							"low": 45.12,
+							"close": 48.09
+						},
+						{
+							"time": "2018-11-13",
+							"open": 60.71,
+							"high": 68.26,
+							"low": 53.39,
+							"close": 59.29
+						},
+						{
+							"time": "2018-11-14",
+							"open": 68.26,
+							"high": 105.85,
+							"low": 59.04,
+							"close": 60.5
+						},
+						{
+							"time": "2018-11-15",
+							"open": 67.71,
+							"high": 121.4,
+							"low": 66.67,
+							"close": 91.04
+						},
+						{
+							"time": "2018-11-16",
+							"open": 91.04,
+							"high": 142.83,
+							"low": 82.7,
+							"close": 111.4
+						},
+						{
+							"time": "2018-11-19",
+							"open": 111.51,
+							"high": 151.17,
+							"low": 103.34,
+							"close": 131.25
+						},
+						{
+							"time": "2018-11-20",
+							"open": 131.33,
+							"high": 110.2,
+							"low": 77.68,
+							"close": 96.43
+						},
+						{
+							"time": "2018-11-21",
+							"open": 106.33,
+							"high": 114.69,
+							"low": 90.39,
+							"close": 98.1
+						},
+						{
+							"time": "2018-11-23",
+							"open": 109.87,
+							"high": 56.02,
+							"low": 85.66,
+							"close": 111.26
+						},
+						{
+							"time": "2018-11-26",
+							"open": 59.17,
+							"high": 58.46,
+							"low": 56.02,
+							"close": 56.02
+						},
+						{
+							"time": "2018-11-27",
+							"open": 60.65,
+							"high": 58.46,
+							"low": 90.39,
+							"close": 98.1
+						},
+						{
+							"time": "2018-11-28",
+							"open": 60.06,
+							"high": 58.46,
+							"low": 85.66,
+							"close": 111.26
+						},
+						{
+							"time": "2018-11-29",
+							"open": 59.45,
+							"high": 58.46,
+							"low": 58.46,
+							"close": 58.46
+						},
+						{
+							"time": "2018-11-30",
+							"open": 60.3,
+							"high": 58.46,
+							"low": 58.46,
+							"close": 58.46
+						},
+						{
+							"time": "2018-12-03",
+							"open": 72.16,
+							"high": 80.32,
+							"low": 32.18,
+							"close": 42.12
+						},
+						{
+							"time": "2018-12-04",
+							"open": 45.12,
+							"high": 53.9,
+							"low": 45.12,
+							"close": 48.09
+						},
+						{
+							"time": "2018-12-06",
+							"open": 60.71,
+							"high": 60.71,
+							"low": 53.39,
+							"close": 59.29
+						},
+						{
+							"time": "2018-12-07",
+							"open": 68.26,
+							"high": 68.26,
+							"low": 59.04,
+							"close": 60.5
+						},
+						{
+							"time": "2018-12-10",
+							"open": 67.71,
+							"high": 105.85,
+							"low": 66.67,
+							"close": 91.04
+						},
+						{
+							"time": "2018-12-11",
+							"open": 91.04,
+							"high": 121.4,
+							"low": 82.7,
+							"close": 111.4
+						},
+						{
+							"time": "2018-12-12",
+							"open": 111.51,
+							"high": 142.83,
+							"low": 103.34,
+							"close": 131.25
+						},
+						{
+							"time": "2018-12-13",
+							"open": 131.33,
+							"high": 151.17,
+							"low": 77.68,
+							"close": 96.43
+						},
+						{
+							"time": "2018-12-14",
+							"open": 106.33,
+							"high": 110.2,
+							"low": 90.39,
+							"close": 98.1
+						},
+						{
+							"time": "2018-12-17",
+							"open": 109.87,
+							"high": 114.69,
+							"low": 85.66,
+							"close": 111.26
+						},
+						{
+							"time": "2018-12-18",
+							"open": 56.02,
+							"high": 56.02,
+							"low": 56.02,
+							"close": 56.02
+						},
+						{
+							"time": "2018-12-19",
+							"open": 106.33,
+							"high": 110.2,
+							"low": 90.39,
+							"close": 98.1
+						},
+						{
+							"time": "2018-12-20",
+							"open": 109.87,
+							"high": 114.69,
+							"low": 85.66,
+							"close": 111.26
+						},
+						{
+							"time": "2018-12-21",
+							"open": 58.46,
+							"high": 53.9,
+							"low": 32.18,
+							"close": 42.12
+						},
+						{
+							"time": "2018-12-24",
+							"open": 45.12,
+							"high": 60.71,
+							"low": 45.12,
+							"close": 48.09
+						}
+					]
+				}
+			},
+			"config": {
+				"childComponent": "DisplayCardsWithSelector",
+				"selector": {
+					"type": "SelectorTabs"
+				},
+				"debugMetadata": true,
+				"header": "Tradingview Customs",
+				"groups": [
+					{
+						"header": "Panes",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"subheader": "Allows you to create multiple panes in a single chart. Useful for a variety of analytical and visualization scenarios, especially when dealing with complex datasets or requiring detailed comparative analysis across different data dimensions"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "panes",
+										"contentConfig": {
+											"contentType": "LWChart",
+											"chartPanes": [
+												{
+													"dataKey": "series",
+													"chartType": "CandlestickSeries",
+													"chartStyleOptions": {
+														"upColor": "#26a69a",
+														"downColor": "#ef5350",
+														"borderVisible": false,
+														"wickUpColor": "#26a69a",
+														"wickDownColor": "#ef5350"
+													}
+												},
+												{
+													"dataKey": "volume",
+													"chartType": "AreaSeries",
+													"chartStyleOptions": {
+														"topColor": "#2962FF",
+														"bottomColor": "rgba(41, 98, 255, 0.28)",
+														"lineColor": "#2962FF",
+														"lineWidth": 2
+													},
+													"paneIndex": 1
+												}
+											],
+											"chartOptions": {
+												"height": 500,
+												"layout": {
+													"panes": {
+														"separatorColor": "#f22c3d",
+														"separatorHoverColor": "rgba(255, 0, 0, 0.1)",
+														"enableResize": false
+													}
+												}
+											}
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		"lwwidgets": {
+			"data": {},
+			"config": {
+				"childComponent": "DisplayCardsWithSelector",
+				"selector": {
+					"type": "SelectorTabs"
+				},
+				"debugMetadata": true,
+				"header": "Tradingview Widgets",
+				"groups": [
+					{
+						"header": "Forex",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "Forex Cross Rates",
+											"subheader": "Display real-time quotes of selected currencies in comparison to other major currencies."
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"contentConfig": {
+											"contentType": "TWWidget",
+											"widgetUrl": "https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js",
+											"widgetOptions": {
+												"currencies": [
+													"EUR",
+													"USD",
+													"JPY",
+													"GBP",
+													"CHF",
+													"AUD",
+													"CAD",
+													"NZD",
+													"CNY",
+													"TRY",
+													"NOK",
+													"ZAR",
+													"SGD",
+													"SEK",
+													"DKK",
+													"HKD",
+													"UYU",
+													"COP",
+													"RUB",
+													"ARS",
+													"KWD",
+													"PLN",
+													"IDR",
+													"THB",
+													"MXN",
+													"KRW",
+													"ISK",
+													"AED",
+													"ILS",
+													"CLP",
+													"PEN"
+												],
+												"height": 800
+											}
+										}
+									}
+								]
+							},
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "Forex Heatmap",
+											"subheader": "Show off a snapshot of currency market action. This widget lets you spot strong and weak currencies and see how they compare to each other, all in real-time."
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"contentConfig": {
+											"contentType": "TWWidget",
+											"widgetUrl": "https://s3.tradingview.com/external-embedding/embed-widget-forex-heat-map.js",
+											"widgetOptions": {
+												"currencies": [
+													"EUR",
+													"USD",
+													"JPY",
+													"GBP",
+													"CHF",
+													"AUD",
+													"CAD",
+													"NZD",
+													"CNY",
+													"TRY",
+													"NOK",
+													"ZAR",
+													"SGD",
+													"SEK",
+													"DKK",
+													"HKD",
+													"UYU",
+													"COP",
+													"RUB",
+													"ARS",
+													"KWD",
+													"PLN",
+													"IDR",
+													"THB",
+													"MXN",
+													"KRW",
+													"ISK",
+													"AED",
+													"ILS",
+													"CLP",
+													"PEN"
+												],
+												"height": 800
+											}
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"header": "Watchlists",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "Market Data",
+											"subheader": "Grab an overview of global markets performance, including change values, Open, High, Low, and Close values for selected financial instruments."
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"contentConfig": {
+											"contentType": "TWWidget",
+											"widgetUrl": "https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js",
+											"widgetOptions": {
+												"showSymbolLogo": true,
+												"height": 1000,
+												"symbolsGroups": [
+													{
+														"name": "Indices",
+														"symbols": [
+															{
+																"name": "FOREXCOM:SPXUSD",
+																"displayName": "S&P 500 Index"
+															},
+															{
+																"name": "FOREXCOM:NSXUSD",
+																"displayName": "US 100 Cash CFD"
+															},
+															{
+																"name": "FOREXCOM:DJI",
+																"displayName": "Dow Jones Industrial Average Index"
+															},
+															{
+																"name": "INDEX:NKY",
+																"displayName": "Japan 225"
+															},
+															{
+																"name": "INDEX:DEU40",
+																"displayName": "DAX Index"
+															},
+															{
+																"name": "FOREXCOM:UKXGBP",
+																"displayName": "FTSE 100 Index"
+															}
+														]
+													},
+													{
+														"name": "Futures",
+														"symbols": [
+															{
+																"name": "BMFBOVESPA:ISP1!",
+																"displayName": "S&P 500"
+															},
+															{
+																"name": "BMFBOVESPA:EUR1!",
+																"displayName": "Euro"
+															},
+															{
+																"name": "CMCMARKETS:GOLD",
+																"displayName": "Gold"
+															},
+															{
+																"name": "PYTH:WTI3!",
+																"displayName": "WTI Crude Oil"
+															},
+															{
+																"name": "BMFBOVESPA:CCM1!",
+																"displayName": "Corn"
+															}
+														]
+													},
+													{
+														"name": "Bonds",
+														"symbols": [
+															{
+																"name": "EUREX:FGBL1!",
+																"displayName": "Euro Bund"
+															},
+															{
+																"name": "EUREX:FBTP1!",
+																"displayName": "Euro BTP"
+															},
+															{
+																"name": "EUREX:FGBM1!",
+																"displayName": "Euro BOBL"
+															}
+														]
+													},
+													{
+														"name": "Forex",
+														"symbols": [
+															{
+																"name": "FX:EURUSD",
+																"displayName": "EUR to USD"
+															},
+															{
+																"name": "FX:GBPUSD",
+																"displayName": "GBP to USD"
+															},
+															{
+																"name": "FX:USDJPY",
+																"displayName": "USD to JPY"
+															},
+															{
+																"name": "FX:USDCHF",
+																"displayName": "USD to CHF"
+															},
+															{
+																"name": "FX:AUDUSD",
+																"displayName": "AUD to USD"
+															},
+															{
+																"name": "FX:USDCAD",
+																"displayName": "USD to CAD"
+															}
+														]
+													}
+												]
+											}
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"header": "Charts",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"debugMetadata": true,
+								"contentConfig": {
+									"contentType": "TWWidget",
+									"widgetUrl": "https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js",
+									"widgetOptions": {
+										"lineWidth": 2,
+										"lineType": 0,
+										"chartType": "area",
+										"fontColor": "rgb(106, 109, 120)",
+										"gridLineColor": "rgba(46, 46, 46, 0.06)",
+										"volumeUpColor": "rgba(34, 171, 148, 0.5)",
+										"volumeDownColor": "rgba(247, 82, 95, 0.5)",
+										"upColor": "#22ab94",
+										"downColor": "#f7525f",
+										"borderUpColor": "#22ab94",
+										"borderDownColor": "#f7525f",
+										"wickUpColor": "#22ab94",
+										"wickDownColor": "#f7525f",
+										"chartOnly": false,
+										"scalePosition": "right",
+										"scaleMode": "Normal",
+										"valuesTracking": "1",
+										"changeMode": "price-and-percent",
+										"symbols": [
+											[
+												"Apple",
+												"AAPL|1D"
+											],
+											[
+												"Google",
+												"GOOGL|1D"
+											],
+											[
+												"Microsoft",
+												"MSFT|1D"
+											]
+										],
+										"dateRanges": [
+											"1d|1",
+											"1m|30",
+											"3m|60",
+											"12m|1D",
+											"60m|1W",
+											"all|1M"
+										],
+										"fontSize": "10",
+										"headerFontSize": "medium",
+										"autosize": true,
+										"width": "100%",
+										"height": 800,
+										"noTimeScale": false,
+										"hideDateRanges": false,
+										"hideMarketStatus": false,
+										"hideSymbolLogo": false
+									}
+								}
+							},
+							{
+								"debugMetadata": true,
+								"contentConfig": {
+									"contentType": "TWWidget",
+									"widgetUrl": "https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js",
+									"widgetOptions": {
+										"dateRange": "12M",
+										"showFloatingTooltip": false,
+										"plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+										"plotLineColorFalling": "rgba(41, 98, 255, 1)",
+										"gridLineColor": "rgba(240, 243, 250, 0)",
+										"scaleFontColor": "#0F0F0F",
+										"belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+										"belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+										"belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+										"belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+										"symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+										"tabs": [
+											{
+												"title": "Indices",
+												"symbols": [
+													{
+														"s": "FOREXCOM:SPXUSD",
+														"d": "S&P 500 Index"
+													},
+													{
+														"s": "FOREXCOM:NSXUSD",
+														"d": "US 100 Cash CFD"
+													},
+													{
+														"s": "FOREXCOM:DJI",
+														"d": "Dow Jones Industrial Average Index"
+													},
+													{
+														"s": "INDEX:NKY",
+														"d": "Japan 225"
+													},
+													{
+														"s": "INDEX:DEU40",
+														"d": "DAX Index"
+													},
+													{
+														"s": "FOREXCOM:UKXGBP",
+														"d": "FTSE 100 Index"
+													}
+												],
+												"originalTitle": "Indices"
+											},
+											{
+												"title": "Futures",
+												"symbols": [
+													{
+														"s": "BMFBOVESPA:ISP1!",
+														"d": "S&P 500"
+													},
+													{
+														"s": "BMFBOVESPA:EUR1!",
+														"d": "Euro"
+													},
+													{
+														"s": "CMCMARKETS:GOLD",
+														"d": "Gold"
+													},
+													{
+														"s": "PYTH:WTI3!",
+														"d": "WTI Crude Oil"
+													},
+													{
+														"s": "BMFBOVESPA:CCM1!",
+														"d": "Corn"
+													}
+												],
+												"originalTitle": "Futures"
+											},
+											{
+												"title": "Bonds",
+												"symbols": [
+													{
+														"s": "EUREX:FGBL1!",
+														"d": "Euro Bund"
+													},
+													{
+														"s": "EUREX:FBTP1!",
+														"d": "Euro BTP"
+													},
+													{
+														"s": "EUREX:FGBM1!",
+														"d": "Euro BOBL"
+													}
+												],
+												"originalTitle": "Bonds"
+											},
+											{
+												"title": "Forex",
+												"symbols": [
+													{
+														"s": "FX:EURUSD",
+														"d": "EUR to USD"
+													},
+													{
+														"s": "FX:GBPUSD",
+														"d": "GBP to USD"
+													},
+													{
+														"s": "FX:USDJPY",
+														"d": "USD to JPY"
+													},
+													{
+														"s": "FX:USDCHF",
+														"d": "USD to CHF"
+													},
+													{
+														"s": "FX:AUDUSD",
+														"d": "AUD to USD"
+													},
+													{
+														"s": "FX:USDCAD",
+														"d": "USD to CAD"
+													}
+												],
+												"originalTitle": "Forex"
+											}
+										],
+										"height": "550",
+										"showSymbolLogo": true,
+										"showChart": true
+									}
+								}
+							}
+						]
+					},
+					{
+						"header": "Tickers",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"debugMetadata": true,
+								"size": {
+									"xs": 4
+								},
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"contentConfig": {
+											"contentType": "TWWidget",
+											"widgetUrl": "https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js",
+											"widgetOptions": {
+												"symbol": "NASDAQ:AAPL",
+												"autosize": false
+											}
+										}
+									}
+								]
+							},
+							{
+								"debugMetadata": true,
+								"size": {
+									"xs": 4
+								},
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"contentConfig": {
+											"contentType": "TWWidget",
+											"widgetUrl": "https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js",
+											"widgetOptions": {
+												"symbol": "NASDAQ:TSLA",
+												"autosize": false
+											}
+										}
+									}
+								]
+							},
+							{
+								"debugMetadata": true,
+								"size": {
+									"xs": 4
+								},
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"contentConfig": {
+											"contentType": "TWWidget",
+											"widgetUrl": "https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js",
+											"widgetOptions": {
+												"symbol": "NASDAQ:NVDA",
+												"autosize": false
+											}
+										}
+									}
+								]
+							},
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"contentConfig": {
+											"contentType": "TWWidget",
+											"widgetUrl": "https://s3.tradingview.com/external-embedding/embed-widget-tickers.js",
+											"widgetOptions": {
+												"symbols": [
+													{
+														"proName": "NASDAQ:TSLA",
+														"title": "TESLA"
+													},
+													{
+														"proName": "FOREXCOM:SPXUSD",
+														"title": "S&P 500 Index"
+													},
+													{
+														"proName": "FOREXCOM:NSXUSD",
+														"title": "US 100 Cash CFD"
+													},
+													{
+														"proName": "FX_IDC:EURUSD",
+														"title": "EUR to USD"
+													},
+													{
+														"proName": "BITSTAMP:BTCUSD",
+														"title": "Bitcoin"
+													},
+													{
+														"proName": "BITSTAMP:ETHUSD",
+														"title": "Ethereum"
+													}
+												],
+												"showSymbolLogo": true
+											}
+										}
+									}
+								]
+							},
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"contentConfig": {
+											"contentType": "TWWidget",
+											"widgetUrl": "https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js",
+											"widgetOptions": {
+												"symbols": [
+													{
+														"proName": "FOREXCOM:SPXUSD",
+														"title": "S&P 500 Index"
+													},
+													{
+														"proName": "FOREXCOM:NSXUSD",
+														"title": "US 100 Cash CFD"
+													},
+													{
+														"proName": "FX_IDC:EURUSD",
+														"title": "EUR to USD"
+													},
+													{
+														"proName": "BITSTAMP:BTCUSD",
+														"title": "Bitcoin"
+													},
+													{
+														"proName": "BITSTAMP:ETHUSD",
+														"title": "Ethereum"
+													}
+												],
+												"showSymbolLogo": true,
+												"displayMode": "adaptive"
+											}
+										}
+									}
+								]
+							},
+							{
+								"debugMetadata": true,
+								"size": {
+									"xs": 4
+								},
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"contentConfig": {
+											"contentType": "TWWidget",
+											"widgetUrl": "https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js",
+											"widgetOptions": {
+												"symbol": "NASDAQ:AAPL",
+												"autosize": false
+											}
+										}
+									},
+									{
+										"type": "cardContent",
+										"contentConfig": {
+											"contentType": "TWWidget",
+											"widgetUrl": "https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js",
+											"widgetOptions": {
+												"symbol": "NASDAQ:TSLA",
+												"autosize": false
+											}
+										}
+									},
+									{
+										"type": "cardContent",
+										"contentConfig": {
+											"contentType": "TWWidget",
+											"widgetUrl": "https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js",
+											"widgetOptions": {
+												"symbol": "NASDAQ:NVDA",
+												"autosize": false
+											}
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"header": "Screeners",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"debugMetadata": true,
+								"contentConfig": {
+									"contentType": "TWWidget",
+									"widgetUrl": "https://s3.tradingview.com/external-embedding/embed-widget-screener.js",
+									"widgetOptions": {
+										"market": "forex",
+										"showToolbar": true,
+										"defaultColumn": "overview",
+										"defaultScreen": "general",
+										"height": 550
+									}
+								}
+							}
+						]
+					},
+					{
+						"header": "News",
+						"itemSize": {
+							"xs": 4
+						},
+						"items": [
+							{
+								"debugMetadata": true,
+								"contentConfig": {
+									"contentType": "TWWidget",
+									"widgetUrl": "https://s3.tradingview.com/external-embedding/embed-widget-timeline.js",
+									"widgetOptions": {
+										"displayMode": "regular",
+										"feedMode": "all_symbols",
+										"width": 400,
+										"height": 550
+									}
+								}
+							},
+							{
+								"debugMetadata": true,
+								"contentConfig": {
+									"contentType": "TWWidget",
+									"widgetUrl": "https://s3.tradingview.com/external-embedding/embed-widget-events.js",
+									"widgetOptions": {
+										"countryFilter": "ar,au,br,ca,cn,fr,de,in,id,it,jp,kr,mx,ru,sa,za,tr,gb,us,eu",
+										"importanceFilter": "-1,0,1",
+										"height": 550
+									}
+								}
+							}
+						]
+					},
+					{
+						"header": "Symbol Page",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"debugMetadata": true,
+								"contentConfig": {
+									"contentType": "TWWidget",
+									"widgetUrl": "https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js",
+									"widgetOptions": {
+										"symbols": [
+											{
+												"description": "",
+												"proName": "NASDAQ:TSLA"
+											},
+											{
+												"description": "",
+												"proName": "NASDAQ:AAPL"
+											},
+											{
+												"description": "",
+												"proName": "NASDAQ:NVDA"
+											},
+											{
+												"description": "",
+												"proName": "NASDAQ:MSFT"
+											},
+											{
+												"description": "",
+												"proName": "NASDAQ:AMZN"
+											},
+											{
+												"description": "",
+												"proName": "NASDAQ:GOOGL"
+											},
+											{
+												"description": "",
+												"proName": "NASDAQ:META"
+											},
+											{
+												"description": "",
+												"proName": "NYSE:BRK.B"
+											},
+											{
+												"description": "",
+												"proName": "NYSE:LLY"
+											},
+											{
+												"description": "",
+												"proName": "NYSE:UNH"
+											},
+											{
+												"description": "",
+												"proName": "NYSE:V"
+											},
+											{
+												"description": "",
+												"proName": "NYSE:WMT"
+											}
+										],
+										"showSymbolLogo": true,
+										"displayMode": "adaptive",
+										"locale": "en"
+									}
+								}
+							},
+							{
+								"debugMetadata": true,
+								"contentConfig": {
+									"contentType": "TWWidget",
+									"widgetUrl": "https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js",
+									"widgetOptions": {
+										"symbol": "NASDAQ:AAPL",
+										"height": 200
+									}
+								}
+							},
+							{
+								"debugMetadata": true,
+								"contentConfig": {
+									"contentType": "TWWidget",
+									"widgetUrl": "https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js",
+									"widgetOptions": {
+										"autosize": true,
+										"symbol": "NASDAQ:AAPL",
+										"interval": "D",
+										"timezone": "Etc/UTC",
+										"style": "1",
+										"allow_symbol_change": true,
+										"calendar": false
+									}
+								}
+							},
+							{
+								"debugMetadata": true,
+								"contentConfig": {
+									"contentType": "TWWidget",
+									"widgetUrl": "https://s3.tradingview.com/external-embedding/embed-widget-symbol-profile.js",
+									"widgetOptions": {
+										"symbol": "NASDAQ:AAPL",
+										"height": 300
+									}
+								}
+							},
+							{
+								"debugMetadata": true,
+								"contentConfig": {
+									"contentType": "TWWidget",
+									"widgetUrl": "https://s3.tradingview.com/external-embedding/embed-widget-financials.js",
+									"widgetOptions": {
+										"symbol": "NASDAQ:AAPL",
+										"height": 900
+									}
+								}
+							},
+							{
+								"debugMetadata": true,
+								"contentConfig": {
+									"contentType": "TWWidget",
+									"widgetUrl": "https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js",
+									"widgetOptions": {
+										"interval": "15m",
+										"height": 400,
+										"symbol": "NASDAQ:AAPL",
+										"showIntervalTabs": true,
+										"displayMode": "single"
+									}
+								}
+							},
+							{
+								"debugMetadata": true,
+								"contentConfig": {
+									"contentType": "TWWidget",
+									"widgetUrl": "https://s3.tradingview.com/external-embedding/embed-widget-timeline.js",
+									"widgetOptions": {
+										"feedMode": "symbol",
+										"symbol": "NASDAQ:AAPL",
+										"displayMode": "regular",
+										"height": 800
+									}
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		"lwcharts": {
+			"data": {
+				"series": [
+					{
+						"open": 10,
+						"high": 10.63,
+						"low": 9.49,
+						"close": 9.55,
+						"time": 1642427876
+					},
+					{
+						"open": 9.55,
+						"high": 10.3,
+						"low": 9.42,
+						"close": 9.94,
+						"time": 1642514276
+					},
+					{
+						"open": 9.94,
+						"high": 10.17,
+						"low": 9.92,
+						"close": 9.78,
+						"time": 1642600676
+					},
+					{
+						"open": 9.78,
+						"high": 10.59,
+						"low": 9.18,
+						"close": 9.51,
+						"time": 1642687076
+					},
+					{
+						"open": 9.51,
+						"high": 10.46,
+						"low": 9.1,
+						"close": 10.17,
+						"time": 1642773476
+					},
+					{
+						"open": 10.17,
+						"high": 10.96,
+						"low": 10.16,
+						"close": 10.47,
+						"time": 1642859876
+					},
+					{
+						"open": 10.47,
+						"high": 11.39,
+						"low": 10.4,
+						"close": 10.81,
+						"time": 1642946276
+					},
+					{
+						"open": 10.81,
+						"high": 11.6,
+						"low": 10.3,
+						"close": 10.75,
+						"time": 1643032676
+					},
+					{
+						"open": 10.75,
+						"high": 11.6,
+						"low": 10.49,
+						"close": 10.93,
+						"time": 1643119076
+					},
+					{
+						"open": 10.93,
+						"high": 11.53,
+						"low": 10.76,
+						"close": 10.96,
+						"time": 1643205476
+					},
+					{
+						"open": 10.96,
+						"high": 11.9,
+						"low": 10.8,
+						"close": 11.5,
+						"time": 1643291876
+					},
+					{
+						"open": 11.5,
+						"high": 12.0,
+						"low": 11.3,
+						"close": 11.8,
+						"time": 1643378276
+					},
+					{
+						"open": 11.8,
+						"high": 12.2,
+						"low": 11.7,
+						"close": 12.0,
+						"time": 1643464676
+					},
+					{
+						"open": 12.0,
+						"high": 12.5,
+						"low": 11.9,
+						"close": 12.3,
+						"time": 1643551076
+					},
+					{
+						"open": 12.3,
+						"high": 12.8,
+						"low": 12.1,
+						"close": 12.6,
+						"time": 1643637476
+					},
+					{
+						"open": 12.6,
+						"high": 13.0,
+						"low": 12.5,
+						"close": 12.9,
+						"time": 1643723876
+					},
+					{
+						"open": 12.9,
+						"high": 13.5,
+						"low": 12.7,
+						"close": 13.2,
+						"time": 1643810276
+					},
+					{
+						"open": 13.2,
+						"high": 13.7,
+						"low": 13.0,
+						"close": 13.5,
+						"time": 1643896676
+					},
+					{
+						"open": 13.5,
+						"high": 14.0,
+						"low": 13.3,
+						"close": 13.8,
+						"time": 1643983076
+					},
+					{
+						"open": 13.8,
+						"high": 14.2,
+						"low": 13.6,
+						"close": 14.0,
+						"time": 1644069476
+					}
+				],
+				"area": [
+					{
+						"time": "2018-12-22",
+						"value": 32.51
+					},
+					{
+						"time": "2018-12-23",
+						"value": 31.11
+					},
+					{
+						"time": "2018-12-24",
+						"value": 27.02
+					},
+					{
+						"time": "2018-12-25",
+						"value": 27.32
+					},
+					{
+						"time": "2018-12-26",
+						"value": 25.17
+					},
+					{
+						"time": "2018-12-27",
+						"value": 28.89
+					},
+					{
+						"time": "2018-12-28",
+						"value": 25.46
+					},
+					{
+						"time": "2018-12-29",
+						"value": 23.92
+					},
+					{
+						"time": "2018-12-30",
+						"value": 22.68
+					},
+					{
+						"time": "2018-12-31",
+						"value": 22.67
+					}
+				],
+				"histogram": [
+					{
+						"value": 1,
+						"time": 1642425322
+					},
+					{
+						"value": 8,
+						"time": 1642511722
+					},
+					{
+						"value": 10,
+						"time": 1642598122
+					},
+					{
+						"value": 20,
+						"time": 1642684522
+					},
+					{
+						"value": 3,
+						"time": 1642770922,
+						"color": "red"
+					},
+					{
+						"value": 43,
+						"time": 1642857322
+					},
+					{
+						"value": 41,
+						"time": 1642943722,
+						"color": "red"
+					},
+					{
+						"value": 43,
+						"time": 1643030122
+					},
+					{
+						"value": 56,
+						"time": 1643116522
+					},
+					{
+						"value": 46,
+						"time": 1643202922,
+						"color": "red"
+					}
+				],
+				"baseline": [
+					{
+						"value": 1,
+						"time": 1642425322
+					},
+					{
+						"value": 8,
+						"time": 1642511722
+					},
+					{
+						"value": 10,
+						"time": 1642598122
+					},
+					{
+						"value": 20,
+						"time": 1642684522
+					},
+					{
+						"value": 3,
+						"time": 1642770922
+					},
+					{
+						"value": 43,
+						"time": 1642857322
+					},
+					{
+						"value": 41,
+						"time": 1642943722
+					},
+					{
+						"value": 43,
+						"time": 1643030122
+					},
+					{
+						"value": 56,
+						"time": 1643116522
+					},
+					{
+						"value": 46,
+						"time": 1643202922
+					}
+				],
+				"curve": [
+					{
+						"time": 1,
+						"value": 5.378
+					},
+					{
+						"time": 2,
+						"value": 5.372
+					},
+					{
+						"time": 3,
+						"value": 5.271
+					},
+					{
+						"time": 6,
+						"value": 5.094
+					},
+					{
+						"time": 12,
+						"value": 4.739
+					},
+					{
+						"time": 24,
+						"value": 4.237
+					},
+					{
+						"time": 36,
+						"value": 4.036
+					},
+					{
+						"time": 60,
+						"value": 3.887
+					},
+					{
+						"time": 84,
+						"value": 3.921
+					},
+					{
+						"time": 120,
+						"value": 4.007
+					},
+					{
+						"time": 240,
+						"value": 4.366
+					},
+					{
+						"time": 360,
+						"value": 4.29
+					}
+				],
+				"options": [
+					{
+						"time": 0,
+						"value": 0
+					},
+					{
+						"time": 0.25,
+						"value": 0.011999833334166665
+					},
+					{
+						"time": 0.5,
+						"value": 0.02399866669333308
+					},
+					{
+						"time": 0.75,
+						"value": 0.03599550020249566
+					},
+					{
+						"time": 1,
+						"value": 0.04798933418663416
+					},
+					{
+						"time": 1.25,
+						"value": 0.05997916927067833
+					},
+					{
+						"time": 1.5,
+						"value": 0.07196400647944459
+					},
+					{
+						"time": 1.75,
+						"value": 0.08394284733753277
+					},
+					{
+						"time": 2,
+						"value": 0.0959146939691727
+					},
+					{
+						"time": 2.25,
+						"value": 0.10787854919801104
+					},
+					{
+						"time": 2.5,
+						"value": 0.11983341664682816
+					},
+					{
+						"time": 2.75,
+						"value": 0.13177830083717482
+					},
+					{
+						"time": 3,
+						"value": 0.14371220728891937
+					},
+					{
+						"time": 3.25,
+						"value": 0.15563414261969485
+					},
+					{
+						"time": 3.5,
+						"value": 0.1675431146442365
+					},
+					{
+						"time": 3.75,
+						"value": 0.17943813247359922
+					},
+					{
+						"time": 4,
+						"value": 0.19131820661424598
+					},
+					{
+						"time": 4.25,
+						"value": 0.20318234906699603
+					},
+					{
+						"time": 4.5,
+						"value": 0.21502957342582418
+					},
+					{
+						"time": 4.75,
+						"value": 0.22685889497650058
+					},
+					{
+						"time": 5,
+						"value": 0.23866933079506122
+					},
+					{
+						"time": 5.25,
+						"value": 0.25045989984609957
+					},
+					{
+						"time": 5.5,
+						"value": 0.26222962308086933
+					},
+					{
+						"time": 5.75,
+						"value": 0.2739775235351884
+					},
+					{
+						"time": 6,
+						"value": 0.28570262642713457
+					},
+					{
+						"time": 6.25,
+						"value": 0.29740395925452295
+					},
+					{
+						"time": 6.5,
+						"value": 0.3090805518921551
+					},
+					{
+						"time": 6.75,
+						"value": 0.32073143668883114
+					},
+					{
+						"time": 7,
+						"value": 0.33235564856411376
+					},
+					{
+						"time": 7.25,
+						"value": 0.34395222510483553
+					},
+					{
+						"time": 7.5,
+						"value": 0.35552020666133954
+					},
+					{
+						"time": 7.75,
+						"value": 0.3670586364434435
+					},
+					{
+						"time": 8,
+						"value": 0.37856656061611776
+					},
+					{
+						"time": 8.25,
+						"value": 0.3900430283948684
+					},
+					{
+						"time": 8.5,
+						"value": 0.4014870921408144
+					},
+					{
+						"time": 8.75,
+						"value": 0.41289780745545135
+					},
+					{
+						"time": 9,
+						"value": 0.42427423327508995
+					},
+					{
+						"time": 9.25,
+						"value": 0.435615431964962
+					},
+					{
+						"time": 9.5,
+						"value": 0.4469204694129827
+					},
+					{
+						"time": 9.75,
+						"value": 0.45818841512316144
+					},
+					{
+						"time": 10,
+						"value": 0.46941834230865054
+					},
+					{
+						"time": 10.25,
+						"value": 0.4806093279844229
+					},
+					{
+						"time": 10.5,
+						"value": 0.49176045305957017
+					},
+					{
+						"time": 10.75,
+						"value": 0.5028708024292108
+					},
+					{
+						"time": 11,
+						"value": 0.5139394650659996
+					},
+					{
+						"time": 11.25,
+						"value": 0.5249655341112303
+					},
+					{
+						"time": 11.5,
+						"value": 0.5359481069655198
+					},
+					{
+						"time": 11.75,
+						"value": 0.5468862853790682
+					},
+					{
+						"time": 12,
+						"value": 0.5577791755414829
+					},
+					{
+						"time": 12.25,
+						"value": 0.568625888171158
+					},
+					{
+						"time": 12.5,
+						"value": 0.579425538604203
+					},
+					{
+						"time": 12.75,
+						"value": 0.5901772468829075
+					},
+					{
+						"time": 13,
+						"value": 0.6008801378437367
+					},
+					{
+						"time": 13.25,
+						"value": 0.6115333412048469
+					},
+					{
+						"time": 13.5,
+						"value": 0.6221359916531132
+					},
+					{
+						"time": 13.75,
+						"value": 0.6326872289306592
+					},
+					{
+						"time": 14,
+						"value": 0.6431861979208834
+					},
+					{
+						"time": 14.25,
+						"value": 0.6536320487339692
+					},
+					{
+						"time": 14.5,
+						"value": 0.6640239367918735
+					},
+					{
+						"time": 14.75,
+						"value": 0.6743610229127838
+					},
+					{
+						"time": 15,
+						"value": 0.6846424733950354
+					},
+					{
+						"time": 15.25,
+						"value": 0.6948674601004813
+					},
+					{
+						"time": 15.5,
+						"value": 0.7050351605373051
+					},
+					{
+						"time": 15.75,
+						"value": 0.7151447579422695
+					},
+					{
+						"time": 16,
+						"value": 0.7251954413623921
+					},
+					{
+						"time": 16.25,
+						"value": 0.7351864057360395
+					},
+					{
+						"time": 16.5,
+						"value": 0.7451168519734338
+					},
+					{
+						"time": 16.75,
+						"value": 0.7549859870365597
+					},
+					{
+						"time": 17,
+						"value": 0.7647930240184686
+					},
+					{
+						"time": 17.25,
+						"value": 0.7745371822219679
+					},
+					{
+						"time": 17.5,
+						"value": 0.784217687237691
+					},
+					{
+						"time": 17.75,
+						"value": 0.7938337710215366
+					},
+					{
+						"time": 18,
+						"value": 0.8033846719714731
+					},
+					{
+						"time": 18.25,
+						"value": 0.8128696350036979
+					},
+					{
+						"time": 18.5,
+						"value": 0.8222879116281451
+					},
+					{
+						"time": 18.75,
+						"value": 0.8316387600233341
+					},
+					{
+						"time": 19,
+						"value": 0.8409214451105513
+					},
+					{
+						"time": 19.25,
+						"value": 0.8501352386273567
+					},
+					{
+						"time": 19.5,
+						"value": 0.8592794192004103
+					},
+					{
+						"time": 19.75,
+						"value": 0.8683532724176078
+					},
+					{
+						"time": 20,
+						"value": 0.8773560908995228
+					},
+					{
+						"time": 20.25,
+						"value": 0.8862871743701426
+					},
+					{
+						"time": 20.5,
+						"value": 0.8951458297268958
+					},
+					{
+						"time": 20.75,
+						"value": 0.9039313711099627
+					},
+					{
+						"time": 21,
+						"value": 0.9126431199708593
+					},
+					{
+						"time": 21.25,
+						"value": 0.9212804051402927
+					},
+					{
+						"time": 21.5,
+						"value": 0.9298425628952769
+					},
+					{
+						"time": 21.75,
+						"value": 0.938328937025505
+					},
+					{
+						"time": 22,
+						"value": 0.9467388788989692
+					},
+					{
+						"time": 22.25,
+						"value": 0.9550717475268238
+					},
+					{
+						"time": 22.5,
+						"value": 0.9633269096274835
+					},
+					{
+						"time": 22.75,
+						"value": 0.9715037396899504
+					},
+					{
+						"time": 23,
+						"value": 0.979601620036366
+					},
+					{
+						"time": 23.25,
+						"value": 0.9876199408837771
+					},
+					{
+						"time": 23.5,
+						"value": 0.9955581004051142
+					},
+					{
+						"time": 23.75,
+						"value": 1.0034155047893738
+					},
+					{
+						"time": 24,
+						"value": 1.0111915683009982
+					},
+					{
+						"time": 24.25,
+						"value": 1.0188857133384501
+					},
+					{
+						"time": 24.5,
+						"value": 1.0264973704919704
+					},
+					{
+						"time": 24.75,
+						"value": 1.0340259786005206
+					}
+				]
+			},
+			"config": {
+				"childComponent": "DisplayCardsWithSelector",
+				"selector": {
+					"type": "SelectorTabs"
+				},
+				"debugMetadata": true,
+				"header": "Lightweight Charts",
+				"groups": [
+					{
+						"header": "Area",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"subheader": "This series is represented with a colored area between the time scale and line connecting all data points"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "area",
+										"contentConfig": {
+											"contentType": "LWChart",
+											"chartType": "AreaSeries",
+											"chartStyleOptions": {
+												"lineColor": "#2962FF",
+												"topColor": "#2962FF",
+												"bottomColor": "rgba(41, 98, 255, 0.28)"
+											},
+											"chartOptions": {
+												"height": 500
+											}
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"header": "Bar",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"subheader": "This series illustrates price movements with vertical bars. The length of each bar corresponds to the range between the highest and lowest price values. Open and close values are represented with the tick marks on the left and right side of the bar, respectively"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "series",
+										"contentConfig": {
+											"contentType": "LWChart",
+											"chartType": "BarSeries",
+											"chartStyleOptions": {
+												"upColor": "#26a69a",
+												"downColor": "#ef5350"
+											},
+											"chartOptions": {
+												"height": 500
+											}
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"header": "Baseline",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"subheader": "This series is represented with two colored areas between the the base value line and line connecting all data points"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "baseline",
+										"contentConfig": {
+											"contentType": "LWChart",
+											"chartType": "baseline",
+											"chartStyleOptions": {
+												"baseValue": {
+													"type": "price",
+													"price": 25
+												},
+												"topLineColor": "rgba( 38, 166, 154, 1)",
+												"topFillColor1": "rgba( 38, 166, 154, 0.28)",
+												"topFillColor2: \"rgba( 38, 166, 154, 0.05)\"": "rgba( 38, 166, 154, 0.05)",
+												"bottomLineColor": "rgba( 239, 83, 80, 1)",
+												"bottomFillColor1": "rgba( 239, 83, 80, 0.05)",
+												"bottomFillColor2": "rgba( 239, 83, 80, 0.28)"
+											},
+											"chartOptions": {
+												"height": 500
+											}
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"header": "Candlestick",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"subheader": "This series illustrates price movements with candlesticks. The solid body of each candlestick represents the open and close values for the time period. Vertical lines, known as wicks, above and below the candle body represent the high and low values, respectively"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "series",
+										"contentConfig": {
+											"contentType": "LWChart",
+											"chartType": "candlestick",
+											"chartStyleOptions": {
+												"upColor": "#26a69a",
+												"downColor": "#ef5350",
+												"borderVisible": false,
+												"wickUpColor": "#26a69a",
+												"wickDownColor": "#ef5350"
+											},
+											"chartOptions": {
+												"height": 500
+											}
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"header": "Histogram",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"subheader": "This series illustrates the distribution of values with columns"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "histogram",
+										"contentConfig": {
+											"contentType": "LWChart",
+											"chartType": "histogram",
+											"chartStyleOptions": {
+												"color": "#26a69a"
+											},
+											"chartOptions": {
+												"height": 500
+											}
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"header": "Line",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"subheader": "This series is represented with a set of data points connected by straight line segments"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "histogram",
+										"debugMetadata": true,
+										"contentConfig": {
+											"contentType": "LWChart",
+											"chartType": "LineSeries",
+											"chartStyleOptions": {
+												"color": "#2962FF"
+											},
+											"chartOptions": {
+												"height": 500
+											}
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"header": "Yield Curve Chart",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"subheader": "The yield curve chart is specifically designed for displaying yield curves, common in financial analysis."
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "curve",
+										"debugMetadata": true,
+										"contentConfig": {
+											"contentType": "LWYieldChart",
+											"chartStyleOptions": {
+												"color": "#2962FF"
+											},
+											"chartOptions": {
+												"height": 500,
+												"yieldCurve": {
+													"baseResolution": 1,
+													"minimumTimeRange": 10,
+													"startTimeRange": 3
+												},
+												"handleScroll": false,
+												"handleScale": false
+											}
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"header": "Options Chart",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"defaults": {
+											"subheader": "The options chart is a specialized type that uses price values on the horizontal scale instead of time."
+										},
+										"type": "cardHeader"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "options",
+										"debugMetadata": true,
+										"contentConfig": {
+											"contentType": "LWOptionsChart",
+											"chartStyleOptions": {
+												"color": "#2962FF"
+											},
+											"chartOptions": {
+												"height": 500
+											}
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		"data": {
+			"dataPath": {
+				"path": "media",
+				"filter": [
+					{
+						"limit": 4,
+						"disable": false
+					}
+				]
+			},
+			"config": {
+				"childComponent": "DisplayData",
+				"debugMetadata": true,
+				"groups": [
+					{
+						"header": "Media List",
+						"itemDefaults": {
+							"cardType": "actionCard",
+							"cardActionUrl": "data/${id}",
+							"cardProps": {
+								"raised": true,
+								"square": false,
+								"variant": "elevation",
+								"elevation": 4
+							},
+							"cardConfig": [
+								{
+									"type": "cardMedia",
+									"dataKey": "media",
+									"defaults": {
+										"component": "img",
+										"height": "200"
+									}
+								},
+								{
+									"type": "cardHeader",
+									"dataKey": "header",
+									"defaults": {
+										"avatar": "W",
+										"title": "title",
+										"subheader": "test subheader",
+										"disableTypography": false
+									}
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		"data_2": {
+			"dataPath": {
+				"path": "media/${id}"
+			},
+			"config": {
+				"debugMetadata": true,
+				"prefix": "media",
+				"childComponent": "DisplayCards",
+				"groups": [
+					{
+						"header": "Media item",
+						"itemSize": {
+							"xs": 12
+						},
+						"itemDefaults": {
+							"cardProps": {
+								"raised": true,
+								"square": false,
+								"variant": "elevation",
+								"elevation": 4
+							}
+						},
+						"items": [
+							{
+								"cardConfig": [
+									{
+										"type": "cardMedia",
+										"dataKey": "media",
+										"defaults": {
+											"component": "img",
+											"height": "500"
+										}
+									},
+									{
+										"type": "cardHeader",
+										"dataKey": "header",
+										"defaults": {
+											"avatar": "W",
+											"title": "title",
+											"subheader": "test subheader",
+											"disableTypography": false
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		"jsonviewer": {
+			"data": {
+				"dummy": {
+					"metric": 100
+				}
+			},
+			"config": {
+				"childComponent": "DisplayCards",
+				"groups": [
+					{
+						"header": "JSON Viewer",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"contentConfig": {
+									"contentType": "JsonViewer"
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		"tableselector1": {
+			"debugMetadata": true,
+			"config": {
+				"childComponent": "TableSelector",
+				"tableSelector": {
+					"type": "Table",
+					"dataKey": "Outliers_users",
+					"contentConfig": {
+						"colorRules": {
+							"threshold5": [
+								{
+									"condition": {
+										"and": [
+											{
+												">": [
+													{
+														"var": "value"
+													},
+													1000
+												]
+											}
+										]
+									},
+									"result": "blue"
+								},
+								{
+									"condition": {
+										"and: [ { \"<\": [ { \"var\": \"value\" }, 0 ] } ]": [
+											{
+												"<": [
+													{
+														"var": "value"
+													},
+													0
+												]
+											}
+										]
+									},
+									"result": "redish"
+								}
+							],
+							"threshold_percent": [
+								{
+									"condition": {
+										"and": [
+											{
+												">": [
+													{
+														"var": "value"
+													},
+													0
+												]
+											},
+											{
+												"<": [
+													{
+														"var": "value"
+													},
+													0.5
+												]
+											}
+										]
+									},
+									"result": "redish"
+								}
+							]
+						},
+						"colorStyles": {
+							"blue": {
+								"color": "blue"
+							},
+							"green": {
+								"color": "limegreen"
+							},
+							"redish": {
+								"color": "orangered"
+							}
+						},
+						"columns": [
+							"index",
+							"Time",
+							"Profit",
+							"trades",
+							"VolumeClosed",
+							"Exp_per_trade"
+						],
+						"columnsColorRules": {
+							"Exp_per_trade": "threshold5",
+							"Profit": "threshold5",
+							"VolumeClosed": "threshold_percent"
+						},
+						"contentType": "TableContent",
+						"dataFormatters": {
+							"Exp_per_trade": "currency",
+							"PnL_Realised": "currency",
+							"Profit": "currency",
+							"VolumeClosed": "number",
+							"trades": "number"
+						},
+						"formatters": {
+							"currencyEUR": {
+								"currency": "USD",
+								"maximumFractionDigits": 2,
+								"style": "currency"
+							},
+							"number": {
+								"compactDisplay": "short",
+								"notation": "compact"
+							},
+							"percent": {
+								"maximumFractionDigits": 2,
+								"style": "percent"
+							}
+						},
+						"headerTitles": {
+							"Exp_per_trade": "Expectation per trade ",
+							"PnL_norm": "Normalised PnL",
+							"Profit_norm": "Normalised Profit",
+							"index": " Login  ",
+							"trades": "Number of Trades"
+						},
+						"height": 500,
+						"indexColumnHeader": "",
+						"showIndexAsColumn": false,
+						"size": "small",
+						"stickyColumn": false,
+						"stickyHeader": true,
+						"cardActionIdKey": "index"
+					}
+				},
+				"groups": [
+					{
+						"header": " ",
+						"items": [
+							{
+								"dataKey": "user",
+								"notation": "compact",
+								"sub": "User Login",
+								"subcolor": "deepskyblue",
+								"title": ""
+							},
+							{
+								"size": {
+									"xs": 8
+								},
+								"dataKey": "group_user",
+								"notation": "compact",
+								"sub": "User Group",
+								"title": ""
+							}
+						]
+					},
+					{
+						"header": " ",
+						"items": [
+							{
+								"dataKey": "current_Time",
+								"notation": "compact",
+								"title": "Current Time"
+							},
+							{
+								"dataKey": "Registration",
+								"notation": "compact",
+								"title": "Registration Date"
+							},
+							{
+								"dataKey": "Initial Deposit",
+								"format": {
+									"currency": "USD",
+									"currencyDisplay": "symbol",
+									"currencySign": "accounting",
+									"maximumFractionDigits": 0,
+									"notation": "compact",
+									"style": "currency"
+								},
+								"notation: \"compact\"": "compact",
+								"title": "Initial Deposit"
+							}
+						]
+					},
+					{
+						"header": " ",
+						"items": [
+							{
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "Status "
+										},
+										"type": "cardHeader"
+									},
+									{
+										"contentConfig": {
+											"colorRules": {
+												"threshold5": [
+													{
+														"condition": {
+															"and": [
+																{
+																	">": [
+																		{
+																			"var": "value"
+																		},
+																		50000
+																	]
+																}
+															]
+														},
+														"result": "blue"
+													},
+													{
+														"condition": {
+															"and": [
+																{
+																	"<": [
+																		{
+																			"var": "value"
+																		},
+																		0
+																	]
+																}
+															]
+														},
+														"result": "redish"
+													}
+												]
+											},
+											"colorStyles": {
+												"blue": {
+													"color": "deepskyblue"
+												},
+												"green": {
+													"color": "limegreen"
+												},
+												"redish": {
+													"color": "orangered"
+												}
+											},
+											"columns": [
+												"index",
+												"Current State"
+											],
+											"columnsColorRules": {
+												"Current State": "threshold5"
+											},
+											"contentType": "TableContent",
+											"dataFormatters": {
+												"Balance": "currency",
+												"BalancePrevDay": "currency",
+												"Current State": "currency",
+												"Leverage": "number"
+											},
+											"formatters": {
+												"currencyEUR": {
+													"currency": "USD",
+													"maximumFractionDigits": 2,
+													"style": "currency"
+												},
+												"number": {
+													"compactDisplay": "short",
+													"notation": "compact"
+												}
+											},
+											"headerTitles": {
+												"index": "   "
+											},
+											"height": 500,
+											"indexColumnHeader": "  ",
+											"showIndexAsColumn": false,
+											"size": "small",
+											"stickyColumn": true,
+											"stickyHeader": true
+										},
+										"dataKey": "currentstats_user1",
+										"type": "cardContent"
+									}
+								],
+								"tableConfig": {}
+							}
+						]
+					}
+				]
+			}
+		},
+		"demoautomap": {
+			"config": {
+				"childComponent": "DisplayCards",
+				"groups": [
+					{
+						"header": "Charts Automapping",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"title": "Automapping with no config",
+								"debugMetadata": true,
+								"dataKey": "metrics",
+								"contentConfig": {
+									"chartType": "Line",
+									"chartAutoMap": true
+								}
+							},
+							{
+								"title": "Automapping with config",
+								"debugMetadata": true,
+								"dataKey": "metrics",
+								"contentConfig": {
+									"chartType": "Line",
+									"chartAutoMap": true,
+									"defaultOptions": {
+										"showMark": false
+									},
+									"labels": {
+										"USDJPY": "usdjpy"
+									}
+								},
+								"chartOptions": {
+									"xAxis": [
+										{
+											"scaleType": "point",
+											"dataKey": "ts"
+										}
+									],
+									"series": [
+										{
+											"dataKey": "XAUUSD",
+											"showMark": true
+										}
+									]
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		"cards": {
+			"dataPath": {
+				"path": "dashboard/navigation/demo/data"
+			},
+			"config": {
+				"childComponent": "DisplayCards",
+				"selector": {
+					"type": "SelectorTabs"
+				},
+				"header": "Cards",
+				"debugMetadata": false,
+				"groupDefaults": {
+					"hideHeader": true
+				},
+				"groups": [
+					{
+						"header": "Stats Cards",
+						"itemDefaults": {
+							"format": {
+								"style": "currency",
+								"currency": "USD",
+								"currencyDisplay": "symbol",
+								"currencySign": "accounting",
+								"maximumFractionDigits": 0,
+								"notation": "compact"
+							}
+						},
+						"items": [
+							{
+								"type": "cardContent",
+								"contentConfig": {
+									"contentType": "StatContent"
+								},
+								"title": "P&L",
+								"dataKey": "pnl",
+								"sub": "vs. last session",
+								"subVariant": "TrendSub",
+								"trendFormat": {
+									"style": "percent"
+								}
+							},
+							{
+								"contentType": "StatContent",
+								"title": "P&L",
+								"dataKey": "pnl",
+								"showChip": true,
+								"sub": "P&L for the current session",
+								"trendUpper": 0.3,
+								"trendLower": -0.3
+							},
+							{
+								"contentType": "StatContent",
+								"title": "P&L",
+								"dataKey": "pnl",
+								"sub": "${value} vs. last session",
+								"subVariant": "ValueSub"
+							}
+						]
+					},
+					{
+						"header": "SparkLine",
+						"itemDefaults": {
+							"debugMetadata": true,
+							"contentConfig": {
+								"chartType": "SparkLine"
+							}
+						},
+						"items": [
+							{
+								"title": "P&L",
+								"sub": "vs. last session",
+								"dataKey": "pnl",
+								"subVariant": "TrendSub",
+								"format": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 0
+								},
+								"trendFormat": {
+									"style": "percent"
+								},
+								"chartOptions": {
+									"height": 50,
+									"area": false,
+									"showHighlight": true,
+									"showTooltip": true,
+									"curve": "natural",
+									"yAxis": {
+										"min": 100,
+										"max": 110
+									}
+								}
+							},
+							{
+								"cardType": "StatCard",
+								"title": "P&L",
+								"showChip": true,
+								"sub": "P&L for the current session",
+								"trendUpper": 0.3,
+								"trendLower": -0.3,
+								"dataKey": "pnl",
+								"format": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 2
+								},
+								"chartOptions": {
+									"height": 50,
+									"plotType": "bar",
+									"area": true,
+									"showHighlight": true,
+									"showTooltip": true
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		"muicharts": {
+			"dataPath": {
+				"path": "dashboard/navigation/demo"
+			},
+			"config": {
+				"childComponent": "DisplayCardsWithSelector",
+				"selector": {
+					"type": "SelectorTabs"
+				},
+				"header": "Labels and Charts",
+				"debugMetadata": true,
+				"groups": [
+					{
+						"header": "Labels",
+						"itemDefaults": {
+							"format": {
+								"style": "currency",
+								"currency": "USD",
+								"currencyDisplay": "symbol",
+								"currencySign": "accounting",
+								"maximumFractionDigits": 0,
+								"notation": "compact"
+							}
+						},
+						"items": [
+							{
+								"title": "P&L",
+								"dataKey": "pnl",
+								"sub": "vs. last session",
+								"subVariant": "TrendSub",
+								"trendFormat": {
+									"style": "percent"
+								}
+							},
+							{
+								"title": "P&L",
+								"dataKey": "pnl",
+								"showChip": true,
+								"sub": "P&L for the current session",
+								"trendUpper": 0.3,
+								"trendLower": -0.3
+							},
+							{
+								"title": "P&L",
+								"dataKey": "pnl",
+								"sub": "${value} vs. last session",
+								"subVariant": "ValueSub"
+							}
+						]
+					},
+					{
+						"header": "Charts: Bars",
+						"itemDefaults": {
+							"debugMetadata": true,
+							"contentConfig": {
+								"chartType": "Bar"
+							}
+						},
+						"items": [
+							{
+								"title": "P&L",
+								"sub": "vs. last session",
+								"dataKey": "pnl",
+								"subVariant": "TrendSub",
+								"format": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 0
+								},
+								"trendFormat": {
+									"style": "percent"
+								}
+							},
+							{
+								"title": "P&L",
+								"showChip": true,
+								"sub": "P&L for the current session",
+								"trendUpper": 0.3,
+								"trendLower": -0.3,
+								"dataKey": "pnl",
+								"format": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 2
+								},
+								"chartOptions": {
+									"barLabel": "value",
+									"borderRadius": 10,
+									"series": [
+										{
+											"label": "last session",
+											"dataKey": "v0"
+										},
+										{
+											"label": "current session",
+											"dataKey": "v"
+										}
+									]
+								}
+							},
+							{
+								"title": "P&L",
+								"hideMetric": true,
+								"dataKey": "pnl",
+								"chartOptions": {
+									"disableAxisListener": true,
+									"slotProps": {
+										"legend": {
+											"hidden": true
+										}
+									},
+									"barLabel": "value",
+									"series": [
+										{
+											"label": "last session",
+											"dataKey": "v0",
+											"stack": "stack1"
+										},
+										{
+											"label": "current session",
+											"dataKey": "v",
+											"stack": "stack1"
+										}
+									],
+									"xAxis": [
+										{
+											"scaleType": "band",
+											"dataKey": "ts",
+											"label": "Hours"
+										}
+									],
+									"yAxis": [
+										{
+											"label": "P&L"
+										}
+									]
+								}
+							},
+							{
+								"title": "P&L",
+								"hideMetric": true,
+								"dataKey": "pnl",
+								"chartOptions": {
+									"axisHighlight": {
+										"x": "line",
+										"y": "band"
+									},
+									"layout": "horizontal",
+									"grid": {
+										"vertical": true
+									},
+									"yAxis": [
+										{
+											"scaleType": "band",
+											"dataKey": "ts",
+											"label": "Hours"
+										}
+									],
+									"series": [
+										{
+											"label": "last session",
+											"dataKey": "v0"
+										},
+										{
+											"label": "current session",
+											"dataKey": "v"
+										}
+									],
+									"xAxis": [
+										{
+											"label": "P&L"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"header": "Charts: Line",
+						"itemDefaults": {
+							"debugMetadata": true,
+							"contentConfig": {
+								"chartType": "Line"
+							}
+						},
+						"items": [
+							{
+								"title": "P&L",
+								"sub": "vs. last session",
+								"dataKey": "pnl",
+								"subVariant": "TrendSub",
+								"format": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 0
+								},
+								"trendFormat": {
+									"style": "percent"
+								}
+							},
+							{
+								"title": "P&L",
+								"showChip": true,
+								"sub": "P&L for the current session",
+								"trendUpper": 0.3,
+								"trendLower": -0.3,
+								"dataKey": "pnl",
+								"format": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 2
+								},
+								"chartOptions": {
+									"legend": {
+										"hidden": true
+									},
+									"yAxis": [
+										{
+											"label": "P&L"
+										}
+									],
+									"series": [
+										{
+											"label": "last session",
+											"dataKey": "v0"
+										},
+										{
+											"label": "current session",
+											"dataKey": "v"
+										}
+									]
+								}
+							},
+							{
+								"title": "P&L",
+								"hideMetric": true,
+								"dataKey": "pnl",
+								"chartOptions": {
+									"legend": {
+										"hidden": true
+									},
+									"yAxis": [
+										{
+											"label": "P&L"
+										}
+									],
+									"xAxis": [
+										{
+											"scaleType": "line",
+											"dataKey": "ts",
+											"label": "Hours"
+										}
+									],
+									"series": [
+										{
+											"label": "last session",
+											"dataKey": "v0",
+											"stack": "pnl",
+											"area": true,
+											"stackOffset": "none"
+										},
+										{
+											"label": "current session",
+											"dataKey": "v",
+											"stack": "pnl",
+											"area": true,
+											"stackOffset": "none"
+										}
+									]
+								}
+							},
+							{
+								"title": "P&L",
+								"hideMetric": true,
+								"dataKey": "pnl"
+							}
+						]
+					},
+					{
+						"header": "Charts: Pie",
+						"itemDefaults": {
+							"debugMetadata": true,
+							"contentConfig": {
+								"chartType": "Pie"
+							}
+						},
+						"items": [
+							{
+								"title": "Reason",
+								"dataKey": "pnl",
+								"chartOptions": {
+									"series": [
+										{
+											"data": [
+												{
+													"dataKey": "v",
+													"label": "Mobile",
+													"color": "orange"
+												},
+												{
+													"dataKey": "v0",
+													"label": "Expert"
+												}
+											]
+										}
+									]
+								}
+							},
+							{
+								"title": "P&L",
+								"sub": "vs. last session",
+								"dataKey": "pnl",
+								"subVariant": "TrendSub",
+								"format": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 0
+								},
+								"trendFormat": {
+									"style": "percent"
+								},
+								"chartOptions": {
+									"series": [
+										{
+											"innerRadius": 20,
+											"arcLabelMinAngle": 20,
+											"data": [
+												{
+													"dataKey": "v",
+													"label": "Current session",
+													"color": "orange"
+												},
+												{
+													"dataKey": "v0",
+													"label": "Last session"
+												}
+											]
+										}
+									]
+								}
+							},
+							{
+								"title": "P&L",
+								"showChip": true,
+								"sub": "P&L for the current session",
+								"trendUpper": 0.3,
+								"trendLower": -0.3,
+								"dataKey": "pnl",
+								"format": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 2
+								},
+								"chartOptions": {
+									"hideLegend": true,
+									"series": [
+										{
+											"innerRadius": 0,
+											"outerRadius": 80,
+											"id": "hour-0",
+											"data": [
+												{
+													"dataKey": "v",
+													"label": "Current session",
+													"color": "orange"
+												},
+												{
+													"dataKey": "v0",
+													"label": "Last session"
+												}
+											]
+										},
+										{
+											"innerRadius": 100,
+											"outerRadius": 120,
+											"id": "hour-1",
+											"data": [
+												{
+													"dataKey": "v",
+													"label": "Current session",
+													"color": "red"
+												},
+												{
+													"dataKey": "v0",
+													"label": "Last session",
+													"color": "green"
+												}
+											]
+										}
+									]
+								}
+							},
+							{
+								"title": "P&L",
+								"hideMetric": true,
+								"dataKey": "pnl",
+								"chartOptions": {
+									"series": [
+										{
+											"highlightScope": {
+												"fade": "global",
+												"highlight": "item"
+											},
+											"faded": {
+												"innerRadius": 30,
+												"additionalRadius": -30,
+												"color": "gray"
+											},
+											"data": [
+												{
+													"dataKey": "v",
+													"label": "Current session"
+												},
+												{
+													"dataKey": "v0",
+													"label": "Last session"
+												}
+											]
+										}
+									]
+								}
+							},
+							{
+								"title": "P&L",
+								"hideMetric": true,
+								"dataKey": "pnl",
+								"chartOptions": {
+									"centerlabel": "P&L",
+									"skipAnimation": true,
+									"series": [
+										{
+											"paddingAngle": 5,
+											"innerRadius": 60,
+											"outerRadius": 80,
+											"data": [
+												{
+													"dataKey": "v",
+													"label": "Current session"
+												},
+												{
+													"dataKey": "v0",
+													"label": "Last session"
+												},
+												{
+													"dataKey": "v",
+													"label": "Current session"
+												},
+												{
+													"dataKey": "v0",
+													"label": "Last session"
+												}
+											]
+										}
+									]
+								}
+							},
+							{
+								"title": "P&L",
+								"hideMetric": true,
+								"dataKey": "pnl",
+								"chartOptions": {
+									"skipAnimation": true,
+									"series": [
+										{
+											"startAngle": -90,
+											"endAngle": 90,
+											"data": [
+												{
+													"dataKey": "v",
+													"label": "Current session"
+												},
+												{
+													"dataKey": "v0",
+													"label": "Last session"
+												},
+												{
+													"dataKey": "v",
+													"label": "Current session"
+												},
+												{
+													"dataKey": "v0",
+													"label": "Last session"
+												}
+											]
+										}
+									]
+								}
+							},
+							{
+								"title": "P&L",
+								"hideMetric": true,
+								"dataKey": "pnl",
+								"chartOptions": {
+									"height": 300,
+									"hideLegend": true,
+									"skipAnimation": true,
+									"series": [
+										{
+											"outerRadius": 80,
+											"data": [
+												{
+													"dataKey": "v",
+													"label": "Current session"
+												},
+												{
+													"dataKey": "v0",
+													"label": "Last session"
+												},
+												{
+													"dataKey": "v",
+													"label": "Current session"
+												},
+												{
+													"dataKey": "v0",
+													"label": "Last session"
+												}
+											]
+										},
+										{
+											"cx": 250,
+											"cy": 200,
+											"innerRadius": 40,
+											"outerRadius": 80,
+											"data": [
+												{
+													"dataKey": "v",
+													"label": "Current session"
+												},
+												{
+													"dataKey": "v0",
+													"label": "Last session"
+												},
+												{
+													"dataKey": "v",
+													"label": "Current session"
+												},
+												{
+													"dataKey": "v0",
+													"label": "Last session"
+												}
+											]
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"header": "Charts: SparkLine",
+						"itemDefaults": {
+							"debugMetadata": true,
+							"contentConfig": {
+								"chartType": "SparkLine"
+							}
+						},
+						"items": [
+							{
+								"title": "P&L",
+								"sub": "vs. last session",
+								"dataKey": "pnl",
+								"subVariant": "TrendSub",
+								"format": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 0
+								},
+								"trendFormat": {
+									"style": "percent"
+								},
+								"chartOptions": {
+									"height": 50,
+									"area": false,
+									"showHighlight": true,
+									"showTooltip": true,
+									"curve": "natural",
+									"yAxis": {
+										"min": 100,
+										"max": 110
+									}
+								}
+							},
+							{
+								"cardType": "StatCard",
+								"title": "P&L",
+								"showChip": true,
+								"sub": "P&L for the current session",
+								"trendUpper": 0.3,
+								"trendLower": -0.3,
+								"dataKey": "pnl",
+								"format": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 2
+								},
+								"chartOptions": {
+									"height": 50,
+									"plotType": "bar",
+									"area": true,
+									"showHighlight": true,
+									"showTooltip": true
+								}
+							}
+						]
+					},
+					{
+						"header": "Charts: Scatter",
+						"itemDefaults": {
+							"debugMetadata": true,
+							"contentConfig": {
+								"chartType": "Scatter"
+							}
+						},
+						"items": [
+							{
+								"title": "P&L",
+								"sub": "vs. last session",
+								"dataKey": "pnl",
+								"subVariant": "TrendSub",
+								"format": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 0
+								},
+								"trendFormat": {
+									"style": "percent"
+								},
+								"chartOptions": {
+									"yAxis": [
+										{
+											"label": "P&L"
+										}
+									],
+									"series": [
+										{
+											"datasetKeys": {
+												"id": "ts",
+												"x": "ts",
+												"y": "v"
+											},
+											"label": "Current sesssion"
+										},
+										{
+											"datasetKeys": {
+												"id": "ts",
+												"x": "ts",
+												"y": "v0"
+											},
+											"label": "Last Session"
+										}
+									]
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		"tables": {
+			"dataPath": {
+				"path": "demo/mt5matrix"
+			},
+			"config": {
+				"childComponent": "DisplayCards",
+				"selector": {
+					"type": "SelectorTabs"
+				},
+				"header": "Table and Datagrid",
+				"isFullSize": true,
+				"debugMetadata": true,
+				"groups": [
+					{
+						"header": "Basic Table",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "Basic Table with Optinal Sticky Header and Column",
+											"subheader": "includes conditional color styling based on the cell value"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"contentConfig": {
+											"colorRules": {
+												"default": [
+													{
+														"condition": {
+															"<": [
+																{
+																	"var": "value"
+																},
+																0
+															]
+														},
+														"result": "red"
+													},
+													{
+														"condition": {
+															">": [
+																{
+																	"var": "value"
+																},
+																0
+															]
+														},
+														"result": "green"
+													},
+													{
+														"condition": {
+															"==": [
+																{
+																	"var": "value"
+																},
+																0
+															]
+														},
+														"result": "zero"
+													}
+												],
+												"threshold500": [
+													{
+														"condition": {
+															"and": [
+																{
+																	">": [
+																		{
+																			"var": "value"
+																		},
+																		500
+																	]
+																},
+																{
+																	"<": [
+																		{
+																			"var": "value"
+																		},
+																		1000
+																	]
+																}
+															]
+														},
+														"result": "blue"
+													}
+												],
+												"string": [
+													{
+														"condition": {
+															"in": [
+																"94",
+																{
+																	"var": "value"
+																}
+															]
+														},
+														"result": "red"
+													}
+												]
+											},
+											"colorStyles": {
+												"blue": {
+													"background": "blue",
+													"color": "white"
+												},
+												"zero": {
+													"background": "orange",
+													"color": "white"
+												}
+											},
+											"columns": [
+												"Login",
+												"TotalPnL",
+												"RealisedPnL",
+												"Floating_PnL",
+												"Balance",
+												"balance_value",
+												"EquityPrevDay",
+												"BalancePrevDay",
+												"dollar_win_trades",
+												"dollar_lost_trades",
+												"Credit",
+												"credit_value",
+												"dollar_winning_Open_positions",
+												"dollar_loosing_Open_positions",
+												"Prof_Fac_Total"
+											],
+											"columnsColorRules": {
+												"Login": "string",
+												"Balance": "default",
+												"BalancePrevDay": "default",
+												"Floating_PnL": "default",
+												"RealisedPnL": "threshold500",
+												"TotalPnL": [
+													"threshold500",
+													"default"
+												]
+											},
+											"contentType": "TableContent",
+											"dataFormatters": {
+												"Balance": "currency",
+												"BalancePrevDay": "currency2",
+												"Commission": "currency2",
+												"Credit": "currency",
+												"EquityPrevDay": "currency2",
+												"Floating_PnL": "currency",
+												"Floating_net_PnL": "currency",
+												"Prof_Fac_Total": "number",
+												"RealisedPnL": "currency",
+												"Realised_Net_PnL": "currency",
+												"TotalPnL": "currencyEUR",
+												"Total_net_PnL": "currency",
+												"balance_value": "currency2",
+												"credit_value": "currency",
+												"dollar_loosing_Open_positions": "currency",
+												"dollar_lost_trades": "currency",
+												"dollar_win_trades": "currency",
+												"dollar_winning_Open_positions": "currency"
+											},
+											"formatters": {
+												"currencyEUR": {
+													"currency": "USD",
+													"maximumFractionDigits": 2,
+													"style": "currency"
+												},
+												"number": {
+													"compactDisplay": "short",
+													"notation": "compact"
+												}
+											},
+											"headerTitles": {
+												"BalancePrevDay": "Balance Prev Day",
+												"EquityPrevDay": "Equity Prev Day",
+												"RealisedPnL": "Realised PnL",
+												"TotalPnL": "Total PnL",
+												"Total_net_PnL": "Total Net PnL",
+												"rank7days_average": "Rank 7days Avg",
+												"rank_current": "Rank"
+											},
+											"height": 500,
+											"indexColumnHeader": "Rating",
+											"showIndexAsColumn": true,
+											"size": "small",
+											"stickyColumn": true,
+											"stickyHeader": true
+										},
+										"dataKey": "15_top_Performers_matrix_pnl1",
+										"type": "cardContent"
+									}
+								],
+								"debugMetadata": true
+							}
+						]
+					},
+					{
+						"header": "Datagrid",
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "DataGrid",
+											"subheader": "for displaying large amount of data"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"contentConfig": {
+											"colorRules": {
+												"default": [
+													{
+														"condition": {
+															"<": [
+																{
+																	"var": "value"
+																},
+																0
+															]
+														},
+														"result": "red"
+													},
+													{
+														"condition": {
+															">": [
+																{
+																	"var": "value"
+																},
+																0
+															]
+														},
+														"result": "green"
+													},
+													{
+														"condition": {
+															"==": [
+																{
+																	"var": "value"
+																},
+																0
+															]
+														},
+														"result": "zero"
+													}
+												],
+												"threshold500": [
+													{
+														"condition": {
+															"and": [
+																{
+																	">": [
+																		{
+																			"var": "value"
+																		},
+																		500
+																	]
+																},
+																{
+																	"<": [
+																		{
+																			"var": "value"
+																		},
+																		1000
+																	]
+																}
+															]
+														},
+														"result": "blue"
+													}
+												],
+												"trade_wins_equal": [
+													{
+														"condition": {
+															"==": [
+																{
+																	"var": "dollar_win_trades"
+																},
+																{
+																	"var": "dollar_lost_trades"
+																}
+															]
+														},
+														"result": "pnl_bg_salmon"
+													}
+												],
+												"credits": [
+													{
+														"condition": {
+															"!=": [
+																{
+																	"var": "value"
+																},
+																{
+																	"var": "credit_value"
+																}
+															]
+														},
+														"result": "bg_navy"
+													}
+												],
+												"bigFont": [
+													{
+														"condition": true,
+														"result": "big_font_size"
+													}
+												]
+											},
+											"colorStyles": {
+												"big_font_size": {
+													"fontSize": 22
+												},
+												"blue": {
+													"background": "blue",
+													"color": "white"
+												},
+												"zero": {
+													"background": "orange",
+													"color": "white"
+												},
+												"pnl_bg_salmon": {
+													"background": "salmon"
+												},
+												"bg_navy": {
+													"color": "white",
+													"background": "navy",
+													"fontWeight": "bold",
+													"fontStyle": "italic",
+													"fontSize": 22,
+													"textAlign": "center!important"
+												}
+											},
+											"columns": [
+												"Login",
+												"TotalPnL",
+												"RealisedPnL",
+												"Floating_PnL",
+												"Balance",
+												"balance_value",
+												"EquityPrevDay",
+												"BalancePrevDay",
+												"dollar_win_trades",
+												"dollar_lost_trades",
+												"Credit",
+												"credit_value",
+												"dollar_winning_Open_positions",
+												"dollar_loosing_Open_positions",
+												"Prof_Fac_Total"
+											],
+											"columnsColorRules": {
+												"Login": "bigFont",
+												"Balance": "default",
+												"BalancePrevDay": "default",
+												"Floating_PnL": "default",
+												"RealisedPnL": "threshold500",
+												"Credit": "credits",
+												"Prof_Fac_Total": "trade_wins_equal",
+												"TotalPnL": [
+													"threshold500",
+													"default"
+												]
+											},
+											"contentType": "DataGridContent",
+											"dataFormatters": {
+												"Balance": "currency",
+												"BalancePrevDay": "currency2",
+												"Commission": "currency2",
+												"Credit": "currency",
+												"EquityPrevDay": "currency2",
+												"Floating_PnL": "currency",
+												"Floating_net_PnL": "currency",
+												"Prof_Fac_Total": "number",
+												"RealisedPnL": "currency",
+												"Realised_Net_PnL": "currency",
+												"TotalPnL": "currencyEUR",
+												"Total_net_PnL": "currency",
+												"balance_value": "currency2",
+												"credit_value": "currency",
+												"dollar_loosing_Open_positions": "currency",
+												"dollar_lost_trades": "currency",
+												"dollar_win_trades": "currency",
+												"dollar_winning_Open_positions": "currency"
+											},
+											"density": "compact",
+											"formatters": {
+												"currencyEUR": {
+													"currency": "USD",
+													"maximumFractionDigits": 2,
+													"style": "currency"
+												},
+												"number": {
+													"compactDisplay": "short",
+													"notation": "compact"
+												}
+											},
+											"headerTitles": {
+												"BalancePrevDay": "Balance Prev Day",
+												"EquityPrevDay": "Equity Prev Day",
+												"RealisedPnL": "Realised PnL",
+												"TotalPnL": "Total PnL",
+												"Total_net_PnL": "Total Net PnL",
+												"rank7days_average": "Rank 7days Avg",
+												"rank_current": "Rank"
+											},
+											"columnsAlign": {
+												"Login": "right"
+											},
+											"label": "EXAMPLE DATAGRID label",
+											"hideFooter": true,
+											"columnWidth": 200,
+											"idColumnName": "Login",
+											"pageSize": 10,
+											"pageSizeOptions": [
+												10,
+												50,
+												100
+											]
+										},
+										"dataKey": "15_top_Performers_matrix_pnl1",
+										"type": "cardContent"
+									}
+								],
+								"debugMetadata": true
+							},
+							{
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "DataGrid",
+											"subheader": "uses different conditional color styling"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"contentConfig": {
+											"colorRules": {
+												"default": [
+													{
+														"condition": {
+															"<": [
+																{
+																	"var": "value"
+																},
+																0
+															]
+														},
+														"result": "red"
+													},
+													{
+														"condition": {
+															">": [
+																{
+																	"var": "value"
+																},
+																0
+															]
+														},
+														"result": "green"
+													},
+													{
+														"condition": {
+															"==": [
+																{
+																	"var": "value"
+																},
+																0
+															]
+														},
+														"result": "zero"
+													}
+												],
+												"threshold500": [
+													{
+														"condition": {
+															"and": [
+																{
+																	">": [
+																		{
+																			"var": "value"
+																		},
+																		500
+																	]
+																},
+																{
+																	"<": [
+																		{
+																			"var": "value"
+																		},
+																		1000
+																	]
+																}
+															]
+														},
+														"result": "blue"
+													}
+												],
+												"ruleRowBalance": [
+													{
+														"condition": {
+															"<": [
+																{
+																	"var": "balance_value"
+																},
+																0
+															]
+														},
+														"result": "bg_orange"
+													},
+													{
+														"condition": {
+															">": [
+																{
+																	"var": "balance_value"
+																},
+																0
+															]
+														},
+														"result": "bg_blue"
+													},
+													{
+														"condition": {
+															"==": [
+																{
+																	"var": "dollar_win_trades"
+																},
+																{
+																	"var": "dollar_lost_trades"
+																}
+															]
+														},
+														"result": "bg_red"
+													}
+												]
+											},
+											"colorStyles": {
+												"zero": {
+													"background": "grey",
+													"color": "white"
+												},
+												"bg_orange": {
+													"background": "orange"
+												},
+												"bg_blue": {
+													"background": "blue"
+												},
+												"bg_red": {
+													"background": "red"
+												}
+											},
+											"columnsColorRules": {
+												"Balance": "default",
+												"BalancePrevDay": "default",
+												"Floating_PnL": "default",
+												"RealisedPnL": "threshold500",
+												"TotalPnL": [
+													"threshold500",
+													"default"
+												]
+											},
+											"rowsColorRules": [
+												"ruleRowBalance"
+											],
+											"columns": [
+												"Login",
+												"TotalPnL",
+												"RealisedPnL",
+												"Floating_PnL",
+												"Balance",
+												"balance_value",
+												"EquityPrevDay",
+												"BalancePrevDay",
+												"dollar_win_trades",
+												"dollar_lost_trades",
+												"Credit",
+												"credit_value",
+												"dollar_winning_Open_positions",
+												"dollar_loosing_Open_positions",
+												"Prof_Fac_Total"
+											],
+											"contentType": "DataGridContent",
+											"dataFormatters": {
+												"Balance": "currency",
+												"BalancePrevDay": "currency2",
+												"Commission": "currency2",
+												"Credit": "currency",
+												"EquityPrevDay": "currency2",
+												"Floating_PnL": "currency",
+												"Floating_net_PnL": "currency",
+												"Prof_Fac_Total": "number",
+												"RealisedPnL": "currency",
+												"Realised_Net_PnL": "currency",
+												"TotalPnL": "currencyEUR",
+												"Total_net_PnL": "currency",
+												"balance_value": "currency2",
+												"credit_value": "currency",
+												"dollar_loosing_Open_positions": "currency",
+												"dollar_lost_trades": "currency",
+												"dollar_win_trades": "currency",
+												"dollar_winning_Open_positions": "currency"
+											},
+											"density": "compact",
+											"formatters": {
+												"currencyEUR": {
+													"currency": "USD",
+													"maximumFractionDigits": 2,
+													"style": "currency"
+												},
+												"number": {
+													"compactDisplay": "short",
+													"notation": "compact"
+												}
+											},
+											"headerTitles": {
+												"BalancePrevDay": "Balance Prev Day",
+												"EquityPrevDay": "Equity Prev Day",
+												"RealisedPnL": "Realised PnL",
+												"TotalPnL": "Total PnL",
+												"Total_net_PnL": "Total Net PnL",
+												"rank7days_average": "Rank 7days Avg",
+												"rank_current": "Rank"
+											},
+											"idColumnName": "Login",
+											"pageSizeOptions": [],
+											"height": 500,
+											"propsDataGrid": {}
+										},
+										"dataKey": "15_top_Performers_matrix_pnl1",
+										"type": "cardContent"
+									}
+								],
+								"debugMetadata": true
+							}
+						]
+					},
+					{
+						"header": "Datagrid Visuals",
+						"itemSize": {
+							"xs": 12
+						},
+						"debugMetadata": true,
+						"items": [
+							{
+								"cardConfig": [
+									{
+										"defaults": {
+											"title": "DataGrid",
+											"subheader": "for displaying column visuals"
+										},
+										"type": "cardHeader"
+									},
+									{
+										"contentConfig": {
+											"dataFormatters": {
+												"mix": "currency"
+											},
+											"formatters": {
+												"currencyEUR": {
+													"currency": "USD",
+													"maximumFractionDigits": 2,
+													"style": "currency"
+												},
+												"number": {
+													"compactDisplay": "short",
+													"notation": "compact"
+												}
+											},
+											"columns": [
+												"Login",
+												"linear",
+												"default",
+												"opt",
+												"bumpx",
+												"catmullRom",
+												"monotoneX",
+												"monotoneY",
+												"step",
+												"stepAfter",
+												"stepBefore",
+												"bars",
+												"area",
+												"mix",
+												"rating",
+												"chip",
+												"country",
+												"link",
+												"progress",
+												"info"
+											],
+											"columnsVisuals": {
+												"info": "info",
+												"progress": "progress",
+												"circular": "circular",
+												"link": "link",
+												"country": "country",
+												"chip": "chip",
+												"rating": "rating",
+												"linear": "sparkline",
+												"bars": "sparklinebar",
+												"area": "sparklinearea",
+												"mix": "sparkline",
+												"opt": {
+													"type": "sparkline",
+													"config": {
+														"color": "pink",
+														"curve": "bumpY"
+													}
+												},
+												"bumpx": {
+													"type": "sparkline",
+													"config": {
+														"color": "maroon",
+														"curve": "bumpX"
+													}
+												},
+												"default": {
+													"type": "sparkline",
+													"config": {
+														"color": "orange",
+														"curve": "natural"
+													}
+												},
+												"catmullRom": {
+													"type": "sparkline",
+													"config": {
+														"color": "purple",
+														"curve": "catmullRom"
+													}
+												},
+												"monotoneX": {
+													"type": "sparkline",
+													"config": {
+														"color": "DarkBlue",
+														"curve": "monotoneX"
+													}
+												},
+												"monotoneY": {
+													"type": "sparkline",
+													"config": {
+														"color": "silver",
+														"curve": "monotoneY"
+													}
+												},
+												"step": {
+													"type": "sparkline",
+													"config": {
+														"color": "olive",
+														"curve": "step"
+													}
+												},
+												"stepAfter": {
+													"type": "sparkline",
+													"config": {
+														"color": "Magenta",
+														"curve": "stepAfter"
+													}
+												},
+												"stepBefore": {
+													"type": "sparkline",
+													"config": {
+														"color": "LightBlue",
+														"curve": "stepBefore"
+													}
+												}
+											},
+											"contentType": "DataGridContent",
+											"density": "compact",
+											"headerTitles": {
+												"default": "natural",
+												"bars": "Bars",
+												"area": "Area",
+												"mix": "Mix",
+												"opt": "bumpY",
+												"bumpx": "bumpX"
+											},
+											"idColumnName": "Login",
+											"columnWidth": 100,
+											"columnWidths": {
+												"info": 30,
+												"chip": 50
+											}
+										},
+										"dataKey": "tableVisuals",
+										"type": "cardContent"
+									}
+								],
+								"debugMetadata": true
+							}
+						]
+					}
+				]
+			}
+		},
+		"demo": {
+			"config": {
+				"header": "Demo Selectors",
+				"debugMetadata": true,
+				"childComponent": "DemoSelector",
+				"demoSelector": {
+					"metadata": [
+						{
+							"header": "Selector",
+							"childComponent": "DisplayCards",
+							"selector": {
+								"type": "Selector",
+								"options": {
+									"multiple": false,
+									"label": "Selector - View"
+								}
+							}
+						},
+						{
+							"header": "Selector - Multi",
+							"childComponent": "DisplayCards",
+							"selector": {
+								"type": "Selector",
+								"options": {
+									"multiple": true,
+									"label": "Multi selector - View"
+								}
+							}
+						},
+						{
+							"header": "ToggleButtons",
+							"childComponent": "DisplayCards",
+							"selector": {
+								"type": "ToggleButtons",
+								"options": {
+									"exclusive": true
+								}
+							}
+						},
+						{
+							"header": "ToggleButtons - Multi",
+							"childComponent": "DisplayCards",
+							"selector": {
+								"type": "ToggleButtons"
+							}
+						},
+						{
+							"header": "RadioButtons",
+							"childComponent": "DisplayCards",
+							"selector": {
+								"type": "RadioButtons",
+								"options": {
+									"label": "View"
+								}
+							}
+						},
+						{
+							"childComponent": "DisplayCards",
+							"header": "SelectorTabs",
+							"selector": {
+								"type": "SelectorTabs"
+							}
+						}
+					]
+				},
+				"groups": [
+					{
+						"header": "Labels",
+						"computations": [],
+						"itemDefaults": {
+							"debugMetadata": true,
+							"format": {
+								"style": "currency",
+								"currency": "USD",
+								"currencyDisplay": "symbol",
+								"currencySign": "accounting",
+								"maximumFractionDigits": 0,
+								"notation": "compact"
+							}
+						},
+						"items": [
+							{
+								"title": "P&L",
+								"dataKey": "pnl",
+								"sub": "vs. last session",
+								"subVariant": "TrendSub",
+								"trendFormat": {
+									"style": "percent"
+								}
+							},
+							{
+								"title": "P&L",
+								"dataKey": "pnl",
+								"showChip": true,
+								"sub": "P&L for the current session",
+								"trendUpper": 0.3,
+								"trendLower": -0.3
+							},
+							{
+								"title": "P&L",
+								"dataKey": "pnl",
+								"sub": "${value} vs. last session",
+								"subVariant": "ValueSub"
+							}
+						]
+					},
+					{
+						"header": "Charts: Bars",
+						"itemDefaults": {
+							"debugMetadata": true,
+							"contentConfig": {
+								"chartType": "Bar"
+							}
+						},
+						"items": [
+							{
+								"title": "P&L",
+								"sub": "vs. last session",
+								"dataKey": "pnl",
+								"subVariant": "TrendSub",
+								"format": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 0
+								},
+								"trendFormat": {
+									"style": "percent"
+								}
+							},
+							{
+								"title": "P&L",
+								"showChip": true,
+								"sub": "P&L for the current session",
+								"trendUpper": 0.3,
+								"trendLower": -0.3,
+								"dataKey": "pnl",
+								"format": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 2
+								},
+								"chartOptions": {
+									"barLabel": "value",
+									"borderRadius": 10,
+									"series": [
+										{
+											"label": "last session",
+											"dataKey": "v0"
+										},
+										{
+											"label": "current session",
+											"dataKey": "v"
+										}
+									]
+								}
+							},
+							{
+								"title": "P&L",
+								"hideMetric": true,
+								"dataKey": "pnl",
+								"chartOptions": {
+									"disableAxisListener": true,
+									"slotProps": {
+										"legend": {
+											"hidden": true
+										}
+									},
+									"barLabel": "value",
+									"series": [
+										{
+											"label": "last session",
+											"dataKey": "v0",
+											"stack": "stack1"
+										},
+										{
+											"label": "current session",
+											"dataKey": "v",
+											"stack": "stack1"
+										}
+									],
+									"xAxis": [
+										{
+											"scaleType": "band",
+											"dataKey": "ts",
+											"label": "Hours"
+										}
+									],
+									"yAxis": [
+										{
+											"label": "P&L"
+										}
+									]
+								}
+							},
+							{
+								"title": "P&L",
+								"hideMetric": true,
+								"dataKey": "pnl",
+								"chartOptions": {
+									"axisHighlight": {
+										"x": "line",
+										"y": "band"
+									},
+									"layout": "horizontal",
+									"grid": {
+										"vertical": true
+									},
+									"yAxis": [
+										{
+											"scaleType": "band",
+											"dataKey": "ts",
+											"label": "Hours"
+										}
+									],
+									"series": [
+										{
+											"label": "last session",
+											"dataKey": "v0"
+										},
+										{
+											"label": "current session",
+											"dataKey": "v"
+										}
+									],
+									"xAxis": [
+										{
+											"label": "P&L"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"header": "Charts: Line",
+						"itemDefaults": {
+							"debugMetadata": true,
+							"contentConfig": {
+								"chartType": "Line"
+							}
+						},
+						"items": [
+							{
+								"title": "P&L",
+								"sub": "vs. last session",
+								"dataKey": "pnl",
+								"subVariant": "TrendSub",
+								"format": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 0
+								},
+								"trendFormat": {
+									"style": "percent"
+								}
+							},
+							{
+								"title": "P&L",
+								"showChip": true,
+								"sub": "P&L for the current session",
+								"trendUpper": 0.3,
+								"trendLower": -0.3,
+								"dataKey": "pnl",
+								"format": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 2
+								},
+								"chartOptions": {
+									"legend": {
+										"hidden": true
+									},
+									"yAxis": [
+										{
+											"label": "P&L"
+										}
+									],
+									"series": [
+										{
+											"label": "last session",
+											"dataKey": "v0"
+										},
+										{
+											"label": "current session",
+											"dataKey": "v"
+										}
+									]
+								}
+							},
+							{
+								"title": "P&L",
+								"hideMetric": true,
+								"dataKey": "pnl",
+								"chartOptions": {
+									"legend": {
+										"hidden": true
+									},
+									"yAxis": [
+										{
+											"label": "P&L"
+										}
+									],
+									"xAxis": [
+										{
+											"scaleType": "line",
+											"dataKey": "ts",
+											"label": "Hours"
+										}
+									],
+									"series": [
+										{
+											"label": "last session",
+											"dataKey": "v0",
+											"stack": "pnl",
+											"area": true,
+											"stackOffset": "none"
+										},
+										{
+											"label": "current session",
+											"dataKey": "v",
+											"stack": "pnl",
+											"area": true,
+											"stackOffset": "none"
+										}
+									]
+								}
+							},
+							{
+								"title": "P&L",
+								"hideMetric": true,
+								"dataKey": "pnl"
+							}
+						]
+					},
+					{
+						"header": "Charts: Pie",
+						"itemDefaults": {
+							"debugMetadata": true,
+							"contentConfig": {
+								"chartType": "Pie"
+							}
+						},
+						"items": [
+							{
+								"title": "Reason",
+								"dataKey": "pnl",
+								"chartOptions": {
+									"series": [
+										{
+											"data": [
+												{
+													"dataKey": "v",
+													"label": "Mobile",
+													"color": "orange"
+												},
+												{
+													"dataKey": "v0",
+													"label": "Expert"
+												}
+											]
+										}
+									]
+								}
+							},
+							{
+								"title": "P&L",
+								"sub": "vs. last session",
+								"dataKey": "pnl",
+								"subVariant": "TrendSub",
+								"format": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 0
+								},
+								"trendFormat": {
+									"style": "percent"
+								},
+								"chartOptions": {
+									"series": [
+										{
+											"innerRadius": 20,
+											"arcLabelMinAngle": 20,
+											"data": [
+												{
+													"dataKey": "v",
+													"label": "Current session",
+													"color": "orange"
+												},
+												{
+													"dataKey": "v0",
+													"label": "Last session"
+												}
+											]
+										}
+									]
+								}
+							},
+							{
+								"title": "P&L",
+								"showChip": true,
+								"sub": "P&L for the current session",
+								"trendUpper": 0.3,
+								"trendLower": -0.3,
+								"dataKey": "pnl",
+								"format": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 2
+								},
+								"chartOptions": {
+									"hideLegend": true,
+									"series": [
+										{
+											"innerRadius": 0,
+											"outerRadius": 80,
+											"id": "hour-0",
+											"data": [
+												{
+													"dataKey": "v",
+													"label": "Current session",
+													"color": "orange"
+												},
+												{
+													"dataKey": "v0",
+													"label": "Last session"
+												}
+											]
+										},
+										{
+											"innerRadius": 100,
+											"outerRadius": 120,
+											"id": "hour-1",
+											"data": [
+												{
+													"dataKey": "v",
+													"label": "Current session",
+													"color": "red"
+												},
+												{
+													"dataKey": "v0",
+													"label": "Last session",
+													"color": "green"
+												}
+											]
+										}
+									]
+								}
+							},
+							{
+								"title": "P&L",
+								"hideMetric": true,
+								"dataKey": "pnl",
+								"chartOptions": {
+									"series": [
+										{
+											"highlightScope": {
+												"fade": "global",
+												"highlight": "item"
+											},
+											"faded": {
+												"innerRadius": 30,
+												"additionalRadius": -30,
+												"color": "gray"
+											},
+											"data": [
+												{
+													"dataKey": "v",
+													"label": "Current session"
+												},
+												{
+													"dataKey": "v0",
+													"label": "Last session"
+												}
+											]
+										}
+									]
+								}
+							},
+							{
+								"title": "P&L",
+								"hideMetric": true,
+								"dataKey": "pnl",
+								"chartOptions": {
+									"centerlabel": "P&L",
+									"skipAnimation": true,
+									"series": [
+										{
+											"paddingAngle": 5,
+											"innerRadius": 60,
+											"outerRadius": 80,
+											"data": [
+												{
+													"dataKey": "v",
+													"label": "Current session"
+												},
+												{
+													"dataKey": "v0",
+													"label": "Last session"
+												},
+												{
+													"dataKey": "v",
+													"label": "Current session"
+												},
+												{
+													"dataKey": "v0",
+													"label": "Last session"
+												}
+											]
+										}
+									]
+								}
+							},
+							{
+								"title": "P&L",
+								"hideMetric": true,
+								"dataKey": "pnl",
+								"chartOptions": {
+									"skipAnimation": true,
+									"series": [
+										{
+											"startAngle": -90,
+											"endAngle": 90,
+											"data": [
+												{
+													"dataKey": "v",
+													"label": "Current session"
+												},
+												{
+													"dataKey": "v0",
+													"label": "Last session"
+												},
+												{
+													"dataKey": "v",
+													"label": "Current session"
+												},
+												{
+													"dataKey": "v0",
+													"label": "Last session"
+												}
+											]
+										}
+									]
+								}
+							},
+							{
+								"title": "P&L",
+								"hideMetric": true,
+								"dataKey": "pnl",
+								"chartOptions": {
+									"height": 300,
+									"hideLegend": true,
+									"skipAnimation": true,
+									"series": [
+										{
+											"outerRadius": 80,
+											"data": [
+												{
+													"dataKey": "v",
+													"label": "Current session"
+												},
+												{
+													"dataKey": "v0",
+													"label": "Last session"
+												},
+												{
+													"dataKey": "v",
+													"label": "Current session"
+												},
+												{
+													"dataKey": "v0",
+													"label": "Last session"
+												}
+											]
+										},
+										{
+											"cx": 250,
+											"cy": 200,
+											"innerRadius": 40,
+											"outerRadius": 80,
+											"data": [
+												{
+													"dataKey": "v",
+													"label": "Current session"
+												},
+												{
+													"dataKey": "v0",
+													"label": "Last session"
+												},
+												{
+													"dataKey": "v",
+													"label": "Current session"
+												},
+												{
+													"dataKey": "v0",
+													"label": "Last session"
+												}
+											]
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"header": "Charts: SparkLine",
+						"itemDefaults": {
+							"debugMetadata": true,
+							"contentConfig": {
+								"chartType": "SparkLine"
+							}
+						},
+						"items": [
+							{
+								"title": "P&L",
+								"sub": "vs. last session",
+								"dataKey": "pnl",
+								"subVariant": "TrendSub",
+								"format": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 0
+								},
+								"trendFormat": {
+									"style": "percent"
+								},
+								"chartOptions": {
+									"height": 50,
+									"area": false,
+									"showHighlight": true,
+									"showTooltip": true,
+									"curve": "natural",
+									"yAxis": {
+										"min": 100,
+										"max": 110
+									}
+								}
+							},
+							{
+								"cardType": "StatCard",
+								"title": "P&L",
+								"showChip": true,
+								"sub": "P&L for the current session",
+								"trendUpper": 0.3,
+								"trendLower": -0.3,
+								"dataKey": "pnl",
+								"format": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 2
+								},
+								"chartOptions": {
+									"height": 50,
+									"plotType": "bar",
+									"area": true,
+									"showHighlight": true,
+									"showTooltip": true
+								}
+							}
+						]
+					},
+					{
+						"header": "Charts: Scatter",
+						"itemDefaults": {
+							"debugMetadata": true,
+							"contentConfig": {
+								"chartType": "Scatter"
+							}
+						},
+						"items": [
+							{
+								"title": "P&L",
+								"sub": "vs. last session",
+								"dataKey": "pnl",
+								"subVariant": "TrendSub",
+								"format": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 0
+								},
+								"trendFormat": {
+									"style": "percent"
+								},
+								"chartOptions": {
+									"yAxis": [
+										{
+											"label": "P&L"
+										}
+									],
+									"series": [
+										{
+											"datasetKeys": {
+												"id": "ts",
+												"x": "ts",
+												"y": "v"
+											},
+											"label": "Current sesssion"
+										},
+										{
+											"datasetKeys": {
+												"id": "ts",
+												"x": "ts",
+												"y": "v0"
+											},
+											"label": "Last Session"
+										}
+									]
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		"dt_2": {
+			"dataPath": {
+				"path": "mt5data/${id}"
+			},
+			"config": {
+				"prefix": "mt5data",
+				"childComponent": "DisplayCardsWithSelector",
+				"selector": {
+					"type": "SelectorTabs"
+				},
+				"header": "Summary",
+				"debugMetadata": true,
+				"groups": [
+					{
+						"header": "Cards",
+						"itemSize": {
+							"xs": 12,
+							"sm": 4,
+							"lg": 4
+						},
+						"itemDefaults": {},
+						"items": [
+							{
+								"size": {
+									"xs": 12
+								},
+								"cardConfig": [
+									{
+										"type": "cardHeader",
+										"map": {
+											"ts": "subheader"
+										},
+										"defaults": {
+											"avatar": "Date:"
+										}
+									}
+								]
+							},
+							{
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"title": "P&L",
+										"contentConfig": {
+											"contentType": "MetricContent",
+											"map": {
+												"pnl": "v"
+											},
+											"format": {
+												"style": "currency",
+												"currency": "USD",
+												"maximumFractionDigits": 0
+											}
+										}
+									}
+								]
+							},
+							{
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"title": "Commission",
+										"contentConfig": {
+											"contentType": "MetricContent",
+											"map": {
+												"commission": "v"
+											},
+											"format": {
+												"style": "currency",
+												"currency": "USD",
+												"maximumFractionDigits": 0
+											}
+										}
+									}
+								]
+							},
+							{
+								"title": "Trades count",
+								"map": {
+									"trades": "v"
+								}
+							},
+							{
+								"map": {
+									"volume": "v"
+								},
+								"title": "Volume",
+								"format": {
+									"notation": "compact",
+									"compactDisplay": "short"
+								}
+							},
+							{
+								"map": {
+									"swaps": "v"
+								},
+								"title": "Swaps",
+								"format": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 0
+								}
+							},
+							{
+								"map": {
+									"hit_rate": "v"
+								},
+								"title": "Hit rate"
+							},
+							{
+								"map": {
+									"profit_factor": "v"
+								},
+								"title": "Profit factor"
+							},
+							{
+								"map": {
+									"exp_trade_volume_adj": "v"
+								},
+								"title": "EXP/Trade volume adj"
+							},
+							{
+								"map": {
+									"exp_trade": "v"
+								},
+								"title": "EXP/Trade"
+							},
+							{
+								"map": {
+									"exp_trade_std": "v"
+								},
+								"title": "EXP/Trade STD"
+							}
+						]
+					},
+					{
+						"header": "Table",
+						"itemSize": {
+							"xs": 12
+						},
+						"itemDefaults": {},
+						"items": [
+							{
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"title": "Table",
+										"contentConfig": {
+											"contentType": "TableContent",
+											"map": {
+												"pnl": "v"
+											},
+											"format": {
+												"style": "currency",
+												"currency": "USD",
+												"maximumFractionDigits": 0
+											}
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"header": "List",
+						"itemSize": {
+							"xs": 6
+						},
+						"itemDefaults": {},
+						"items": [
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"contentConfig": {
+											"contentType": "ListContent",
+											"defaults": {
+												"primary": "${title}: ${value}"
+											},
+											"items": [
+												{
+													"title": "P&L",
+													"dataKey": "pnl",
+													"format": {
+														"style": "currency",
+														"currency": "USD",
+														"maximumFractionDigits": 0
+													}
+												},
+												{
+													"title": "Commission",
+													"dataKey": "commission",
+													"format": {
+														"style": "currency",
+														"currency": "USD",
+														"maximumFractionDigits": 0
+													}
+												},
+												{
+													"title": "Trades count",
+													"dataKey": "trades"
+												},
+												{
+													"dataKey": "volume",
+													"title": "Volume",
+													"format": {
+														"notation": "compact",
+														"compactDisplay": "short"
+													}
+												},
+												{
+													"dataKey": "swaps",
+													"title": "Swaps",
+													"format": {
+														"style": "currency",
+														"currency": "USD",
+														"maximumFractionDigits": 1
+													}
+												},
+												{
+													"dataKey": "hit_rate",
+													"title": "Hit rate:"
+												},
+												{
+													"dataKey": "profit_factor",
+													"title": "Profit factor"
+												},
+												{
+													"dataKey": "exp_trade",
+													"title": "EXP/Trade"
+												},
+												{
+													"dataKey": "exp_trade_std",
+													"title": "EXP/Trade STD"
+												}
+											]
+										}
+									}
+								]
+							},
+							{
+								"debugMetadata": true,
+								"cardConfig": [
+									{
+										"type": "cardHeader",
+										"defaults": {
+											"title": "P&L"
+										}
+									},
+									{
+										"type": "cardContent",
+										"contentConfig": {
+											"contentType": "ListContent",
+											"defaults": {
+												"primary": "${value}",
+												"secondary": ""
+											},
+											"items": [
+												{
+													"primary": "${value}",
+													"dataKey": "pnl",
+													"format": {
+														"style": "currency",
+														"currency": "USD",
+														"maximumFractionDigits": 0
+													}
+												},
+												{
+													"primary": "Profit factor",
+													"secondary": "${value}",
+													"dataKey": "profit_factor"
+												}
+											]
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		"dt": {
+			"dataPath": {
+				"path": "mt5data",
+				"filters": [
+					{
+						"limitToLast": 7,
+						"disable": true
+					},
+					{
+						"limit": 7,
+						"disable": false
+					},
+					{
+						"sort": [
+							"ts",
+							"desc"
+						],
+						"disbale": true
+					}
+				]
+			},
+			"config": {
+				"debugMetadata": true,
+				"childComponent": "DisplayData",
+				"selector": {
+					"type": "SelectorTabs"
+				},
+				"header": "Data List",
+				"groups": [
+					{
+						"header": "Cards",
+						"itemDefaults": {
+							"cardType": "actionCard",
+							"cardActionUrl": "dt/${id}",
+							"cardConfig": [
+								{
+									"type": "cardHeader",
+									"map": {
+										"ts": "title"
+									},
+									"defaults": {
+										"subheader": "click to see summary"
+									}
+								}
+							]
+						}
+					},
+					{
+						"header": "Table",
+						"renderType": "table",
+						"itemDefaults": {
+							"debugMetadata": true,
+							"rowType": "actionable",
+							"rowActionUrl": "dt/${id}",
+							"tableConfig": {},
+							"headerTitles": {
+								"id": "Date",
+								"pnl": "P&L",
+								"profit_factor": "Profit Factor",
+								"volume": "Volume"
+							},
+							"dataFormatters": {
+								"pnl": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 0
+								},
+								"volume": {
+									"notation": "compact",
+									"compactDisplay": "short"
+								}
+							}
+						}
+					},
+					{
+						"header": "List",
+						"renderType": "list",
+						"itemDefaults": {
+							"cardType": "actionCard",
+							"cardActionUrl": "dt/${id}",
+							"subheader": "Session Dates",
+							"showAvatar": true,
+							"defaultIcon": "timeline",
+							"defaultAvatar": {},
+							"defaultAvatarText": "P",
+							"primary": "${title}",
+							"secondary": "${value}",
+							"headers": [
+								"id",
+								"pnl",
+								"profit_factor",
+								"volume"
+							],
+							"headerTitles": {
+								"id": "Date",
+								"pnl": "P&L",
+								"profit_factor": "Profit Factor",
+								"volume": "Volume"
+							},
+							"dataFormatters": {
+								"pnl": {
+									"style": "currency",
+									"currency": "USD",
+									"maximumFractionDigits": 0
+								},
+								"volume": {
+									"notation": "compact",
+									"compactDisplay": "short"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"table-selector": {
+			"dataPath": {
+				"path": "dashboard/navigation/outsymbols"
+			},
+			"config": {
+				"header": "Table Selector",
+				"debugMetadata": true,
+				"childComponent": "DisplayCards",
+				"groups": [
+					{
+						"header": " ",
+						"items": [
+							{
+								"dataKey": "symb",
+								"notation": "compact",
+								"sub": "Currency",
+								"subcolor": "deepskyblue",
+								"title": "  "
+							}
+						]
+					},
+					{
+						"header": " ",
+						"items": [
+							{
+								"contentConfig": {
+									"contentType": "Plotly"
+								},
+								"dataKey": "price_chart",
+								"notation": "compact",
+								"size": {
+									"xs": 6
+								}
+							},
+							{
+								"contentConfig": {
+									"contentType": "Plotly"
+								},
+								"dataKey": "fig_market_overview",
+								"notation": "compact",
+								"size": {
+									"xs": 6
+								}
+							},
+							{
+								"contentConfig": {
+									"contentType": "Plotly"
+								},
+								"dataKey": "fig_reason_box",
+								"notation": "compact",
+								"size": {
+									"xs": 6
+								}
+							},
+							{
+								"cardActionUrl": "pnl",
+								"cardType": "actionCard",
+								"chart": {
+									"hideLegend": true,
+									"legend": {
+										"hidden": true
+									},
+									"series": [
+										{
+											"color": "deepskyblue",
+											"dataKey": "Profit",
+											"showMark": true
+										}
+									],
+									"xAxis": [
+										{
+											"dataKey": "Time",
+											"scaleType": "band"
+										}
+									],
+									"yAxis": [
+										{
+											"color": "deepskyblue",
+											"dataKey": "Profit"
+										}
+									]
+								},
+								"chartType": "Line",
+								"dataKey": "chrt1",
+								"hideLegend": true,
+								"size": {
+									"xs": 6
+								},
+								"title": " Profits of Outliers "
+							},
+							{
+								"chart": {
+									"hideLegend": true,
+									"legend": {
+										"hidden": true
+									},
+									"series": [
+										{
+											"color": "orangered",
+											"dataKey": "Login",
+											"showMark": true
+										}
+									],
+									"xAxis": [
+										{
+											"dataKey": "Time",
+											"scaleType": "band"
+										}
+									],
+									"yAxis": [
+										{
+											"color": "red",
+											"dataKey": "Login",
+											"label": "Number of Logins"
+										}
+									]
+								},
+								"chartType": "Line",
+								"color": "red",
+								"dataKey": "chrt2",
+								"hideLegend": true,
+								"size": {
+									"xs": 6
+								},
+								"title": " Number of Clients trade "
+							},
+							{
+								"chart": {
+									"hideLegend": true,
+									"legend": {
+										"hidden": true
+									},
+									"series": [
+										{
+											"color": "deepskyblue",
+											"dataKey": "VolumeClosed",
+											"showMark": true
+										}
+									],
+									"xAxis": [
+										{
+											"dataKey": "Time",
+											"scaleType": "band"
+										}
+									],
+									"yAxis": [
+										{
+											"color": "deepskyblue",
+											"dataKey": "VolumeClosed",
+											"label": "Closed Volume"
+										}
+									]
+								},
+								"chartType": "Line",
+								"color": "skyblue",
+								"dataKey": "chrt3",
+								"hideLegend": true,
+								"size": {
+									"xs": 6
+								},
+								"title": " Volume Closed by Outliers"
+							}
+						]
+					}
+				],
+				"tableSelector": {
+					"contentConfig": {
+						"cardActionIdKey": "Symbol",
+						"colorRules": {
+							"threshold5": [
+								{
+									"condition": {
+										"and": [
+											{
+												">": [
+													{
+														"var": "value"
+													},
+													1000
+												]
+											}
+										]
+									},
+									"result": "blue"
+								},
+								{
+									"condition": {
+										"and": [
+											{
+												"<": [
+													{
+														"var": "value"
+													},
+													0
+												]
+											}
+										]
+									},
+									"result": "redish"
+								}
+							],
+							"threshold_percent": [
+								{
+									"condition": {
+										"and": [
+											{
+												">": [
+													{
+														"var": "value"
+													},
+													0
+												]
+											},
+											{
+												"<": [
+													{
+														"var": "value"
+													},
+													0.5
+												]
+											}
+										]
+									},
+									"result": "redish"
+								}
+							]
+						},
+						"colorStyles": {
+							"blue": {
+								"color": "deepskyblue"
+							},
+							"green": {
+								"color": "limegreen"
+							},
+							"redish": {
+								"color": "orangered"
+							}
+						},
+						"columns": [
+							"Symbol",
+							"Reason_string",
+							"Profit",
+							"VolumeClosedExt",
+							"Login"
+						],
+						"columnsColorRules": {
+							"Profit": "threshold5",
+							"VolumeClosed": "threshold5"
+						},
+						"contentType": "TableContent",
+						"dataFormatters": {
+							"Exp_per_trade": "currency",
+							"PnL_Realised": "currency",
+							"Profit": "currency",
+							"VolumeClosed": "number",
+							"trades": "number"
+						},
+						"formatters": {
+							"currencyEUR": {
+								"currency": "USD",
+								"maximumFractionDigits": 2,
+								"style": "currency"
+							},
+							"number": {
+								"compactDisplay": "short",
+								"notation": "compact"
+							},
+							"percent": {
+								"maximumFractionDigits": 2,
+								"style": "percent"
+							}
+						},
+						"headerTitles": {
+							"Exp_per_trade": "Expectation per trade ",
+							"PnL_norm": "Normalised PnL",
+							"Profit_norm": "Normalised Profit",
+							"index": " Login  ",
+							"trades": "Number of Trades"
+						},
+						"height": 500,
+						"indexColumnHeader": "  ",
+						"showIndexAsColumn": false,
+						"size": "small"
+					},
+					"dataKey": "symb_reas_ALL",
+					"tableConfig": {},
+					"type": "cardContent"
+				}
+			}
+		},
+		"chartselector": {
+			"data": {
+				"chartSelector": {
+					"ds": [
+						{
+							"time": "2018-10-19",
+							"value": 52.89
+						},
+						{
+							"time": "2018-10-22",
+							"value": 55.22
+						},
+						{
+							"time": "2018-10-23",
+							"value": 57.21
+						},
+						{
+							"time": "2018-10-24",
+							"value": 57.42
+						},
+						{
+							"time": "2018-10-25",
+							"value": 56.43
+						},
+						{
+							"time": "2018-10-26",
+							"value": 55.51
+						},
+						{
+							"time": "2018-10-29",
+							"value": 56.48
+						},
+						{
+							"time": "2018-10-30",
+							"value": 58.18
+						}
+					]
+				},
+				"2018-10-19": {
+					"user": {
+						"v": 1213
+					},
+					"group_user": {
+						"v": "2018-10-19"
+					}
+				},
+				"2018-10-22": {
+					"user": {
+						"v": 222
+					},
+					"group_user": {
+						"v": "2018-10-22"
+					}
+				},
+				"2018-10-23": {
+					"user": {
+						"v": 888
+					},
+					"group_user": {
+						"v": "2018-10-23"
+					}
+				},
+				"2018-10-24": {
+					"user": {
+						"v": 777
+					},
+					"group_user": {
+						"v": "2018-10-24"
+					}
+				},
+				"2018-10-25": {
+					"user": {
+						"v": 666
+					},
+					"group_user": {
+						"v": "2018-10-25"
+					}
+				},
+				"2018-10-26": {
+					"user": {
+						"v": 444
+					},
+					"group_user": {
+						"v": "2018-10-26"
+					}
+				},
+				"2018-10-29": {
+					"user": {
+						"v": 333
+					},
+					"group_user": {
+						"v": "2018-10-29"
+					}
+				},
+				"2018-10-30": {
+					"user": {
+						"v": 2
+					},
+					"group_user": {
+						"v": "2018-10-30"
+					}
+				}
+			},
+			"config": {
+				"header": "Chart Selector",
+				"demoSelector": {
+					"metadata": [
+						{
+							"header": "Bar Chart Selector",
+							"chartSelector": {
+								"initValue": "2018-10-29",
+								"dataKey": "chartSelector",
+								"contentConfig": {
+									"chartType": "bar"
+								}
+							}
+						},
+						{
+							"header": "Line Chart Selector",
+							"chartSelector": {
+								"dataKey": "chartSelector",
+								"contentConfig": {
+									"chartType": "line",
+									"defaultOptions": {
+										"showMark": true
+									}
+								},
+								"chartOptions": {
+									"height": 500
+								}
+							}
+						},
+						{
+							"header": "Area Chart Selector",
+							"chartSelector": {
+								"dataKey": "chartSelector",
+								"contentConfig": {
+									"chartType": "area",
+									"defaultOptions": {
+										"showMark": true
+									}
+								}
+							}
+						}
+					]
+				},
+				"debugMetadata": true,
+				"groups": [
+					{
+						"header": " ",
+						"items": [
+							{
+								"dataKey": "user",
+								"notation": "compact",
+								"sub": "User Login",
+								"subcolor": "deepskyblue",
+								"title": ""
+							},
+							{
+								"size": {
+									"xs": 8
+								},
+								"dataKey": "group_user",
+								"notation": "compact",
+								"sub": "Entry Date",
+								"title": ""
+							}
+						]
+					}
+				]
+			}
+		},
+		"plotly-selector": {
+			"data": {
+				"slip": {
+					"plotly": "{\"data\":[{\"domain\":{\"x\":[0.05,0.15],\"y\":[0.75,0.95]},\"mode\":\"number\",\"number\":{\"prefix\":\"$\",\"suffix\":\" \"},\"title\":{\"text\":\"Negative slippage \"},\"value\":5107.709137951882,\"type\":\"indicator\"},{\"domain\":{\"x\":[0.05,0.15],\"y\":[0.05,0.15]},\"mode\":\"number+delta\",\"number\":{\"prefix\":\"$\",\"suffix\":\" \"},\"title\":{\"text\":\"Positive Slippage \"},\"value\":-1205.7527110268716,\"type\":\"indicator\"},{\"customdata\":[[0.0,10010.0,0.0,\"2026-01-23T00:00:00\"],[0.0,null,null,\"2026-01-23T00:30:00\"],[-166.32,10019.0,-155.64,\"2026-01-23T01:00:00\"],[-5.34,10024.0,-5.1,\"2026-01-23T01:30:00\"],[-21.7,10024.0,-21.7,\"2026-01-23T02:00:00\"],[-3.1,10024.0,-2.1,\"2026-01-23T02:30:00\"],[-2.87,10053.0,-2.7,\"2026-01-23T03:00:00\"],[-6.8,10024.0,-6.8,\"2026-01-23T03:30:00\"],[0.0,10024.0,0.0,\"2026-01-23T04:00:00\"],[-22.01,10053.0,-21.2,\"2026-01-23T04:30:00\"],[-4.6,10053.0,-4.54,\"2026-01-23T05:00:00\"],[-0.03,10058.0,-0.03,\"2026-01-23T05:30:00\"],[0.0,10065.0,0.0,\"2026-01-23T06:00:00\"],[-3.95,10019.0,-2.4,\"2026-01-23T06:30:00\"],[-1.9,10081.0,-1.0,\"2026-01-23T07:00:00\"],[-0.05,10010.0,-0.05,\"2026-01-23T07:30:00\"],[-11.81,10053.0,-10.8,\"2026-01-23T08:00:00\"],[-7.79,10018.0,-7.0,\"2026-01-23T08:30:00\"],[-9.54,10024.0,-6.0,\"2026-01-23T09:00:00\"],[-588.73,10019.0,-512.67,\"2026-01-23T09:30:00\"],[-152.0,10019.0,-66.83,\"2026-01-23T10:00:00\"],[-72.22,10024.0,-30.0,\"2026-01-23T10:30:00\"],[-105.57,10053.0,-74.3,\"2026-01-23T11:00:00\"],[-14.92,10064.0,-9.78,\"2026-01-23T11:30:00\"],[-4.5,10024.0,-4.5,\"2026-01-23T12:00:00\"]],\"hovertemplate\":\"\\u003cb\\u003e%{customdata[3]}\\u003c\\u002fb\\u003e\\u003cbr\\u003eTotal: %{customdata[0]}\\u003cbr\\u003eMinLogin: %{customdata[1]}\\u003cbr\\u003eMinUSD: %{customdata[2]}\\u003cextra\\u003e\\u003c\\u002fextra\\u003e\",\"name\":\"RealizedSpreadUSD\",\"x\":[\"2026-01-23T00:00:00.000000000\",\"2026-01-23T00:30:00.000000000\",\"2026-01-23T01:00:00.000000000\",\"2026-01-23T01:30:00.000000000\",\"2026-01-23T02:00:00.000000000\",\"2026-01-23T02:30:00.000000000\",\"2026-01-23T03:00:00.000000000\",\"2026-01-23T03:30:00.000000000\",\"2026-01-23T04:00:00.000000000\",\"2026-01-23T04:30:00.000000000\",\"2026-01-23T05:00:00.000000000\",\"2026-01-23T05:30:00.000000000\",\"2026-01-23T06:00:00.000000000\",\"2026-01-23T06:30:00.000000000\",\"2026-01-23T07:00:00.000000000\",\"2026-01-23T07:30:00.000000000\",\"2026-01-23T08:00:00.000000000\",\"2026-01-23T08:30:00.000000000\",\"2026-01-23T09:00:00.000000000\",\"2026-01-23T09:30:00.000000000\",\"2026-01-23T10:00:00.000000000\",\"2026-01-23T10:30:00.000000000\",\"2026-01-23T11:00:00.000000000\",\"2026-01-23T11:30:00.000000000\",\"2026-01-23T12:00:00.000000000\"],\"y\":{\"dtype\":\"f8\",\"bdata\":\"AAAAAAAAAAAAAAAAAAAAAOfxiq0bymTAAHDC9ShcFcAAUjMzM7M1wACQzczMzAjAAHhcj8L1BsBopzMzMzMbwAAAAAAAAAAAPiRc6y0CNsA\\u002f\\u002fXe9fWkSwAAAiOtRuJ6\\u002fAAAAAAAAAABoXEoLzaAPwICzZmZmZv6\\u002fAMDEmZmZqb83a\\u002fcbP6AnwADwjsL1KB\\u002fAWknl6J8WI8D7NWj2z2WCwDLjdq\\u002fj\\u002f2LAYsHDEyQOUsB7Ead3QWRawLVuwtEg2S3AACAAAAAAEsA=\"},\"type\":\"bar\"},{\"customdata\":[[0.0,10010.0,0.0,\"2026-01-23T00:00:00\"],[0.0,null,null,\"2026-01-23T00:30:00\"],[93.94,10024.0,59.82,\"2026-01-23T01:00:00\"],[92.15,10019.0,60.23,\"2026-01-23T01:30:00\"],[54.21,10053.0,43.95,\"2026-01-23T02:00:00\"],[276.6,10053.0,275.4,\"2026-01-23T02:30:00\"],[240.36,10053.0,234.89,\"2026-01-23T03:00:00\"],[25.79,10053.0,24.17,\"2026-01-23T03:30:00\"],[41.07,10058.0,28.6,\"2026-01-23T04:00:00\"],[91.57,10058.0,59.8,\"2026-01-23T04:30:00\"],[310.47,10053.0,274.83,\"2026-01-23T05:00:00\"],[104.04,10053.0,102.25,\"2026-01-23T05:30:00\"],[0.13,10053.0,0.1,\"2026-01-23T06:00:00\"],[1.09,10019.0,0.78,\"2026-01-23T06:30:00\"],[9.76,10058.0,7.8,\"2026-01-23T07:00:00\"],[67.74,10016.0,65.3,\"2026-01-23T07:30:00\"],[177.83,10053.0,170.55,\"2026-01-23T08:00:00\"],[48.1,10058.0,36.4,\"2026-01-23T08:30:00\"],[1024.6,10024.0,1008.0,\"2026-01-23T09:00:00\"],[468.5,10053.0,163.87,\"2026-01-23T09:30:00\"],[713.52,10053.0,435.31,\"2026-01-23T10:00:00\"],[876.97,10053.0,522.07,\"2026-01-23T10:30:00\"],[283.74,10053.0,146.78,\"2026-01-23T11:00:00\"],[98.64,10053.0,32.18,\"2026-01-23T11:30:00\"],[6.88,10064.0,3.95,\"2026-01-23T12:00:00\"]],\"hovertemplate\":\"\\u003cb\\u003e%{customdata[3]}\\u003c\\u002fb\\u003e\\u003cbr\\u003eTotal: %{customdata[0]}\\u003cbr\\u003eMaxLogin: %{customdata[1]}\\u003cbr\\u003eMaxUSD: %{customdata[2]}\\u003cextra\\u003e\\u003c\\u002fextra\\u003e\",\"name\":\"RealizedSpreadUSDpos\",\"x\":[\"2026-01-23T00:00:00.000000000\",\"2026-01-23T00:30:00.000000000\",\"2026-01-23T01:00:00.000000000\",\"2026-01-23T01:30:00.000000000\",\"2026-01-23T02:00:00.000000000\",\"2026-01-23T02:30:00.000000000\",\"2026-01-23T03:00:00.000000000\",\"2026-01-23T03:30:00.000000000\",\"2026-01-23T04:00:00.000000000\",\"2026-01-23T04:30:00.000000000\",\"2026-01-23T05:00:00.000000000\",\"2026-01-23T05:30:00.000000000\",\"2026-01-23T06:00:00.000000000\",\"2026-01-23T06:30:00.000000000\",\"2026-01-23T07:00:00.000000000\",\"2026-01-23T07:30:00.000000000\",\"2026-01-23T08:00:00.000000000\",\"2026-01-23T08:30:00.000000000\",\"2026-01-23T09:00:00.000000000\",\"2026-01-23T09:30:00.000000000\",\"2026-01-23T10:00:00.000000000\",\"2026-01-23T10:30:00.000000000\",\"2026-01-23T11:00:00.000000000\",\"2026-01-23T11:30:00.000000000\",\"2026-01-23T12:00:00.000000000\"],\"y\":{\"dtype\":\"f8\",\"bdata\":\"AAAAAAAAAAAAAAAAAAAAAACNwvUofFdAwI2ZmZkJV0CA8K1H4RpLQCqJmZmZSXFAsdmryI0LbkA+lAzRBco5QAVCz4WGiERAc0DPzjHkVkB7S60GhmdzQMf3KFyPAlpA3sDBW8QowT+9ZHWZiWrxPwRMUbgehSNA6O31KFzvUEAKHQpOpDpmQLyC\\u002fLgTDUhAZyzreGICkEC++neIDUh9QHoElGMjTIZAQNR74shni0AHq41147txQCy1CIUXqVhARCxb7pGJG0A=\"},\"type\":\"bar\"}],\"layout\":{\"template\":{\"data\":{\"histogram2dcontour\":[{\"type\":\"histogram2dcontour\",\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]]}],\"choropleth\":[{\"type\":\"choropleth\",\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}}],\"histogram2d\":[{\"type\":\"histogram2d\",\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]]}],\"heatmap\":[{\"type\":\"heatmap\",\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]]}],\"contourcarpet\":[{\"type\":\"contourcarpet\",\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}}],\"contour\":[{\"type\":\"contour\",\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]]}],\"surface\":[{\"type\":\"surface\",\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]]}],\"mesh3d\":[{\"type\":\"mesh3d\",\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}}],\"scatter\":[{\"fillpattern\":{\"fillmode\":\"overlay\",\"size\":10,\"solidity\":0.2},\"type\":\"scatter\"}],\"parcoords\":[{\"type\":\"parcoords\",\"line\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}}}],\"scatterpolargl\":[{\"type\":\"scatterpolargl\",\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}}}],\"bar\":[{\"error_x\":{\"color\":\"#2a3f5f\"},\"error_y\":{\"color\":\"#2a3f5f\"},\"marker\":{\"line\":{\"color\":\"#E5ECF6\",\"width\":0.5},\"pattern\":{\"fillmode\":\"overlay\",\"size\":10,\"solidity\":0.2}},\"type\":\"bar\"}],\"scattergeo\":[{\"type\":\"scattergeo\",\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}}}],\"scatterpolar\":[{\"type\":\"scatterpolar\",\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}}}],\"histogram\":[{\"marker\":{\"pattern\":{\"fillmode\":\"overlay\",\"size\":10,\"solidity\":0.2}},\"type\":\"histogram\"}],\"scattergl\":[{\"type\":\"scattergl\",\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}}}],\"scatter3d\":[{\"type\":\"scatter3d\",\"line\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}}}],\"scattermap\":[{\"type\":\"scattermap\",\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}}}],\"scattermapbox\":[{\"type\":\"scattermapbox\",\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}}}],\"scatterternary\":[{\"type\":\"scatterternary\",\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}}}],\"scattercarpet\":[{\"type\":\"scattercarpet\",\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}}}],\"carpet\":[{\"aaxis\":{\"endlinecolor\":\"#2a3f5f\",\"gridcolor\":\"white\",\"linecolor\":\"white\",\"minorgridcolor\":\"white\",\"startlinecolor\":\"#2a3f5f\"},\"baxis\":{\"endlinecolor\":\"#2a3f5f\",\"gridcolor\":\"white\",\"linecolor\":\"white\",\"minorgridcolor\":\"white\",\"startlinecolor\":\"#2a3f5f\"},\"type\":\"carpet\"}],\"table\":[{\"cells\":{\"fill\":{\"color\":\"#EBF0F8\"},\"line\":{\"color\":\"white\"}},\"header\":{\"fill\":{\"color\":\"#C8D4E3\"},\"line\":{\"color\":\"white\"}},\"type\":\"table\"}],\"barpolar\":[{\"marker\":{\"line\":{\"color\":\"#E5ECF6\",\"width\":0.5},\"pattern\":{\"fillmode\":\"overlay\",\"size\":10,\"solidity\":0.2}},\"type\":\"barpolar\"}],\"pie\":[{\"automargin\":true,\"type\":\"pie\"}]},\"layout\":{\"autotypenumbers\":\"strict\",\"colorway\":[\"#636efa\",\"#EF553B\",\"#00cc96\",\"#ab63fa\",\"#FFA15A\",\"#19d3f3\",\"#FF6692\",\"#B6E880\",\"#FF97FF\",\"#FECB52\"],\"font\":{\"color\":\"#2a3f5f\"},\"hovermode\":\"closest\",\"hoverlabel\":{\"align\":\"left\"},\"paper_bgcolor\":\"white\",\"plot_bgcolor\":\"#E5ECF6\",\"polar\":{\"bgcolor\":\"#E5ECF6\",\"angularaxis\":{\"gridcolor\":\"white\",\"linecolor\":\"white\",\"ticks\":\"\"},\"radialaxis\":{\"gridcolor\":\"white\",\"linecolor\":\"white\",\"ticks\":\"\"}},\"ternary\":{\"bgcolor\":\"#E5ECF6\",\"aaxis\":{\"gridcolor\":\"white\",\"linecolor\":\"white\",\"ticks\":\"\"},\"baxis\":{\"gridcolor\":\"white\",\"linecolor\":\"white\",\"ticks\":\"\"},\"caxis\":{\"gridcolor\":\"white\",\"linecolor\":\"white\",\"ticks\":\"\"}},\"coloraxis\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"colorscale\":{\"sequential\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]],\"sequentialminus\":[[0.0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1.0,\"#f0f921\"]],\"diverging\":[[0,\"#8e0152\"],[0.1,\"#c51b7d\"],[0.2,\"#de77ae\"],[0.3,\"#f1b6da\"],[0.4,\"#fde0ef\"],[0.5,\"#f7f7f7\"],[0.6,\"#e6f5d0\"],[0.7,\"#b8e186\"],[0.8,\"#7fbc41\"],[0.9,\"#4d9221\"],[1,\"#276419\"]]},\"xaxis\":{\"gridcolor\":\"white\",\"linecolor\":\"white\",\"ticks\":\"\",\"title\":{\"standoff\":15},\"zerolinecolor\":\"white\",\"automargin\":true,\"zerolinewidth\":2},\"yaxis\":{\"gridcolor\":\"white\",\"linecolor\":\"white\",\"ticks\":\"\",\"title\":{\"standoff\":15},\"zerolinecolor\":\"white\",\"automargin\":true,\"zerolinewidth\":2},\"scene\":{\"xaxis\":{\"backgroundcolor\":\"#E5ECF6\",\"gridcolor\":\"white\",\"linecolor\":\"white\",\"showbackground\":true,\"ticks\":\"\",\"zerolinecolor\":\"white\",\"gridwidth\":2},\"yaxis\":{\"backgroundcolor\":\"#E5ECF6\",\"gridcolor\":\"white\",\"linecolor\":\"white\",\"showbackground\":true,\"ticks\":\"\",\"zerolinecolor\":\"white\",\"gridwidth\":2},\"zaxis\":{\"backgroundcolor\":\"#E5ECF6\",\"gridcolor\":\"white\",\"linecolor\":\"white\",\"showbackground\":true,\"ticks\":\"\",\"zerolinecolor\":\"white\",\"gridwidth\":2}},\"shapedefaults\":{\"line\":{\"color\":\"#2a3f5f\"}},\"annotationdefaults\":{\"arrowcolor\":\"#2a3f5f\",\"arrowhead\":0,\"arrowwidth\":1},\"geo\":{\"bgcolor\":\"white\",\"landcolor\":\"#E5ECF6\",\"subunitcolor\":\"white\",\"showland\":true,\"showlakes\":true,\"lakecolor\":\"white\"},\"title\":{\"x\":0.05},\"mapbox\":{\"style\":\"light\"}}},\"shapes\":[{\"fillcolor\":\"dodgerblue\",\"line\":{\"width\":0},\"opacity\":0.4,\"type\":\"rect\",\"x0\":0,\"x1\":1,\"xref\":\"x domain\",\"y0\":0,\"y1\":1127.0557808323324,\"yref\":\"y\"},{\"fillcolor\":\"crimson\",\"line\":{\"width\":0},\"opacity\":0.5,\"type\":\"rect\",\"x0\":0,\"x1\":1,\"xref\":\"x domain\",\"y0\":0,\"y1\":-647.5991986232397,\"yref\":\"y\"}],\"title\":{\"text\":\"d(RealizedSpread,ImpliedSpread) in USD\"},\"paper_bgcolor\":\"rgba(0, 1, 0, 0)\",\"plot_bgcolor\":\"rgba(0, 0, 0, 0)\",\"showlegend\":false,\"height\":800}}"
+				},
+				"plotlySelector": {
+					"plotly": "{\"data\":[{\"alignmentgroup\":\"True\",\"hovertemplate\":\"City=SF<br>Fruit=%{x}<br>Amount=%{y}<extra></extra>\",\"legendgroup\":\"SF\",\"marker\":{\"color\":\"#636efa\",\"pattern\":{\"shape\":\"\"}},\"name\":\"SF\",\"offsetgroup\":\"SF\",\"orientation\":\"v\",\"showlegend\":true,\"textposition\":\"auto\",\"x\":[\"Apples\",\"Oranges\",\"Bananas\"],\"xaxis\":\"x\",\"y\":{\"dtype\":\"i1\",\"bdata\":\"BAEC\"},\"yaxis\":\"y\",\"type\":\"bar\"},{\"alignmentgroup\":\"True\",\"hovertemplate\":\"City=Montreal<br>Fruit=%{x}<br>Amount=%{y}<extra></extra>\",\"legendgroup\":\"Montreal\",\"marker\":{\"color\":\"#EF553B\",\"pattern\":{\"shape\":\"\"}},\"name\":\"Montreal\",\"offsetgroup\":\"Montreal\",\"orientation\":\"v\",\"showlegend\":true,\"textposition\":\"auto\",\"x\":[\"Apples\",\"Oranges\",\"Bananas\"],\"xaxis\":\"x\",\"y\":{\"dtype\":\"i1\",\"bdata\":\"AgQF\"},\"yaxis\":\"y\",\"type\":\"bar\"}],\"layout\":{\"template\":{\"data\":{\"histogram2dcontour\":[{\"type\":\"histogram2dcontour\",\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1,\"#f0f921\"]]}],\"choropleth\":[{\"type\":\"choropleth\",\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}}],\"histogram2d\":[{\"type\":\"histogram2d\",\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1,\"#f0f921\"]]}],\"heatmap\":[{\"type\":\"heatmap\",\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1,\"#f0f921\"]]}],\"contourcarpet\":[{\"type\":\"contourcarpet\",\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}}],\"contour\":[{\"type\":\"contour\",\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1,\"#f0f921\"]]}],\"surface\":[{\"type\":\"surface\",\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"},\"colorscale\":[[0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1,\"#f0f921\"]]}],\"mesh3d\":[{\"type\":\"mesh3d\",\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}}],\"scatter\":[{\"fillpattern\":{\"fillmode\":\"overlay\",\"size\":10,\"solidity\":0.2},\"type\":\"scatter\"}],\"parcoords\":[{\"type\":\"parcoords\",\"line\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}}}],\"scatterpolargl\":[{\"type\":\"scatterpolargl\",\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}}}],\"bar\":[{\"error_x\":{\"color\":\"#2a3f5f\"},\"error_y\":{\"color\":\"#2a3f5f\"},\"marker\":{\"line\":{\"color\":\"#E5ECF6\",\"width\":0.5},\"pattern\":{\"fillmode\":\"overlay\",\"size\":10,\"solidity\":0.2}},\"type\":\"bar\"}],\"scattergeo\":[{\"type\":\"scattergeo\",\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}}}],\"scatterpolar\":[{\"type\":\"scatterpolar\",\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}}}],\"histogram\":[{\"marker\":{\"pattern\":{\"fillmode\":\"overlay\",\"size\":10,\"solidity\":0.2}},\"type\":\"histogram\"}],\"scattergl\":[{\"type\":\"scattergl\",\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}}}],\"scatter3d\":[{\"type\":\"scatter3d\",\"line\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}}}],\"scattermap\":[{\"type\":\"scattermap\",\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}}}],\"scattermapbox\":[{\"type\":\"scattermapbox\",\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}}}],\"scatterternary\":[{\"type\":\"scatterternary\",\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}}}],\"scattercarpet\":[{\"type\":\"scattercarpet\",\"marker\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}}}],\"carpet\":[{\"aaxis\":{\"endlinecolor\":\"#2a3f5f\",\"gridcolor\":\"white\",\"linecolor\":\"white\",\"minorgridcolor\":\"white\",\"startlinecolor\":\"#2a3f5f\"},\"baxis\":{\"endlinecolor\":\"#2a3f5f\",\"gridcolor\":\"white\",\"linecolor\":\"white\",\"minorgridcolor\":\"white\",\"startlinecolor\":\"#2a3f5f\"},\"type\":\"carpet\"}],\"table\":[{\"cells\":{\"fill\":{\"color\":\"#EBF0F8\"},\"line\":{\"color\":\"white\"}},\"header\":{\"fill\":{\"color\":\"#C8D4E3\"},\"line\":{\"color\":\"white\"}},\"type\":\"table\"}],\"barpolar\":[{\"marker\":{\"line\":{\"color\":\"#E5ECF6\",\"width\":0.5},\"pattern\":{\"fillmode\":\"overlay\",\"size\":10,\"solidity\":0.2}},\"type\":\"barpolar\"}],\"pie\":[{\"automargin\":true,\"type\":\"pie\"}]},\"layout\":{\"autotypenumbers\":\"strict\",\"colorway\":[\"#636efa\",\"#EF553B\",\"#00cc96\",\"#ab63fa\",\"#FFA15A\",\"#19d3f3\",\"#FF6692\",\"#B6E880\",\"#FF97FF\",\"#FECB52\"],\"font\":{\"color\":\"#2a3f5f\"},\"hovermode\":\"closest\",\"hoverlabel\":{\"align\":\"left\"},\"paper_bgcolor\":\"white\",\"plot_bgcolor\":\"#E5ECF6\",\"polar\":{\"bgcolor\":\"#E5ECF6\",\"angularaxis\":{\"gridcolor\":\"white\",\"linecolor\":\"white\",\"ticks\":\"\"},\"radialaxis\":{\"gridcolor\":\"white\",\"linecolor\":\"white\",\"ticks\":\"\"}},\"ternary\":{\"bgcolor\":\"#E5ECF6\",\"aaxis\":{\"gridcolor\":\"white\",\"linecolor\":\"white\",\"ticks\":\"\"},\"baxis\":{\"gridcolor\":\"white\",\"linecolor\":\"white\",\"ticks\":\"\"},\"caxis\":{\"gridcolor\":\"white\",\"linecolor\":\"white\",\"ticks\":\"\"}},\"coloraxis\":{\"colorbar\":{\"outlinewidth\":0,\"ticks\":\"\"}},\"colorscale\":{\"sequential\":[[0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1,\"#f0f921\"]],\"sequentialminus\":[[0,\"#0d0887\"],[0.1111111111111111,\"#46039f\"],[0.2222222222222222,\"#7201a8\"],[0.3333333333333333,\"#9c179e\"],[0.4444444444444444,\"#bd3786\"],[0.5555555555555556,\"#d8576b\"],[0.6666666666666666,\"#ed7953\"],[0.7777777777777778,\"#fb9f3a\"],[0.8888888888888888,\"#fdca26\"],[1,\"#f0f921\"]],\"diverging\":[[0,\"#8e0152\"],[0.1,\"#c51b7d\"],[0.2,\"#de77ae\"],[0.3,\"#f1b6da\"],[0.4,\"#fde0ef\"],[0.5,\"#f7f7f7\"],[0.6,\"#e6f5d0\"],[0.7,\"#b8e186\"],[0.8,\"#7fbc41\"],[0.9,\"#4d9221\"],[1,\"#276419\"]]},\"xaxis\":{\"gridcolor\":\"white\",\"linecolor\":\"white\",\"ticks\":\"\",\"title\":{\"standoff\":15},\"zerolinecolor\":\"white\",\"automargin\":true,\"zerolinewidth\":2},\"yaxis\":{\"gridcolor\":\"white\",\"linecolor\":\"white\",\"ticks\":\"\",\"title\":{\"standoff\":15},\"zerolinecolor\":\"white\",\"automargin\":true,\"zerolinewidth\":2},\"scene\":{\"xaxis\":{\"backgroundcolor\":\"#E5ECF6\",\"gridcolor\":\"white\",\"linecolor\":\"white\",\"showbackground\":true,\"ticks\":\"\",\"zerolinecolor\":\"white\",\"gridwidth\":2},\"yaxis\":{\"backgroundcolor\":\"#E5ECF6\",\"gridcolor\":\"white\",\"linecolor\":\"white\",\"showbackground\":true,\"ticks\":\"\",\"zerolinecolor\":\"white\",\"gridwidth\":2},\"zaxis\":{\"backgroundcolor\":\"#E5ECF6\",\"gridcolor\":\"white\",\"linecolor\":\"white\",\"showbackground\":true,\"ticks\":\"\",\"zerolinecolor\":\"white\",\"gridwidth\":2}},\"shapedefaults\":{\"line\":{\"color\":\"#2a3f5f\"}},\"annotationdefaults\":{\"arrowcolor\":\"#2a3f5f\",\"arrowhead\":0,\"arrowwidth\":1},\"geo\":{\"bgcolor\":\"white\",\"landcolor\":\"#E5ECF6\",\"subunitcolor\":\"white\",\"showland\":true,\"showlakes\":true,\"lakecolor\":\"white\"},\"title\":{\"x\":0.05},\"mapbox\":{\"style\":\"light\"}}},\"xaxis\":{\"anchor\":\"y\",\"domain\":[0,1],\"title\":{\"text\":\"Fruit\"}},\"yaxis\":{\"anchor\":\"x\",\"domain\":[0,1],\"title\":{\"text\":\"Amount\"}},\"legend\":{\"title\":{\"text\":\"City\"},\"tracegroupgap\":0},\"margin\":{\"t\":60},\"barmode\":\"group\"}}"
+				},
+				"bananas": {
+					"xAxis": {
+						"v": "Bananas"
+					},
+					"group_user": {
+						"v": "3"
+					}
+				},
+				"oranges": {
+					"xAxis": {
+						"v": "Oranges"
+					},
+					"group_user": {
+						"v": "1"
+					}
+				},
+				"apples": {
+					"xAxis": {
+						"v": "Apples"
+					},
+					"group_user": {
+						"v": "2"
+					}
+				},
+				"2026-01-23 09:00": {
+					"xAxis": {
+						"v": "2026-01-23 09:00"
+					},
+					"group_user": {
+						"v": "2"
+					}
+				},
+				"2026-01-23 09:30": {
+					"xAxis": {
+						"v": "2026-01-23 09:30"
+					},
+					"group_user": {
+						"v": "20"
+					}
+				},
+				"2026-01-23 10:00": {
+					"xAxis": {
+						"v": "2026-01-23 10:00"
+					},
+					"group_user": {
+						"v": "2"
+					}
+				}
+			},
+			"config": {
+				"header": "Plotly Selector",
+				"demoSelector": {
+					"metadata": [
+						{
+							"header": "Plotly Bar Selector",
+							"plotlySelector": {
+								"initValue": "apples",
+								"dataKey": "plotlySelector",
+								"contentConfig": {}
+							}
+						},
+						{
+							"header": "Advanced Plotly Bar Selector",
+							"plotlySelector": {
+								"initValue": "apples",
+								"dataKey": "slip",
+								"contentConfig": {}
+							}
+						}
+					]
+				},
+				"debugMetadata": true,
+				"groups": [
+					{
+						"header": " ",
+						"items": [
+							{
+								"dataKey": "xAxis",
+								"notation": "compact",
+								"sub": "xAxis Click",
+								"title": ""
+							},
+							{
+								"size": {
+									"xs": 8
+								},
+								"dataKey": "group_user",
+								"notation": "compact",
+								"sub": "Entry Date",
+								"title": ""
+							}
+						]
+					}
+				]
+			}
 		}
 	},
 	"navs": {
