@@ -63,7 +63,7 @@
 									"Risk Monitoring"
 								],
 								"intensity": 0.4,
-								"pauseTime": 5000,
+								"pauseTime": 15000,
 								"variant": "typewriter",
 								"vx": {
 									"size": "lg",
