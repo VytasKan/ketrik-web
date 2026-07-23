@@ -556,6 +556,13 @@
 								"cardType": "noCard"
 							},
 							{
+								"contentConfig": {
+									"contentType": "KetrikDiagram"
+								},
+								"dataKey": "subHero",
+								"type": "cardContent"
+							},
+							{
 								"cardConfig": [
 									{
 										"contentConfig": {
