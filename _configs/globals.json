@@ -88,7 +88,7 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "In computing, a shell is just the interface people use to control a system—the outer layer that shows what's going on and lets you act. Ketrik is that shell for your business: the live control panel sitting on top of your data and workflows."
+								"text": "In computing, a shell is just the interface people use to control a system — the outer layer that shows what's going on and lets you act. Ketrik is that shell for your business: the live control panel sitting on top of your data and workflows."
 							}
 						]
 					}
@@ -520,11 +520,13 @@
 											"contentType": "Marketing",
 											"panel": "basic",
 											"vx": {
-												"title": {
-													"size": "sm",
-													"color": "gray",
+												"titleWrapper": {
 													"center": true,
 													"isVertical": true
+												},
+												"title": {
+													"size": "sm",
+													"color": "gray"
 												},
 												"featuresGrid": {
 													"size": 2,
@@ -598,6 +600,23 @@
 											}
 										},
 										"dataKey": "shellBullets",
+										"type": "cardContent"
+									}
+								]
+							},
+							{
+								"cardProps": {
+									"sx": {
+										"mt": 5
+									}
+								},
+								"cardType": "noCard",
+								"cardConfig": [
+									{
+										"contentConfig": {
+											"contentType": "KetrikFaq",
+											"dataKey": "shellBullets"
+										},
 										"type": "cardContent"
 									}
 								]
