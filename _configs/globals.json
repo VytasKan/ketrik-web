@@ -45,30 +45,16 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "Ketrik turns your data and workflows into an AI-powered command center — allowing you to see, react, and execute at the speed of decisions, without building a platform from scratch."
+								"text": "Ketrik turns your data and workflows into an AI-powered command center — allowing you to see, react, and execute the moment decisions are made, without months of custom platform engineering."
 							}
 						]
 					}
 				},
 				"subHero": {
-					"backgroud": {
-						"style": {
-							"backgroundImage": "repeating-linear-gradient(0deg, transparent, transparent 19px, rgba(75, 85, 99, 0.08) 19px, rgba(75, 85, 99, 0.08) 20px, transparent 20px, transparent 39px, rgba(75, 85, 99, 0.08) 39px, rgba(75, 85, 99, 0.08) 40px),repeating-linear-gradient(90deg, transparent, transparent 19px, rgba(75, 85, 99, 0.08) 19px, rgba(75, 85, 99, 0.08) 20px, transparent 20px, transparent 39px, rgba(75, 85, 99, 0.08) 39px, rgba(75, 85, 99, 0.08) 40px), radial-gradient(circle at 20px 20px, rgba(55, 65, 81, 0.12) 2px, transparent 2px), radial-gradient(circle at 40px 40px, rgba(55, 65, 81, 0.12) 2px, transparent 2px)",
-							"backgroundSize": "40px 40px, 40px 40px, 40px 40px, 40px 40px"
-						}
-					},
 					"title": {
 						"text": [
 							{
-								"text": "Built for Operators and Experts",
-								"vx": {
-									"size": "sm",
-									"color": "gray",
-									"lineBreak": true
-								}
-							},
-							{
-								"text": " "
+								"text": "Built for Operators and Experts"
 							}
 						]
 					},
@@ -77,7 +63,7 @@
 							{
 								"title": "Operators & Founders",
 								"icon": "DashboardCustomize",
-								"description": "Run your business from one live screen. Get instant visibility into live metrics, risk warnings, and operational workflows—giving you full control from MVP to scale."
+								"description": "Run your business from one live screen. Get instant visibility into live metrics, risk warnings, and operational workflows — giving you full control from MVP to scale."
 							},
 							{
 								"title": "Consultants & Analysts",
@@ -535,6 +521,8 @@
 											"panel": "basic",
 											"vx": {
 												"title": {
+													"size": "sm",
+													"color": "gray",
 													"center": true,
 													"isVertical": true
 												},
@@ -553,7 +541,8 @@
 								"cardProps": {
 									"sx": {
 										"position": "relative",
-										"zIndex": 10
+										"zIndex": 10,
+										"pt": 5
 									}
 								},
 								"cardConfig": [
