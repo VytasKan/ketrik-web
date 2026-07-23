@@ -47,7 +47,6 @@
 							{
 								"text": "Ketrik turns your data and workflows into an AI-powered command center — allowing you to see, react, and execute at the speed of decisions, without building a platform from scratch.",
 								"vx": {
-									"size": "lg",
 									"maxWidth": "md",
 									"center": false
 								}
@@ -59,38 +58,7 @@
 					"title": {
 						"text": [
 							{
-								"text": "Built for operators and experts",
-								"vx": {
-									"size": "sm",
-									"color": "blue",
-									"lineBreak": true
-								}
-							},
-							{
-								"text": " "
-							}
-						]
-					},
-					"featuresGrid": {
-						"ds": [
-							{
-								"title": "Operators & Founders",
-								"icon": "DashboardCustomize",
-								"description": "Run your business from one live screen. Get instant visibility into live metrics, risk warnings, and operational workflows—giving you full control from MVP to scale."
-							},
-							{
-								"title": "Consultants & Analysts",
-								"icon": "Insights",
-								"description": "Turn your data models into client-ready applications. Plug in your custom metrics and algorithms, and let Ketrik deliver the live dashboards, alerts, and command surface your clients need."
-							}
-						]
-					}
-				},
-				"subHero2": {
-					"title": {
-						"text": [
-							{
-								"text": "Built for operators and experts",
+								"text": "Built for Operators and Experts",
 								"vx": {
 									"size": "sm",
 									"color": "gray",
@@ -113,6 +81,45 @@
 								"title": "Consultants & Analysts",
 								"icon": "Insights",
 								"description": "Turn your data models into client-ready tools. Plug in your custom metrics and algorithms, and let Ketrik handle the dashboards, alerts, and workflows they need."
+							}
+						]
+					}
+				},
+				"shell": {
+					"title": {
+						"text": [
+							{
+								"text": "What we mean by “shell”",
+								"vx": {
+									"size": "md",
+									"color": "blue"
+								}
+							}
+						]
+					},
+					"subtitle": {
+						"text": [
+							{
+								"text": "In computing, a shell is just the interface people use to control a system—the outer layer that shows what’s going on and lets you act. Ketrik is that shell for your business: the live control panel sitting on top of your data and workflows."
+							}
+						]
+					},
+					"featuresGrid": {
+						"ds": [
+							{
+								"title": "One control surface, not ten tools",
+								"icon": "Layers",
+								"description": "Consolidate scattered views and portals into a single, unified interface."
+							},
+							{
+								"title": "Feeds on what you already have",
+								"icon": "Extension",
+								"description": "Sits cleanly on top of your existing data, models, and workflows without requiring a rebuild."
+							},
+							{
+								"title": "Reactive by design, AI under the hood",
+								"icon": "Bolt",
+								"description": "Surfaces immediate alerts and guided actions the moment operational thresholds shift."
 							}
 						]
 					}
@@ -529,38 +536,23 @@
 											"panel": "basic",
 											"vx": {
 												"featuresGrid": {
-													"size": 2,
+													"size": 3,
 													"color": "blue"
 												}
 											}
 										},
-										"dataKey": "subHero2",
+										"dataKey": "shell",
 										"type": "cardContent"
 									},
 									{
 										"contentConfig": {
-											"contentType": "Marketing",
-											"panel": "basic",
-											"id": "work",
-											"vx": {
-												"featuresGrid": {
-													"size": 2,
-													"color": "blue"
-												}
-											}
+											"contentType": "KetrikDiagram"
 										},
-										"dataKey": "panel2",
+										"dataKey": "subHero",
 										"type": "cardContent"
 									}
 								],
 								"cardType": "noCard"
-							},
-							{
-								"contentConfig": {
-									"contentType": "KetrikDiagram"
-								},
-								"dataKey": "subHero",
-								"type": "cardContent"
 							},
 							{
 								"cardConfig": [
