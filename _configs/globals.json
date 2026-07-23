@@ -91,9 +91,8 @@
 					"title": {
 						"text": [
 							{
-								"text": "What We Mean by “Shell”",
+								"text": "The Ketrik Shell",
 								"vx": {
-									"center": true,
 									"size": "sm",
 									"color": "gray"
 								}
@@ -103,12 +102,7 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "In computing, a shell is just the interface people use to control a system—the outer layer that shows what's going on and lets you act. Ketrik is that shell for your business: the live control panel sitting on top of your data and workflows.",
-								"vx": {
-									"maxWidth": "md",
-									"center": true,
-									"italic": true
-								}
+								"text": "In computing, a shell is just the interface people use to control a system—the outer layer that shows what's going on and lets you act. Ketrik is that shell for your business: the live control panel sitting on top of your data and workflows."
 							}
 						]
 					}
@@ -540,6 +534,10 @@
 											"contentType": "Marketing",
 											"panel": "basic",
 											"vx": {
+												"title": {
+													"center": true,
+													"isVertical": true
+												},
 												"featuresGrid": {
 													"size": 2,
 													"color": "blue"
@@ -552,6 +550,12 @@
 								]
 							},
 							{
+								"cardProps": {
+									"sx": {
+										"position": "relative",
+										"zIndex": 10
+									}
+								},
 								"cardConfig": [
 									{
 										"contentConfig": {
@@ -561,6 +565,11 @@
 												"titleWrapper": {
 													"center": true,
 													"isVertical": true
+												},
+												"subtitle": {
+													"maxWidth": "md",
+													"center": true,
+													"italic": true
 												},
 												"featuresGrid": {
 													"size": 3,
@@ -606,34 +615,6 @@
 							},
 							{
 								"cardConfig": [
-									{
-										"contentConfig": {
-											"contentType": "Marketing",
-											"panel": "basic",
-											"vx": {
-												"titleWrapper": {
-													"center": true,
-													"isVertical": true
-												},
-												"featuresGrid": {
-													"size": 3,
-													"color": "blue"
-												},
-												"sectionWrapper": {
-													"hasNoMargin": true
-												}
-											}
-										},
-										"dataKey": "shell",
-										"type": "cardContent"
-									},
-									{
-										"contentConfig": {
-											"contentType": "KetrikDiagram"
-										},
-										"dataKey": "subHero",
-										"type": "cardContent"
-									},
 									{
 										"contentConfig": {
 											"contentType": "Marketing",
