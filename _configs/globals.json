@@ -91,8 +91,8 @@
 							{
 								"text": "What we mean by “shell”",
 								"vx": {
-									"size": "md",
-									"color": "blue"
+									"size": "sm",
+									"color": "gray"
 								}
 							}
 						]
@@ -100,7 +100,11 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "In computing, a shell is just the interface people use to control a system—the outer layer that shows what’s going on and lets you act. Ketrik is that shell for your business: the live control panel sitting on top of your data and workflows."
+								"text": "In computing, a shell is just the interface people use to control a system—the outer layer that shows what's going on and lets you act. Ketrik is that shell for your business: the live control panel sitting on top of your data and workflows.",
+								"vx": {
+									"maxWidth": "md",
+									"center": true
+								}
 							}
 						]
 					},
