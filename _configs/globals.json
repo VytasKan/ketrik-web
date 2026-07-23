@@ -22,11 +22,11 @@
 								"phrases": [
 									"Business Operations",
 									"Command Centers",
-									"Client Operations",
 									"Event Response",
-									"Risk Monitoring",
+									"Risk & Monitoring",
 									"Decision Intelligence",
-									"Real-Time Command"
+									"Client Dashboards",
+									"Live Workflows"
 								],
 								"intensity": 0.5,
 								"pauseTime": 30000,
@@ -45,7 +45,7 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "Ketrik turns your data and workflows into an AI-powered command center - allowing you to see, react, and execute at the speed of decisions, without building a platform from scratch.",
+								"text": "Ketrik turns your data and workflows into an AI-powered command center — allowing you to see, react, and execute at the speed of decisions, without building a platform from scratch.",
 								"vx": {
 									"size": "lg",
 									"maxWidth": "md",
@@ -59,18 +59,11 @@
 					"title": {
 						"text": [
 							{
-								"text": "Target Audience",
-								"vx": {
-									"size": "xs",
-									"color": "gray",
-									"lineBreak": true
-								}
-							},
-							{
 								"text": "Built for operators and experts",
 								"vx": {
 									"size": "md",
-									"color": "blue"
+									"color": "blue",
+									"lineBreak": true
 								}
 							}
 						]
@@ -504,6 +497,7 @@
 											"panel": "basic",
 											"vx": {
 												"featuresGrid": {
+													"size": 2,
 													"color": "blue"
 												}
 											}
