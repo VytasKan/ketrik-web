@@ -93,7 +93,7 @@
 								"text": "Built for operators and experts",
 								"vx": {
 									"size": "sm",
-									"color": "blue",
+									"color": "gray",
 									"lineBreak": true
 								}
 							},
@@ -112,7 +112,7 @@
 							{
 								"title": "Consultants & Analysts",
 								"icon": "Insights",
-								"description": "Turn your data models into client-ready applications. Plug in your custom metrics and algorithms, and let Ketrik deliver the live dashboards, alerts, and command surface your clients need."
+								"description": "Turn your data models into client-ready tools. Plug in your custom metrics and algorithms, and let Ketrik handle the dashboards, alerts, and workflows they need."
 							}
 						]
 					}
