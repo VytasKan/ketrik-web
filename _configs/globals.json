@@ -61,10 +61,44 @@
 							{
 								"text": "Built for operators and experts",
 								"vx": {
-									"size": "md",
+									"size": "sm",
 									"color": "blue",
 									"lineBreak": true
 								}
+							},
+							{
+								"text": " "
+							}
+						]
+					},
+					"featuresGrid": {
+						"ds": [
+							{
+								"title": "Operators & Founders",
+								"icon": "DashboardCustomize",
+								"description": "Run your business from one live screen. Get instant visibility into live metrics, risk warnings, and operational workflows—giving you full control from MVP to scale."
+							},
+							{
+								"title": "Consultants & Analysts",
+								"icon": "Insights",
+								"description": "Turn your data models into client-ready applications. Plug in your custom metrics and algorithms, and let Ketrik deliver the live dashboards, alerts, and command surface your clients need."
+							}
+						]
+					}
+				},
+				"subHero2": {
+					"title": {
+						"text": [
+							{
+								"text": "Built for operators and experts",
+								"vx": {
+									"size": "sm",
+									"color": "blue",
+									"lineBreak": true
+								}
+							},
+							{
+								"text": " "
 							}
 						]
 					},
@@ -247,7 +281,7 @@
 					}
 				},
 				"vibe": {
-					"backgroun": {
+					"backgroud": {
 						"style": {
 							"backgroundImage": "repeating-linear-gradient(0deg, transparent, transparent 19px, rgba(75, 85, 99, 0.08) 19px, rgba(75, 85, 99, 0.08) 20px, transparent 20px, transparent 39px, rgba(75, 85, 99, 0.08) 39px, rgba(75, 85, 99, 0.08) 40px),repeating-linear-gradient(90deg, transparent, transparent 19px, rgba(75, 85, 99, 0.08) 19px, rgba(75, 85, 99, 0.08) 20px, transparent 20px, transparent 39px, rgba(75, 85, 99, 0.08) 39px, rgba(75, 85, 99, 0.08) 40px), radial-gradient(circle at 20px 20px, rgba(55, 65, 81, 0.12) 2px, transparent 2px), radial-gradient(circle at 40px 40px, rgba(55, 65, 81, 0.12) 2px, transparent 2px)",
 							"backgroundSize": "40px 40px, 40px 40px, 40px 40px, 40px 40px"
@@ -266,22 +300,6 @@
 							{
 								"text": "Think of it like a high-stakes expedition. 'Vibe coding' is a great way to start moving, but without professional-grade equipment, you'll stall as soon as the terrain gets tough. We provide the technical durability that allows you to pivot and scale as the market changes. By reinforcing your vision with resilient architecture, we ensure your platform stays fast and stable—whether you're serving ten users or ten thousand.",
 								"text2": "Think of it like an expedition. 'Vibe coding' is a fast start, but if you don't have the right equipment, you'll stall as soon as the terrain gets tough. We provide the technical durability that allows you to pivot and scale as the market changes. We ensure your foundation is resilient, so whether you're serving ten users or ten thousand, your platform remains fast, stable, and ready for the road ahead."
-							}
-						]
-					}
-				},
-				"stories": {
-					"title": {
-						"text": [
-							{
-								"text": "Success Stories"
-							}
-						]
-					},
-					"subtitle": {
-						"text": [
-							{
-								"text": ""
 							}
 						]
 					}
@@ -360,7 +378,7 @@
 					}
 				},
 				"panel2": {
-					"background1": {
+					"background": {
 						"style": {
 							"backgroundImage": "repeating-linear-gradient(0deg, transparent, transparent 19px, rgba(75, 85, 99, 0.08) 19px, rgba(75, 85, 99, 0.08) 20px, transparent 20px, transparent 39px, rgba(75, 85, 99, 0.08) 39px, rgba(75, 85, 99, 0.08) 40px),repeating-linear-gradient(90deg, transparent, transparent 19px, rgba(75, 85, 99, 0.08) 19px, rgba(75, 85, 99, 0.08) 20px, transparent 20px, transparent 39px, rgba(75, 85, 99, 0.08) 39px, rgba(75, 85, 99, 0.08) 40px), radial-gradient(circle at 20px 20px, rgba(55, 65, 81, 0.12) 2px, transparent 2px), radial-gradient(circle at 40px 40px, rgba(55, 65, 81, 0.12) 2px, transparent 2px)",
 							"backgroundSize": "40px 40px, 40px 40px, 40px 40px, 40px 40px"
@@ -503,6 +521,20 @@
 											}
 										},
 										"dataKey": "subHero",
+										"type": "cardContent"
+									},
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "basic",
+											"vx": {
+												"featuresGrid": {
+													"size": 2,
+													"color": "blue"
+												}
+											}
+										},
+										"dataKey": "subHero2",
 										"type": "cardContent"
 									},
 									{
