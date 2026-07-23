@@ -20,13 +20,12 @@
 							},
 							{
 								"phrases": [
-									"Business Operations",
-									"Command Centers",
-									"Event Response",
-									"Risk & Monitoring",
-									"Decision Intelligence",
-									"Client Dashboards",
-									"Live Workflows"
+									"Live Operations",
+									"Real-Time Execution",
+									"Critical Events",
+									"Client Applications",
+									"Risk Control",
+									"Complex Workflows"
 								],
 								"intensity": 0.5,
 								"pauseTime": 30000,
@@ -544,7 +543,8 @@
 									"sx": {
 										"position": "relative",
 										"zIndex": 10,
-										"pt": 5
+										"pt": 5,
+										"mb": 10
 									}
 								},
 								"cardConfig": [
