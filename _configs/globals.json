@@ -539,7 +539,11 @@
 										},
 										"dataKey": "subHero",
 										"type": "cardContent"
-									},
+									}
+								]
+							},
+							{
+								"cardConfig": [
 									{
 										"contentConfig": {
 											"contentType": "Marketing",
@@ -567,11 +571,7 @@
 										},
 										"dataKey": "subHero",
 										"type": "cardContent"
-									}
-								]
-							},
-							{
-								"cardConfig": [
+									},
 									{
 										"contentConfig": {
 											"contentType": "Marketing",
