@@ -29,7 +29,7 @@
 									"Real-Time Command"
 								],
 								"intensity": 0.5,
-								"pauseTime": 20000,
+								"pauseTime": 30000,
 								"variant": "typewriter",
 								"vx": {
 									"size": "xl",
@@ -45,7 +45,7 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "Ketrik turns your existing data and workflows into a live, AI-powered command center - so you can see what's happening and execute guided actions without building a platform from scratch.",
+								"text": "Ketrik turns your data and workflows into an AI-powered command center - allowing you to see, react, and execute at the speed of decisions, without building a platform from scratch.",
 								"vx": {
 									"size": "lg",
 									"maxWidth": "md",
@@ -56,6 +56,41 @@
 					}
 				},
 				"subHero": {
+					"title": {
+						"text": [
+							{
+								"text": "Target Audience",
+								"vx": {
+									"size": "xs",
+									"color": "gray",
+									"lineBreak": true
+								}
+							},
+							{
+								"text": "Built for operators and experts",
+								"vx": {
+									"size": "md",
+									"color": "blue"
+								}
+							}
+						]
+					},
+					"featuresGrid": {
+						"ds": [
+							{
+								"title": "Operators & Founders",
+								"icon": "DashboardCustomize",
+								"description": "Run your business from one live screen. Get instant visibility into live metrics, risk warnings, and operational workflows—giving you full control from MVP to scale."
+							},
+							{
+								"title": "Consultants & Analysts",
+								"icon": "Insights",
+								"description": "Turn your data models into client-ready applications. Plug in your custom metrics and algorithms, and let Ketrik deliver the live dashboards, alerts, and command surface your clients need."
+							}
+						]
+					}
+				},
+				"subHero1": {
 					"title": {
 						"text": [
 							{
