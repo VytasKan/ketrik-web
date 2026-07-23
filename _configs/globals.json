@@ -45,11 +45,7 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "Ketrik turns your data and workflows into an AI-powered command center — allowing you to see, react, and execute at the speed of decisions, without building a platform from scratch.",
-								"vx": {
-									"maxWidth": "md",
-									"center": false
-								}
+								"text": "Ketrik turns your data and workflows into an AI-powered command center — allowing you to see, react, and execute at the speed of decisions, without building a platform from scratch."
 							}
 						]
 					}
@@ -491,6 +487,7 @@
 						},
 						"items": [
 							{
+								"cardType": "noCard",
 								"cardConfig": [
 									{
 										"contentConfig": {
@@ -509,6 +506,9 @@
 													"color": "primary",
 													"radius": "full",
 													"size": "lg"
+												},
+												"background": {
+													"layout": "fullScreen"
 												}
 											},
 											"sx": {
@@ -521,7 +521,11 @@
 										},
 										"dataKey": "hero",
 										"type": "cardContent"
-									},
+									}
+								]
+							},
+							{
+								"cardConfig": [
 									{
 										"contentConfig": {
 											"contentType": "Marketing",
@@ -541,6 +545,10 @@
 											"contentType": "Marketing",
 											"panel": "basic",
 											"vx": {
+												"titleWrapper": {
+													"center": true,
+													"isVertical": true
+												},
 												"featuresGrid": {
 													"size": 3,
 													"color": "blue"
@@ -560,8 +568,7 @@
 										"dataKey": "subHero",
 										"type": "cardContent"
 									}
-								],
-								"cardType": "noCard"
+								]
 							},
 							{
 								"cardConfig": [
