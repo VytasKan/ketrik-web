@@ -9,65 +9,47 @@
 							"--bg-image-dark": "url(/_assets/network_pattern_121212_hd.png)"
 						}
 					},
-					"button": {
-						"href": "/portal",
-						"text": "Get In Touch"
-					},
-					"subtitle": {
-						"text": [
-							{
-								"text": "Most AI sits in chats. Ketrik applies it to your actual operations — generating workflows, building dashboards, and extending your platform as your business evolves.",
-								"vx": {
-									"size": "lg",
-									"maxWidth": "md",
-									"center": false
-								}
-							}
-						]
-					},
 					"title": {
 						"text": [
 							{
 								"text": "AI Applied to",
 								"vx": {
 									"size": "lg",
-									"lineBreak": false
+									"lineBreak": true
 								}
 							},
 							{
 								"phrases": [
-									"Data Flows",
-									"Operational Visibility",
-									"Command Centers",
 									"Business Operations",
-									"Real-Time Command",
-									"Metric Delivery",
-									"Infrastructure",
-									"Orchestration",
-									"Instant Operations",
-									"Complex Data",
-									"Growing Operations",
-									"Your Pipelines",
-									"Live Dashboards",
-									"Multi-Tenant Operations",
-									"Workflow Automation",
-									"Real-Time Analytics",
-									"Mission Control",
-									"Operational Intelligence",
-									"Data Integration",
-									"Alert Management",
+									"Command Centers",
 									"Client Operations",
-									"Decision Intelligence",
 									"Event Response",
-									"Platform Extension",
-									"Risk Monitoring"
+									"Risk Monitoring",
+									"Decision Intelligence",
+									"Real-Time Command"
 								],
-								"intensity": 0.4,
-								"pauseTime": 15000,
+								"intensity": 0.5,
+								"pauseTime": 10000,
 								"variant": "typewriter",
 								"vx": {
 									"size": "lg",
 									"color": "blue"
+								}
+							}
+						]
+					},
+					"button": {
+						"href": "/dashboard",
+						"text": "Get In Touch"
+					},
+					"subtitle": {
+						"text": [
+							{
+								"text": "Ketrik gives you one live, AI-powered screen for your business that turns the data and workflows you already have into dashboards, smart alerts, and guided actions—so you can see what's happening and what to do next without building a platform from scratch.",
+								"vx": {
+									"size": "lg",
+									"maxWidth": "md",
+									"center": false
 								}
 							}
 						]
@@ -465,7 +447,7 @@
 												"title": {},
 												"titleWrapper": {},
 												"button": {
-													"color": "red",
+													"color": "primary",
 													"radius": "full",
 													"size": "lg"
 												}
