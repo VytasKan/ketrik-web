@@ -543,8 +543,7 @@
 									"sx": {
 										"position": "relative",
 										"zIndex": 10,
-										"pt": 5,
-										"mb": 10
+										"pt": 5
 									}
 								},
 								"cardConfig": [
@@ -583,6 +582,13 @@
 									},
 									{
 										"contentConfig": {
+											"contentType": "KetrikMiniFaq",
+											"dataKey": "shellBullets"
+										},
+										"type": "cardContent"
+									},
+									{
+										"contentConfig": {
 											"contentType": "Marketing",
 											"panel": "basic",
 											"vx": {
@@ -605,11 +611,6 @@
 								]
 							},
 							{
-								"cardProps": {
-									"sx": {
-										"mt": 5
-									}
-								},
 								"cardType": "noCard",
 								"cardConfig": [
 									{
@@ -623,28 +624,6 @@
 							},
 							{
 								"cardConfig": [
-									{
-										"contentConfig": {
-											"contentType": "Marketing",
-											"panel": "basic",
-											"vx": {
-												"sectionWrapper": {
-													"isBlurred": true
-												},
-												"subtitle": {
-													"center": true,
-													"maxWidth": "md",
-													"italic": true
-												},
-												"titleWrapper": {
-													"center": true,
-													"isVertical": true
-												}
-											}
-										},
-										"dataKey": "vibe",
-										"type": "cardContent"
-									},
 									{
 										"contentConfig": {
 											"contentType": "Marketing",
