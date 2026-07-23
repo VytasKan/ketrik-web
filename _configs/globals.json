@@ -29,10 +29,10 @@
 									"Real-Time Command"
 								],
 								"intensity": 0.5,
-								"pauseTime": 10000,
+								"pauseTime": 20000,
 								"variant": "typewriter",
 								"vx": {
-									"size": "lg",
+									"size": "xl",
 									"color": "blue"
 								}
 							}
@@ -45,7 +45,7 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "Ketrik gives you one live, AI-powered screen for your business that turns the data and workflows you already have into dashboards, smart alerts, and guided actions—so you can see what's happening and what to do next without building a platform from scratch.",
+								"text": "Ketrik turns your existing data and workflows into a live, AI-powered command center - so you can see what's happening and execute guided actions without building a platform from scratch.",
 								"vx": {
 									"size": "lg",
 									"maxWidth": "md",
