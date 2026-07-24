@@ -62,10 +62,18 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "Ketrik turns your data and workflows into an interactive control surface where you can see, decide, and execute in real time."
+								"text": "Ketrik turns your data and workflows into interactive views where you can see, decide, and execute in real time."
 							},
 							{
-								"text": "Optional AI agents can then layer in to automate routine decisions and accelerate operations — all without custom platform engineering."
+								"text": "AI agents can automate routine decisions and accelerate operations — all without custom engineering or vibe coding."
+							}
+						],
+						"text1": [
+							{
+								"text": "Ketrik turns your data and workflows into an interactive viewse where you can see, decide, and execute in real time."
+							},
+							{
+								"text": "AI agents can automate routine decisions and accelerate operations — all without custom or vibe coding engineering."
 							},
 							{
 								"text1": "Ketrik turns your data and workflows into an AI-powered command center — deploying autonomous agents that see, decide, and execute the moment decisions are made, without months of custom platform engineering."
