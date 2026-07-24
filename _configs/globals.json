@@ -57,12 +57,12 @@
 					},
 					"button": {
 						"href": "/dashboard",
-						"text": "Explore Interactive Views"
+						"text": "Explore Interactive Views ➡️"
 					},
 					"subtitle": {
 						"text": [
 							{
-								"text": "Ketrik Shell ",
+								"text": "🖥️ Ketrik Shell ",
 								"vx": {
 									"bold": true,
 									"block": false
@@ -76,7 +76,7 @@
 								}
 							},
 							{
-								"text": "Ketrik AI Agents ",
+								"text": "🤖 Ketrik AI Agents ",
 								"vx": {
 									"bold": true,
 									"block": false
@@ -2524,8 +2524,27 @@
 				]
 			}
 		},
+		"pages_privacy": {
+			"data": {
+				"type": "remote",
+				"url": "https://raw.githubusercontent.com/smacken/dollar-cost-average/refs/heads/master/README.md"
+			},
+			"renderComponent": {
+				"component": "Markdown",
+				"container": {
+					"maxWidth": "md",
+					"sx": {
+						"mt": 5
+					}
+				},
+				"props": {}
+			}
+		},
 		"privacy": {
-			"data": "# Hi, *Pluto*! Just a link: www.nasa.gov. \n * [Python](/downloads/)",
+			"data": {
+				"type": "remote",
+				"url": "https://raw.githubusercontent.com/smacken/dollar-cost-average/refs/heads/master/README.md"
+			},
 			"renderComponent": {
 				"component": "Markdown",
 				"container": {
@@ -2558,7 +2577,7 @@
 								},
 								"cardConfig": [
 									{
-										"dataKey": "privacy1",
+										"dataKey": "privacy",
 										"type": "cardContent",
 										"contentConfig": {
 											"contentType": "Markdown"
