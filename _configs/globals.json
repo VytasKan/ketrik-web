@@ -62,7 +62,13 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "Ketrik turns your data and workflows into an AI-powered command center — deploying autonomous agents that see, decide, and execute the moment decisions are made, without months of custom platform engineering."
+								"text": "Ketrik turns your data and workflows into an interactive control surface where you can see, decide, and execute in real time."
+							},
+							{
+								"text": "Optional AI agents can then layer in to automate routine decisions and accelerate operations — all without custom platform engineering."
+							},
+							{
+								"text1": "Ketrik turns your data and workflows into an AI-powered command center — deploying autonomous agents that see, decide, and execute the moment decisions are made, without months of custom platform engineering."
 							}
 						]
 					}
@@ -109,13 +115,19 @@
 				"shellfaq": [
 					{
 						"id": "panel1",
-						"question": "Is Ketrik a dashboard, a workflow engine, or an AI tool?",
-						"answer": "It is the shell — the unified command center that sits on top of all three. Your team or data experts define how data and workflows operate; Ketrik renders the live dashboards, real-time alerts, and agent interfaces you execute from every day."
+						"question": "Is Ketrik a dashboard tool, a workflow tool, or an AI tool?",
+						"answer": "It’s the shell — the live interface that sits on top of all three. You or your data experts define how data and workflows work; Ketrik turns that into dashboards, alerts, and a command center you can actually use every day.",
+						"category": "shell",
+						"iconName": "WidgetsOutlined",
+						"badge": "Architecture"
 					},
 					{
 						"id": "panel2",
-						"question": "Do I need to be technical to use Ketrik?",
-						"answer": "No. Everyday users interact with clear metrics, live alerts, and one-click actions. The technical orchestration — data pipelines, AI models, and custom telemetry — can be managed by your team, your consultant, or us, and seamlessly plugged into the Ketrik shell."
+						"question": "Do I need to be technical to use it?",
+						"answer": "No. You see clear numbers, alerts, and actions. The technical work—models, pipelines, custom metrics — can be done by us, your consultant, or your data scientist and then plugged into Ketrik.",
+						"category": "shell",
+						"iconName": "PersonOutlineOutlined",
+						"badge": "Usability"
 					}
 				],
 				"agent": {
@@ -136,28 +148,28 @@
 				},
 				"agentfaq": [
 					{
-						"id": "q1",
-						"question": "What are Ketrik Agents actually doing behind the scenes?",
-						"answer": "They watch your entire business in real time. Ketrik Agents constantly monitor the live metrics, customer events, and operational signals flowing into your shell—spotting patterns, shifts, and risks the moment they happen without requiring you to manually scan multiple screens.",
-						"category": "agents",
-						"iconName": "VisibilityOutlined",
-						"badge": "Monitoring"
+						"id": "panel3",
+						"question": "Are Ketrik agents fully autonomous?",
+						"answer": "They can act on their own, but within the guardrails you set. You choose which workflows agents can trigger, when they must ask for approval, and what they’re allowed to change.",
+						"category": "agent",
+						"iconName": "SecurityOutlined",
+						"badge": "Control"
 					},
 					{
-						"id": "q2",
-						"question": "How do agents know what needs my attention versus routine tasks?",
-						"answer": "They prioritize and filter before disturbing you. Rather than flooding your phone with endless raw alerts, agents evaluate urgency, impact, and business context—automatically handling routine updates on their own and only escalating critical issues directly to your main command surface.",
-						"category": "agents",
-						"iconName": "PsychologyOutlined",
-						"badge": "Prioritization"
+						"id": "panel4",
+						"question": "What do Ketrik agents actually do day to day?",
+						"answer": "Agents watch your metrics and events, spot issues, and kick off the workflows you’ve defined — updating systems, sending alerts, and surfacing decisions in the Ketrik shell so you can see what’s happening.",
+						"category": "agent",
+						"iconName": "BoltOutlined",
+						"badge": "Automation"
 					},
 					{
-						"id": "q3",
-						"question": "Do agents replace my current tools, or do they work through them?",
-						"answer": "They work directly through the tools you already use. When an action is required, Ketrik Agents trigger your existing workflows, update your connected databases, and send notifications to your team, executing necessary steps across your stack and reporting results back into your shell.",
-						"category": "agents",
-						"iconName": "AutoModeOutlined",
-						"badge": "Execution"
+						"id": "panel5",
+						"question": "Can I start without agents and add them later?",
+						"answer": "Yes. Many teams start with the Ketrik shell as a live command center, then introduce agents gradually for specific tasks like risk monitoring, follow‑ups, or routing incidents.",
+						"category": "agent",
+						"iconName": "ScheduleOutlined",
+						"badge": "Adoption"
 					}
 				],
 				"faqSection": {
