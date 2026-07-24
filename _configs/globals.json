@@ -737,19 +737,6 @@
 											"contentType": "Marketing",
 											"panel": "basic",
 											"vx": {
-												"title": {
-													"size": "sm"
-												}
-											}
-										},
-										"dataKey": "advantage",
-										"type": "cardContent"
-									},
-									{
-										"contentConfig": {
-											"contentType": "Marketing",
-											"panel": "basic",
-											"vx": {
 												"titleWrapper": {
 													"center": true,
 													"isVertical": false
