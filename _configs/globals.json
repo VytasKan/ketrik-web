@@ -62,10 +62,25 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "Ketrik Shell turns your data and workflows into interactive views where you can see live metrics, decide on risk alerts, and execute operational actions in real time."
+								"text": "Ketrik Shell ",
+								"vx": {
+									"bold": true,
+									"block": false
+								}
 							},
 							{
-								"text": "Ketrik AI Agents can automate routine decisions and accelerate operations — all without custom engineering or vibe coding."
+								"text": "turns your data and workflows into interactive views where you can see live metrics, decide on risk alerts, and execute operational actions in real time.",
+								"vx": {}
+							},
+							{
+								"text": "Ketrik AI Agents ",
+								"vx": {
+									"bold": true,
+									"block": false
+								}
+							},
+							{
+								"text": "can automate routine decisions and accelerate execution — all without custom engineering or vibe coding."
 							}
 						],
 						"text1": [
