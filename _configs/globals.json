@@ -657,7 +657,7 @@
 													"color": "blue"
 												},
 												"sectionWrapper": {
-													"hasNoMargin": false
+													"hasNoMargin": true
 												}
 											}
 										},
@@ -672,11 +672,17 @@
 										"type": "cardContent"
 									},
 									{
+										"dataKey": "shellfaq",
 										"contentConfig": {
-											"contentType": "KetrikMiniFaq",
-											"dataKey": "shellfaq"
+											"contentType": "KetrikMiniFaq"
 										},
 										"type": "cardContent"
+									},
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "basic"
+										}
 									}
 								]
 							},
