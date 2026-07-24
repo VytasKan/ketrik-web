@@ -57,12 +57,12 @@
 					},
 					"button": {
 						"href": "/dashboard",
-						"text": "Explore Interactive Demo"
+						"text": "Explore Interactive Views"
 					},
 					"subtitle": {
 						"text": [
 							{
-								"text": "Ketrik turns your data and workflows into interactive views where you can see, decide, and execute in real time."
+								"text": "Ketrik Shell turns your data and workflows into interactive views where you can see, decide, and execute in real time."
 							},
 							{
 								"text": "Ketrik AI agents can automate routine decisions and accelerate operations — all without custom engineering or vibe coding."
@@ -108,7 +108,7 @@
 					"title": {
 						"text": [
 							{
-								"text": "The Ketrik Shell"
+								"text": "Ketrik Shell"
 							}
 						]
 					},
@@ -142,7 +142,7 @@
 					"title": {
 						"text": [
 							{
-								"text": "The Ketrik AI Agents"
+								"text": "Ketrik AI Agents"
 							}
 						]
 					},
@@ -637,10 +637,20 @@
 												"featuresGrid": {
 													"size": 2,
 													"color": "blue"
+												},
+												"sectionWrapper": {
+													"hasNoMargin": true
 												}
 											}
 										},
 										"dataKey": "subHero",
+										"type": "cardContent"
+									},
+									{
+										"dataKey": "subHero",
+										"contentConfig": {
+											"contentType": "KetrikSocial"
+										},
 										"type": "cardContent"
 									}
 								]
