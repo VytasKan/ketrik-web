@@ -586,27 +586,6 @@
 											"dataKey": "shellBullets"
 										},
 										"type": "cardContent"
-									},
-									{
-										"contentConfig": {
-											"contentType": "Marketing",
-											"panel": "basic",
-											"vx": {
-												"titleWrapper": {
-													"center": true,
-													"isVertical": true
-												},
-												"featuresGrid": {
-													"size": 3,
-													"color": "blue"
-												},
-												"sectionWrapper": {
-													"hasNoMargin": true
-												}
-											}
-										},
-										"dataKey": "shellBullets",
-										"type": "cardContent"
 									}
 								]
 							},
@@ -673,6 +652,27 @@
 											}
 										},
 										"dataKey": "panel3",
+										"type": "cardContent"
+									},
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "basic",
+											"vx": {
+												"titleWrapper": {
+													"center": true,
+													"isVertical": true
+												},
+												"featuresGrid": {
+													"size": 3,
+													"color": "blue"
+												},
+												"sectionWrapper": {
+													"hasNoMargin": true
+												}
+											}
+										},
+										"dataKey": "shellBullets",
 										"type": "cardContent"
 									}
 								],
