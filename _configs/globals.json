@@ -518,7 +518,8 @@
 												},
 												"subtitle": {
 													"size": "xl",
-													"bold": true
+													"bold": true,
+													"maxWidth": "md"
 												},
 												"title": {},
 												"titleWrapper": {},
@@ -557,8 +558,7 @@
 													"isVertical": true
 												},
 												"title": {
-													"size": "sm",
-													"color": "gray"
+													"size": "lg"
 												},
 												"featuresGrid": {
 													"size": 2,
