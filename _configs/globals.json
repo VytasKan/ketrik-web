@@ -46,7 +46,7 @@
 									"HR, Hiring & People Operations"
 								],
 								"intensity": 0.5,
-								"pauseTime": 20000,
+								"pauseTime": 50000,
 								"variant": "typewriter",
 								"vx": {
 									"size": "xl",
