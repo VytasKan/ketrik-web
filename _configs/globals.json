@@ -70,7 +70,9 @@
 							},
 							{
 								"text": "turns your data and workflows into interactive views where you can see live metrics, decide on risk alerts, and execute operational actions in real time.",
-								"vx": {}
+								"vx": {
+									"block": false
+								}
 							},
 							{
 								"text": "Ketrik AI Agents ",
@@ -80,7 +82,10 @@
 								}
 							},
 							{
-								"text": "can automate routine decisions and accelerate execution — all without custom engineering or vibe coding."
+								"text": "can automate routine decisions and accelerate execution — all without custom engineering or vibe coding.",
+								"vx": {
+									"block": false
+								}
 							}
 						],
 						"text1": [
