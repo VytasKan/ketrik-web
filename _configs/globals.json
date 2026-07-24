@@ -677,12 +677,6 @@
 											"contentType": "KetrikMiniFaq"
 										},
 										"type": "cardContent"
-									},
-									{
-										"contentConfig": {
-											"contentType": "Marketing",
-											"panel": "basic"
-										}
 									}
 								]
 							},
