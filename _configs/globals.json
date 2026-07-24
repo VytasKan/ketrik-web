@@ -118,6 +118,22 @@
 						"answer": "No. Everyday users interact with clear metrics, live alerts, and one-click actions. The technical orchestration — data pipelines, AI models, and custom telemetry — can be managed by your team, your consultant, or us, and seamlessly plugged into the Ketrik shell."
 					}
 				],
+				"faqSection": {
+					"title": {
+						"text": [
+							{
+								"text": "Frequently asked questions"
+							}
+						]
+					},
+					"subtitle": {
+						"text": [
+							{
+								"text": "Still curious? We've got you covered."
+							}
+						]
+					}
+				},
 				"shellBullets": {
 					"featuresGrid": {
 						"ds": [
@@ -575,6 +591,7 @@
 										"pt": 5
 									}
 								},
+								"cardType": "noCard",
 								"cardConfig": [
 									{
 										"contentConfig": {
@@ -624,6 +641,35 @@
 							{
 								"cardType": "noCard",
 								"cardConfig": [
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "basic",
+											"vx": {
+												"titleWrapper": {
+													"center": true,
+													"isVertical": true
+												},
+												"title": {
+													"size": "lg"
+												},
+												"subtitle": {
+													"maxWidth": "md",
+													"center": true,
+													"italic": true
+												},
+												"featuresGrid": {
+													"size": 3,
+													"color": "blue"
+												},
+												"sectionWrapper": {
+													"hasNoMargin": true
+												}
+											}
+										},
+										"dataKey": "faqSection",
+										"type": "cardContent"
+									},
 									{
 										"contentConfig": {
 											"contentType": "KetrikFaq",
