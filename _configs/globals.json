@@ -62,16 +62,13 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "Ketrik Shell turns your data and workflows into interactive views where you can see, decide, and execute in real time."
+								"text": "Ketrik Shell turns your data and workflows into interactive views where you can see live metrics, decide on risk alerts, and execute operational actions in real time."
 							},
 							{
-								"text": "Ketrik AI agents can automate routine decisions and accelerate operations — all without custom engineering or vibe coding."
+								"text": "Ketrik AI Agents can automate routine decisions and accelerate operations — all without custom engineering or vibe coding."
 							}
 						],
 						"text1": [
-							{
-								"text": "Ketrik turns your data and workflows into an interactive viewse where you can see, decide, and execute in real time."
-							},
 							{
 								"text": "AI agents can automate routine decisions and accelerate operations — all without custom or vibe coding engineering."
 							},
@@ -262,123 +259,19 @@
 						]
 					}
 				},
-				"advantage": {
-					"comparisonTable": {
-						"ds": [
-							{
-								"feature": "Feature",
-								"traditional": "Traditional Agency",
-								"vibe": "Vibe Coding (AI-Only)",
-								"approach": "Our Managed Approach"
-							},
-							{
-								"feature": "Delivery Speed",
-								"traditional": "Slow (Months)",
-								"vibe": "Instant (Hours)",
-								"approach": "Rapid (1-3 Weeks)"
-							},
-							{
-								"feature": "Build Quality",
-								"traditional": "Custom / Manual",
-								"vibe": "Unpredictable",
-								"approach": "Enterprise"
-							},
-							{
-								"feature": "Foundation",
-								"traditional": "High Stability",
-								"vibe": "High Fragility",
-								"approach": "Modular & Robust"
-							},
-							{
-								"feature": "Infrastructure",
-								"traditional": "Manual Hand-off",
-								"vibe": "DIY / Unstable",
-								"approach": "Expert AWS/Firebase"
-							},
-							{
-								"feature": "Deployment",
-								"traditional": "Professional",
-								"vibe": "Local / Manual",
-								"approach": "Production (CI/CD)"
-							},
-							{
-								"feature": "Maintenance",
-								"traditional": "Hourly Fees",
-								"vibe": "You are the debugger",
-								"approach": "Included Support"
-							},
-							{
-								"feature": "Future Cost",
-								"traditional": "High (Labor)",
-								"vibe": "High (Total Rewrite)",
-								"approach": "Low (Easy Pivots)"
-							},
-							{
-								"feature": "Scale Potential",
-								"traditional": "Expensive",
-								"vibe": "Low / Technical Debt",
-								"approach": "High / Compoundable"
-							}
-						],
-						"ds1": [
-							{
-								"feature": "Feature",
-								"traditional": "Traditional Agency Build",
-								"vibe": "Vibe Coding (AI-Only)",
-								"modular": "Our Managed Modular Approach"
-							},
-							{
-								"feature": "Speed",
-								"traditional": "Slow (Months of dev)",
-								"vibe": "Instant (Days/Hours)",
-								"modular": "Rapid (2-4 Weeks for MVP)"
-							},
-							{
-								"feature": "Code Quality",
-								"traditional": "Custom (often bloated)",
-								"vibe": "Unpredictable / Hallucinated",
-								"modular": "Enterprise (MUI & Logic Libraries)"
-							},
-							{
-								"feature": "Maintenance",
-								"traditional": "Hourly \"Ticket\" fees",
-								"vibe": "You are the debugger",
-								"modular": "Fully Managed Monthly Support"
-							},
-							{
-								"feature": "Infrastructure",
-								"traditional": "Manual Hand-off",
-								"vibe": "DIY (Firebase/Vercel)",
-								"modular": "Expert AWS/Firebase Architecture"
-							},
-							{
-								"feature": "Scalability",
-								"traditional": "High (but expensive)",
-								"vibe": "Low (Technical debt builds fast)",
-								"modular": "High (Built on Scalable Modules)"
-							},
-							{
-								"feature": "Ownership",
-								"traditional": "Proprietary Lock-in",
-								"vibe": "Full (but messy)",
-								"modular": "100% Open-Source Standards"
-							}
-						]
-					},
-					"title1": {
-						"text": [
-							{
-								"text": "From Idea to Scale"
-							}
-						]
-					},
-					"subtitle1": {
-						"text": [
-							{
-								"text": "The table breaks down how the Managed Modular Approach solves the fragility of AI-only \"Vibe Coding\" while avoiding the slow, high-cost hurdles of a Traditional Agency."
-							}
-						]
-					}
+				"title1": {
+					"text": [
+						{
+							"text": "From Idea to Scale"
+						}
+					]
+				},
+				"subtitle1": {
+					"text": [
+						{
+							"text": "The table breaks down how the Managed Modular Approach solves the fragility of AI-only \"Vibe Coding\" while avoiding the slow, high-cost hurdles of a Traditional Agency."
+						}
+					]
 				},
 				"vibe": {
 					"backgroud": {
@@ -591,9 +484,9 @@
 													"shadow": "sm"
 												},
 												"subtitle": {
-													"size": "xl",
-													"bold": true,
-													"maxWidth": "md"
+													"size": "lg",
+													"bold": false,
+													"maxWidth": "lg"
 												},
 												"title": {},
 												"titleWrapper": {},
