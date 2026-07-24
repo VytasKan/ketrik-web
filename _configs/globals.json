@@ -20,12 +20,14 @@
 							},
 							{
 								"phrases": [
-									"Live Operations",
-									"Real-Time Execution",
-									"Critical Events",
-									"Client Applications",
-									"Risk Control",
-									"Complex Workflows"
+									"Complex Business Workflows",
+									"Sales & Marketing Campaigns",
+									"Customer Service & Support Workflows",
+									"Client Experience Journeys",
+									"Financial & Accounting Operations",
+									"Risk, Compliance & Regulatory Processes",
+									"Insurance Claims & Underwriting Workflows",
+									"Hiring & Staffing Processes"
 								],
 								"intensity": 0.5,
 								"pauseTime": 30000,
@@ -92,6 +94,18 @@
 						]
 					}
 				},
+				"shellfaq": [
+					{
+						"id": "panel1",
+						"question": "Is Ketrik a dashboard tool, a workflow tool, or an AI tool?",
+						"answer": "It's the shell — the live interface that sits on top of all three. You or your data experts define how data and workflows work; Ketrik turns that into dashboards, alerts, and a command center you can actually use every day."
+					},
+					{
+						"id": "panel2",
+						"question": "Do I need to be technical to use it?",
+						"answer": "No. You see clear numbers, alerts, and actions. The technical work—models, pipelines, custom metrics — can be done by us, your consultant, or your data scientist and then plugged into Ketrik."
+					}
+				],
 				"shellBullets": {
 					"featuresGrid": {
 						"ds": [
@@ -583,7 +597,7 @@
 									{
 										"contentConfig": {
 											"contentType": "KetrikMiniFaq",
-											"dataKey": "shellBullets"
+											"dataKey": "shellfaq"
 										},
 										"type": "cardContent"
 									}
