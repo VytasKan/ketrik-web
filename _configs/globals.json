@@ -9,6 +9,9 @@
 							"--bg-image-dark": "url(/_assets/network_pattern_121212_hd.png)"
 						}
 					},
+					"eyebrow": {
+						"text": "AI-Powered Workflow Command Center"
+					},
 					"title": {
 						"text": [
 							{
@@ -20,17 +23,30 @@
 							},
 							{
 								"phrases": [
-									"Complex Business Workflows",
-									"Sales & Marketing Campaigns",
-									"Customer Service & Support Workflows",
-									"Client Experience Journeys",
+									"Your Complex Workflows",
+									"Sales & Pipelines",
+									"Customer Support",
+									"Risk & Compliance",
+									"Financial Operations",
+									"System Telemetry",
+									"Any Custom Enterprise Domain"
+								],
+								"phrases12": [
+									"CRM & Enterprise Workflows",
+									"Sales & Pipeline Management",
+									"Marketing & Campaign Automation",
+									"Customer Service & Support",
+									"Call & Contact Center Operations",
+									"Client & Account Management",
 									"Financial & Accounting Operations",
 									"Risk, Compliance & Regulatory Processes",
-									"Insurance Claims & Underwriting Workflows",
-									"Hiring & Staffing Processes"
+									"Insurance Claims & Underwriting",
+									"Market Research & Insights",
+									"Operational Telemetry & Observability",
+									"HR, Hiring & People Operations"
 								],
 								"intensity": 0.5,
-								"pauseTime": 30000,
+								"pauseTime": 20000,
 								"variant": "typewriter",
 								"vx": {
 									"size": "xl",
@@ -41,7 +57,7 @@
 					},
 					"button": {
 						"href": "/dashboard",
-						"text": "Get In Touch"
+						"text": "Explore Interactive Demo"
 					},
 					"subtitle": {
 						"text": [
@@ -500,7 +516,10 @@
 													"isZoomed": true,
 													"shadow": "sm"
 												},
-												"subtitle": {},
+												"subtitle": {
+													"size": "xl",
+													"bold": true
+												},
 												"title": {},
 												"titleWrapper": {},
 												"button": {
