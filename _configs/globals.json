@@ -721,9 +721,9 @@
 										"type": "cardContent"
 									},
 									{
+										"dataKey": "agentfaq",
 										"contentConfig": {
-											"contentType": "KetrikMiniFaq",
-											"dataKey": "agentfaq"
+											"contentType": "KetrikMiniFaq"
 										},
 										"type": "cardContent"
 									}
