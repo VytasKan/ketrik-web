@@ -118,6 +118,48 @@
 						"answer": "No. Everyday users interact with clear metrics, live alerts, and one-click actions. The technical orchestration — data pipelines, AI models, and custom telemetry — can be managed by your team, your consultant, or us, and seamlessly plugged into the Ketrik shell."
 					}
 				],
+				"agent": {
+					"title": {
+						"text": [
+							{
+								"text": "The Ketrik Agent"
+							}
+						]
+					},
+					"subtitle": {
+						"text": [
+							{
+								"text": "The autonomous engine inside your shell. While you monitor the big picture, Ketrik Agents work behind the scenes—routing data, updating systems, and executing routine operations across your business automatically."
+							}
+						]
+					}
+				},
+				"agentfaq": [
+					{
+						"id": "q1",
+						"question": "What are Ketrik Agents actually doing behind the scenes?",
+						"answer": "They watch your entire business in real time. Ketrik Agents constantly monitor the live metrics, customer events, and operational signals flowing into your shell—spotting patterns, shifts, and risks the moment they happen without requiring you to manually scan multiple screens.",
+						"category": "agents",
+						"iconName": "VisibilityOutlined",
+						"badge": "Monitoring"
+					},
+					{
+						"id": "q2",
+						"question": "How do agents know what needs my attention versus routine tasks?",
+						"answer": "They prioritize and filter before disturbing you. Rather than flooding your phone with endless raw alerts, agents evaluate urgency, impact, and business context—automatically handling routine updates on their own and only escalating critical issues directly to your main command surface.",
+						"category": "agents",
+						"iconName": "PsychologyOutlined",
+						"badge": "Prioritization"
+					},
+					{
+						"id": "q3",
+						"question": "Do agents replace my current tools, or do they work through them?",
+						"answer": "They work directly through the tools you already use. When an action is required, Ketrik Agents trigger your existing workflows, update your connected databases, and send notifications to your team, executing necessary steps across your stack and reporting results back into your shell.",
+						"category": "agents",
+						"iconName": "AutoModeOutlined",
+						"badge": "Execution"
+					}
+				],
 				"faqSection": {
 					"title": {
 						"text": [
@@ -615,7 +657,7 @@
 													"color": "blue"
 												},
 												"sectionWrapper": {
-													"hasNoMargin": true
+													"hasNoMargin": false
 												}
 											}
 										},
@@ -633,6 +675,55 @@
 										"contentConfig": {
 											"contentType": "KetrikMiniFaq",
 											"dataKey": "shellfaq"
+										},
+										"type": "cardContent"
+									}
+								]
+							},
+							{
+								"cardType": "noCard",
+								"id": "ketrik_agent",
+								"cardConfig": [
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "basic",
+											"vx": {
+												"titleWrapper": {
+													"center": true,
+													"isVertical": true
+												},
+												"title": {
+													"size": "lg"
+												},
+												"subtitle": {
+													"maxWidth": "md",
+													"center": true,
+													"italic": true
+												},
+												"featuresGrid": {
+													"size": 3,
+													"color": "blue"
+												},
+												"sectionWrapper": {
+													"hasNoMargin": true
+												}
+											}
+										},
+										"dataKey": "agent",
+										"type": "cardContent"
+									},
+									{
+										"contentConfig": {
+											"contentType": "KetrikAgent"
+										},
+										"dataKey": "agent",
+										"type": "cardContent"
+									},
+									{
+										"contentConfig": {
+											"contentType": "KetrikMiniFaq",
+											"dataKey": "agentfaq"
 										},
 										"type": "cardContent"
 									}
