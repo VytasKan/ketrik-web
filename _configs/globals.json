@@ -62,7 +62,7 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "Ketrik turns your data and workflows into an AI-powered command center — allowing you to see, react, and execute the moment decisions are made, without months of custom platform engineering."
+								"text": "Ketrik turns your data and workflows into an AI-powered command center — deploying autonomous agents that see, decide, and execute the moment decisions are made, without months of custom platform engineering."
 							}
 						]
 					}
@@ -94,11 +94,7 @@
 					"title": {
 						"text": [
 							{
-								"text": "The Ketrik Shell",
-								"vx": {
-									"size": "sm",
-									"color": "gray"
-								}
+								"text": "The Ketrik Shell"
 							}
 						]
 					},
@@ -113,13 +109,13 @@
 				"shellfaq": [
 					{
 						"id": "panel1",
-						"question": "Is Ketrik a dashboard tool, a workflow tool, or an AI tool?",
-						"answer": "It's the shell — the live interface that sits on top of all three. You or your data experts define how data and workflows work; Ketrik turns that into dashboards, alerts, and a command center you can actually use every day."
+						"question": "Is Ketrik a dashboard, a workflow engine, or an AI tool?",
+						"answer": "It is the shell — the unified command center that sits on top of all three. Your team or data experts define how data and workflows operate; Ketrik renders the live dashboards, real-time alerts, and agent interfaces you execute from every day."
 					},
 					{
 						"id": "panel2",
-						"question": "Do I need to be technical to use it?",
-						"answer": "No. You see clear numbers, alerts, and actions. The technical work—models, pipelines, custom metrics — can be done by us, your consultant, or your data scientist and then plugged into Ketrik."
+						"question": "Do I need to be technical to use Ketrik?",
+						"answer": "No. Everyday users interact with clear metrics, live alerts, and one-click actions. The technical orchestration — data pipelines, AI models, and custom telemetry — can be managed by your team, your consultant, or us, and seamlessly plugged into the Ketrik shell."
 					}
 				],
 				"shellBullets": {
@@ -588,6 +584,9 @@
 												"titleWrapper": {
 													"center": true,
 													"isVertical": true
+												},
+												"title": {
+													"size": "lg"
 												},
 												"subtitle": {
 													"maxWidth": "md",
