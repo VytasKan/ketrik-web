@@ -782,7 +782,8 @@
 													"color": "blue"
 												},
 												"sectionWrapper": {
-													"hasNoMargin": true
+													"hasNoMargin": true,
+													"addTopMargin": false
 												}
 											}
 										},
