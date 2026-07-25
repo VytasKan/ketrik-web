@@ -805,8 +805,99 @@
 			}
 		},
 		"pages_pricing": {
-			"dataPath": {
-				"path": "pages_pricing"
+			"data": "# Ketrik Pricing page",
+			"renderComponent": {
+				"component": "Markdown",
+				"container": {
+					"maxWidth": "md",
+					"sx": {
+						"mt": 10,
+						"mb": 10
+					}
+				}
+			}
+		},
+		"pages_research": {
+			"data": "# Ketrik Research page",
+			"renderComponent": {
+				"component": "Markdown"
+			}
+		},
+		"pages_about": {
+			"data": "# Ketrik About page",
+			"renderComponent": {
+				"component": "Markdown",
+				"container": {
+					"maxWidth": "md",
+					"sx": {
+						"mt": 10,
+						"mb": 10
+					}
+				}
+			}
+		},
+		"pages_privacy": {
+			"data": {
+				"type": "remote",
+				"url": "/_docs/privacy.md"
+			},
+			"renderComponent": {
+				"component": "Markdown",
+				"container": {
+					"maxWidth": "md",
+					"sx": {
+						"mt": 5
+					}
+				},
+				"props": {}
+			}
+		},
+		"privacy": {
+			"data": {
+				"type": "remote",
+				"url": "/_docs/privacy.md"
+			},
+			"renderComponent": {
+				"component": "Markdown",
+				"container": {
+					"maxWidth": "md",
+					"sx": {
+						"mt": 5
+					}
+				},
+				"props": {}
+			}
+		},
+		"pages_terms": {
+			"data": {
+				"type": "remote",
+				"url": "/_docs/terms.md"
+			},
+			"renderComponent": {
+				"component": "Markdown",
+				"container": {
+					"maxWidth": "md",
+					"sx": {
+						"mt": 5
+					}
+				},
+				"props": {}
+			}
+		},
+		"terms": {
+			"data": {
+				"type": "remote",
+				"url": "/_docs/terms.md"
+			},
+			"renderComponent": {
+				"component": "Markdown",
+				"container": {
+					"maxWidth": "md",
+					"sx": {
+						"mt": 5
+					}
+				},
+				"props": {}
 			}
 		},
 		"membership": {
@@ -1565,19 +1656,6 @@
 						]
 					}
 				]
-			}
-		},
-		"policy_route": {
-			"data": "# TripAdvisor Privacy Policy\nLast updated: **April 2026**\n\nYour data is secure with us.",
-			"renderComponent": {
-				"component": "Markdown",
-				"container": {
-					"maxWidth": "md",
-					"sx": {
-						"mt": 10,
-						"mb": 10
-					}
-				}
 			}
 		},
 		"marketing_dashboard": {
@@ -2529,89 +2607,6 @@
 								],
 								"cardActionUrl": "/missions/details",
 								"cardActionIdKey": "userId"
-							}
-						]
-					}
-				]
-			}
-		},
-		"pages_privacy": {
-			"data": {
-				"type": "remote",
-				"url": "https://raw.githubusercontent.com/smacken/dollar-cost-average/refs/heads/master/README.md"
-			},
-			"renderComponent": {
-				"component": "Markdown",
-				"container": {
-					"maxWidth": "md",
-					"sx": {
-						"mt": 5
-					}
-				},
-				"props": {}
-			}
-		},
-		"privacy": {
-			"data": {
-				"type": "remote",
-				"url": "https://raw.githubusercontent.com/smacken/dollar-cost-average/refs/heads/master/README.md"
-			},
-			"renderComponent": {
-				"component": "Markdown",
-				"container": {
-					"maxWidth": "md",
-					"sx": {
-						"mt": 5
-					}
-				},
-				"props": {}
-			}
-		},
-		"privacy1": {
-			"data": {
-				"privacy": {
-					"type": "remote",
-					"url": "https://raw.githubusercontent.com/smacken/dollar-cost-average/refs/heads/master/README.md"
-				},
-				"privacy1": "# Hi, *Pluto*! Just a link: www.nasa.gov."
-			},
-			"config": {
-				"childComponent": "DisplayCards",
-				"header": "Privacy 22",
-				"groups": [
-					{
-						"items": [
-							{
-								"cardType": "card",
-								"cardProps": {
-									"raised": false
-								},
-								"cardConfig": [
-									{
-										"dataKey": "privacy",
-										"type": "cardContent",
-										"contentConfig": {
-											"contentType": "Markdown"
-										}
-									}
-								]
-							},
-							{
-								"cardType": "card",
-								"cardProps": {
-									"raised": false,
-									"square": true,
-									"variant": "elevation"
-								},
-								"cardConfig": [
-									{
-										"dataKey": "privacy1",
-										"type": "cardContent",
-										"contentConfig": {
-											"contentType": "Markdown"
-										}
-									}
-								]
 							}
 						]
 					}
@@ -10297,11 +10292,11 @@
 		"footer": [
 			{
 				"title": "Privacy",
-				"segment": "privacy"
+				"segment": "pages/privacy"
 			},
 			{
 				"title": "Terms",
-				"segment": "terms"
+				"segment": "pages/terms"
 			}
 		],
 		"demo": [
