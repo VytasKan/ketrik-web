@@ -198,22 +198,6 @@
 						"badge": "Adoption"
 					}
 				],
-				"faqSection": {
-					"title": {
-						"text": [
-							{
-								"text": "Frequently asked questions"
-							}
-						]
-					},
-					"subtitle": {
-						"text": [
-							{
-								"text": "Still curious? We've got you covered."
-							}
-						]
-					}
-				},
 				"shellBullets": {
 					"featuresGrid": {
 						"ds": [
@@ -783,6 +767,77 @@
 				],
 				"hideFullSizeToggle": true,
 				"isFullSize": false
+			}
+		},
+		"pages_faq": {
+			"data": {
+				"faqSection": {
+					"title": {
+						"text": [
+							{
+								"text": "Frequently asked questions"
+							}
+						]
+					},
+					"subtitle": {
+						"text": [
+							{
+								"text": "Still curious? We've got you covered."
+							}
+						]
+					}
+				}
+			},
+			"config": {
+				"disableGutter": true,
+				"groups": [
+					{
+						"cardType": "noCard",
+						"cardConfig": [
+							{
+								"contentConfig": {
+									"contentType": "Marketing",
+									"panel": "basic",
+									"vx": {
+										"titleWrapper": {
+											"center": true,
+											"isVertical": true
+										},
+										"title": {
+											"size": "lg"
+										},
+										"subtitle": {
+											"maxWidth": "md",
+											"center": true,
+											"italic": true
+										},
+										"featuresGrid": {
+											"size": 3,
+											"color": "blue"
+										},
+										"sectionWrapper": {
+											"hasNoMargin": true
+										}
+									}
+								},
+								"dataKey": "faqSection",
+								"type": "cardContent"
+							},
+							{
+								"contentConfig": {
+									"contentType": "KetrikFaq",
+									"dataKey": "shellBullets"
+								},
+								"type": "cardContent"
+							}
+						]
+					}
+				]
+			}
+		},
+		"pages_pricing": {
+			"dataPath": {
+				"path": "pages_pricing"
 			}
 		},
 		"membership": {
@@ -10233,19 +10288,29 @@
 		],
 		"topbar": [
 			{
-				"title": "Dashboard",
-				"segment": "dashboard",
+				"title": "Home",
+				"segment": "/",
 				"icon": "Dashboard"
 			},
 			{
-				"title": "Analytics",
-				"segment": "analytics",
-				"icon": "BarChart"
+				"title": "Pricing",
+				"segment": "/pages/pricing",
+				"icon": "RequestQuote"
 			},
 			{
-				"title": "Settings",
-				"segment": "settings",
-				"icon": "Settings"
+				"title": "FAQ",
+				"segment": "/pages/faq",
+				"icon": "QuestionAnswer"
+			},
+			{
+				"title": "Research",
+				"segment": "/pages/research",
+				"icon": "AutoGraphOutlined"
+			},
+			{
+				"title": "About",
+				"segment": "/pages/about",
+				"icon": "InfoOutlined"
 			}
 		],
 		"actions": [
@@ -10475,7 +10540,7 @@
 				"key": "Demo Menu"
 			}
 		],
-		"logo": "https://www.ketrik.com/ketrik-13.png",
+		"logo": "/_assets/ketrik.png",
 		"title": {
 			"main": "Ketrik ",
 			"secondary1": "Services",
