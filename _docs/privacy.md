@@ -123,5 +123,4 @@ If you have questions about this Privacy Policy or wish to exercise your data ri
 
 *This policy is governed by the laws of England and Wales, without regard to conflict of law principles, except where local law requires otherwise (e.g., for EU/UK or California residents exercising statutory rights).*
 
----
- 
+  

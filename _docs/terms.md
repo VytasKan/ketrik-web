@@ -121,6 +121,4 @@ These Terms are governed by and construed in accordance with the laws of England
 ### 15. Contact Us
 
 If you have any questions about these Terms, please contact us at: [legal@ketrik.com](mailto:legal@ketrik.com).
-
----
  
