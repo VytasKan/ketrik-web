@@ -658,47 +658,6 @@
 								]
 							},
 							{
-								"cardType": "noCard",
-								"cardConfig": [
-									{
-										"contentConfig": {
-											"contentType": "Marketing",
-											"panel": "basic",
-											"vx": {
-												"titleWrapper": {
-													"center": true,
-													"isVertical": true
-												},
-												"title": {
-													"size": "lg"
-												},
-												"subtitle": {
-													"maxWidth": "md",
-													"center": true,
-													"italic": true
-												},
-												"featuresGrid": {
-													"size": 3,
-													"color": "blue"
-												},
-												"sectionWrapper": {
-													"hasNoMargin": true
-												}
-											}
-										},
-										"dataKey": "faqSection",
-										"type": "cardContent"
-									},
-									{
-										"contentConfig": {
-											"contentType": "KetrikFaq",
-											"dataKey": "shellBullets"
-										},
-										"type": "cardContent"
-									}
-								]
-							},
-							{
 								"cardConfig": [
 									{
 										"contentConfig": {
@@ -790,45 +749,54 @@
 			},
 			"config": {
 				"disableGutter": true,
+				"hideFullSizeToggle": true,
+				"isFullSize": false,
 				"groups": [
 					{
-						"cardType": "noCard",
-						"cardConfig": [
+						"itemSize": {
+							"sm": 12
+						},
+						"items": [
 							{
-								"contentConfig": {
-									"contentType": "Marketing",
-									"panel": "basic",
-									"vx": {
-										"titleWrapper": {
-											"center": true,
-											"isVertical": true
+								"cardType": "noCard",
+								"cardConfig": [
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "basic",
+											"vx": {
+												"titleWrapper": {
+													"center": true,
+													"isVertical": true
+												},
+												"title": {
+													"size": "lg"
+												},
+												"subtitle": {
+													"maxWidth": "md",
+													"center": true,
+													"italic": true
+												},
+												"featuresGrid": {
+													"size": 3,
+													"color": "blue"
+												},
+												"sectionWrapper": {
+													"hasNoMargin": true
+												}
+											}
 										},
-										"title": {
-											"size": "lg"
+										"dataKey": "faqSection",
+										"type": "cardContent"
+									},
+									{
+										"contentConfig": {
+											"contentType": "KetrikFaq",
+											"dataKey": "faqSection"
 										},
-										"subtitle": {
-											"maxWidth": "md",
-											"center": true,
-											"italic": true
-										},
-										"featuresGrid": {
-											"size": 3,
-											"color": "blue"
-										},
-										"sectionWrapper": {
-											"hasNoMargin": true
-										}
+										"type": "cardContent"
 									}
-								},
-								"dataKey": "faqSection",
-								"type": "cardContent"
-							},
-							{
-								"contentConfig": {
-									"contentType": "KetrikFaq",
-									"dataKey": "shellBullets"
-								},
-								"type": "cardContent"
+								]
 							}
 						]
 					}
@@ -10294,22 +10262,22 @@
 			},
 			{
 				"title": "Pricing",
-				"segment": "/pages/pricing",
+				"segment": "pages/pricing",
 				"icon": "RequestQuote"
 			},
 			{
 				"title": "FAQ",
-				"segment": "/pages/faq",
+				"segment": "pages/faq",
 				"icon": "QuestionAnswer"
 			},
 			{
 				"title": "Research",
-				"segment": "/pages/research",
+				"segment": "pages/research",
 				"icon": "AutoGraphOutlined"
 			},
 			{
 				"title": "About",
-				"segment": "/pages/about",
+				"segment": "pages/about",
 				"icon": "InfoOutlined"
 			}
 		],
