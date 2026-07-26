@@ -1,0 +1,23 @@
+{
+    "configs": {
+        "guardSteps": [
+            {
+                "id": "EMAIL_VERIFICATION",
+                "mandatoryPath": "/gates/verify-email",
+                "maxWidth": "xs",
+                "field": "emailVerified"
+            },
+            {
+                "id": "MFA",
+                "mandatoryPath": "/gates/mfa-setup",
+                "maxWidth": "xs",
+                "field": "hasMfa"
+            },
+            {
+                "id": "TERMS",
+                "mandatoryPath": "/gates/terms",
+                "field": "hasAcceptedTerms"
+            }
+        ]
+    }
+}

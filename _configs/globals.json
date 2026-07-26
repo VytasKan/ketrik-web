@@ -661,8 +661,55 @@
 				"props": {}
 			}
 		},
-		"membership": {
-			"renderComponent": "Membership"
+		"gates_terms": {
+			"data": {
+				"terms": {
+					"type": "remote",
+					"url": "/_docs/terms.md"
+				}
+			},
+			"config": {
+				"header": "Terms and Conditions",
+				"groups": [
+					{
+						"header": " ",
+						"items": [
+							{
+								"dataKey": "terms",
+								"notation": "compact",
+								"sub": "Terms and Conditions",
+								"title": ""
+							}
+						]
+					},
+					{
+						"cardConfig": [
+							{
+								"type": "cardHeader",
+								"title": "Terms and Conditions"
+							},
+							{
+								"type": "cardContent",
+								"dataKey": "terms",
+								"contentConfig": {
+									"contentType": "Markdown"
+								}
+							},
+							{
+								"type": "cardAction",
+								"buttons": [
+									{
+										"label": "Accept",
+										"variant": "outlined",
+										"color": "info",
+										"actionType": "nav"
+									}
+								]
+							}
+						]
+					}
+				]
+			}
 		},
 		"profile": {
 			"data": {
@@ -10243,6 +10290,25 @@
 		]
 	},
 	"configs": {
+		"guardSteps": [
+			{
+				"id": "EMAIL_VERIFICATION",
+				"mandatoryPath": "/gates/verify-email",
+				"maxWidth": "xs",
+				"field": "emailVerified"
+			},
+			{
+				"id": "MFA",
+				"mandatoryPath": "/gates/mfa-setup",
+				"maxWidth": "xs",
+				"field": "hasMfa"
+			},
+			{
+				"id": "TERMS",
+				"mandatoryPath": "/gates/terms",
+				"field": "hasAcceptedTerms"
+			}
+		],
 		"authConfig": {
 			"emailVerifyEnabled": true,
 			"mfaRequired": true
@@ -10250,20 +10316,6 @@
 		"authProviders": [
 			"credentials",
 			"google"
-		],
-		"sidebarSwitcher": [
-			{
-				"value": "sidebar",
-				"key": "Main Menu"
-			},
-			{
-				"value": "accountMenu",
-				"key": "Administration"
-			},
-			{
-				"value": "demo",
-				"key": "Demo Menu"
-			}
 		],
 		"logo": "/_assets/ketrik.png",
 		"title": {
