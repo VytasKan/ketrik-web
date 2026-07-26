@@ -57,7 +57,7 @@
 					},
 					"button": {
 						"href": "/dashboard",
-						"text": "Explore Interactive Views"
+						"text": "Explore Interactive Shell"
 					},
 					"subtitle": {
 						"text": [
@@ -209,13 +209,13 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "No sales pitch, no calendar links, and zero waiting. Dive straight into the live interactive shell right now."
+								"text": "No sales pitch, no calendar links, and zero waiting. Jump straight into the live interactive shell right now."
 							}
 						]
 					},
 					"button": {
 						"href": "/demo",
-						"text": "Explore Interactive Demo"
+						"text": "Explore Interactive Shell"
 					}
 				},
 				"finalCTAfaq": [
@@ -431,6 +431,11 @@
 											"contentType": "Marketing",
 											"panel": "basic",
 											"vx": {
+												"subtitle": {
+													"maxWidth": "md",
+													"center": true,
+													"italic": true
+												},
 												"titleWrapper": {
 													"center": true,
 													"isVertical": true
