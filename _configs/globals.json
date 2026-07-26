@@ -202,7 +202,7 @@
 					"title": {
 						"text": [
 							{
-								"text": "Ready to see Ketrik in action?"
+								"text": "Ready to See Ketrik in Action?"
 							}
 						]
 					},
@@ -553,6 +553,19 @@
 		},
 		"pages_pricing": {
 			"data": "# Ketrik Pricing page",
+			"renderComponent": {
+				"component": "Markdown",
+				"container": {
+					"maxWidth": "md",
+					"sx": {
+						"mt": 10,
+						"mb": 10
+					}
+				}
+			}
+		},
+		"pages_articles": {
+			"data": "## Computer Vision Papers\n\n* [Attention Is All You Need](https://arxiv.org/abs/1706.03762) — *Vaswani et al. (2017)*\n  * **Key takeaway:** Introduced the Transformer architecture.",
 			"renderComponent": {
 				"component": "Markdown",
 				"container": {
@@ -10015,8 +10028,8 @@
 				"icon": "QuestionAnswer"
 			},
 			{
-				"title": "Research",
-				"segment": "pages/research",
+				"title": "Articles",
+				"segment": "pages/articles",
 				"icon": "AutoGraphOutlined"
 			},
 			{
@@ -10028,8 +10041,8 @@
 		"actions": [
 			{
 				"type": "authButton",
-				"preAuthLabel": "Get In Touch",
-				"authLabel": "Get In Touch",
+				"preAuthLabel": "Get Started",
+				"authLabel": "Go To Shell",
 				"url": "/dashboard",
 				"color": "primary"
 			},
