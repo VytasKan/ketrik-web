@@ -198,40 +198,17 @@
 						"badge": "Adoption"
 					}
 				],
-				"shellBullets": {
-					"featuresGrid": {
-						"ds": [
-							{
-								"title": "One control surface, not ten tools",
-								"icon": "Layers",
-								"description": "Consolidate scattered views and portals into a single, unified interface."
-							},
-							{
-								"title": "Feeds on what you already have",
-								"icon": "Extension",
-								"description": "Sits cleanly on top of your existing data, models, and workflows without requiring a rebuild."
-							},
-							{
-								"title": "Reactive by design, AI under the hood",
-								"icon": "Bolt",
-								"description": "Surfaces immediate alerts and guided actions the moment operational thresholds shift."
-							}
-						]
-					}
-				},
-				"subHero1": {
+				"finalCTA": {
 					"title": {
 						"text": [
 							{
-								"text": "The Problem",
+								"text": "Ready to see Ketrik ",
 								"vx": {
-									"size": "xs",
-									"color": "gray",
 									"lineBreak": true
 								}
 							},
 							{
-								"text": "The software you built two years ago can't keep up with the business you run today",
+								"text": "in action on your workflows?",
 								"vx": {
 									"size": "sm",
 									"color": "blue"
@@ -239,204 +216,10 @@
 							}
 						]
 					},
-					"featuresGrid": {
-						"ds": [
-							{
-								"title": "Workflows",
-								"icon": "UpdateDisabled",
-								"description": "Workflows aren't a one-time build — they need to keep changing as your business changes. Keeping them current is what keeps the business running smoothly."
-							},
-							{
-								"title": "Dashboards",
-								"icon": "LinkOff",
-								"description": "The questions your business needs answered change all the time. A dashboard only has value if it can keep up and show you what matters right now."
-							},
-							{
-								"title": "Command",
-								"icon": "Engineering",
-								"description": "As you grow into new markets and take on new clients, your command center has to grow with you. It only works if it's built to keep pace."
-							},
-							{
-								"title": "Operations",
-								"icon": "ConfirmationNumber",
-								"description": "Operations run on being able to respond in the moment. That only happens when the system is always current, not playing catch-up."
-							}
-						]
-					}
-				},
-				"title1": {
-					"text": [
-						{
-							"text": "From Idea to Scale"
-						}
-					]
-				},
-				"subtitle1": {
-					"text": [
-						{
-							"text": "The table breaks down how the Managed Modular Approach solves the fragility of AI-only \"Vibe Coding\" while avoiding the slow, high-cost hurdles of a Traditional Agency."
-						}
-					]
-				},
-				"vibe": {
-					"backgroud": {
-						"style": {
-							"backgroundImage": "repeating-linear-gradient(0deg, transparent, transparent 19px, rgba(75, 85, 99, 0.08) 19px, rgba(75, 85, 99, 0.08) 20px, transparent 20px, transparent 39px, rgba(75, 85, 99, 0.08) 39px, rgba(75, 85, 99, 0.08) 40px),repeating-linear-gradient(90deg, transparent, transparent 19px, rgba(75, 85, 99, 0.08) 19px, rgba(75, 85, 99, 0.08) 20px, transparent 20px, transparent 39px, rgba(75, 85, 99, 0.08) 39px, rgba(75, 85, 99, 0.08) 40px), radial-gradient(circle at 20px 20px, rgba(55, 65, 81, 0.12) 2px, transparent 2px), radial-gradient(circle at 40px 40px, rgba(55, 65, 81, 0.12) 2px, transparent 2px)",
-							"backgroundSize": "40px 40px, 40px 40px, 40px 40px, 40px 40px"
-						}
-					},
-					"title": {
-						"text": [
-							{
-								"text": "From Vision to Production Architecture",
-								"vx": {}
-							}
-						]
-					},
 					"subtitle": {
 						"text": [
 							{
-								"text": "Think of it like a high-stakes expedition. 'Vibe coding' is a great way to start moving, but without professional-grade equipment, you'll stall as soon as the terrain gets tough. We provide the technical durability that allows you to pivot and scale as the market changes. By reinforcing your vision with resilient architecture, we ensure your platform stays fast and stable—whether you're serving ten users or ten thousand.",
-								"text2": "Think of it like an expedition. 'Vibe coding' is a fast start, but if you don't have the right equipment, you'll stall as soon as the terrain gets tough. We provide the technical durability that allows you to pivot and scale as the market changes. We ensure your foundation is resilient, so whether you're serving ten users or ten thousand, your platform remains fast, stable, and ready for the road ahead."
-							}
-						]
-					}
-				},
-				"panel1": {
-					"featuresGrid": {
-						"ds": [
-							{
-								"description": "We bypass the \"grunt work\" using our MUI library to launch your custom platform faster.",
-								"icon": "RocketLaunch",
-								"title": "1. Accelerated MVP Assembly"
-							},
-							{
-								"description": "We design a \"bulletproof\" brain, mapping data and APIs for maximum logic and speed.",
-								"icon": "Psychology",
-								"title": "2. High-Performance Architecture"
-							},
-							{
-								"description": "We handle AWS/Firebase, security, and 24/7 monitoring so you can scale without the stress.",
-								"icon": "CloudDone",
-								"title": "3. Zero-Ops Managed Hosting"
-							},
-							{
-								"description": "We provide the ongoing roadmap and iterations to ensure your product grows as fast as your vision.",
-								"icon": "Timeline",
-								"title": "4. Strategic Product Evolution"
-							}
-						],
-						"ds1": [
-							{
-								"description": "We conduct an intensive deep-dive into your business goals, current tech stack, and future scaling requirements.",
-								"icon": "",
-								"title": "1. Define & Design"
-							},
-							{
-								"description": "We build the platform using cloud solutions, focusing on security, stability, and reproducibility.",
-								"icon": "",
-								"title": "2. Implement & Automate"
-							},
-							{
-								"description": "We conduct rigorous testing, performance tuning, and operational stabilization.",
-								"title": "3. Stabilize & Transfer"
-							},
-							{
-								"description": "Architectures built with high availability, redundancy, and automated failover baked in, leveraging best practices.",
-								"title": "4. Designed for Uptime"
-							}
-						]
-					},
-					"image": {
-						"src": "https://www.ketrik.com/screenshot.jpg"
-					},
-					"subtitle1": {
-						"text": [
-							{
-								"text": "We build the operational backbone your platform needs to scale, clearing the path for your team to focus entirely on innovation."
-							}
-						]
-					},
-					"title": {
-						"text": [
-							{
-								"text": "Why Us ",
-								"vx": {
-									"lineBreak": true
-								}
-							},
-							{
-								"text": "Operational certainty from day one",
-								"vx": {
-									"size": "sm",
-									"color": "blue"
-								}
-							}
-						]
-					}
-				},
-				"panel2": {
-					"background": {
-						"style": {
-							"backgroundImage": "repeating-linear-gradient(0deg, transparent, transparent 19px, rgba(75, 85, 99, 0.08) 19px, rgba(75, 85, 99, 0.08) 20px, transparent 20px, transparent 39px, rgba(75, 85, 99, 0.08) 39px, rgba(75, 85, 99, 0.08) 40px),repeating-linear-gradient(90deg, transparent, transparent 19px, rgba(75, 85, 99, 0.08) 19px, rgba(75, 85, 99, 0.08) 20px, transparent 20px, transparent 39px, rgba(75, 85, 99, 0.08) 39px, rgba(75, 85, 99, 0.08) 40px), radial-gradient(circle at 20px 20px, rgba(55, 65, 81, 0.12) 2px, transparent 2px), radial-gradient(circle at 40px 40px, rgba(55, 65, 81, 0.12) 2px, transparent 2px)",
-							"backgroundSize": "40px 40px, 40px 40px, 40px 40px, 40px 40px"
-						}
-					},
-					"featuresGrid": {
-						"ds": [
-							{
-								"description": "It starts with a project submission. We review your vision, technical requirements, and market goals to ensure they align with our Lab’s expertise and current capacity.",
-								"icon": "",
-								"title": "1. Venture Intake"
-							},
-							{
-								"description": "We map out your 'Vibe-to-Architecture' path. For startups, we focus on market entry; for Enterprise partners, we focus on cloud modernization, security compliance, and seamless integration with existing AWS or Google Cloud ecosystems.",
-								"icon": "",
-								"title": "2. The Deep-Dive Session"
-							},
-							{
-								"description": "No two ventures are the same. We define a custom engagement model—ranging from rapid-prototype MVP builds to Enterprise-level SOWs (Statements of Work)—tailored to your internal procurement and roadmap requirements.",
-								"title": "3. Bespoke Structuring"
-							},
-							{
-								"description": "We move into high-velocity development. Using our validated component library, we transform your concept into a secure, launch-ready environment that meets enterprise-grade standards for audit and scale.",
-								"title": "4. Lab Execution"
-							}
-						]
-					},
-					"subtitle": {
-						"text": [
-							{
-								"text": "Why we built a Lab, not an Agency? We believe the best products are born from the intersection of creative intuition and rigorous engineering. In the Lab, we don't just solve tickets; we solve for the venture’s future.",
-								"vx": {},
-								"text1": "Beyond code, we invest our conviction. We are a boutique studio that prioritizes deep technical involvement in projects that challenge the status quo."
-							}
-						]
-					},
-					"title": {
-						"text": [
-							{
-								"text": "Work With Us",
-								"vx": {
-									"lineBreak": true
-								}
-							},
-							{
-								"text": "We are a boutique venture lab",
-								"text1": "We prioritize deep partnerships over high-volume projects",
-								"vx": {
-									"size": "sm",
-									"color": "blue"
-								}
-							}
-						]
-					}
-				},
-				"panel3": {
-					"subtitle": {
-						"text": [
-							{
-								"text": "The difference between a successful market launch and a stalled project is speed, expertise, and predictability. Outsource the build, mitigate the risk, and achieve revenue goals months ahead of your competition.",
+								"text": "No sales pitch, no calendar links, and zero waiting. Dive straight into the live interactive shell right now.",
 								"vx": {
 									"center": true,
 									"maxWidth": "md"
@@ -444,26 +227,9 @@
 							}
 						]
 					},
-					"title": {
-						"text": [
-							{
-								"text": "Stop delaying ",
-								"vx": {
-									"lineBreak": true
-								}
-							},
-							{
-								"text": "your next great product",
-								"vx": {
-									"size": "sm",
-									"color": "blue"
-								}
-							}
-						]
-					},
 					"button": {
-						"href": "/portal",
-						"text": "Reach out"
+						"href": "/demo",
+						"text": "Launch Interactive Demo"
 					}
 				}
 			},
@@ -820,7 +586,8 @@
 		"pages_research": {
 			"data": "# Ketrik Research page",
 			"renderComponent": {
-				"component": "Markdown"
+				"component": "Markdown",
+				"container": {}
 			}
 		},
 		"pages_about": {
