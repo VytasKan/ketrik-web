@@ -669,40 +669,47 @@
 				}
 			},
 			"config": {
-				"header": "Terms and Conditions",
 				"groups": [
 					{
-						"header": " ",
 						"items": [
 							{
-								"dataKey": "terms",
-								"notation": "compact",
-								"sub": "Terms and Conditions",
-								"title": ""
-							}
-						]
-					},
-					{
-						"cardConfig": [
-							{
-								"type": "cardHeader",
-								"title": "Terms and Conditions"
-							},
-							{
-								"type": "cardContent",
-								"dataKey": "terms",
-								"contentConfig": {
-									"contentType": "Markdown"
-								}
-							},
-							{
-								"type": "cardAction",
-								"buttons": [
+								"cardConfig": [
 									{
-										"label": "Accept",
-										"variant": "outlined",
-										"color": "info",
-										"actionType": "nav"
+										"type": "cardContent",
+										"dataKey": "terms",
+										"contentConfig": {
+											"contentType": "Markdown",
+											"scrollable": true
+										}
+									},
+									{
+										"type": "cardAction",
+										"sx": {
+											"justifyContent": "center"
+										},
+										"buttons": [
+											{
+												"label": "Sign Out",
+												"variant": "outlined",
+												"color": "error",
+												"actionConfig": {
+													"type": "LOGOUT"
+												}
+											},
+											{
+												"actionConfig": {
+													"type": "SAVE_TO_FIRESTORE",
+													"collection": "users",
+													"document": "${uid}",
+													"data": {
+														"hasAcceptedTerms": true,
+														"hasAcceptedTermsAt": "${now}"
+													}
+												},
+												"label": "Accept",
+												"variant": "outlined"
+											}
+										]
 									}
 								]
 							}
