@@ -202,28 +202,14 @@
 					"title": {
 						"text": [
 							{
-								"text": "Ready to see Ketrik ",
-								"vx": {
-									"lineBreak": true
-								}
-							},
-							{
-								"text": "in action on your workflows?",
-								"vx": {
-									"size": "sm",
-									"color": "blue"
-								}
+								"text": "Ready to see Ketrik in action?"
 							}
 						]
 					},
 					"subtitle": {
 						"text": [
 							{
-								"text": "No sales pitch, no calendar links, and zero waiting. Dive straight into the live interactive shell right now.",
-								"vx": {
-									"center": true,
-									"maxWidth": "md"
-								}
+								"text": "No sales pitch, no calendar links, and zero waiting. Dive straight into the live interactive shell right now."
 							}
 						]
 					},
@@ -452,12 +438,16 @@
 												"title": {
 													"size": "lg"
 												},
-												"featuresGrid": {
-													"size": 2,
-													"color": "blue"
-												},
 												"sectionWrapper": {
 													"hasNoMargin": true
+												},
+												"buttonWrapper": {
+													"center": true
+												},
+												"button": {
+													"color": "primary",
+													"radius": "full",
+													"size": "lg"
 												}
 											}
 										},
@@ -472,6 +462,70 @@
 										"type": "cardContent"
 									}
 								]
+							},
+							{
+								"cardConfig": [
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "basic",
+											"id": "solutions",
+											"vx": {
+												"image": {
+													"isBlurred": true,
+													"isZoomed": true,
+													"shadow": "sm"
+												}
+											}
+										},
+										"dataKey": "panel1",
+										"type": "cardContent"
+									},
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "basic",
+											"vx": {
+												"titleWrapper": {
+													"center": true,
+													"isVertical": false
+												},
+												"buttonWrapper": {
+													"center": true
+												},
+												"button": {
+													"color": "primary",
+													"radius": "full",
+													"size": "lg"
+												}
+											}
+										},
+										"dataKey": "panel3",
+										"type": "cardContent"
+									},
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "basic",
+											"vx": {
+												"titleWrapper": {
+													"center": true,
+													"isVertical": true
+												},
+												"featuresGrid": {
+													"size": 3,
+													"color": "blue"
+												},
+												"sectionWrapper": {
+													"hasNoMargin": true
+												}
+											}
+										},
+										"dataKey": "shellBullets",
+										"type": "cardContent"
+									}
+								],
+								"cardType": "noCard"
 							}
 						]
 					}
