@@ -10314,6 +10314,11 @@
 				"id": "TERMS",
 				"mandatoryPath": "/gates/terms",
 				"field": "hasAcceptedTerms"
+			},
+			{
+				"id": "CHATBOT",
+				"mandatoryPath": "/gates/chatbot",
+				"field": "hasCompletedChatbot"
 			}
 		],
 		"authConfig": {
