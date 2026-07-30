@@ -718,6 +718,115 @@
 				]
 			}
 		},
+		"gates_chatbot": {
+			"data": {
+				"profile": true
+			},
+			"config": {
+				"childComponent": "DisplayCards",
+				"disableGutters": true,
+				"groups": [
+					{
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"cardProps": {
+									"sx": {
+										"p": "0px",
+										"m": 0,
+										"border": "none"
+									}
+								},
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"actionConfig": {
+											"type": "SAVE_TO_FIRESTORE",
+											"collection": "users",
+											"document": "${uid}",
+											"variable1": "onboarding",
+											"data": {
+												"hasCompletedOnboarding": true,
+												"hasCompletedOnboardingAt": "${now}"
+											}
+										},
+										"contentConfig": {
+											"contentType": "Chatbot",
+											"scrollable": true,
+											"sx": {
+												"minHeight": "65vh",
+												"p": "0px!important",
+												"m": 0
+											},
+											"inputConfig": {
+												"initialMode": "auto",
+												"maxHeight": 280,
+												"maxLength": 500,
+												"placeholder": "Type your answer..."
+											},
+											"tools": {
+												"save_user_profile": {
+													"description": "Submit final user profile data after all fields are collected and confirmed.",
+													"inputSchema": {
+														"type": "object",
+														"properties": {
+															"displayName": {
+																"type": "string",
+																"description": "Name"
+															},
+															"companyName": {
+																"type": "string",
+																"description": "Company Name"
+															},
+															"profession": {
+																"type": "string",
+																"description": "Profession/Role"
+															},
+															"email": {
+																"type": "string",
+																"description": "Work Email"
+															}
+														},
+														"required": [
+															"displayName",
+															"companyName",
+															"profession",
+															"email"
+														],
+														"additionalProperties": false
+													}
+												}
+											},
+											"prompt": {
+												"role": "You are an onboarding assistant initiating a profile setup session. Your goal is to deliver a warm, personalized greeting, mention what setup entails, and prompt the user for the first missing or unconfirmed piece of information.",
+												"instructions": [
+													"Greet the user using their name if explicitly provided in the context; otherwise use a generic greeting like 'Hello!'. Never invent or assume names.",
+													"If a fact is INFERRED (e.g., company derived from email domain), do NOT ask for it from scratch. Instead, ask the user to confirm if it is correct.",
+													"If a fact is EXPLICITLY CONFIRMED or KNOWN, consider it set. Do NOT ask about it or confirm it again.",
+													"Prompt ONLY for the single highest-priority field that is unconfirmed or missing."
+												],
+												"constraints": [
+													"Output maximum 3 short, natural sentences.",
+													"Speak directly to the user in plain text.",
+													"Do NOT ask for information from scratch if it was already inferred—always phrase inferred data as a simple confirmation check.",
+													"NEVER invent, assume, or default to a name (like Alex) or company if not provided in context.",
+													"Do NOT include markdown code blocks, metadata, preamble, system notes, or section headers in the output."
+												]
+											},
+											"greetingStaticText": "Hello! To get your profile set up, could you please tell me your full name?",
+											"greetingIsDynamic": true,
+											"greetingPrompt": ""
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
 		"profile": {
 			"data": {
 				"profile": {
