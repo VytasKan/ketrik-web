@@ -10318,7 +10318,7 @@
 			{
 				"id": "CHATBOT",
 				"mandatoryPath": "/gates/chatbot",
-				"field": "onboarding.hasCompletedOnboarding"
+				"field": "hasCompletedOnboarding"
 			}
 		],
 		"authConfig": {
