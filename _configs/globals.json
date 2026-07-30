@@ -659,16 +659,139 @@
 			}
 		},
 		"pages_pricing": {
-			"data": "# Ketrik Pricing page",
-			"renderComponent": {
-				"component": "Markdown",
-				"container": {
-					"maxWidth": "md",
-					"sx": {
-						"mt": 10,
-						"mb": 10
-					}
+			"data": {
+				"pricing": {
+					"title": "Flexible Pricing for Every Team",
+					"subtitle": "Choose the plan that’s right for you."
+				},
+				"pricingFaq": {
+					"items": [
+						{
+							"id": "q1",
+							"question": "What is the pricing model for Ketrik?",
+							"answer": "Ketrik offers flexible usage-based pricing with monthly and annual subscription tiers. Pricing is determined by data ingestion volume, active agents, compute hours, and premium feature usage. Volume discounts apply for large-scale deployments.",
+							"category": "general",
+							"iconName": "RequestQuoteOutlined",
+							"badge": "Pricing"
+						},
+						{
+							"id": "q2",
+							"question": "Do you offer a free trial or sandbox environment?",
+							"answer": "Yes, we provide a free sandbox environment with 10GB of data ingestion and 3 active agents for 14 days. This allows you to test core features, connect your data sources, and validate workflows before committing to a plan.",
+							"category": "general",
+							"iconName": "ScienceOutlined",
+							"badge": "Trial"
+						},
+						{
+							"id": "q3",
+							"question": "Can I upgrade or downgrade my plan at any time?",
+							"answer": "Yes, you can upgrade or downgrade your subscription plan anytime directly from the billing dashboard. Changes typically take effect at the start of your next billing cycle, though usage overages may be billed immediately.",
+							"category": "general",
+							"iconName": "SyncAltOutlined",
+							"badge": "Billing"
+						},
+						{
+							"id": "q4",
+							"question": "What happens if I exceed my data or agent limits?",
+							"answer": "If you exceed your limits, Ketrik will automatically scale to handle the load while notifying you of your current usage. You’ll receive alerts when you approach your limits, and overages are billed proportionally based on your subscription tier.",
+							"category": "general",
+							"iconName": "WarningOutlined",
+							"badge": "Limits"
+						},
+						{
+							"id": "q5",
+							"question": "Do you offer enterprise pricing or custom deployment options?",
+							"answer": "Yes, for enterprise customers we offer custom pricing, dedicated deployments, and tailored SLA agreements. Enterprise plans include features like SSO, advanced security controls, custom integrations, and premium support.",
+							"category": "general",
+							"iconName": "DomainOutlined",
+							"badge": "Enterprise"
+						},
+						{
+							"id": "q6",
+							"question": "What payment methods do you accept?",
+							"answer": "We accept all major credit cards for standard subscriptions. Enterprise customers can opt for invoicing and wire transfer payments. All transactions are processed securely through Stripe.",
+							"category": "general",
+							"iconName": "CreditCardOutlined",
+							"badge": "Payments"
+						},
+						{
+							"id": "q7",
+							"question": "How are compute costs calculated for custom actions and agents?",
+							"answer": "Compute usage is calculated based on execution time, number of operations, and model inferences. Each action type has an associated cost index, and your real-time usage dashboard shows projected costs as you build.",
+							"category": "performance",
+							"iconName": "CalculateOutlined",
+							"badge": "Compute"
+						},
+						{
+							"id": "q8",
+							"question": "Can I get a custom quote for my specific usage patterns?",
+							"answer": "Yes, our sales team can prepare a custom quote based on your expected data volume, agent count, integration needs, and compute requirements. We also offer pilot program pricing for strategic partners.",
+							"category": "general",
+							"iconName": "MonetizationOnOutlined",
+							"badge": "Quote"
+						}
+					]
 				}
+			},
+			"config": {
+				"disableGutter": true,
+				"hideFullSizeToggle": true,
+				"isFullSize": false,
+				"groups": [
+					{
+						"itemSize": {
+							"sm": 12
+						},
+						"items": [
+							{
+								"id": "pricing",
+								"cardType": "noCard",
+								"cardConfig": [
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "basic",
+											"vx": {
+												"subtitle": {
+													"maxWidth": "md",
+													"center": true,
+													"italic": true
+												},
+												"titleWrapper": {
+													"center": true,
+													"isVertical": true
+												},
+												"title": {
+													"size": "lg"
+												},
+												"sectionWrapper": {
+													"hasNoMargin": true
+												},
+												"buttonWrapper": {
+													"center": true
+												},
+												"button": {
+													"color": "primary",
+													"radius": "full",
+													"size": "lg"
+												}
+											}
+										},
+										"dataKey": "pricing",
+										"type": "cardContent"
+									},
+									{
+										"dataKey": "pricingFaq",
+										"contentConfig": {
+											"contentType": "KetrikMiniFaq"
+										},
+										"type": "cardContent"
+									}
+								]
+							}
+						]
+					}
+				]
 			}
 		},
 		"pages_articles": {
