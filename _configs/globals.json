@@ -661,8 +661,22 @@
 		"pages_pricing": {
 			"data": {
 				"pricing": {
-					"title": "Flexible Pricing for Every Team",
-					"subtitle": "Choose the plan that’s right for you."
+					"title": {
+						"text": [
+							{
+								"text": "Flexible Pricing for Every Team",
+								"vx": {
+									"size": "lg",
+									"lineBreak": true
+								}
+							}],
+					"subtitle": {
+						"text": "Choose the plan that’s right for you.",
+						"vx": {
+							"center": true,
+							"size": "sm"
+						}
+					}
 				},
 				"pricingFaq": {
 					"items": [
