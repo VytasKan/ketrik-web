@@ -764,15 +764,13 @@
 											"contentType": "Marketing",
 											"panel": "basic",
 											"vx": {
-												"subtitle": {
-													"maxWidth": "md"
-												},
+												"subtitle": {},
 												"titleWrapper": {
 													"center": false,
 													"isVertical": false
 												},
 												"title": {
-													"size": "lg"
+													"size": "md"
 												},
 												"sectionWrapper": {
 													"hasNoMargin": true
