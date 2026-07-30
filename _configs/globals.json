@@ -664,18 +664,14 @@
 					"title": {
 						"text": [
 							{
-								"text": "Flexible Pricing for Every Team",
-								"vx": {
-									"size": "lg",
-									"lineBreak": true
-								}
+								"text": "Pricing, Based on What You Run"
 							}
 						]
 					},
 					"subtitle": {
 						"text": [
 							{
-								"text": "Choose the plan that’s right for you.",
+								"text": "You pay once to connect Ketrik to your data and workflows, and an ongoing fee to keep it running — not a per-seat fee for how many people log in. What you pay reflects the size and complexity of what's actually deployed for your business.",
 								"vx": {
 									"center": true,
 									"size": "sm"
@@ -773,13 +769,11 @@
 											"panel": "basic",
 											"vx": {
 												"subtitle": {
-													"maxWidth": "md",
-													"center": true,
-													"italic": true
+													"maxWidth": "md"
 												},
 												"titleWrapper": {
-													"center": true,
-													"isVertical": true
+													"center": false,
+													"isVertical": false
 												},
 												"title": {
 													"size": "lg"
@@ -789,11 +783,6 @@
 												},
 												"buttonWrapper": {
 													"center": true
-												},
-												"button": {
-													"color": "primary",
-													"radius": "full",
-													"size": "lg"
 												}
 											}
 										},
