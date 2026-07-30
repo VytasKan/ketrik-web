@@ -507,11 +507,6 @@
 							"iconName": "LayersOutlined"
 						},
 						{
-							"id": "performance",
-							"title": "Performance & AI",
-							"iconName": "SpeedOutlined"
-						},
-						{
 							"id": "security",
 							"title": "Security & Privacy",
 							"iconName": "ShieldOutlined"
@@ -536,7 +531,7 @@
 							"id": "q2",
 							"question": "How does Ketrik handle real-time data ingestion and processing?",
 							"answer": "Ketrik uses an event-driven streaming architecture and WebSocket connections to map live feeds in real time. Incoming data is immediately evaluated against custom trigger rules and AI anomaly detection models.",
-							"category": "performance",
+							"category": "general",
 							"iconName": "SpeedOutlined",
 							"badge": "Real-Time"
 						},
