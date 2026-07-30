@@ -669,13 +669,19 @@
 									"size": "lg",
 									"lineBreak": true
 								}
-							}],
+							}
+						]
+					},
 					"subtitle": {
-						"text": "Choose the plan that’s right for you.",
-						"vx": {
-							"center": true,
-							"size": "sm"
-						}
+						"text": [
+							{
+								"text": "Choose the plan that’s right for you.",
+								"vx": {
+									"center": true,
+									"size": "sm"
+								}
+							}
+						]
 					}
 				},
 				"pricingFaq": {
