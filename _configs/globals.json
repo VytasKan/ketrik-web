@@ -664,18 +664,14 @@
 					"title": {
 						"text": [
 							{
-								"text": "Pricing, Based on What You Run"
+								"text": "Ketrik Pricing — Based on What You Run"
 							}
 						]
 					},
 					"subtitle": {
 						"text": [
 							{
-								"text": "You pay once to connect Ketrik to your data and workflows, and an ongoing fee to keep it running — not a per-seat fee for how many people log in. What you pay reflects the size and complexity of what's actually deployed for your business.",
-								"vx": {
-									"center": true,
-									"size": "sm"
-								}
+								"text": "You pay once to connect Ketrik to your data and workflows, and an ongoing fee to keep it running — not a per-seat fee for how many people log in. What you pay reflects the size and complexity of what's actually deployed for your business."
 							}
 						]
 					}
