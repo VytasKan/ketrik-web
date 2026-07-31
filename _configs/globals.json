@@ -664,7 +664,17 @@
 					"title": {
 						"text": [
 							{
-								"text": "Ketrik Pricing — Based on What You Run"
+								"text": "Ketrik Pricing — Based on",
+								"vx": {
+									"size": "lg",
+									"lineBreak": true
+								}
+							},
+							{
+								"text": "What You Run",
+								"vx": {
+									"size": "lg"
+								}
 							}
 						]
 					},
