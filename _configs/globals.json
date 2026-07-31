@@ -796,9 +796,7 @@
 												"title": {
 													"size": "lg"
 												},
-												"subtitle": {
-													"maxWidth": "md"
-												},
+												"subtitle": {},
 												"sectionWrapper": {
 													"hasNoMargin": true,
 													"addTopMargin": false
