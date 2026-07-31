@@ -688,7 +688,7 @@
 								"text": "What you pay reflects the exact data complexity and operational scope deployed for your business.",
 								"vx": {
 									"bold": false,
-									"italic": true
+									"italic": false
 								}
 							},
 							{
@@ -696,7 +696,7 @@
 								"vx": {
 									"bold": false,
 									"block": false,
-									"italic": true
+									"italic": false
 								}
 							}
 						]
