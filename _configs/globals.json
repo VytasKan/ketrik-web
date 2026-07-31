@@ -264,7 +264,9 @@
 													"maxWidth": "lg"
 												},
 												"title": {},
-												"titleWrapper": {},
+												"titleWrapper": {
+													"mobileMinHeight": true
+												},
 												"button": {
 													"color": "primary",
 													"radius": "full",
@@ -743,7 +745,7 @@
 					"title": {
 						"text": [
 							{
-								"text": "Ready to See Ketrik in Action?"
+								"text": "Ready to Scope Your Project?"
 							}
 						]
 					},
@@ -819,6 +821,7 @@
 							{
 								"id": "pricing",
 								"cardType": "noCard",
+
 								"cardConfig": [
 									{
 										"contentConfig": {
@@ -846,7 +849,13 @@
 							{
 								"id": "eraAi",
 								"cardType": "noCard",
-
+								"cardProps": {
+									"sx": {
+										"borderTop": "1px solid",
+										"borderBottom": "1px solid",
+										"borderColor": "divider"
+									}
+								},
 								"cardConfig": [
 									{
 										"contentConfig": {
