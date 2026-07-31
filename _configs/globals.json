@@ -690,6 +690,30 @@
 									"bold": false,
 									"italic": true
 								}
+							},
+							{
+								"text": "The two parts of your investment",
+								"vx": {
+									"bold": true
+								}
+							},
+							{
+								"text": "You pay a setup fee to connect Ketrik Shell and AI Agents to your data and workflows, and an ongoing fee to keep them running — never a per-seat fee."
+							}
+						]
+					},
+					"featuresGrid": {
+						"ds": [
+							{
+								"title": "Setup fee",
+								"icon": "BuildOutlined",
+
+								"description": "Custom architecture and workflow design. Connecting your live data feeds, APIs, and databases. Setting up AI Agent rules for the decisions you want automated."
+							},
+							{
+								"title": "Operations & support",
+								"icon": "SupportAgentOutlined",
+								"description": "Real-time data processing and platform hosting. Ongoing performance tuning and AI Agent updates. Support to keep the platform aligned as you scale."
 							}
 						]
 					}
