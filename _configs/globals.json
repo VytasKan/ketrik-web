@@ -676,8 +676,7 @@
 							{
 								"text": "Scoped to Your Business",
 								"vx": {
-									"size": "lg",
-									"color": "blue"
+									"size": "lg"
 								}
 							}
 						]
@@ -692,14 +691,7 @@
 								}
 							},
 							{
-								"text": "The two parts of your investment: ",
-								"vx": {
-									"bold": false,
-									"block": false
-								}
-							},
-							{
-								"text": "you pay a setup fee to connect Ketrik Shell and AI Agents to your data and workflows, and an ongoing fee to keep them running — never a per-seat fee.",
+								"text": "Pricing has two parts: a setup fee to connect Ketrik Shell and AI Agents to your data and workflows, and an ongoing fee to keep them running — never a per-seat fee.",
 								"vx": {
 									"bold": false,
 									"block": false
