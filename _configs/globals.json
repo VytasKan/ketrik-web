@@ -687,10 +687,28 @@
 							{
 								"text": "What you pay reflects the exact data complexity and operational scope deployed for your business.",
 								"vx": {
-									"bold": true,
+									"bold": false,
 									"italic": true
 								}
-							},
+							}
+						]
+					}
+				},
+
+				"investement": {
+					"title": {
+						"text": [
+							{
+								"text": "The two parts of your investment",
+								"vx": {
+									"size": "sm",
+									"lineBreak": true
+								}
+							}
+						]
+					},
+					"subtitle": {
+						"text": [
 							{
 								"text": "You pay a setup fee to connect Ketrik Shell and AI Agents to your data and workflows, and an ongoing fee to keep them running — never a per-seat fee."
 							}
@@ -884,6 +902,37 @@
 											}
 										},
 										"dataKey": "pricing",
+										"type": "cardContent"
+									}
+								]
+							},
+
+							{
+								"id": "investement",
+								"cardType": "noCard",
+
+								"cardConfig": [
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "basic",
+											"vx": {
+												"titleWrapper": {},
+												"title": {
+													"size": "lg"
+												},
+												"subtitle": {},
+												"sectionWrapper": {
+													"hasNoMargin": true,
+													"addTopMargin": false
+												},
+												"featuresGrid": {
+													"size": 2,
+													"color": "blue"
+												}
+											}
+										},
+										"dataKey": "investement",
 										"type": "cardContent"
 									}
 								]
