@@ -661,17 +661,23 @@
 		"pages_pricing": {
 			"data": {
 				"pricing": {
+					"background": {
+						"style": {
+							"--bg-image": "url(/_assets/network_pattern_hd.png)",
+							"--bg-image-dark": "url(/_assets/network_pattern_121212_hd.png)"
+						}
+					},
 					"title": {
 						"text": [
 							{
-								"text": "Ketrik Pricing — Based on",
+								"text": "Ketrik Pricing",
 								"vx": {
-									"size": "lg",
+									"size": "sm",
 									"lineBreak": true
 								}
 							},
 							{
-								"text": "What You Run",
+								"text": "Pricing, based on what you run",
 								"vx": {
 									"size": "lg"
 								}
@@ -681,7 +687,14 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "You pay once to connect Ketrik Shell and AI Agents to your stack, and a simple ongoing fee to keep them running — not a per-seat fee for your team. What you pay reflects the exact data complexity and operational scope deployed for your business."
+								"text": "You pay once to connect Ketrik Shell and AI Agents to your stack, and a simple ongoing fee to keep them running — not a per-seat fee for your team."
+							}
+						]
+					},
+					"featuresGrid": {
+						"ds": [
+							{
+								"description": "What you pay reflects the exact data complexity and operational scope deployed for your business."
 							}
 						]
 					}
@@ -774,24 +787,20 @@
 											"contentType": "Marketing",
 											"panel": "basic",
 											"vx": {
-												"titleWrapper": {
-													"center": true,
-													"isVertical": true
-												},
+												"titleWrapper": {},
 												"title": {
 													"size": "lg"
 												},
 												"subtitle": {
-													"maxWidth": "md",
-													"center": true,
-													"italic": true
+													"maxWidth": "md"
 												},
 												"sectionWrapper": {
 													"hasNoMargin": true,
 													"addTopMargin": false
 												},
-												"buttonWrapper": {
-													"center": true
+												"featuresGrid": {
+													"size": 1,
+													"color": "blue"
 												}
 											}
 										},
