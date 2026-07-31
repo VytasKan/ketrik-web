@@ -732,10 +732,14 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "These days, code can be generated in seconds. System architecture still takes judgment, iteration, and time. That judgment is harder to hire for than ever: AI can generate a dozen solutions that all technically work, but only one will fit your system, your data, and the way it needs to scale. Knowing which one to choose is the real skill, and it takes months to hire for — often months more before anything ships."
+								"text": "Code generation is fast, but that speed hasn't made the work easier — it's relocated it. True value hasn't shifted away from engineering; it's concentrated in architectural vision, exact domain requirements, and the expert judgment needed to evaluate and refine what AI produces."
 							},
 							{
-								"text": "Ketrik Shell and Ketrik AI Agents already solve that. Instead of building that judgment from scratch or stitching together custom code and vibe-coded scripts, you're paying for a platform that connects to your data, workflows, and business rules so it runs the way your business actually works."
+								"text": "AI can generate a dozen solutions that all work today. The judgment is what turns one of them into something you build on — without it, you're stuck rebuilding instead of creating business value."
+							},
+
+							{
+								"text": "Ketrik Shell and Ketrik AI Agents already carry that judgment. Instead of building it from scratch or stitching together custom code and vibe-coded scripts, you're paying for a platform that connects to your data, workflows, and business rules — so it runs the way your business actually works."
 							}
 						]
 					}
@@ -745,20 +749,20 @@
 					"title": {
 						"text": [
 							{
-								"text": "Ready to Scope Your Project?"
+								"text": "Ready to Become AI-native?"
 							}
 						]
 					},
 					"subtitle": {
 						"text": [
 							{
-								"text": "No sales pitch, no calendar links, and zero waiting. Jump straight into the live interactive shell right now."
+								"text": "A few questions about your data and workflows is all it takes."
 							}
 						]
 					},
 					"button": {
-						"href": "/demo",
-						"text": "Explore Ketrik Shell"
+						"href": "/pricing",
+						"text": "Get started with Ketrik"
 					}
 				},
 				"pricingFaq": {
@@ -852,7 +856,6 @@
 								"cardProps": {
 									"sx": {
 										"borderTop": "1px solid",
-										"borderBottom": "1px solid",
 										"borderColor": "divider"
 									}
 								},
@@ -891,6 +894,13 @@
 							{
 								"id": "FinalCTA",
 								"cardType": "noCard",
+								"cardProps": {
+									"sx": {
+										"borderTop": "1px solid",
+
+										"borderColor": "divider"
+									}
+								},
 								"cardConfig": [
 									{
 										"contentConfig": {
@@ -905,7 +915,7 @@
 													"size": "sm"
 												},
 												"sectionWrapper": {
-													"hasNoMargin": false,
+													"hasNoMargin": true,
 													"addTopMargin": false
 												},
 
