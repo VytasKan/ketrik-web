@@ -810,42 +810,35 @@
 						{
 							"id": "panel1",
 							"question": "How does Ketrik pricing work?",
-							"answer": "You're paying for senior engineering judgment already built into the platform — the kind of validation and system design that normally takes months to hire for and build in-house — plus the work to connect it to your data and workflows specifically.",
+							"answer": "You're paying for senior engineering judgment already built into the platform — the kind of validation and system design that normally takes months to hire for and build in-house — plus the work to connect it to your data and workflows specifically. Ongoing platform access starts from $2,000/month, which is 5–10x less than the cost of a single senior hire.",
 							"category": "pricing",
 							"iconName": "MonetizationOnOutlined",
 							"badge": "Pricing"
 						},
-						{
-							"id": "panel2",
-							"question": "Why doesn't building this in-house make sense?",
-							"answer": "Even a strong hire takes months before anything is running, plus ongoing maintenance and the next hire as scope grows. That time goes toward rebuilding infrastructure that already exists, not toward your business.",
-							"category": "pricing",
-							"iconName": "EngineeringOutlined",
-							"badge": "Value"
-						},
+
 						{
 							"id": "panel3",
 							"question": "How are setup fees calculated?",
-							"answer": "Setup is scoped to your project's size and complexity — how much data, how many workflows, how much automation you want running from day one.",
+							"answer": "Setup is scoped to your project's size and complexity—how much data, how many workflows, and how much automation you want running from day one. Pricing is calculated transparently using standard market rates and computed daily rates for the required engineering effort.",
 							"category": "pricing",
 							"iconName": "CalculateOutlined",
 							"badge": "Setup"
 						},
 						{
+							"id": "panel2",
+							"question": "Why doesn't building this in-house make sense?",
+							"answer": "Hiring senior engineers takes months before anything reaches production, while quick 'vibe coding' alternatives inevitably introduce technical debt and unmaintainable code. In-house builds trap your team in ongoing maintenance overhead and infrastructure duplication rather than driving core business value.",
+							"category": "pricing",
+							"iconName": "EngineeringOutlined",
+							"badge": "Value"
+						},
+						{
 							"id": "panel4",
 							"question": "Do we need our own engineers to maintain this?",
-							"answer": "No. Ketrik AI Agents are built to run without custom engineering or vibe-coded workarounds on your side. The engineering work happens once, upfront, to connect the platform to your systems — after that, it's ours to run and maintain.",
+							"answer": "No, but you can if you want to. If you have engineers, they can build and maintain the workflows, metrics, and data connections themselves. If you don't, Ketrik does that work for you — not just to get set up, but on an ongoing basis as your data and workflows change.",
 							"category": "pricing",
 							"iconName": "BuildOutlined",
 							"badge": "Maintenance"
-						},
-						{
-							"id": "panel5",
-							"question": "Is this a software subscription or an agency engagement?",
-							"answer": "You get Ketrik Shell and Ketrik AI Agents — enterprise-grade software — backed by dedicated engineers who implement and run it for you.",
-							"category": "pricing",
-							"iconName": "HandshakeOutlined",
-							"badge": "Model"
 						},
 						{
 							"id": "panel6",
@@ -925,14 +918,7 @@
 										},
 										"dataKey": "eraAi",
 										"type": "cardContent"
-									}
-								]
-							},
-
-							{
-								"id": "pricingFaq",
-								"cardType": "noCard",
-								"cardConfig": [
+									},
 									{
 										"dataKey": "pricingFaq",
 										"contentConfig": {
@@ -941,6 +927,12 @@
 										"type": "cardContent"
 									}
 								]
+							},
+
+							{
+								"id": "pricingFaq",
+								"cardType": "noCard",
+								"cardConfig": []
 							}
 						]
 					}
