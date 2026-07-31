@@ -738,73 +738,27 @@
 						]
 					}
 				},
-				"howItWorks": {
-					"title": {
-						"text": [
-							{
-								"text": "How Ketrik pricing works",
-								"vx": {
-									"size": "sm"
-								}
-							}
-						]
-					},
-					"subtitle": {
-						"text": [
-							{
-								"text": "Writing raw code is fast. Turning live data into something reliable enough to run decisions on — dashboards that don't lag, alerts that don't miscall, agents that execute the right action at the right moment — still takes senior engineering judgment to get right."
-							},
-							{
-								"text": "That's what Ketrik Shell and Ketrik AI Agents already solve. You're not paying for that engineering to be built from scratch, and your team isn't stitching it together with custom code or vibe-coded scripts either. You're paying for the platform, plus the work to connect it to your data feeds, workflows, and business rules — so it works the way your business actually runs."
-							}
-						]
-					}
-				},
-				"hire": {
-					"title": {
-						"text": [
-							{
-								"text": "Hiring in the AI era",
-								"vx": {
-									"size": "sm"
-								}
-							}
-						]
-					},
-					"subtitle": {
-						"text": [
-							{
-								"text": "Hiring engineering talent is harder than it used to be, and not for the reason most companies expect. AI coding tools have made it easy to produce code fast, but volume was never the bottleneck — judgment was. Most of what looks like engineering output now is fast, unreviewed generation: code that runs today and breaks under the first edge case nobody thought to test."
-							},
-							{
-								"text": "Finding people who can tell the difference, and who'll do the slower work of validating what the AI wrote, is now the harder hire, not the easier one — and it's the hire you actually need if the system is going to run your business."
-							}
-						]
-					}
-				},
-				"inhouse": {
-					"title": {
-						"text": [
-							{
-								"text": "Why in-house doesn't add up",
-								"vx": {
-									"size": "sm"
-								}
-							}
-						]
-					},
-					"subtitle": {
-						"text": [
-							{
-								"text": "Even a strong hire takes months before anything is running, and that's before ongoing maintenance, review, and the next engineer needed as scope grows. None of that time goes toward your business — it goes toward rebuilding infrastructure that already exists."
-							},
-							{
-								"text": "The better use of that budget is running the business more efficiently with what's already built, not rebuilding the platform underneath it."
-							}
-						]
-					}
-				},
 
+				"finalCTA": {
+					"title": {
+						"text": [
+							{
+								"text": "Ready to See Ketrik in Action?"
+							}
+						]
+					},
+					"subtitle": {
+						"text": [
+							{
+								"text": "No sales pitch, no calendar links, and zero waiting. Jump straight into the live interactive shell right now."
+							}
+						]
+					},
+					"button": {
+						"href": "/demo",
+						"text": "Explore Ketrik Shell"
+					}
+				},
 				"pricingFaq": {
 					"items": [
 						{
@@ -930,9 +884,43 @@
 							},
 
 							{
-								"id": "pricingFaq",
+								"id": "FinalCTA",
 								"cardType": "noCard",
-								"cardConfig": []
+								"cardConfig": [
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "basic",
+											"vx": {
+												"subtitle": {
+													"maxWidth": "md",
+													"center": true,
+													"italic": true
+												},
+												"titleWrapper": {
+													"center": true,
+													"isVertical": true
+												},
+												"title": {
+													"size": "lg"
+												},
+												"sectionWrapper": {
+													"hasNoMargin": true
+												},
+												"buttonWrapper": {
+													"center": true
+												},
+												"button": {
+													"color": "primary",
+													"radius": "full",
+													"size": "lg"
+												}
+											}
+										},
+										"dataKey": "finalCTA",
+										"type": "cardContent"
+									}
+								]
 							}
 						]
 					}
