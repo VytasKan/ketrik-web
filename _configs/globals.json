@@ -695,7 +695,7 @@
 								"text": "The two parts of your investment: ",
 								"vx": {
 									"bold": true,
-									"block": true
+									"block": false
 								}
 							},
 							{
