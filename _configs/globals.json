@@ -826,9 +826,7 @@
 											"panel": "basic",
 											"vx": {
 												"titleWrapper": {},
-												"title": {
-													"size": "lg"
-												},
+
 												"subtitle": {},
 												"sectionWrapper": {
 													"hasNoMargin": true,
@@ -856,9 +854,7 @@
 											"panel": "basic",
 											"vx": {
 												"titleWrapper": {},
-												"title": {
-													"size": "lg"
-												},
+
 												"subtitle": {},
 												"sectionWrapper": {
 													"hasNoMargin": true,
@@ -893,23 +889,17 @@
 											"panel": "basic",
 											"vx": {
 												"subtitle": {
-													"maxWidth": "md",
-													"center": true,
-													"italic": true
+													"maxWidth": "md"
 												},
-												"titleWrapper": {
-													"center": true,
-													"isVertical": true
-												},
+
 												"title": {
-													"size": "lg"
+													"size": "sm"
 												},
 												"sectionWrapper": {
-													"hasNoMargin": true
+													"hasNoMargin": false,
+													"addTopMargin": false
 												},
-												"buttonWrapper": {
-													"center": true
-												},
+
 												"button": {
 													"color": "primary",
 													"radius": "full",
