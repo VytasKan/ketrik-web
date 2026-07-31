@@ -701,6 +701,7 @@
 							{
 								"text": "you pay a setup fee to connect Ketrik Shell and AI Agents to your data and workflows, and an ongoing fee to keep them running — never a per-seat fee.",
 								"vx": {
+									"bold": true,
 									"block": false
 								}
 							}
