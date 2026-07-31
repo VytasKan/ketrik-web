@@ -730,10 +730,10 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "Code can be generated in seconds. System architecture still takes judgment, iteration, and time. That judgment is harder to hire for than ever.  Finding senior engineers who can validate and harden that code takes months, and months more before anything ships."
+								"text": "Code can be generated in seconds. System architecture still takes judgment, iteration, and time. That judgment is harder to hire for than ever: AI can generate a dozen solutions that all technically work, but only one will fit your system, your data, and the way it needs to scale. Knowing which one to choose is the real skill, and it takes months to hire for — often months more before anything ships."
 							},
 							{
-								"text": "Ketrik Shell and Ketrik AI Agents already solve that. You're not paying to have that judgment built from scratch, and your team isn't stitching it together with custom code or vibe-coded scripts either — you're paying for the platform, plus the work to connect it to your data, workflows, and business rules, so it runs the way your business actually does."
+								"text": "Ketrik Shell and Ketrik AI Agents already solve that. Instead of building that judgment from scratch or stitching together custom code and vibe-coded scripts, you're paying for a platform that connects to your data, workflows, and business rules so it runs the way your business actually works."
 							}
 						]
 					}
@@ -930,7 +930,7 @@
 												},
 												"subtitle": {},
 												"sectionWrapper": {
-													"hasNoMargin": true,
+													"hasNoMargin": false,
 													"addTopMargin": false
 												},
 												"featuresGrid": {
@@ -945,96 +945,6 @@
 								]
 							},
 
-							{
-								"id": "howItWorks",
-								"cardType": "noCard",
-
-								"cardConfig": [
-									{
-										"contentConfig": {
-											"contentType": "Marketing",
-											"panel": "basic",
-											"vx": {
-												"titleWrapper": {},
-												"title": {
-													"size": "lg"
-												},
-												"subtitle": {},
-												"sectionWrapper": {
-													"hasNoMargin": true,
-													"addTopMargin": false
-												},
-												"featuresGrid": {
-													"size": 1,
-													"color": "blue"
-												}
-											}
-										},
-										"dataKey": "howItWorks",
-										"type": "cardContent"
-									}
-								]
-							},
-							{
-								"id": "hire",
-								"cardType": "noCard",
-
-								"cardConfig": [
-									{
-										"contentConfig": {
-											"contentType": "Marketing",
-											"panel": "basic",
-											"vx": {
-												"titleWrapper": {},
-												"title": {
-													"size": "lg"
-												},
-												"subtitle": {},
-												"sectionWrapper": {
-													"hasNoMargin": true,
-													"addTopMargin": false
-												},
-												"featuresGrid": {
-													"size": 1,
-													"color": "blue"
-												}
-											}
-										},
-										"dataKey": "hire",
-										"type": "cardContent"
-									}
-								]
-							},
-							{
-								"id": "inhouse",
-								"cardType": "noCard",
-
-								"cardConfig": [
-									{
-										"contentConfig": {
-											"contentType": "Marketing",
-											"panel": "basic",
-											"vx": {
-												"titleWrapper": {},
-												"title": {
-													"size": "lg"
-												},
-												"subtitle": {},
-												"sectionWrapper": {
-													"hasNoMargin": true,
-													"addTopMargin": false
-												},
-												"featuresGrid": {
-													"size": 1,
-													"color": "blue"
-												}
-											}
-										},
-										"dataKey": "inhouse",
-										"type": "cardContent"
-									}
-								]
-							},
 							{
 								"id": "pricingFaq",
 								"cardType": "noCard",
