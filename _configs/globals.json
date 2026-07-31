@@ -638,6 +638,9 @@
 												"sectionWrapper": {
 													"hasNoMargin": true,
 													"addTopMargin": false
+												},
+												"background": {
+													"layout": "fullScreen"
 												}
 											}
 										},
@@ -679,7 +682,8 @@
 							{
 								"text": "Pricing, based on what you run",
 								"vx": {
-									"size": "lg"
+									"size": "lg",
+									"color": "blue"
 								}
 							}
 						]
@@ -694,7 +698,7 @@
 					"featuresGrid": {
 						"ds": [
 							{
-								"description": "What you pay reflects the exact data complexity and operational scope deployed for your business."
+								"title": "What you pay reflects the exact data complexity and operational scope deployed for your business."
 							}
 						]
 					}
