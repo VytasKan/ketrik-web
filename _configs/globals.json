@@ -667,14 +667,14 @@
 					"title": {
 						"text": [
 							{
-								"text": "Ketrik Pricing",
+								"text": "Ketrik",
 								"vx": {
 									"size": "sm",
 									"lineBreak": true
 								}
 							},
 							{
-								"text": "Pricing, scoped to your business",
+								"text": "Scoped to Your Business",
 								"vx": {
 									"size": "lg",
 									"color": "blue"
@@ -685,7 +685,13 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "You pay a setup fee to connect Ketrik Shell and AI Agents to your data and workflows, and an ongoing fee to keep them running — not a per-seat fee for your team."
+								"text": "You pay a setup fee to connect Ketrik Shell and AI Agents to your data and workflows, and an ongoing fee to keep them running — never a per-seat fee."
+							},
+							{
+								"text": "What you pay reflects the exact data complexity and operational scope deployed for your business.",
+								"vx": {
+									"italic": true
+								}
 							}
 						]
 					},
@@ -697,6 +703,73 @@
 						]
 					}
 				},
+				"howItWorks": {
+					"title": {
+						"text": [
+							{
+								"text": "How Ketrik pricing works",
+								"vx": {
+									"size": "sm"
+								}
+							}
+						]
+					},
+					"subtitle": {
+						"text": [
+							{
+								"text": "Writing raw code is fast. Turning live data into something reliable enough to run decisions on — dashboards that don't lag, alerts that don't miscall, agents that execute the right action at the right moment — still takes senior engineering judgment to get right."
+							},
+							{
+								"text": "That's what Ketrik Shell and Ketrik AI Agents already solve. You're not paying for that engineering to be built from scratch, and your team isn't stitching it together with custom code or vibe-coded scripts either. You're paying for the platform, plus the work to connect it to your data feeds, workflows, and business rules — so it works the way your business actually runs."
+							}
+						]
+					}
+				},
+				"hire": {
+					"title": {
+						"text": [
+							{
+								"text": "Hiring in the AI era",
+								"vx": {
+									"size": "sm"
+								}
+							}
+						]
+					},
+					"subtitle": {
+						"text": [
+							{
+								"text": "Hiring engineering talent is harder than it used to be, and not for the reason most companies expect. AI coding tools have made it easy to produce code fast, but volume was never the bottleneck — judgment was. Most of what looks like engineering output now is fast, unreviewed generation: code that runs today and breaks under the first edge case nobody thought to test."
+							},
+							{
+								"text": "Finding people who can tell the difference, and who'll do the slower work of validating what the AI wrote, is now the harder hire, not the easier one — and it's the hire you actually need if the system is going to run your business."
+							}
+						]
+					}
+				},
+				"inhouse": {
+					"title": {
+						"text": [
+							{
+								"text": "Why in-house doesn't add up",
+								"vx": {
+									"size": "sm"
+								}
+							}
+						]
+					},
+					"subtitle": {
+						"text": [
+							{
+								"text": "Even a strong hire takes months before anything is running, and that's before ongoing maintenance, review, and the next engineer needed as scope grows. None of that time goes toward your business — it goes toward rebuilding infrastructure that already exists."
+							},
+							{
+								"text": "The better use of that budget is running the business more efficiently with what's already built, not rebuilding the platform underneath it."
+							}
+						]
+					}
+				},
+
 				"pricingFaq": {
 					"items": [
 						{
@@ -770,6 +843,7 @@
 				"disableGutter": true,
 				"hideFullSizeToggle": true,
 				"isFullSize": false,
+				"maxWidth": "md",
 				"groups": [
 					{
 						"itemSize": {
@@ -802,7 +876,97 @@
 										},
 										"dataKey": "pricing",
 										"type": "cardContent"
-									},
+									}
+								]
+							},
+							{
+								"id": "howItWorks",
+								"cardConfig": [
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "basic",
+											"vx": {
+												"titleWrapper": {},
+												"title": {
+													"size": "lg"
+												},
+												"subtitle": {},
+												"sectionWrapper": {
+													"hasNoMargin": true,
+													"addTopMargin": false
+												},
+												"featuresGrid": {
+													"size": 1,
+													"color": "blue"
+												}
+											}
+										},
+										"dataKey": "howItWorks",
+										"type": "cardContent"
+									}
+								]
+							},
+							{
+								"id": "hire",
+								"cardConfig": [
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "basic",
+											"vx": {
+												"titleWrapper": {},
+												"title": {
+													"size": "lg"
+												},
+												"subtitle": {},
+												"sectionWrapper": {
+													"hasNoMargin": true,
+													"addTopMargin": false
+												},
+												"featuresGrid": {
+													"size": 1,
+													"color": "blue"
+												}
+											}
+										},
+										"dataKey": "hire",
+										"type": "cardContent"
+									}
+								]
+							},
+							{
+								"id": "inhouse",
+								"cardConfig": [
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "basic",
+											"vx": {
+												"titleWrapper": {},
+												"title": {
+													"size": "lg"
+												},
+												"subtitle": {},
+												"sectionWrapper": {
+													"hasNoMargin": true,
+													"addTopMargin": false
+												},
+												"featuresGrid": {
+													"size": 1,
+													"color": "blue"
+												}
+											}
+										},
+										"dataKey": "inhouse",
+										"type": "cardContent"
+									}
+								]
+							},
+							{
+								"id": "pricing",
+								"cardType": "noCard",
+								"cardConfig": [
 									{
 										"dataKey": "pricingFaq",
 										"contentConfig": {
