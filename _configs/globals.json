@@ -664,12 +664,6 @@
 		"pages_pricing": {
 			"data": {
 				"pricing": {
-					"background": {
-						"style": {
-							"--bg-image": "url(/_assets/network_pattern_hd.png)",
-							"--bg-image-dark": "url(/_assets/network_pattern_121212_hd.png)"
-						}
-					},
 					"title": {
 						"text": [
 							{
@@ -692,6 +686,13 @@
 						"text": [
 							{
 								"text": "You pay once to connect Ketrik Shell and AI Agents to your stack, and a simple ongoing fee to keep them running — not a per-seat fee for your team."
+							},
+							{
+								"text": "// What you pay reflects the exact data complexity and operational scope deployed for your business.",
+								"vx": {
+									"bold": true,
+									"block": true
+								}
 							}
 						]
 					},
