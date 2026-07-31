@@ -664,15 +664,14 @@
 					"title": {
 						"text": [
 							{
-								"text": "Ketrik Pricing"
+								"text": "Ketrik Pricing — Based on What You Run"
 							}
 						]
 					},
 					"subtitle": {
 						"text": [
 							{
-								"text": "Based on What You Run",
-								"text1": "You pay once to connect Ketrik Shell and AI Agents to your stack, and a simple ongoing fee to keep them running — not a per-seat fee for your team. What you pay reflects the exact data complexity and operational scope deployed for your business."
+								"text": "You pay once to connect Ketrik Shell and AI Agents to your stack, and a simple ongoing fee to keep them running — not a per-seat fee for your team. What you pay reflects the exact data complexity and operational scope deployed for your business."
 							}
 						]
 					}
