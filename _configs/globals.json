@@ -667,7 +667,7 @@
 					"title": {
 						"text": [
 							{
-								"text": "Ketrik",
+								"text": "Ketrik Pricing",
 								"vx": {
 									"size": "sm",
 									"lineBreak": true
@@ -690,12 +690,12 @@
 							{
 								"text": "What you pay reflects the exact data complexity and operational scope deployed for your business.",
 								"vx": {
-									"italic": true
+									"bold": true
 								}
 							}
 						]
 					},
-					"featuresGrid": {
+					"featuresGrid1": {
 						"ds": [
 							{
 								"title": "What you pay reflects the exact data complexity and operational scope deployed for your business."
@@ -881,6 +881,8 @@
 							},
 							{
 								"id": "howItWorks",
+								"cardType": "noCard",
+
 								"cardConfig": [
 									{
 										"contentConfig": {
@@ -909,6 +911,8 @@
 							},
 							{
 								"id": "hire",
+								"cardType": "noCard",
+
 								"cardConfig": [
 									{
 										"contentConfig": {
@@ -937,6 +941,8 @@
 							},
 							{
 								"id": "inhouse",
+								"cardType": "noCard",
+
 								"cardConfig": [
 									{
 										"contentConfig": {
@@ -964,7 +970,7 @@
 								]
 							},
 							{
-								"id": "pricing",
+								"id": "pricingFaq",
 								"cardType": "noCard",
 								"cardConfig": [
 									{
