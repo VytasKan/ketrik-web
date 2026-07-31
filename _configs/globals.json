@@ -730,7 +730,7 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "Code can be generated in seconds. System architecture still takes judgment, iteration, and time. That judgment is harder to hire for than ever: AI can generate a dozen solutions that all technically work, but only one will fit your system, your data, and the way it needs to scale. Knowing which one to choose is the real skill, and it takes months to hire for — often months more before anything ships."
+								"text": "These days, code can be generated in seconds. System architecture still takes judgment, iteration, and time. That judgment is harder to hire for than ever: AI can generate a dozen solutions that all technically work, but only one will fit your system, your data, and the way it needs to scale. Knowing which one to choose is the real skill, and it takes months to hire for — often months more before anything ships."
 							},
 							{
 								"text": "Ketrik Shell and Ketrik AI Agents already solve that. Instead of building that judgment from scratch or stitching together custom code and vibe-coded scripts, you're paying for a platform that connects to your data, workflows, and business rules so it runs the way your business actually works."
@@ -808,68 +808,52 @@
 				"pricingFaq": {
 					"items": [
 						{
-							"id": "q1",
-							"question": "What is the pricing model for Ketrik?",
-							"answer": "Ketrik offers flexible usage-based pricing with monthly and annual subscription tiers. Pricing is determined by data ingestion volume, active agents, compute hours, and premium feature usage. Volume discounts apply for large-scale deployments.",
-							"category": "general",
-							"iconName": "RequestQuoteOutlined",
+							"id": "panel1",
+							"question": "How does Ketrik pricing work?",
+							"answer": "You're paying for senior engineering judgment already built into the platform — the kind of validation and system design that normally takes months to hire for and build in-house — plus the work to connect it to your data and workflows specifically.",
+							"category": "pricing",
+							"iconName": "MonetizationOnOutlined",
 							"badge": "Pricing"
 						},
 						{
-							"id": "q2",
-							"question": "Do you offer a free trial or sandbox environment?",
-							"answer": "Yes, we provide a free sandbox environment with 10GB of data ingestion and 3 active agents for 14 days. This allows you to test core features, connect your data sources, and validate workflows before committing to a plan.",
-							"category": "general",
-							"iconName": "ScienceOutlined",
-							"badge": "Trial"
+							"id": "panel2",
+							"question": "Why doesn't building this in-house make sense?",
+							"answer": "Even a strong hire takes months before anything is running, plus ongoing maintenance and the next hire as scope grows. That time goes toward rebuilding infrastructure that already exists, not toward your business.",
+							"category": "pricing",
+							"iconName": "EngineeringOutlined",
+							"badge": "Value"
 						},
 						{
-							"id": "q3",
-							"question": "Can I upgrade or downgrade my plan at any time?",
-							"answer": "Yes, you can upgrade or downgrade your subscription plan anytime directly from the billing dashboard. Changes typically take effect at the start of your next billing cycle, though usage overages may be billed immediately.",
-							"category": "general",
-							"iconName": "SyncAltOutlined",
-							"badge": "Billing"
-						},
-						{
-							"id": "q4",
-							"question": "What happens if I exceed my data or agent limits?",
-							"answer": "If you exceed your limits, Ketrik will automatically scale to handle the load while notifying you of your current usage. You’ll receive alerts when you approach your limits, and overages are billed proportionally based on your subscription tier.",
-							"category": "general",
-							"iconName": "WarningOutlined",
-							"badge": "Limits"
-						},
-						{
-							"id": "q5",
-							"question": "Do you offer enterprise pricing or custom deployment options?",
-							"answer": "Yes, for enterprise customers we offer custom pricing, dedicated deployments, and tailored SLA agreements. Enterprise plans include features like SSO, advanced security controls, custom integrations, and premium support.",
-							"category": "general",
-							"iconName": "DomainOutlined",
-							"badge": "Enterprise"
-						},
-						{
-							"id": "q6",
-							"question": "What payment methods do you accept?",
-							"answer": "We accept all major credit cards for standard subscriptions. Enterprise customers can opt for invoicing and wire transfer payments. All transactions are processed securely through Stripe.",
-							"category": "general",
-							"iconName": "CreditCardOutlined",
-							"badge": "Payments"
-						},
-						{
-							"id": "q7",
-							"question": "How are compute costs calculated for custom actions and agents?",
-							"answer": "Compute usage is calculated based on execution time, number of operations, and model inferences. Each action type has an associated cost index, and your real-time usage dashboard shows projected costs as you build.",
-							"category": "performance",
+							"id": "panel3",
+							"question": "How are setup fees calculated?",
+							"answer": "Setup is scoped to your project's size and complexity — how much data, how many workflows, how much automation you want running from day one.",
+							"category": "pricing",
 							"iconName": "CalculateOutlined",
-							"badge": "Compute"
+							"badge": "Setup"
 						},
 						{
-							"id": "q8",
-							"question": "Can I get a custom quote for my specific usage patterns?",
-							"answer": "Yes, our sales team can prepare a custom quote based on your expected data volume, agent count, integration needs, and compute requirements. We also offer pilot program pricing for strategic partners.",
-							"category": "general",
-							"iconName": "MonetizationOnOutlined",
-							"badge": "Quote"
+							"id": "panel4",
+							"question": "Do we need our own engineers to maintain this?",
+							"answer": "No. Ketrik AI Agents are built to run without custom engineering or vibe-coded workarounds on your side. The engineering work happens once, upfront, to connect the platform to your systems — after that, it's ours to run and maintain.",
+							"category": "pricing",
+							"iconName": "BuildOutlined",
+							"badge": "Maintenance"
+						},
+						{
+							"id": "panel5",
+							"question": "Is this a software subscription or an agency engagement?",
+							"answer": "You get Ketrik Shell and Ketrik AI Agents — enterprise-grade software — backed by dedicated engineers who implement and run it for you.",
+							"category": "pricing",
+							"iconName": "HandshakeOutlined",
+							"badge": "Model"
+						},
+						{
+							"id": "panel6",
+							"question": "Can Ketrik be deployed into our own customer cloud account?",
+							"answer": "Yes. Ketrik can be deployed directly into your existing cloud environment—whether AWS, GCP, or Azure—ensuring your data stays within your security perimeter and compliance boundaries while still benefiting from our managed maintenance and AI agent infrastructure.",
+							"category": "deployment",
+							"iconName": "CloudQueueOutlined",
+							"badge": "Deployment"
 						}
 					]
 				}
@@ -930,7 +914,7 @@
 												},
 												"subtitle": {},
 												"sectionWrapper": {
-													"hasNoMargin": false,
+													"hasNoMargin": true,
 													"addTopMargin": false
 												},
 												"featuresGrid": {
