@@ -676,7 +676,8 @@
 							{
 								"text": "Scoped to Your Business",
 								"vx": {
-									"size": "lg"
+									"size": "lg",
+									"color": "blue"
 								}
 							}
 						]
@@ -687,18 +688,43 @@
 								"text": "What you pay reflects the exact data complexity and operational scope deployed for your business.",
 								"vx": {
 									"bold": false,
-									"italic": false
+									"italic": true
 								}
 							},
 							{
 								"text": "Pricing has two parts: a setup fee to connect Ketrik Shell and AI Agents to your data and workflows, and an ongoing fee to keep them running — never a per-seat fee.",
 								"vx": {
 									"bold": false,
-									"block": false
+									"block": false,
+									"italic": true
 								}
 							}
 						]
 					},
+
+					"eraAi": {
+						"title": {
+							"text": [
+								{
+									"text": "Pricing in the AI era",
+									"vx": {
+										"size": "sm"
+									}
+								}
+							]
+						},
+						"subtitle": {
+							"text": [
+								{
+									"text": "Writing raw code is fast. Turning live data into something reliable enough to run decisions on — dashboards that don't lag, alerts that don't miscall, agents that execute the right action at the right moment — still takes senior engineering judgment to get right. That judgment is also the harder thing to hire for now, not the easier one: AI coding tools have made code fast to produce, but most of what looks like output today is fast, unreviewed generation that runs until it hits the first edge case nobody tested. Finding people who'll do the slower work of validating what the AI wrote is the real hire — and it's one that takes months to make and months more before anything is running."
+								},
+								{
+									"text": "Ketrik Shell and Ketrik AI Agents already solve that. You're not paying to have that judgment built from scratch, and your team isn't stitching it together with custom code or vibe-coded scripts either — you're paying for the platform, plus the work to connect it to your data, workflows, and business rules, so it runs the way your business actually does."
+								}
+							]
+						}
+					},
+
 					"featuresGrid": {
 						"ds": [
 							{
@@ -707,48 +733,13 @@
 								"description": "Custom architecture and workflow design. Connecting your live data feeds, APIs, and databases. Setting up AI Agent rules for the decisions you want automated."
 							},
 							{
-								"title": "Operations & support",
+								"title": "Ongoing fee",
 								"description": "Real-time data processing and platform hosting. Ongoing performance tuning and AI Agent updates. Support to keep the platform aligned as you scale."
 							}
 						]
 					}
 				},
 
-				"investement": {
-					"title": {
-						"text": [
-							{
-								"text": "The two parts of your investment",
-								"vx": {
-									"size": "sm",
-									"lineBreak": true
-								}
-							}
-						]
-					},
-					"subtitle": {
-						"text": [
-							{
-								"text": "You pay a setup fee to connect Ketrik Shell and AI Agents to your data and workflows, and an ongoing fee to keep them running — never a per-seat fee."
-							}
-						]
-					},
-					"featuresGrid": {
-						"ds": [
-							{
-								"title": "Setup fee",
-								"icon": "BuildOutlined",
-
-								"description": "Custom architecture and workflow design. Connecting your live data feeds, APIs, and databases. Setting up AI Agent rules for the decisions you want automated."
-							},
-							{
-								"title": "Operations & support",
-								"icon": "SupportAgentOutlined",
-								"description": "Real-time data processing and platform hosting. Ongoing performance tuning and AI Agent updates. Support to keep the platform aligned as you scale."
-							}
-						]
-					}
-				},
 				"howItWorks": {
 					"title": {
 						"text": [
@@ -925,9 +916,8 @@
 									}
 								]
 							},
-
 							{
-								"id": "investement",
+								"id": "eraAi",
 								"cardType": "noCard",
 
 								"cardConfig": [
@@ -946,16 +936,17 @@
 													"addTopMargin": false
 												},
 												"featuresGrid": {
-													"size": 2,
+													"size": 1,
 													"color": "blue"
 												}
 											}
 										},
-										"dataKey": "investement",
+										"dataKey": "eraAi",
 										"type": "cardContent"
 									}
 								]
 							},
+
 							{
 								"id": "howItWorks",
 								"cardType": "noCard",
