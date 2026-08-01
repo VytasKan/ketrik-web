@@ -703,7 +703,7 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "You pay for the data complexity and operational scope deployed for your business — a setup fee to connect Ketrik Shell and AI Agents to your data and workflows, plus an ongoing fee to keep them running. Never a per-seat fee."
+								"text": "You pay only for the data complexity and operational scope deployed for your business — a setup fee to connect your data and workflows, plus an ongoing fee to keep them running. Never a per-seat fee."
 							}
 						]
 					},
@@ -736,7 +736,7 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "Generative AI has made coding easier, and pricing harder. The assumption behind most pricing models is that engineering effort is the scarce resource. It isn't anymore. What hasn't disappeared is expertise: the need for someone who can tell superior code from merely working code."
+								"text": "Generative AI has broken pricing models built around hours logged or lines of code shipped — the old assumption that writing code is the scarce resource. It isn't anymore. AI can generate thousands of lines of code just as fast as a 300-page manuscript—but raw text doesn't make a book people actually read., and raw code doesn't make a product people actually rely on. The value was never in typing out the syntax; it was always in the architecture, the domain knowledge, and the judgment required to make it work."
 							},
 							{
 								"text": "Code generation is fast, but that speed hasn't made the work easier — it's relocated it. True value hasn't shifted away from engineering; it's concentrated in architectural vision, exact business requirements, and the expert judgment needed to evaluate and refine what AI produces."
