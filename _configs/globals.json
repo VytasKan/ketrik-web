@@ -2,13 +2,16 @@
 	"schemas": {
 		"$root$": {
 			"data": {
-				"hero": {
-					"background1": {
+				"backgoround": {
+					"background": {
 						"style": {
 							"--bg-image": "url(/_assets/network_pattern_hd.png)",
 							"--bg-image-dark": "url(/_assets/network_pattern_121212_hd.png)"
 						}
-					},
+					}
+				},
+
+				"hero": {
 					"eyebrow": {
 						"text": "AI-Powered Workflow Command Center"
 					},
@@ -49,7 +52,7 @@
 									"HR, Hiring & People Operations"
 								],
 								"intensity": 0.5,
-								"pauseTime": 50000,
+
 								"variant1": "typewriter",
 								"vx": {
 									"size": "xl",
@@ -72,7 +75,7 @@
 								}
 							},
 							{
-								"text": "turns your data and workflowsinto live views — metrics, alerts, and actions, in real time.",
+								"text": "turns your data and workflows into live views — metrics, alerts, and actions, in real time.",
 								"vx": {
 									"block": false,
 									"lineBreak": true
@@ -268,22 +271,12 @@
 												},
 												"title": {},
 												"titleWrapper": {
-													"mobileMinHeight": true
+													"mobileMinHeight": false
 												},
 												"button": {
 													"color": "primary",
 													"radius": "full",
 													"size": "lg"
-												},
-												"background": {
-													"layout": "fullScreen"
-												}
-											},
-											"sx": {
-												"titleWrapper": {
-													"minHeight": {
-														"xs": "auto"
-													}
 												}
 											}
 										},
@@ -469,6 +462,26 @@
 										"contentConfig": {
 											"contentType": "KetrikMiniFaq"
 										},
+										"type": "cardContent"
+									}
+								]
+							},
+
+							{
+								"id": "background",
+								"cardType": "noCard",
+								"cardConfig": [
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "basic",
+											"vx": {
+												"background": {
+													"layout": "fullScreen"
+												}
+											}
+										},
+										"dataKey": "background",
 										"type": "cardContent"
 									}
 								]
