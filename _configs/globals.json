@@ -474,7 +474,7 @@
 									{
 										"contentConfig": {
 											"contentType": "Marketing",
-											"panel": "basic",
+											"panel": "background",
 											"vx": {
 												"background": {
 													"layout": "fullScreen"
@@ -921,7 +921,7 @@
 									{
 										"contentConfig": {
 											"contentType": "Marketing",
-											"panel": "background",
+											"panel": "basic",
 											"vx": {
 												"subtitle": {
 													"maxWidth": "md",
