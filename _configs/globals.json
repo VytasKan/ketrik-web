@@ -3,7 +3,7 @@
 		"$root$": {
 			"data": {
 				"hero": {
-					"background": {
+					"background1": {
 						"style": {
 							"--bg-image": "url(/_assets/network_pattern_hd.png)",
 							"--bg-image-dark": "url(/_assets/network_pattern_121212_hd.png)"
@@ -50,7 +50,7 @@
 								],
 								"intensity": 0.5,
 								"pauseTime": 50000,
-								"variant": "typewriter",
+								"variant1": "typewriter",
 								"vx": {
 									"size": "xl",
 									"color": "blue"
@@ -72,7 +72,7 @@
 								}
 							},
 							{
-								"text": "turns your data and workflows into interactive views where you can see live metrics, decide on risk alerts, and execute operational actions in real time.",
+								"text": "turns your data and workflowsinto live views — metrics, alerts, and actions, in real time.",
 								"vx": {
 									"block": false,
 									"lineBreak": true
@@ -86,7 +86,7 @@
 								}
 							},
 							{
-								"text": "automate routine decisions and accelerate execution — all without custom engineering or vibe coding.",
+								"text": "automate routine decisions and accelerate execution — no custom engineering, no vibe coding.",
 								"vx": {
 									"block": false
 								}
