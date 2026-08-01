@@ -131,11 +131,11 @@
 				"social": {
 					"headline": "Trusted by operators, agencies & SaaS teams",
 					"testimonial": {
-						"quote": "“Ketrik let us stand up a live broker dashboard with alerts in days, not months of custom dev. Our client felt like they got a $100k custom software build overnight.”",
-						"authorName": "DC",
-						"authorRole": "Lead Data Architect",
-						"authorCompany": "Enterprise Analytics & Brokerage Consulting",
-						"avatarInitials": "DC"
+						"quote": "“The team built the Alexa Skills automation and global CMS that let us create and launch new Alexa experiences fast — we've shipped over 200 branded experiences for Amazon Ads as a result. Separately, they delivered an Alexa monetization project for us: the world's first voice + multimodal TV guide experience, which reached over a million monthly users in the UK.”",
+						"authorName": "Chetan Damani",
+						"authorRole": "CEO",
+						"authorCompany": "Biscote AI",
+						"avatarInitials": "CD"
 					},
 					"logos": [
 						{
