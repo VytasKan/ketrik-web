@@ -2,7 +2,7 @@
 	"schemas": {
 		"$root$": {
 			"data": {
-				"backgoround": {
+				"background": {
 					"background": {
 						"style": {
 							"--bg-image": "url(/_assets/network_pattern_hd.png)",
