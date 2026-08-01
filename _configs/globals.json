@@ -128,6 +128,40 @@
 						]
 					}
 				},
+				"social": {
+					"headline": "Trusted by operators, agencies & SaaS teams",
+					"testimonial": {
+						"quote": "“Ketrik let us stand up a live broker dashboard with alerts in days, not months of custom dev. Our client felt like they got a $100k custom software build overnight.”",
+						"authorName": "DC",
+						"authorRole": "Lead Data Architect",
+						"authorCompany": "Enterprise Analytics & Brokerage Consulting",
+						"avatarInitials": "DC"
+					},
+					"logos": [
+						{
+							"id": "logo-1",
+							"name": "Client Partner",
+							"logoUrl": "https://framerusercontent.com/images/BQqDJxY71V2DDAuJx5xVnZdc9ks.png?width=1189&height=300",
+							"href": "https://advertising.amazon.com/",
+							"target": "_blank"
+						},
+						{
+							"id": "logo-2",
+							"name": "Enterprise Client",
+							"logoUrl": "https://framerusercontent.com/images/qFLTwyi59McB90zO2mICZyUMko.png?width=1500&height=247",
+							"href": "https://www.tripadvisor.co.uk/",
+							"target": "_blank"
+						},
+						{
+							"id": "logo-3",
+							"name": "SaaS Partner",
+							"logoUrl": "https://framerusercontent.com/images/v2s3vPaJ9dPPmCpJwuc8QO3eF0.svg?width=840&height=178",
+							"invertInLightMode": true,
+							"href": "https://www.biscotte.ai/",
+							"target": "_blank"
+						}
+					]
+				},
 				"shell": {
 					"title": {
 						"text": [
@@ -314,7 +348,7 @@
 										"type": "cardContent"
 									},
 									{
-										"dataKey": "subHero",
+										"dataKey": "social",
 										"contentConfig": {
 											"contentType": "KetrikSocial"
 										},
