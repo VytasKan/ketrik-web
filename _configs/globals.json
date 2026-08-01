@@ -748,7 +748,7 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "Code generation is fast, but that speed hasn't made the work easier — it's relocated it. True value hasn't shifted away from engineering; it's concentrated in architectural vision, exact domain requirements, and the expert judgment needed to evaluate and refine what AI produces."
+								"text": "Generative AI has changed what's expensive and what isn't — and pricing needs to catch up. Code generation is fast, but that speed hasn't made the work easier — it's relocated it. True value hasn't shifted away from engineering; it's concentrated in architectural vision, exact domain requirements, and the expert judgment needed to evaluate and refine what AI produces."
 							},
 							{
 								"text": "AI can generate a dozen solutions that all work today. The judgment is what turns one of them into something you build on — without it, you're stuck rebuilding instead of creating business value."
@@ -765,7 +765,7 @@
 					"title": {
 						"text": [
 							{
-								"text": "Ready to Become AI-native?"
+								"text": "Ready to be AI-Native?"
 							}
 						]
 					},
@@ -778,7 +778,7 @@
 					},
 					"button": {
 						"href": "/pricing",
-						"text": "Get started with Ketrik"
+						"text": "Get Started with Ketrik"
 					}
 				},
 				"pricingFaq": {
@@ -883,7 +883,9 @@
 											"vx": {
 												"titleWrapper": {},
 
-												"subtitle": {},
+												"subtitle": {
+													"block": false
+												},
 												"sectionWrapper": {
 													"hasNoMargin": true,
 													"addTopMargin": false
@@ -910,18 +912,17 @@
 							{
 								"id": "FinalCTA",
 								"cardType": "noCard",
-								"cardProps": {
-									"sx": {
-										"borderTop": "1px solid",
 
-										"borderColor": "divider"
-									}
-								},
 								"cardConfig": [
 									{
 										"contentConfig": {
 											"contentType": "Marketing",
 											"panel": "basic",
+											"sx": {
+												"borderTop": "1px solid",
+
+												"borderColor": "divider"
+											},
 											"vx": {
 												"subtitle": {
 													"maxWidth": "md",
