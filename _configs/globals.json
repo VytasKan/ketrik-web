@@ -15,14 +15,17 @@
 					"title": {
 						"text": [
 							{
-								"text": "We Apply AI to Your",
+								"text": "Ketrik Applies AI to",
 								"vx": {
 									"size": "lg",
 									"lineBreak": true
 								}
 							},
+
 							{
-								"phrases": [
+								"text": "Your Business Operations",
+
+								"phrases1": [
 									"Complex Workflows",
 									"Sales & Revenue Pipelines",
 									"Customer & Field Support",
