@@ -27,6 +27,7 @@
 
 							{
 								"text": "Your Business Operations",
+								"lineBreak": true,
 
 								"phrases1": [
 									"Complex Workflows",
@@ -131,7 +132,7 @@
 				"social": {
 					"headline": "Trusted by operators, agencies & SaaS teams",
 					"testimonial": {
-						"quote": "“They built the Alexa Skills automation workflow with global CMS capabilities that let us create and launch new Alexa experiences fast — we've shipped over 200 branded experiences for Amazon Ads as a result in multiple countries. Separately, they delivered an Alexa monetization project for us: the world's first voice + multimodal TV guide experience, which reached over a million monthly users in the UK.”",
+						"quote": "“From speed-to-market to massive scale, they delivered at every level. They built a global CMS automation workflow that let us launch 200+ branded Alexa experiences for Amazon Ads, then spearheaded the world's first voice + multimodal TV guide experience—reaching 1M+ monthly users in the UK.”",
 						"authorName": "Chetan Damani",
 						"authorRole": "CEO",
 						"authorCompany": "Biscotte AI",
