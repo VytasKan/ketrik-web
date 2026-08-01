@@ -15,7 +15,7 @@
 					"title": {
 						"text": [
 							{
-								"text": "AI Applied to",
+								"text": "We Apply AI to Your",
 								"vx": {
 									"size": "lg",
 									"lineBreak": true
@@ -23,13 +23,13 @@
 							},
 							{
 								"phrases": [
-									"Your Complex Workflows",
-									"Your Sales & Revenue Pipelines",
-									"Your Customer & Field Support",
-									"Your Risk & Compliance",
-									"Your Financial Operations",
-									"Your Real-Time Telemetry",
-									"Any Custom Domain"
+									"Complex Workflows",
+									"Sales & Revenue Pipelines",
+									"Customer & Field Support",
+									"Risk & Compliance",
+									"Financial Operations",
+									"Real-Time Telemetry",
+									"Custom Domain"
 								],
 								"phrases12": [
 									"CRM & Enterprise Workflows",
