@@ -748,10 +748,13 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "Generative AI has changed what's expensive and what isn't — and pricing needs to catch up. Code generation is fast, but that speed hasn't made the work easier — it's relocated it. True value hasn't shifted away from engineering; it's concentrated in architectural vision, exact domain requirements, and the expert judgment needed to evaluate and refine what AI produces."
+								"text": "Generative AI has made coding easier, and pricing harder. The assumption behind most pricing models is that engineering effort is the scarce resource. It isn't anymore. What hasn't disappeared is expertise: the need for someone who can tell superior code from merely working code."
 							},
 							{
-								"text": "AI can generate a dozen solutions that all work today. The judgment is what turns one of them into something you build on — without it, you're stuck rebuilding instead of creating business value."
+								"text": "Code generation is fast, but that speed hasn't made the work easier — it's relocated it. True value hasn't shifted away from engineering; it's concentrated in architectural vision, exact business requirements, and the expert judgment needed to evaluate and refine what AI produces."
+							},
+							{
+								"text": "AI can generate a dozen solutions that all work well. The judgment is what turns one of them into something you build on — without it, you're stuck rebuilding instead of creating business value."
 							},
 
 							{
@@ -883,9 +886,7 @@
 											"vx": {
 												"titleWrapper": {},
 
-												"subtitle": {
-													"block": false
-												},
+												"subtitle": {},
 												"sectionWrapper": {
 													"hasNoMargin": true,
 													"addTopMargin": false
