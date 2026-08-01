@@ -131,31 +131,31 @@
 				"social": {
 					"headline": "Trusted by operators, agencies & SaaS teams",
 					"testimonial": {
-						"quote": "“The team built the Alexa Skills automation and global CMS that let us create and launch new Alexa experiences fast — we've shipped over 200 branded experiences for Amazon Ads as a result. Separately, they delivered an Alexa monetization project for us: the world's first voice + multimodal TV guide experience, which reached over a million monthly users in the UK.”",
+						"quote": "“They built the Alexa Skills automation workflow with global CMS capabilities that let us create and launch new Alexa experiences fast — we've shipped over 200 branded experiences for Amazon Ads as a result in multiple countries. Separately, they delivered an Alexa monetization project for us: the world's first voice + multimodal TV guide experience, which reached over a million monthly users in the UK.”",
 						"authorName": "Chetan Damani",
 						"authorRole": "CEO",
-						"authorCompany": "Biscote AI",
+						"authorCompany": "Biscotte AI",
 						"avatarInitials": "CD"
 					},
 					"logos": [
 						{
 							"id": "logo-1",
-							"name": "Client Partner",
-							"logoUrl": "https://framerusercontent.com/images/BQqDJxY71V2DDAuJx5xVnZdc9ks.png?width=1189&height=300",
+							"name": "Amazon Ads",
+							"logoUrl": "/_assets/amazon.avif",
 							"href": "https://advertising.amazon.com/",
 							"target": "_blank"
 						},
 						{
 							"id": "logo-2",
-							"name": "Enterprise Client",
-							"logoUrl": "https://framerusercontent.com/images/qFLTwyi59McB90zO2mICZyUMko.png?width=1500&height=247",
+							"name": "Trip Advisor",
+							"logoUrl": "/_assets/tripadvisor.avif",
 							"href": "https://www.tripadvisor.co.uk/",
 							"target": "_blank"
 						},
 						{
 							"id": "logo-3",
-							"name": "SaaS Partner",
-							"logoUrl": "https://framerusercontent.com/images/v2s3vPaJ9dPPmCpJwuc8QO3eF0.svg?width=840&height=178",
+							"name": "Biscotte AI",
+							"logoUrl": "/_assets/biscotte.svg",
 							"invertInLightMode": true,
 							"href": "https://www.biscotte.ai/",
 							"target": "_blank"
