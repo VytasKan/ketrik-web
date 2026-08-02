@@ -27,7 +27,6 @@
 
 							{
 								"text": "Your Business Operations",
-								"lineBreak": true,
 
 								"phrases1": [
 									"Complex Workflows",
@@ -56,6 +55,7 @@
 
 								"variant1": "typewriter",
 								"vx": {
+									"lineBreak": true,
 									"size": "xl",
 									"color": "blue"
 								}
@@ -771,17 +771,10 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "Generative AI has broken pricing models built around hours logged or lines of code shipped — the old assumption that writing code is the scarce resource. It isn't anymore. AI can generate thousands of lines of code just as fast as a 300-page manuscript—but raw text doesn't make a book people actually read., and raw code doesn't make a product people actually rely on. The value was never in typing out the syntax; it was always in the architecture, the domain knowledge, and the judgment required to make it work."
+								"text": "Generative AI has broken pricing models built around hours logged or lines of code shipped — the old assumption that writing code is the scarce resource. It isn't anymore. The question was never whether AI should write code — it already does, and that's not going back. The real issue is AI slop: code that runs but wasn't architected, doesn't fit the business, and creates more rework than it saves. This isn't a new problem in software. The same argument played out in the 2000s with TDD — writing tests before code wasn't about slowing developers down, it was about making sure what got built actually worked. Expert judgment plays that role now: not writing every line, but architecting the system, encoding domain knowledge, and evaluating what AI produces so it becomes a real product instead of a pile of generated code nobody can build on."
 							},
 							{
-								"text": "Code generation is fast, but that speed hasn't made the work easier — it's relocated it. True value hasn't shifted away from engineering; it's concentrated in architectural vision, exact business requirements, and the expert judgment needed to evaluate and refine what AI produces."
-							},
-							{
-								"text": "AI can generate a dozen solutions that all work well. The judgment is what turns one of them into something you build on — without it, you're stuck rebuilding instead of creating business value."
-							},
-
-							{
-								"text": "Ketrik Shell and Ketrik AI Agents already carry that judgment. Instead of building it from scratch or stitching together custom code and vibe-coded scripts, you're paying for a platform that connects to your data, workflows, and business rules — so it runs the way your business actually works."
+								"text": "Ketrik Shell and Ketrik AI Agents carry that judgment by default — connected to your data, workflows, and business rules from the start. That's what you're actually paying for: not code generation, but a platform that already knows how to turn it into a working product."
 							}
 						]
 					}
