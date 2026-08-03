@@ -898,12 +898,7 @@
 							{
 								"id": "eraAi",
 								"cardType": "noCard",
-								"cardProps": {
-									"sx": {
-										"borderTop": "1px solid",
-										"borderColor": "divider"
-									}
-								},
+
 								"cardConfig": [
 									{
 										"type": "cardContent",
@@ -913,27 +908,6 @@
 										}
 									},
 
-									{
-										"contentConfig": {
-											"contentType": "Marketing",
-											"panel": "basic",
-											"vx": {
-												"titleWrapper": {},
-
-												"subtitle": {},
-												"sectionWrapper": {
-													"hasNoMargin": true,
-													"addTopMargin": false
-												},
-												"featuresGrid": {
-													"size": 1,
-													"color": "blue"
-												}
-											}
-										},
-										"dataKey": "eraAi",
-										"type": "cardContent"
-									},
 									{
 										"dataKey": "pricingFaq",
 										"contentConfig": {
