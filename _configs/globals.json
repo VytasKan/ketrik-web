@@ -716,6 +716,15 @@
 		},
 		"pages_pricing": {
 			"data": {
+				"background": {
+					"background": {
+						"style": {
+							"--bg-image": "url(/_assets/network_pattern_hd.png)",
+							"--bg-image-dark": "url(/_assets/network_pattern_121212_hd.png)"
+						}
+					}
+				},
+
 				"pricing": {
 					"title": {
 						"text": [
@@ -739,15 +748,9 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "You pay only for your data complexity and operational footprint — a setup fee to integrate your workflows, plus an ongoing fee to maintain them. Never per seat. ",
+								"text": "You pay only for your data complexity and operational scope — a setup fee to integrate your workflows, plus an ongoing fee to maintain them. Never a per-seat fee. ",
 
 								"text1": "You pay only for the data complexity and operational scope deployed for your business — a setup fee to connect your data and workflows, plus an ongoing fee to keep them running. Never a per-seat fee."
-							},
-							{
-								"text": "Never per seat.",
-								"vx": {
-									"bold": true
-								}
 							}
 						]
 					},
@@ -901,14 +904,7 @@
 										},
 										"dataKey": "pricing",
 										"type": "cardContent"
-									}
-								]
-							},
-							{
-								"id": "eraAi",
-								"cardType": "noCard",
-
-								"cardConfig": [
+									},
 									{
 										"type": "cardContent",
 										"dataKey": "eraAiMarkdown",
@@ -923,15 +919,7 @@
 											"contentType": "KetrikMiniFaq"
 										},
 										"type": "cardContent"
-									}
-								]
-							},
-
-							{
-								"id": "FinalCTA",
-								"cardType": "noCard",
-
-								"cardConfig": [
+									},
 									{
 										"contentConfig": {
 											"contentType": "Marketing",
@@ -968,6 +956,25 @@
 											}
 										},
 										"dataKey": "finalCTA",
+										"type": "cardContent"
+									}
+								]
+							},
+							{
+								"id": "background",
+								"cardType": "noCard",
+								"cardConfig": [
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "background",
+											"vx": {
+												"background": {
+													"layout": "fullScreen"
+												}
+											}
+										},
+										"dataKey": "background",
 										"type": "cardContent"
 									}
 								]
