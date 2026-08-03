@@ -757,6 +757,9 @@
 						]
 					}
 				},
+
+				"eraAiMarkdown": "# Pricing in the AI Era\n\nGenerative AI hasn't made time-based pricing obsolete — **it has redefined what those hours pay for.** \n\nHourly rates billed for writing and changing code because that work was genuinely slow — even a simple fix meant finding the right code, changing it safely, and testing it. Now AI collapses that entire pipeline to minutes.\n\nFixed pricing solved a different version of the same problem. Historically, task complexity and delivery time rarely lined up. A fix might take a senior engineer an hour or a junior four, so flat quotes allowed agencies to estimate once and pass the work to whoever was free. \n\nAI breaks this model too, just differently. It executes fixes faster than any junior ever could. The job no longer calls for junior hands — **it calls for expert judgment.** And experts won't work at a *junior-calibrated fixed rate* when their time evaluating AI output is worth more than the old fixed price was built to cover.\n\n> **The Core Shift:** Both models were built for a world where expertise was the bottleneck to production speed. AI removed that bottleneck — but not the need for expertise itself.\n\n---\n\n## The Rise of \"AI Slop\"\n\nThe question was never whether AI should write code — it already does, and there's no reversing that. The real issue is **AI slop**: code that runs but isn't architected, doesn't fit the business, and creates more rework than it saves.\n\nThis isn't a new problem in software. The same argument played out in the 2000s with TDD — writing tests before code wasn't about slowing developers down, it was about making sure what got built actually worked.\n\nToday, expert judgment plays that role:\n* **Not** writing every line manually\n* **Architecting** the core system\n* **Encoding** domain knowledge\n* **Evaluating** what AI produces\n\nThe result is a real product, not a pile of generated code nobody can build on.\n\n---\n\n## Judgment by Default\n\n**Ketrik Shell** and **Ketrik AI Agents** carry that judgment by default — connected to your data, workflows, and business rules from the start. \n\nYou're not paying for generated code. **You're paying for a platform that already knows how to turn it into a working product.**",
+
 				"eraAi": {
 					"title": {
 						"text": [
@@ -902,6 +905,14 @@
 									}
 								},
 								"cardConfig": [
+									{
+										"type": "cardContent",
+										"dataKey": "eraAiMarkdown",
+										"contentConfig": {
+											"contentType": "Markdown"
+										}
+									},
+
 									{
 										"contentConfig": {
 											"contentType": "Marketing",
