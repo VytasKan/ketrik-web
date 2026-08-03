@@ -317,13 +317,7 @@
 										},
 										"dataKey": "hero",
 										"type": "cardContent"
-									}
-								]
-							},
-							{
-								"id": "BuiltForOperators",
-								"cardType": "noCard",
-								"cardConfig": [
+									},
 									{
 										"contentConfig": {
 											"contentType": "Marketing",
@@ -354,13 +348,7 @@
 											"contentType": "KetrikSocial"
 										},
 										"type": "cardContent"
-									}
-								]
-							},
-							{
-								"id": "KetrikShell",
-								"cardType": "noCard",
-								"cardConfig": [
+									},
 									{
 										"contentConfig": {
 											"contentType": "Marketing",
@@ -403,13 +391,7 @@
 											"contentType": "KetrikMiniFaq"
 										},
 										"type": "cardContent"
-									}
-								]
-							},
-							{
-								"cardType": "noCard",
-								"id": "KetrikAgents",
-								"cardConfig": [
+									},
 									{
 										"contentConfig": {
 											"contentType": "Marketing",
@@ -452,13 +434,7 @@
 											"contentType": "KetrikMiniFaq"
 										},
 										"type": "cardContent"
-									}
-								]
-							},
-							{
-								"id": "FinalCTA",
-								"cardType": "noCard",
-								"cardConfig": [
+									},
 									{
 										"contentConfig": {
 											"contentType": "Marketing",
@@ -731,7 +707,7 @@
 							{
 								"text": "Ketrik Pricing",
 								"vx": {
-									"size": "sm",
+									"size": "md",
 									"lineBreak": true
 								}
 							},
