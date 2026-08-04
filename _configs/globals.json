@@ -1013,11 +1013,12 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "We build a metadata-driven shell that integrates directly with your existing data pipelines and workflows, consolidating raw telemetry into a unified command center. AI agents automate routine execution—shifting your focus from infrastructure maintenance to strategic growth."
+								"text": "We started Ketrik on a simple premise: innovation should not require a complete rebuild. Our schema-driven shell wraps around your existing data pipelines and workflows, consolidating everything into a single command surface with autonomous agents that help you see, understand, and act."
 							}
 						]
 					}
-				}
+				},
+				"ketrikstory": "## Why Ketrik Had to Exist\n\nIf you have ever tried to \"just build a dashboard,\" you already know the trap: one chart becomes ten, alerts get bolted on later, and soon you are maintaining a fragile mini-platform on the side of your actual business. Engineering teams and consultants end up acting as accidental platform engineers—debugging dashboards, wiring custom event buses, and manually translating KPIs across teams instead of focusing on clients, deals, and strategy.\n\nKetrik exists to break that cycle. Instead of building custom platform infrastructure around your data, you plug your data and workflows into Ketrik. The shell becomes your live operational surface, and AI agents handle watching metrics, catching issues, and executing the workflows you define—so you can stay focused on running the business.\n\n---\n\n## A Project 15+ Years in the Making\n\nThe architectural foundation of Ketrik traces back to 2009. While conducting doctoral research on financial computing and risk management systems, our founder designed **Zeus**—a custom research platform built on four specialized subsystems (*Eagle, T-bolt, Bull, and Oak*) to automate infrastructure provisioning, experiment orchestration, execution, and analytical reporting."
 			},
 			"config": {
 				"disableGutter": true,
@@ -1058,10 +1059,16 @@
 									},
 									{
 										"type": "cardContent",
-										"dataKey": "eraAiMarkdown",
+										"dataKey": "ketrikstory",
 										"contentConfig": {
 											"contentType": "Markdown"
 										}
+									},
+									{
+										"contentConfig": {
+											"contentType": "KetrikZeus"
+										},
+										"type": "cardContent"
 									},
 
 									{
