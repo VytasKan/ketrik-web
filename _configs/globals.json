@@ -197,7 +197,7 @@
 						"badge": "Usability"
 					},
 					{
-						"id": "panel1",
+						"id": "panel3",
 						"question": "How long until we see a live shell?",
 						"answer": "Deployed within 24 hours and ready to accept your metrics whenever your data is prepared. Core views and alerts go live on day one, while deeper customization depends on your data complexity.",
 						"category": "shell",
@@ -205,7 +205,7 @@
 						"badge": "Timeline"
 					},
 					{
-						"id": "panel2",
+						"id": "panel4",
 						"question": "Where does Ketrik run, and is raw client data kept secure?",
 						"answer": "By default, Ketrik uses Google Cloud (GCP) for high-speed caching, real-time sync, and access control, with options to deploy inside your own cloud account or custom infrastructure. By design, raw data stays inside your existing systems—Ketrik only processes and displays lightweight metrics, alerts, and summarized data. Client environments remain strictly isolated, with full support for private VPN connections and custom network security.",
 						"category": "shell",
