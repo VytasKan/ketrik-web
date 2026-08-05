@@ -1128,7 +1128,7 @@
 				},
 				"article": {
 					"type": "remote",
-					"url": "/_docs/articles/${id}.md"
+					"url": "/_docs/articles/${slug}.md"
 				}
 			},
 			"config": {
