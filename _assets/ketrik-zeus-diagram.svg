@@ -1,9 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 846 418">
   <style>
-    text, tspan { fill: currentColor; }
-    [fill="#ffffff"], [fill="#FFFFFF"], [fill="#fafafa"], [fill="#FAFAFA"], [fill="#f7f7f7"] { fill: transparent; }
-    stop[stop-color="#ffffff"], stop[stop-color="#FFFFFF"] { stop-color: transparent; }
-    [stroke="#000000"] { stroke: currentColor; }
+    /* Light Mode */
+    :root, [data-mui-color-scheme="light"], :host {
+      --box-bg: #ffffff;
+      --text-color: #111827;
+      --box-border: #374151;
+    }
+
+    /* Dark Mode */
+    [data-mui-color-scheme="dark"] {
+      --box-bg: #1e1e1e;
+      --text-color: #f9fafb;
+      --box-border: #9ca3af;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-mui-color-scheme="light"]), :host:not([data-mui-color-scheme="light"]) {
+        --box-bg: #1e1e1e;
+        --text-color: #f9fafb;
+        --box-border: #9ca3af;
+      }
+    }
+
+    /* Clean font rendering without text-anchor override */
+    text, tspan {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+      fill: var(--text-color) !important;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+    path[stroke="var(--mui-palette-text-primary)"], path[stroke="#000000"] { stroke: var(--box-border) !important; }
+    path[fill="var(--mui-palette-background-paper)"], path[fill="#fafafa"] { fill: var(--box-bg) !important; }
+    stop[stop-color="#ffffff"], stop[stop-color="#FFFFFF"] { stop-color: var(--box-bg) !important; }
   </style>
 				<defs>
 					<linearGradient id="lg1" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -545,9 +573,9 @@
 							<g id="shape7" transform="translate(0.000000,39.669290)">
 								<text
 									xml:space="preserve"
-									style="fill: var(--mui-palette-text-primary); font-family: Lucida Grande, PingFang SC, Microsoft YaHei, Arial; font-size: 10px"
+									style="fill: var(--text-color); font-family: Inter, -apple-system, sans-serif; font-size: 10px"
 								>
-									<tspan y="16.8" textLength="25.8" x="20.9">
+									<tspan y="16.8" x="43.8" text-anchor="middle">
 										eagle
 									</tspan>
 								</text>
@@ -3159,9 +3187,9 @@
 					<g id="shape426" transform="translate(116.342362,286.657323)">
 						<text
 							xml:space="preserve"
-							style="fill: var(--mui-palette-text-primary); font-family: Lucida Grande, PingFang SC, Microsoft YaHei, Arial; font-size: 10px"
+							style="fill: var(--text-color); font-family: Inter, -apple-system, sans-serif; font-size: 10px"
 						>
-							<tspan y="17.2" textLength="74.3" x="15.7">
+							<tspan y="17.2" x="62.85" text-anchor="middle">
 								workers cluster
 							</tspan>
 						</text>
@@ -3182,9 +3210,9 @@
 					<g id="shape428" transform="translate(123.708425,315.685228)">
 						<text
 							xml:space="preserve"
-							style="fill: var(--mui-palette-text-primary); font-family: Lucida Grande, PingFang SC, Microsoft YaHei, Arial; font-size: 10px; font-weight: bold"
+							style="fill: var(--text-color); font-family: Inter, -apple-system, sans-serif; font-size: 10px; font-weight: bold"
 						>
-							<tspan y="28.3" textLength="22.1" x="32.3">
+							<tspan y="28.3" x="53.35" text-anchor="middle">
 								AWS
 							</tspan>
 						</text>
@@ -3192,9 +3220,9 @@
 					<g id="shape429" transform="translate(299.828976,213.899528)">
 						<text
 							xml:space="preserve"
-							style="fill: var(--mui-palette-text-primary); font-family: Lucida Grande, PingFang SC, Microsoft YaHei, Arial; font-size: 10px"
+							style="fill: var(--text-color); font-family: Inter, -apple-system, sans-serif; font-size: 10px"
 						>
-							<tspan y="17.2" textLength="119.3" x="19.7">
+							<tspan y="17.2" x="89.35" text-anchor="middle">
 								provisions infrastructure
 							</tspan>
 						</text>
@@ -3501,9 +3529,9 @@
 					<g id="shape468" transform="translate(491.810079,328.695969)">
 						<text
 							xml:space="preserve"
-							style="fill: var(--mui-palette-text-primary); font-family: Lucida Grande, PingFang SC, Microsoft YaHei, Arial; font-size: 10px"
+							style="fill: var(--text-color); font-family: Inter, -apple-system, sans-serif; font-size: 10px"
 						>
-							<tspan y="27.7" textLength="114.9" x="21.8">
+							<tspan y="27.7" x="89.25" text-anchor="middle">
 								zeus: research platform
 							</tspan>
 						</text>
@@ -3536,9 +3564,9 @@
 								<g id="shape474" transform="translate(0.000000,41.790187)">
 									<text
 										xml:space="preserve"
-										style="fill: var(--mui-palette-text-primary); font-family: Lucida Grande, PingFang SC, Microsoft YaHei, Arial; font-size: 10px"
+										style="fill: var(--text-color); font-family: Inter, -apple-system, sans-serif; font-size: 10px"
 									>
-										<tspan y="14.0" textLength="20.1" x="21.1">
+										<tspan y="14.0" x="41.15" text-anchor="middle">
 											CCR
 										</tspan>
 									</text>
@@ -3867,9 +3895,9 @@
 								<g id="shape527" transform="translate(0.000000,41.790187)">
 									<text
 										xml:space="preserve"
-										style="fill: var(--mui-palette-text-primary); font-family: Lucida Grande, PingFang SC, Microsoft YaHei, Arial; font-size: 10px"
+										style="fill: var(--text-color); font-family: Inter, -apple-system, sans-serif; font-size: 10px"
 									>
-										<tspan y="14.0" textLength="14.9" x="23.7">
+										<tspan y="14.0" x="41.15" text-anchor="middle">
 											MR
 										</tspan>
 									</text>
@@ -4185,9 +4213,9 @@
 								<g id="shape579" transform="translate(0.000000,41.790187)">
 									<text
 										xml:space="preserve"
-										style="fill: var(--mui-palette-text-primary); font-family: Lucida Grande, PingFang SC, Microsoft YaHei, Arial; font-size: 10px"
+										style="fill: var(--text-color); font-family: Inter, -apple-system, sans-serif; font-size: 10px"
 									>
-										<tspan y="14.0" textLength="14.1" x="24.1">
+										<tspan y="14.0" x="41.15" text-anchor="middle">
 											OR
 										</tspan>
 									</text>
@@ -4491,9 +4519,9 @@
 					<g id="shape627" transform="translate(433.661102,95.309291)">
 						<text
 							xml:space="preserve"
-							style="fill: var(--mui-palette-text-primary); font-family: Lucida Grande, PingFang SC, Microsoft YaHei, Arial; font-size: 10px"
+							style="fill: var(--text-color); font-family: Inter, -apple-system, sans-serif; font-size: 10px"
 						>
-							<tspan y="17.2" textLength="128.0" x="22.1">
+							<tspan y="17.2" x="96.1" text-anchor="middle">
 								Risk Management systems
 							</tspan>
 						</text>
@@ -4512,9 +4540,9 @@
 							<g id="shape631" transform="translate(0.000000,44.955832)">
 								<text
 									xml:space="preserve"
-									style="fill: var(--mui-palette-text-primary); font-family: Lucida Grande, PingFang SC, Microsoft YaHei, Arial; font-size: 10px"
+									style="fill: var(--text-color); font-family: Inter, -apple-system, sans-serif; font-size: 10px"
 								>
-									<tspan y="15.0" textLength="17.5" x="24.9">
+									<tspan y="15.0" x="43.65" text-anchor="middle">
 										oak
 									</tspan>
 								</text>
@@ -4772,9 +4800,9 @@
 					<g id="shape672" transform="translate(299.828976,298.534488)">
 						<text
 							xml:space="preserve"
-							style="fill: var(--mui-palette-text-primary); font-family: Lucida Grande, PingFang SC, Microsoft YaHei, Arial; font-size: 10px"
+							style="fill: var(--text-color); font-family: Inter, -apple-system, sans-serif; font-size: 10px"
 						>
-							<tspan y="17.2" textLength="56.9" x="50.9">
+							<tspan y="17.2" x="89.35" text-anchor="middle">
 								results data
 							</tspan>
 						</text>
@@ -4793,9 +4821,9 @@
 							<g id="shape676" transform="translate(0.000000,43.448918)">
 								<text
 									xml:space="preserve"
-									style="fill: var(--mui-palette-text-primary); font-family: Lucida Grande, PingFang SC, Microsoft YaHei, Arial; font-size: 10px"
+									style="fill: var(--text-color); font-family: Inter, -apple-system, sans-serif; font-size: 10px"
 								>
-									<tspan y="14.9" textLength="28.6" x="19.5">
+									<tspan y="14.9" x="43.8" text-anchor="middle">
 										t-bolt
 									</tspan>
 								</text>
@@ -5056,9 +5084,9 @@
 					<g id="shape717" transform="translate(739.922976,298.867559)">
 						<text
 							xml:space="preserve"
-							style="fill: var(--mui-palette-text-primary); font-family: Lucida Grande, PingFang SC, Microsoft YaHei, Arial; font-size: 10px"
+							style="fill: var(--text-color); font-family: Inter, -apple-system, sans-serif; font-size: 10px"
 						>
-							<tspan y="15.0" textLength="50.8" x="12.0">
+							<tspan y="15.0" x="47.4" text-anchor="middle">
 								researcher
 							</tspan>
 						</text>
@@ -5087,9 +5115,9 @@
 							<g id="shape722" transform="translate(0.000000,44.010908)">
 								<text
 									xml:space="preserve"
-									style="fill: var(--mui-palette-text-primary); font-family: Lucida Grande, PingFang SC, Microsoft YaHei, Arial; font-size: 10px"
+									style="fill: var(--text-color); font-family: Inter, -apple-system, sans-serif; font-size: 10px"
 								>
-									<tspan y="15.0" textLength="18.3" x="24.5">
+									<tspan y="15.0" x="43.65" text-anchor="middle">
 										bull
 									</tspan>
 								</text>
@@ -5350,9 +5378,9 @@
 					<g id="shape763" transform="translate(297.939213,266.427402)">
 						<text
 							xml:space="preserve"
-							style="fill: #000000; font-family: Lucida Grande, PingFang SC, Microsoft YaHei, Arial; font-size: 10px"
+							style="fill: var(--text-color); font-family: Inter, -apple-system, sans-serif; font-size: 10px"
 						>
-							<tspan y="17.2" textLength="84.6" x="37.1">
+							<tspan y="17.2" x="89.4" text-anchor="middle">
 								experiments data
 							</tspan>
 						</text>
