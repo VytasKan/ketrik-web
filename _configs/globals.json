@@ -515,6 +515,14 @@
 		},
 		"pages_faq": {
 			"data": {
+				"background": {
+					"background": {
+						"style": {
+							"--bg-image": "url(/_assets/network_pattern_hd.png)",
+							"--bg-image-dark": "url(/_assets/network_pattern_121212_hd.png)"
+						}
+					}
+				},
 				"faqSection": {
 					"title": {
 						"text": [
@@ -526,7 +534,7 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "Still curious? We've got you covered."
+								"text": "Still curious? We've got you covered"
 							}
 						]
 					}
@@ -690,6 +698,25 @@
 										"contentConfig": {
 											"contentType": "KetrikFaq"
 										},
+										"type": "cardContent"
+									}
+								]
+							},
+							{
+								"id": "background",
+								"cardType": "noCard",
+								"cardConfig": [
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "background",
+											"vx": {
+												"background": {
+													"layout": "fullScreen"
+												}
+											}
+										},
+										"dataKey": "background",
 										"type": "cardContent"
 									}
 								]
