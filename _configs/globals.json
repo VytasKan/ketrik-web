@@ -1190,7 +1190,64 @@
 					}
 				},
 
-				"ketrikstory": { "type": "remote", "url": "/_docs/about.md" }
+				"ketrikstory": { "type": "remote", "url": "/_docs/about.md" },
+				"minifaq": [
+					{
+						"id": "panel1",
+						"question": "Is Ketrik a self-service product or a custom service?",
+						"answer": "Ketrik is an operational MVP built on a flexible, metadata-driven platform and delivered as a founder-led service. While the core shell and agent runtime are fully live, we work directly with early clients to configure and adapt the views, data connections, and agent behaviors around how their business actually operates.",
+						"category": "shell",
+						"iconName": "BuildOutlined",
+						"badge": "Delivery"
+					},
+					{
+						"id": "panel2",
+						"question": "Who is Ketrik built for right now?",
+						"answer": "Ketrik is currently being piloted with brokers, consultants, and SaaS teams who need a living command surface around their operations. We work directly with founders and domain experts through hands-on pilots and consulting engagements—co-designing the shell, event triggers, and agent workflows around real, active data streams.",
+						"category": "shell",
+						"iconName": "PersonOutlineOutlined",
+						"badge": "Target Audience"
+					},
+					{
+						"id": "panel3",
+						"question": "How do I discuss a pilot, partnership, or engagement?",
+						"answer": "If you have custom requirements, want to explore a pilot, or are interested in a consulting engagement, reach out directly on LinkedIn. We’re happy to talk through your use case and see if Ketrik is a fit for your team.",
+						"category": "shell",
+						"iconName": "ChatOutlined",
+						"badge": "Contact"
+					}
+				],
+
+				"cta": {
+					"title": {
+						"text": [
+							{
+								"text": "Contact Us",
+								"vx": {
+									"size": "md"
+								}
+							}
+						]
+					},
+					"subtitle": {
+						"text": [
+							{
+								"text": "Want to see Ketrik in action or explore how it could fit your team? You can already try our live version today."
+							},
+							{
+								"text": "Ketrik is currently being piloted with brokers, consultants, and SaaS teams, operating as an MVP and founder-led project built in close collaboration with a small group of early users. Rather than offering a finished, off-the-shelf product, we tailor the shell and agent behaviors around your specific business needs."
+							},
+							{
+								"text": "If you have custom requirements or would like to discuss a potential partnership or consulting engagement, reach out directly on LinkedIn — we'd be happy to talk through your use case."
+							}
+						]
+					},
+					"button": {
+						"href": "https://www.linkedin.com/in/vytkan",
+						"text": "Talk to us on LinkedIn",
+						"target": "_blank"
+					}
+				}
 			},
 			"config": {
 				"disableGutter": true,
@@ -1238,7 +1295,7 @@
 									},
 
 									{
-										"dataKey": "pricingFaq",
+										"dataKey": "minifaq",
 										"contentConfig": {
 											"contentType": "KetrikMiniFaq"
 										},
@@ -1279,7 +1336,7 @@
 												}
 											}
 										},
-										"dataKey": "finalCTA",
+										"dataKey": "cta",
 										"type": "cardContent"
 									}
 								]
