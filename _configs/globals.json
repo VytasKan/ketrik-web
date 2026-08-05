@@ -653,7 +653,7 @@
 													"isVertical": true
 												},
 												"title": {
-													"size": "lg"
+													"size": "md"
 												},
 												"subtitle": {
 													"maxWidth": "md",
@@ -971,23 +971,16 @@
 							{
 								"text": "Ketrik Articles & Insights",
 								"vx": {
-									"size": "md",
-									"lineBreak": true
-								}
-							},
-							{
-								"text": "Thoughts on systems architecture, tech strategy, and building Ketrik",
-								"vx": {
-									"size": "lg",
-									"color": "blue"
-								}
-							}
+									"size": "md"
+ 								}
+							} 
+							 
 						]
 					},
 					"subtitle": {
 						"text": [
 							{
-								"text": " "
+								"text": "Thoughts on systems architecture, tech strategy, and building Ketrik"
 							}
 						]
 					}
@@ -1014,18 +1007,31 @@
 											"contentType": "Marketing",
 											"panel": "basic",
 											"vx": {
-												"titleWrapper": {},
-
-												"subtitle": {},
+												"titleWrapper": {
+													"center": true,
+													"isVertical": true
+												},
+												"title": {
+													"size": "md"
+												},
+												"subtitle": {
+													"maxWidth": "md",
+													"center": true,
+													"italic": true
+												},
+												"featuresGrid": {
+													"size": 3,
+													"color": "blue"
+												},
 												"sectionWrapper": {
 													"hasNoMargin": true,
 													"addTopMargin": false
 												},
-												"featuresGrid": {
-													"size": 2,
-													"color": "blue"
+												"background": {
+													"layout": "fullScreen"
 												}
 											}
+										},
 										},
 										"dataKey": "header",
 										"type": "cardContent"
