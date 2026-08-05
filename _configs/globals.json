@@ -266,7 +266,7 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "No sales pitch, no calendar links, and zero waiting."
+								"text": "No sales pitch, no calendar links, and zero waiting"
 							}
 						]
 					},
@@ -1204,7 +1204,7 @@
 					{
 						"id": "panel1",
 						"question": "Is Ketrik a self-service product or a custom service?",
-						"answer": "Ketrik is an operational MVP built on a flexible, metadata-driven platform and delivered as a founder-led service. While the core shell and agent runtime are fully live, we work directly with early clients to configure and adapt the views, data connections, and agent behaviors around how their business actually operates.",
+						"answer": "Ketrik is an operational MVP built on a flexible, schema-driven platform and delivered as a founder-led service. While the core shell and agent runtime are fully live, we work directly with early clients to configure and adapt the views, data connections, and agent behaviors around how their business actually operates.",
 						"category": "shell",
 						"iconName": "BuildOutlined",
 						"badge": "Delivery"
@@ -1241,7 +1241,7 @@
 					"subtitle": {
 						"text": [
 							{
-								"text": "Want to see Ketrik in action or explore how it could fit your team? You can already try our live version today."
+								"text": "Want to see Ketrik in action or explore how it could fit your business? You can already try our live demo version today."
 							},
 							{
 								"text": "Ketrik is currently being piloted with brokers, consultants, and SaaS teams, operating as an MVP and founder-led project built in close collaboration with a small group of early users. Rather than offering a finished, off-the-shelf product, we tailor the shell and agent behaviors around your specific business needs."
