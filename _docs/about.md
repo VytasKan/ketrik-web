@@ -10,6 +10,6 @@ These subsystems went far beyond traditional components as specialized execution
 
 Across a 25-year career as a solution architect and co-founding two venture-backed startups, our founder repeatedly saw the same structural pattern: organizations possessed exceptional data and domain logic, but lacked an extensible, unified command layer to execute them through.
 
-As generative AI and modern event-driven architectures matured, the missing pieces finally aligned. What began in 2009 as specialized research components evolved into Ketrik: an AI-native shell where autonomous agents handle infrastructure, monitoring, and workflow execution while humans maintain architectural control.
+As generative AI and modern event-driven architectures matured, the missing pieces finally aligned. What began in 2009 as specialized research components evolved into Ketrik: an **AI-native shell** where autonomous agents handle infrastructure, monitoring, and workflow execution while keeping humans in the loop.
 
 ---
