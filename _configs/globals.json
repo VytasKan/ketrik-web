@@ -964,7 +964,35 @@
 			}
 		},
 		"pages_articles": {
-			"data": "## Computer Vision Papers\n\n* [Attention Is All You Need](https://arxiv.org/abs/1706.03762) — *Vaswani et al. (2017)*\n  * **Key takeaway:** Introduced the Transformer architecture.",
+			"data": {
+				"header": {
+					"title": {
+						"text": [
+							{
+								"text": "Ketrik Articles & Insights",
+								"vx": {
+									"size": "md",
+									"lineBreak": true
+								}
+							},
+							{
+								"text": "Thoughts on systems architecture, tech strategy, and building Ketrik",
+								"vx": {
+									"size": "lg",
+									"color": "blue"
+								}
+							}
+						]
+					},
+					"subtitle": {
+						"text": [
+							{
+								"text": " "
+							}
+						]
+					}
+				}
+			},
 			"renderComponent": {
 				"component": "Markdown",
 				"container": {
