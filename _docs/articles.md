@@ -9,13 +9,13 @@ Most AI code assistants accelerate typing rather than solving architectural comp
 
 ---
 
-### [Deterministic Rules in Non-Deterministic Systems](#)
+### [Cooperative Sequential Rendering for Registry-Resolved Component Trees](#)
 
 `Architecture` · `8 min read`
 
-How we structure domain logic inside Ketrik Shell so AI agents obey strict security boundaries without sacrificing dynamic reasoning.
+We describe a client-side scheduling pattern for progressively revealing a list of heavy, dynamically-resolved React components without modifying the loop that renders them. The pattern addresses a specific asymmetry between cold-load and warm-navigation rendering paths in registry/blueprint-driven UI systems: cold loads exhibit incidental progressive reveal as a side effect of asynchronous module resolution, while warm (cached) navigations lose this property entirely because no pending promise remains to drive staggered commits. We formalize the problem, survey why adjacent React and browser mechanisms (Fiber's yield loop, `useTransition`, `Suspense`, `content-visibility`) do not solve it in the warm case, and present a cooperative single-flight queue, keyed by mount-order effect scheduling, with token-based cancellation to prevent stale-task accumulation across rapid navigation.
 
-[Read article →](#)
+[Read article →](/pages/articles/sequential-render-queue)
 
 ---
 

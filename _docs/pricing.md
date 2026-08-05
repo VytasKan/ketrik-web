@@ -8,8 +8,6 @@ Generative AI is reshaping how value is defined in traditional billing.
 
 > AI destabilizes both models because raw execution is now instant. The bottleneck is no longer coding speed — **it is expert judgment.** We are no longer paying for the speed of writing code. We are paying for the judgment required to build the right system.
 
----
-
 ### The Rise of "AI Slop"
 
 The question was never whether AI should write code — it already does, and there's no reversing that. The real issue is **AI slop**: code that runs but isn't architected, doesn't fit the business, and creates more rework than it saves.
@@ -22,8 +20,6 @@ Today, expert judgment serves that exact purpose. It shifts the work away from m
 - **Maintaining** overall system coherence and governance
 
 The result is a real product, not a pile of generated code nobody can build on.
-
----
 
 ### Expert Judgment by Default
 
