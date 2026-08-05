@@ -993,15 +993,74 @@
 					}
 				}
 			},
-			"renderComponent": {
-				"component": "Markdown",
-				"container": {
-					"maxWidth": "md",
-					"sx": {
-						"mt": 10,
-						"mb": 10
+			"config": {
+				"disableGutter": true,
+				"hideFullSizeToggle": true,
+				"isFullSize": false,
+				"maxWidth": "md",
+				"groups": [
+					{
+						"itemSize": {
+							"sm": 12
+						},
+						"items": [
+							{
+								"id": "aricles",
+								"cardType": "noCard",
+
+								"cardConfig": [
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "basic",
+											"vx": {
+												"titleWrapper": {},
+
+												"subtitle": {},
+												"sectionWrapper": {
+													"hasNoMargin": true,
+													"addTopMargin": false
+												},
+												"featuresGrid": {
+													"size": 2,
+													"color": "blue"
+												}
+											}
+										},
+										"dataKey": "header",
+										"type": "cardContent"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "ketrikstory",
+										"contentConfig": {
+											"contentType": "Markdown"
+										}
+									}
+								]
+							},
+							{
+								"id": "background",
+								"cardType": "noCard",
+								"cardConfig": [
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "background",
+											"vx": {
+												"background": {
+													"layout": "fullScreen"
+												}
+											}
+										},
+										"dataKey": "background",
+										"type": "cardContent"
+									}
+								]
+							}
+						]
 					}
-				}
+				]
 			}
 		},
 		"pages_research": {
