@@ -2073,6 +2073,7 @@
 		"_layoutHeaderType": "default",
 		"_layoutVariant": "row",
 		"_layoutWithFooter": false,
+		"layoutWithFooterHero": true,
 		"layoutStickyStackEnabled": true,
 		"layoutMobileStickyStackEnabled": true,
 
