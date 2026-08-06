@@ -1,0 +1,256 @@
+{
+	"data": {
+		"background": {
+			"background": {
+				"style": {
+					"--bg-image": "url(/_assets/network_pattern_hd.png)",
+					"--bg-image-dark": "url(/_assets/network_pattern_121212_hd.png)"
+				}
+			}
+		},
+		"pricing": {
+			"title": {
+				"text": [
+					{
+						"text": "Ketrik Pricing",
+						"vx": {
+							"size": "md",
+							"lineBreak": true
+						}
+					},
+					{
+						"text": "Scoped to Your Business",
+						"text1": "Built Around Complexity, Not User Count",
+						"vx": {
+							"size": "lg",
+							"color": "blue"
+						}
+					}
+				]
+			},
+			"subtitle": {
+				"text": [
+					{
+						"text": "You pay only for your data complexity and operational scope — a setup fee to integrate your workflows, plus an ongoing fee to maintain them. Never a per-seat fee. ",
+						"text1": "You pay only for the data complexity and operational scope deployed for your business — a setup fee to connect your data and workflows, plus an ongoing fee to keep them running. Never a per-seat fee."
+					}
+				]
+			},
+			"featuresGrid1": {
+				"ds": [
+					{
+						"title": "Setup fee",
+						"description": "Custom architecture and workflow design. Connecting your live data feeds, APIs, and databases. Setting up AI Agent rules for the decisions you want automated."
+					},
+					{
+						"title": "Ongoing fee",
+						"description": "Real-time data processing and platform hosting. Ongoing performance tuning and AI Agent updates. Support to keep the platform aligned as you scale."
+					}
+				]
+			}
+		},
+		"eraAiMarkdown": { "type": "remote", "url": "/_docs/pricing.md" },
+		"eraAi": {
+			"title": {
+				"text": [
+					{
+						"text": "Pricing in the AI era",
+						"vx": {
+							"size": "sm"
+						}
+					}
+				]
+			},
+			"subtitle": {
+				"text": [
+					{
+						"text": "Generative AI has broken pricing models built around hours logged. That model existed because changes were slow — not because they were complex. A client asking for a tweaked validation rule or a moved button wasn't a hard problem, but finding the right code, changing it safely, and testing it took time. Hours were the honest unit to bill, because time was genuinely the bottleneck. AI removes that bottleneck: the same change now takes minutes, not hours. But that just exposes the real problem — the code AI produces still needs to fit the business, and speed alone doesn't guarantee that."
+					},
+					{
+						"text": "The question was never whether AI should write code — it already does, and that's not going back. The real issue is AI slop: code that runs but wasn't architected, doesn't fit the business, and creates more rework than it saves. This isn't a new problem in software. The same argument played out in the 2000s with TDD — writing tests before code wasn't about slowing developers down, it was about making sure what got built actually worked."
+					},
+					{
+						"text": "Expert judgment plays that role now: not writing every line, but architecting the system, encoding domain knowledge, and evaluating what AI produces so it becomes a real product instead of a pile of generated code nobody can build on."
+					},
+					{
+						"text": "Ketrik Shell and Ketrik AI Agents carry that judgment by default — connected to your data, workflows, and business rules from the start. That's what you're actually paying for: not code generation, but a platform that already knows how to turn it into a working product."
+					}
+				]
+			}
+		},
+		"finalCTA": {
+			"title": {
+				"text": [
+					{
+						"text": "Start your AI-native journey",
+						"vx": {
+							"size": "md"
+						}
+					}
+				]
+			},
+			"subtitle": {
+				"text": [
+					{
+						"text": "A few questions about your data and workflows is all it takes"
+					}
+				]
+			},
+			"button": {
+				"href": "/pricing",
+				"text": "Explore Ketrik Shell"
+			}
+		},
+		"pricingFaq": {
+			"items": [
+				{
+					"id": "panel1",
+					"question": "How does Ketrik pricing work?",
+					"answer": "You're paying for senior engineering judgment already built into the platform — the kind of validation and system design that normally takes months to hire for and build in-house — plus the work to connect it to your data and workflows specifically. Ongoing platform access starts from $2,000/month, which is 5–10x less than the cost of a single senior hire.",
+					"category": "pricing",
+					"iconName": "MonetizationOnOutlined",
+					"badge": "Pricing"
+				},
+				{
+					"id": "panel3",
+					"question": "How are setup fees calculated?",
+					"answer": "Setup is scoped to your project's size and complexity—how much data, how many workflows, and how much automation you want running from day one. Pricing is calculated transparently using standard market rates and computed daily rates for the required engineering effort.",
+					"category": "pricing",
+					"iconName": "CalculateOutlined",
+					"badge": "Setup"
+				},
+				{
+					"id": "panel2",
+					"question": "Why doesn't building this in-house make sense?",
+					"answer": "Hiring senior engineers takes months before anything reaches production, while quick 'vibe coding' alternatives inevitably introduce technical debt and unmaintainable code. In-house builds trap your team in ongoing maintenance overhead and infrastructure duplication rather than driving core business value.",
+					"category": "pricing",
+					"iconName": "EngineeringOutlined",
+					"badge": "Value"
+				},
+				{
+					"id": "panel4",
+					"question": "Do we need our own engineers to maintain this?",
+					"answer": "No, but you can if you want to. If you have engineers, they can build and maintain the workflows, metrics, and data connections themselves. If you don't, Ketrik does that work for you — not just to get set up, but on an ongoing basis as your data and workflows change.",
+					"category": "pricing",
+					"iconName": "BuildOutlined",
+					"badge": "Maintenance"
+				},
+				{
+					"id": "panel6",
+					"question": "Can Ketrik be deployed into our own customer cloud account?",
+					"answer": "Yes. Ketrik can be deployed directly into your existing cloud environment—whether AWS, GCP, or Azure—ensuring your data stays within your security perimeter and compliance boundaries while still benefiting from our managed maintenance and AI agent infrastructure.",
+					"category": "deployment",
+					"iconName": "CloudQueueOutlined",
+					"badge": "Deployment"
+				}
+			]
+		}
+	},
+	"config": {
+		"disableGutter": true,
+		"hideFullSizeToggle": true,
+		"isFullSize": false,
+		"maxWidth": "md",
+		"groups": [
+			{
+				"itemSize": {
+					"sm": 12
+				},
+				"items": [
+					{
+						"id": "pricing",
+						"cardType": "noCard",
+						"cardConfig": [
+							{
+								"contentConfig": {
+									"contentType": "Marketing",
+									"panel": "basic",
+									"vx": {
+										"titleWrapper": {},
+										"subtitle": {},
+										"sectionWrapper": {
+											"hasNoMargin": true,
+											"addTopMargin": false
+										},
+										"featuresGrid": {
+											"size": 2,
+											"color": "blue"
+										}
+									}
+								},
+								"dataKey": "pricing",
+								"type": "cardContent"
+							},
+							{
+								"type": "cardContent",
+								"dataKey": "eraAiMarkdown",
+								"contentConfig": {
+									"contentType": "Markdown"
+								}
+							},
+							{
+								"dataKey": "pricingFaq",
+								"contentConfig": {
+									"contentType": "KetrikMiniFaq"
+								},
+								"type": "cardContent"
+							},
+							{
+								"contentConfig": {
+									"contentType": "Marketing",
+									"panel": "basic",
+									"vx": {
+										"subtitle": {
+											"maxWidth": "md",
+											"center": true,
+											"italic": true
+										},
+										"titleWrapper": {
+											"center": true,
+											"isVertical": true
+										},
+										"title": {
+											"size": "lg"
+										},
+										"sectionWrapper": {
+											"hasNoMargin": false
+										},
+										"buttonWrapper": {
+											"center": true
+										},
+										"button": {
+											"color": "primary",
+											"radius": "full",
+											"size": "lg"
+										}
+									}
+								},
+								"dataKey": "finalCTA",
+								"type": "cardContent"
+							}
+						]
+					},
+					{
+						"id": "background",
+						"cardType": "noCard",
+						"cardConfig": [
+							{
+								"contentConfig": {
+									"contentType": "Marketing",
+									"panel": "background",
+									"vx": {
+										"background": {
+											"layout": "fullScreen"
+										}
+									}
+								},
+								"dataKey": "background",
+								"type": "cardContent"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

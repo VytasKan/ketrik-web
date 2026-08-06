@@ -1,0 +1,115 @@
+{
+	"data": {
+		"background": {
+			"background": {
+				"style": {
+					"--bg-image": "url(/_assets/network_pattern_hd.png)",
+					"--bg-image-dark": "url(/_assets/network_pattern_121212_hd.png)"
+				}
+			}
+		},
+		"header": {
+			"title": {
+				"text": [
+					{
+						"text": "Ketrik Articles & Insights",
+						"vx": {
+							"size": "md"
+						}
+					}
+				]
+			},
+			"subtitle": {
+				"text": [
+					{
+						"text": "Thoughts on AI-native architecture, tech strategy, and building Ketrik"
+					}
+				]
+			}
+		},
+		"articles": {
+			"type": "remote",
+			"url": "/_docs/articles.md"
+		}
+	},
+	"config": {
+		"disableGutter": true,
+		"hideFullSizeToggle": true,
+		"isFullSize": false,
+		"maxWidth": "md",
+		"groups": [
+			{
+				"itemSize": {
+					"sm": 12
+				},
+				"items": [
+					{
+						"id": "aricles",
+						"cardType": "noCard",
+						"cardConfig": [
+							{
+								"contentConfig": {
+									"contentType": "Marketing",
+									"panel": "basic",
+									"vx": {
+										"titleWrapper": {
+											"center": true,
+											"isVertical": true
+										},
+										"title": {
+											"size": "md"
+										},
+										"subtitle": {
+											"maxWidth": "md",
+											"center": true,
+											"italic": true
+										},
+										"featuresGrid": {
+											"size": 3,
+											"color": "blue"
+										},
+										"sectionWrapper": {
+											"hasNoMargin": true,
+											"addTopMargin": false
+										},
+										"background": {
+											"layout": "fullScreen"
+										}
+									}
+								},
+								"dataKey": "header",
+								"type": "cardContent"
+							},
+							{
+								"type": "cardContent",
+								"dataKey": "articles",
+								"contentConfig": {
+									"contentType": "Markdown"
+								}
+							}
+						]
+					},
+					{
+						"id": "background",
+						"cardType": "noCard",
+						"cardConfig": [
+							{
+								"contentConfig": {
+									"contentType": "Marketing",
+									"panel": "background",
+									"vx": {
+										"background": {
+											"layout": "fullScreen"
+										}
+									}
+								},
+								"dataKey": "background",
+								"type": "cardContent"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

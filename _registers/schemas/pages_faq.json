@@ -1,0 +1,210 @@
+{
+	"data": {
+		"background": {
+			"background": {
+				"style": {
+					"--bg-image": "url(/_assets/network_pattern_hd.png)",
+					"--bg-image-dark": "url(/_assets/network_pattern_121212_hd.png)"
+				}
+			}
+		},
+		"faqSection": {
+			"title": {
+				"text": [
+					{
+						"text": "Ketrik FAQ"
+					}
+				]
+			},
+			"subtitle": {
+				"text": [
+					{
+						"text": "Still curious? We've got you covered"
+					}
+				]
+			}
+		},
+		"faq": {
+			"categories": [
+				{ "id": "all", "title": "All Questions", "iconName": "QuizOutlined" },
+				{
+					"id": "general",
+					"title": "General & Platform",
+					"iconName": "HelpOutlineOutlined"
+				},
+				{
+					"id": "integration",
+					"title": "Integrations & APIs",
+					"iconName": "LayersOutlined"
+				},
+				{
+					"id": "security",
+					"title": "Security & Privacy",
+					"iconName": "ShieldOutlined"
+				},
+				{
+					"id": "agents",
+					"title": "Ketrik Agents",
+					"iconName": "SmartToyOutlined"
+				}
+			],
+			"items": [
+				{
+					"id": "q1",
+					"question": "What is Ketrik and how does it integrate with existing workflows?",
+					"answer": "Ketrik is a live, AI-powered command surface that connects directly to your databases, APIs, spreadsheets, and custom logic without requiring a full rebuild of your underlying tech stack. It aggregates data into dynamic dashboards, automated alerts, and executable action flows.",
+					"category": "general",
+					"iconName": "HelpOutlineOutlined",
+					"badge": "Platform"
+				},
+				{
+					"id": "q2",
+					"question": "How does Ketrik handle real-time data ingestion and processing?",
+					"answer": "Ketrik uses an event-driven streaming architecture and WebSocket connections to map live feeds in real time. Incoming data is immediately evaluated against custom trigger rules and AI anomaly detection models.",
+					"category": "general",
+					"iconName": "SpeedOutlined",
+					"badge": "Real-Time"
+				},
+				{
+					"id": "q3",
+					"question": "Can I connect custom third-party APIs or internal databases?",
+					"answer": "Yes, Ketrik provides pre-built connectors for major CRMs, SQL/NoSQL databases, cloud warehouses, and REST/GraphQL APIs. You can also define custom OpenAPI schemas for proprietary endpoints.",
+					"category": "integration",
+					"iconName": "LayersOutlined",
+					"badge": "Connectors"
+				},
+				{
+					"id": "q4",
+					"question": "Is data sent to Ketrik encrypted and compliant with enterprise security standards?",
+					"answer": "All data in transit is protected using TLS 1.3 encryption, and data at rest is encrypted with AES-256. Ketrik supports SOC2 Type II compliance, enterprise SSO (SAML/OIDC), and granular role-based access control (RBAC).",
+					"category": "security",
+					"iconName": "ShieldOutlined",
+					"badge": "Security"
+				},
+				{
+					"id": "q5",
+					"question": "How do AI-guided actions work within the Ketrik Shell?",
+					"answer": "The Ketrik AI engine continuously analyzes operational health metrics and suggests actionable steps. Operators can execute multi-step workflows, dispatch team notifications, or trigger external API payloads directly from single-click action buttons.",
+					"category": "general",
+					"iconName": "AutoAwesomeOutlined",
+					"badge": "AI Engine"
+				},
+				{
+					"id": "q6",
+					"question": "Can I customize the visual interface and white-label the surface for clients?",
+					"answer": "Yes! Ketrik is built with customizable theme primitives. Tech leads and consultants can brand the command surface with custom color schemes, typography, layout bounds, and logo assets for bespoke client delivery.",
+					"category": "general",
+					"iconName": "TuneOutlined",
+					"badge": "Customization"
+				},
+				{
+					"id": "q7",
+					"question": "What are Ketrik Agents actually doing behind the scenes?",
+					"answer": "They watch your entire business in real time. Ketrik Agents constantly monitor the live metrics, customer events, and operational signals flowing into your shell—spotting patterns, shifts, and risks the moment they happen without requiring you to manually scan multiple screens.",
+					"category": "agents",
+					"iconName": "VisibilityOutlined",
+					"badge": "Monitoring"
+				},
+				{
+					"id": "q8",
+					"question": "How do agents know what needs my attention versus routine tasks?",
+					"answer": "They prioritize and filter before disturbing you. Rather than flooding your phone with endless raw alerts, agents evaluate urgency, impact, and business context—automatically handling routine updates on their own and only escalating critical issues directly to your main command surface.",
+					"category": "agents",
+					"iconName": "PsychologyOutlined",
+					"badge": "Prioritization"
+				},
+				{
+					"id": "q9",
+					"question": "Do agents replace my current tools, or do they work through them?",
+					"answer": "They work directly through the tools you already use. When an action is required, Ketrik Agents trigger your existing workflows, update your connected databases, and send notifications to your team, executing necessary steps across your stack and reporting results back into your shell.",
+					"category": "agents",
+					"iconName": "AutoModeOutlined",
+					"badge": "Execution"
+				}
+			],
+			"contactBox": {
+				"title": "Still have questions?",
+				"subtitle": "Try exploring our interactive shell instead.",
+				"buttonLabel": "Explore Ketrik Shell"
+			}
+		}
+	},
+	"config": {
+		"disableGutter": true,
+		"hideFullSizeToggle": true,
+		"isFullSize": false,
+		"groups": [
+			{
+				"itemSize": {
+					"sm": 12
+				},
+				"items": [
+					{
+						"cardType": "noCard",
+						"cardConfig": [
+							{
+								"contentConfig": {
+									"contentType": "Marketing",
+									"panel": "basic",
+									"vx": {
+										"titleWrapper": {
+											"center": true,
+											"isVertical": true
+										},
+										"title": {
+											"size": "md"
+										},
+										"subtitle": {
+											"maxWidth": "md",
+											"center": true,
+											"italic": true
+										},
+										"featuresGrid": {
+											"size": 3,
+											"color": "blue"
+										},
+										"sectionWrapper": {
+											"hasNoMargin": true,
+											"addTopMargin": false
+										},
+										"background": {
+											"layout": "fullScreen"
+										}
+									}
+								},
+								"dataKey": "faqSection",
+								"type": "cardContent"
+							},
+							{
+								"dataKey": "faq",
+								"contentConfig": {
+									"contentType": "KetrikFaq"
+								},
+								"type": "cardContent"
+							}
+						]
+					},
+					{
+						"id": "background",
+						"cardType": "noCard",
+						"cardConfig": [
+							{
+								"contentConfig": {
+									"contentType": "Marketing",
+									"panel": "background",
+									"vx": {
+										"background": {
+											"layout": "fullScreen"
+										}
+									}
+								},
+								"dataKey": "background",
+								"type": "cardContent"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

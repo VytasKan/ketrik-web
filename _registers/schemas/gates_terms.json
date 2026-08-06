@@ -1,0 +1,57 @@
+{
+	"data": {
+		"terms": {
+			"type": "remote",
+			"url": "/_docs/terms.md"
+		}
+	},
+	"config": {
+		"groups": [
+			{
+				"items": [
+					{
+						"cardConfig": [
+							{
+								"type": "cardContent",
+								"dataKey": "terms",
+								"contentConfig": {
+									"contentType": "Markdown",
+									"scrollable": true
+								}
+							},
+							{
+								"type": "cardAction",
+								"sx": {
+									"justifyContent": "center"
+								},
+								"buttons": [
+									{
+										"label": "Sign Out",
+										"variant": "outlined",
+										"color": "error",
+										"actionConfig": {
+											"type": "LOGOUT"
+										}
+									},
+									{
+										"actionConfig": {
+											"type": "SAVE_TO_FIRESTORE",
+											"collection": "users",
+											"document": "${uid}",
+											"data": {
+												"hasAcceptedTerms": true,
+												"hasAcceptedTermsAt": "${now}"
+											}
+										},
+										"label": "Accept",
+										"variant": "outlined"
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

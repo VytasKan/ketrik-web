@@ -1,0 +1,55 @@
+{
+	"guardSteps": [
+		{
+			"id": "EMAIL_VERIFICATION",
+			"mandatoryPath": "/gates/verify-email",
+			"maxWidth": "xs",
+			"field": "emailVerified"
+		},
+		{
+			"id": "MFA",
+			"mandatoryPath": "/gates/mfa-setup",
+			"maxWidth": "xs",
+			"field": "hasMfa"
+		},
+		{
+			"id": "TERMS",
+			"mandatoryPath": "/gates/terms",
+			"field": "hasAcceptedTerms"
+		},
+		{
+			"id": "CHATBOT",
+			"mandatoryPath": "/gates/chatbot",
+			"field": "hasCompletedOnboarding"
+		}
+	],
+	"authConfig": {
+		"emailVerifyEnabled": true,
+		"mfaRequired": true
+	},
+	"authProviders": ["credentials", "google"],
+	"logo": "/_assets/ketrik.png",
+	"title": {
+		"main": "Ketrik ",
+		"secondary1": "Services",
+		"sub": "AI-Native"
+	},
+	"dashboardUrl": "/",
+	"passwordResetUrl": "/auth/password",
+	"rememberMeEnabled": true,
+	"remmeberMeLabel": "Remember me",
+	"forgotPasswordEnabled": true,
+	"forgotPasswordLabel": "Forgot password?",
+	"_layoutSidebarType": "default",
+	"_layoutHeaderType": "default",
+	"_layoutVariant": "row",
+	"_layoutWithFooter": false,
+	"layoutWithFooterHero": true,
+	"layoutStickyStackEnabled": true,
+	"layoutMobileStickyStackEnabled": true,
+	"dashboardDefaults": {
+		"config": {
+			"isFullSize": true
+		}
+	}
+}

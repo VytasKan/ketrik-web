@@ -1,0 +1,508 @@
+{
+	"data": {
+		"background": {
+			"background": {
+				"style": {
+					"--bg-image": "url(/_assets/network_pattern_hd.png)",
+					"--bg-image-dark": "url(/_assets/network_pattern_121212_hd.png)"
+				}
+			}
+		},
+		"hero": {
+			"eyebrow": {
+				"text": "AI-Powered Workflow Command Center"
+			},
+			"title": {
+				"text": [
+					{
+						"text": "Ketrik Applies AI to",
+						"vx": {
+							"size": "lg",
+							"lineBreak": true
+						}
+					},
+					{
+						"text": "Your Business Operations",
+						"phrases1": [
+							"Complex Workflows",
+							"Sales & Revenue Pipelines",
+							"Customer & Field Support",
+							"Risk & Compliance",
+							"Financial Operations",
+							"Real-Time Telemetry",
+							"Custom Domain"
+						],
+						"phrases12": [
+							"CRM & Enterprise Workflows",
+							"Sales & Pipeline Management",
+							"Marketing & Campaign Automation",
+							"Customer Service & Support",
+							"Call & Contact Center Operations",
+							"Client & Account Management",
+							"Financial & Accounting Operations",
+							"Risk, Compliance & Regulatory Processes",
+							"Insurance Claims & Underwriting",
+							"Market Research & Insights",
+							"Operational Telemetry & Observability",
+							"HR, Hiring & People Operations"
+						],
+						"intensity": 0.5,
+						"variant1": "typewriter",
+						"vx": {
+							"lineBreak": true,
+							"size": "xl",
+							"color": "blue"
+						}
+					}
+				]
+			},
+			"button": {
+				"href": "/dashboard",
+				"text": "Explore Ketrik Shell"
+			},
+			"subtitle": {
+				"text": [
+					{
+						"text": "// Ketrik Shell ",
+						"vx": {
+							"bold": true,
+							"block": false
+						}
+					},
+					{
+						"text": "turns your data and workflows into live views — metrics, alerts, and actions, in real time.",
+						"vx": {
+							"block": false,
+							"lineBreak": true
+						}
+					},
+					{
+						"text": "// Ketrik AI Agents ",
+						"vx": {
+							"bold": true,
+							"block": false
+						}
+					},
+					{
+						"text": "automate routine decisions and accelerate execution — no custom engineering, no vibe coding.",
+						"vx": {
+							"block": false
+						}
+					}
+				],
+				"text1": [
+					{
+						"text": "AI agents can automate routine decisions and accelerate operations — all without custom or vibe coding engineering."
+					},
+					{
+						"text1": "Ketrik turns your data and workflows into an AI-powered command center — deploying autonomous agents that see, decide, and execute the moment decisions are made, without months of custom platform engineering."
+					}
+				]
+			}
+		},
+		"subHero": {
+			"title": {
+				"text": [
+					{
+						"text": "Built for Operators and Experts"
+					}
+				]
+			},
+			"featuresGrid": {
+				"ds": [
+					{
+						"title": "Operators & Founders",
+						"icon": "DashboardCustomize",
+						"description": "Run your business from one live screen. Get instant visibility into live metrics, risk warnings, and operational workflows — giving you full control from MVP to scale."
+					},
+					{
+						"title": "Consultants & Analysts",
+						"icon": "Insights",
+						"description": "Turn your data models into client-ready tools. Plug in your custom metrics and algorithms, and let Ketrik handle the dashboards, alerts, and workflows they need."
+					}
+				]
+			}
+		},
+		"social": {
+			"headline": "Trusted by operators, agencies & SaaS teams",
+			"testimonial": {
+				"quote": "“From speed-to-market to massive scale, they delivered at every level. They built a global CMS automation workflow that let us launch 200+ branded Alexa experiences for Amazon Ads, then spearheaded the world's first voice + multimodal TV guide experience—reaching 1M+ monthly users in the UK.”",
+				"authorName": "Chetan Damani",
+				"authorRole": "CEO",
+				"authorCompany": "Biscotte AI",
+				"avatarInitials": "CD"
+			},
+			"logos": [
+				{
+					"id": "logo-1",
+					"name": "Amazon Ads",
+					"logoUrl": "/_assets/amazon.avif",
+					"href": "https://advertising.amazon.com/",
+					"target": "_blank"
+				},
+				{
+					"id": "logo-2",
+					"name": "Trip Advisor",
+					"logoUrl": "/_assets/tripadvisor.avif",
+					"href": "https://www.tripadvisor.co.uk/",
+					"target": "_blank"
+				},
+				{
+					"id": "logo-3",
+					"name": "Biscotte AI",
+					"logoUrl": "/_assets/biscotte.svg",
+					"invertInLightMode": true,
+					"href": "https://www.biscotte.ai/",
+					"target": "_blank"
+				}
+			]
+		},
+		"shell": {
+			"title": {
+				"text": [
+					{
+						"text": "Ketrik Shell"
+					}
+				]
+			},
+			"subtitle": {
+				"text": [
+					{
+						"text": "In computing, a shell is just the interface people use to control a system — the outer layer that shows what's going on and lets you act. Ketrik is that shell for your business: the live control panel sitting on top of your data and workflows."
+					}
+				]
+			}
+		},
+		"shellfaq": [
+			{
+				"id": "panel1",
+				"question": "Is Ketrik a dashboard tool, a workflow tool, or an AI tool?",
+				"answer": "It’s the shell — the live interface that sits on top of all three. You or your data experts define how data and workflows work; Ketrik turns that into dashboards, alerts, and a command center you can actually use every day.",
+				"category": "shell",
+				"iconName": "WidgetsOutlined",
+				"badge": "Architecture"
+			},
+			{
+				"id": "panel2",
+				"question": "Do I need to be technical to use it?",
+				"answer": "No. You see clear numbers, alerts, and actions. The technical work—models, pipelines, custom metrics — can be done by us, your consultant, or your data scientist and then plugged into Ketrik.",
+				"category": "shell",
+				"iconName": "PersonOutlineOutlined",
+				"badge": "Usability"
+			},
+			{
+				"id": "panel3",
+				"question": "How long until we see a live shell?",
+				"answer": "Deployed within 24 hours and ready to accept your metrics whenever your data is prepared. Core views and alerts go live on day one, while deeper customization depends on your data complexity.",
+				"category": "shell",
+				"iconName": "SpeedOutlined",
+				"badge": "Timeline"
+			},
+			{
+				"id": "panel4",
+				"question": "Where does Ketrik run, and is raw client data kept secure?",
+				"answer": "By default, Ketrik uses Google Cloud (GCP) for high-speed caching, real-time sync, and access control, with options to deploy inside your own cloud account or custom infrastructure. By design, raw data stays inside your existing systems—Ketrik only processes and displays lightweight metrics, alerts, and summarized data. Client environments remain strictly isolated, with full support for private VPN connections and custom network security.",
+				"category": "shell",
+				"iconName": "SecurityOutlined",
+				"badge": "Deployment & Isolation"
+			}
+		],
+		"agent": {
+			"title": {
+				"text": [
+					{
+						"text": "Ketrik AI Agents"
+					}
+				]
+			},
+			"subtitle": {
+				"text": [
+					{
+						"text": "The autonomous engine inside your shell. While you monitor the big picture, Ketrik AI Agents work behind the scenes—routing data, updating systems, and executing routine operations across your business automatically."
+					}
+				]
+			}
+		},
+		"agentfaq": [
+			{
+				"id": "panel3",
+				"question": "Are Ketrik agents fully autonomous?",
+				"answer": "They can act on their own, but within the guardrails you set. You choose which workflows agents can trigger, when they must ask for approval, and what they’re allowed to change.",
+				"category": "agent",
+				"iconName": "SecurityOutlined",
+				"badge": "Control"
+			},
+			{
+				"id": "panel4",
+				"question": "What do Ketrik agents actually do day to day?",
+				"answer": "Agents watch your metrics and events, spot issues, and kick off the workflows you’ve defined — updating systems, sending alerts, and surfacing decisions in the Ketrik shell so you can see what’s happening.",
+				"category": "agent",
+				"iconName": "BoltOutlined",
+				"badge": "Automation"
+			},
+			{
+				"id": "panel5",
+				"question": "Can I start without agents and add them later?",
+				"answer": "Yes. Many teams start with the Ketrik shell as a live command center, then introduce agents gradually for specific tasks like risk monitoring, follow‑ups, or routing incidents.",
+				"category": "agent",
+				"iconName": "ScheduleOutlined",
+				"badge": "Adoption"
+			}
+		],
+		"finalCTA": {
+			"title": {
+				"text": [
+					{
+						"text": "Ready to See Ketrik in Action?"
+					}
+				]
+			},
+			"subtitle": {
+				"text": [
+					{
+						"text": "No sales pitch, no calendar links, and zero waiting"
+					}
+				]
+			},
+			"button": {
+				"href": "/demo",
+				"text": "Explore Ketrik Shell"
+			}
+		},
+		"finalCTAfaq": [
+			{
+				"id": "panel1",
+				"question": "How long until we see a live shell?",
+				"answer": "Deployed within 24 hours and ready to accept your metrics whenever your data is prepared. Core views and alerts go live on day one, while deeper customization depends on your data complexity.",
+				"category": "shell",
+				"iconName": "SpeedOutlined",
+				"badge": "Timeline"
+			},
+			{
+				"id": "panel2",
+				"question": "Where does Ketrik run, and is raw client data kept secure?",
+				"answer": "By default, Ketrik uses Google Cloud (GCP) for high-speed caching, real-time sync, and access control, with options to deploy inside your own cloud account or custom infrastructure. By design, raw data stays inside your existing systems—Ketrik only processes and displays lightweight metrics, alerts, and summarized data. Client environments remain strictly isolated, with full support for private VPN connections and custom network security.",
+				"category": "shell",
+				"iconName": "SecurityOutlined",
+				"badge": "Deployment & Isolation"
+			}
+		]
+	},
+	"config": {
+		"disableGutter": true,
+		"groups": [
+			{
+				"itemSize": {
+					"sm": 12
+				},
+				"items": [
+					{
+						"cardType": "noCard",
+						"cardConfig": [
+							{
+								"contentConfig": {
+									"contentType": "Marketing",
+									"panel": "hero",
+									"vx": {
+										"sideImage": {
+											"isBlurred": false,
+											"isZoomed": true,
+											"shadow": "sm"
+										},
+										"subtitle": {
+											"size": "lg",
+											"bold": false,
+											"maxWidth": "lg"
+										},
+										"title": {},
+										"titleWrapper": {
+											"mobileMinHeight": false
+										},
+										"button": {
+											"color": "primary",
+											"radius": "full",
+											"size": "lg"
+										}
+									}
+								},
+								"dataKey": "hero",
+								"type": "cardContent"
+							},
+							{
+								"contentConfig": {
+									"contentType": "Marketing",
+									"panel": "basic",
+									"vx": {
+										"titleWrapper": {
+											"center": true,
+											"isVertical": true
+										},
+										"title": {
+											"size": "lg"
+										},
+										"featuresGrid": {
+											"size": 2,
+											"color": "blue"
+										},
+										"sectionWrapper": {
+											"hasNoMargin": true
+										}
+									}
+								},
+								"dataKey": "subHero",
+								"type": "cardContent"
+							},
+							{
+								"dataKey": "social",
+								"contentConfig": {
+									"contentType": "KetrikSocial"
+								},
+								"type": "cardContent"
+							},
+							{
+								"contentConfig": {
+									"contentType": "Marketing",
+									"panel": "basic",
+									"vx": {
+										"titleWrapper": {
+											"center": true,
+											"isVertical": true
+										},
+										"title": {
+											"size": "lg"
+										},
+										"subtitle": {
+											"maxWidth": "md",
+											"center": true,
+											"italic": true
+										},
+										"featuresGrid": {
+											"size": 3,
+											"color": "blue"
+										},
+										"sectionWrapper": {
+											"hasNoMargin": true
+										}
+									}
+								},
+								"dataKey": "shell",
+								"type": "cardContent"
+							},
+							{
+								"contentConfig": {
+									"contentType": "KetrikDiagram"
+								},
+								"dataKey": "subHero",
+								"type": "cardContent"
+							},
+							{
+								"dataKey": "shellfaq",
+								"contentConfig": {
+									"contentType": "KetrikMiniFaq"
+								},
+								"type": "cardContent"
+							},
+							{
+								"contentConfig": {
+									"contentType": "Marketing",
+									"panel": "basic",
+									"vx": {
+										"titleWrapper": {
+											"center": true,
+											"isVertical": true
+										},
+										"title": {
+											"size": "lg"
+										},
+										"subtitle": {
+											"maxWidth": "md",
+											"center": true,
+											"italic": true
+										},
+										"featuresGrid": {
+											"size": 3,
+											"color": "blue"
+										},
+										"sectionWrapper": {
+											"hasNoMargin": true
+										}
+									}
+								},
+								"dataKey": "agent",
+								"type": "cardContent"
+							},
+							{
+								"contentConfig": {
+									"contentType": "KetrikAgent"
+								},
+								"dataKey": "agent",
+								"type": "cardContent"
+							},
+							{
+								"dataKey": "agentfaq",
+								"contentConfig": {
+									"contentType": "KetrikMiniFaq"
+								},
+								"type": "cardContent"
+							},
+							{
+								"contentConfig": {
+									"contentType": "Marketing",
+									"panel": "basic",
+									"vx": {
+										"subtitle": {
+											"maxWidth": "md",
+											"center": true,
+											"italic": true
+										},
+										"titleWrapper": {
+											"center": true,
+											"isVertical": true
+										},
+										"title": {
+											"size": "lg"
+										},
+										"sectionWrapper": {
+											"hasNoMargin": true
+										},
+										"buttonWrapper": {
+											"center": true
+										},
+										"button": {
+											"color": "primary",
+											"radius": "full",
+											"size": "lg"
+										}
+									}
+								},
+								"dataKey": "finalCTA",
+								"type": "cardContent"
+							}
+						]
+					},
+					{
+						"id": "background",
+						"cardType": "noCard",
+						"cardConfig": [
+							{
+								"contentConfig": {
+									"contentType": "Marketing",
+									"panel": "background",
+									"vx": {
+										"background": {
+											"layout": "fullScreen"
+										}
+									}
+								},
+								"dataKey": "background",
+								"type": "cardContent"
+							}
+						]
+					}
+				]
+			}
+		],
+		"hideFullSizeToggle": true,
+		"isFullSize": false
+	}
+}

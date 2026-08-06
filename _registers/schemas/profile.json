@@ -1,0 +1,159 @@
+{
+	"data": {
+		"profile": {
+			"name": "Vytas",
+			"startDate": "2026-10-10"
+		}
+	},
+	"config": {
+		"childComponent": "DisplayCards",
+		"header": "Profile",
+		"isFullSize": false,
+		"maxWidth": "md",
+		"groups": [
+			{
+				"id": "profile",
+				"itemSize": 12,
+				"items": [
+					{
+						"cardConfig": [
+							{
+								"type": "cardContent",
+								"dataKey": "profile",
+								"actionConfig": {
+									"type": "SAVE_TO_FIRESTORE",
+									"collection": "users",
+									"document": "${uid}"
+								},
+								"contentConfig": {
+									"contentType": "DataForm",
+									"schema": {
+										"properties": {
+											"endDate": {
+												"format": "date",
+												"title": "To",
+												"type": "string"
+											},
+											"startDate": {
+												"format": "date",
+												"title": "From",
+												"type": "string"
+											}
+										},
+										"required": ["endDate", "startDate"],
+										"type": "object"
+									},
+									"uiSchema": {
+										"endDate": {
+											"ui:options": {
+												"label": true
+											},
+											"ui:placeholder": "End Date"
+										},
+										"startDate": {
+											"ui:options": {
+												"label": true
+											},
+											"ui:placeholder": "Start Date"
+										},
+										"ui:order": ["startDate", "endDate"]
+									}
+								}
+							}
+						]
+					},
+					{
+						"cardConfig": [
+							{
+								"type": "cardContent",
+								"dataKey": "profile",
+								"contentConfig": {
+									"contentType": "DataForm",
+									"schema": {
+										"title": "Firebase Auth Settings",
+										"type": "object",
+										"required": ["apiKey", "authDomain", "projectId"],
+										"properties": {
+											"apiKey": {
+												"type": "string",
+												"title": "API Key",
+												"default": ""
+											},
+											"authDomain": {
+												"type": "string",
+												"title": "Auth Domain",
+												"examples": ["your-app.firebaseapp.com"]
+											},
+											"projectId": {
+												"type": "string",
+												"title": "Project ID"
+											},
+											"storageBucket": {
+												"type": "string",
+												"title": "Storage Bucket"
+											},
+											"messagingSenderId": {
+												"type": "string",
+												"title": "Messaging Sender ID"
+											},
+											"appId": {
+												"type": "string",
+												"title": "App ID"
+											},
+											"persistenceType": {
+												"type": "string",
+												"title": "Auth Persistence",
+												"enum": ["LOCAL", "SESSION", "NONE"],
+												"default": "LOCAL"
+											},
+											"enableEmailPassword": {
+												"type": "boolean",
+												"title": "Enable Email/Password Login",
+												"default": true
+											},
+											"mfaRequired": {
+												"type": "boolean",
+												"title": "Require Multi-Factor Authentication",
+												"default": false
+											}
+										}
+									},
+									"uiSchema": {
+										"apiKey": {
+											"ui:widget": "password",
+											"ui:help": "Found in your Firebase Console project settings.",
+											"ui:placeholder": "AIzaSy..."
+										},
+										"authDomain": {
+											"ui:placeholder": "project-id.firebaseapp.com"
+										},
+										"persistenceType": {
+											"ui:widget": "radio",
+											"ui:options": {
+												"inline": true
+											}
+										},
+										"enableEmailPassword": {
+											"ui:widget": "checkbox"
+										},
+										"ui:order": [
+											"projectId",
+											"apiKey",
+											"authDomain",
+											"appId",
+											"storageBucket",
+											"messagingSenderId",
+											"persistenceType",
+											"*",
+											"mfaRequired"
+										]
+									}
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

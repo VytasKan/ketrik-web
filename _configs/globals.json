@@ -10,7 +10,6 @@
 						}
 					}
 				},
-
 				"hero": {
 					"eyebrow": {
 						"text": "AI-Powered Workflow Command Center"
@@ -24,10 +23,8 @@
 									"lineBreak": true
 								}
 							},
-
 							{
 								"text": "Your Business Operations",
-
 								"phrases1": [
 									"Complex Workflows",
 									"Sales & Revenue Pipelines",
@@ -52,7 +49,6 @@
 									"HR, Hiring & People Operations"
 								],
 								"intensity": 0.5,
-
 								"variant1": "typewriter",
 								"vx": {
 									"lineBreak": true,
@@ -486,7 +482,6 @@
 									}
 								]
 							},
-
 							{
 								"id": "background",
 								"cardType": "noCard",
@@ -511,6 +506,556 @@
 				],
 				"hideFullSizeToggle": true,
 				"isFullSize": false
+			}
+		},
+		"gates_chatbot": {
+			"data": {
+				"profile": true
+			},
+			"config": {
+				"childComponent": "DisplayCards",
+				"disableGutters": true,
+				"groups": [
+					{
+						"itemSize": {
+							"xs": 12
+						},
+						"items": [
+							{
+								"cardProps": {
+									"sx": {
+										"p": "0px",
+										"m": 0,
+										"border": "none"
+									}
+								},
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"actionConfig": {
+											"type": "SAVE_TO_FIRESTORE",
+											"collection": "users",
+											"document": "${uid}",
+											"variable1": "onboarding",
+											"data": {
+												"hasCompletedOnboarding": true,
+												"hasCompletedOnboardingAt": "${now}"
+											}
+										},
+										"contentConfig": {
+											"contentType": "Chatbot",
+											"scrollable": true,
+											"sx": {
+												"minHeight": "65vh",
+												"p": "0px!important",
+												"m": 0
+											},
+											"inputConfig": {
+												"initialMode": "auto",
+												"maxHeight": 280,
+												"maxLength": 500,
+												"placeholder": "Type your answer..."
+											},
+											"tools": {
+												"save_user_profile": {
+													"description": "Submit final user profile data after all fields are collected and confirmed.",
+													"inputSchema": {
+														"type": "object",
+														"properties": {
+															"displayName": {
+																"type": "string",
+																"description": "Name"
+															},
+															"companyName": {
+																"type": "string",
+																"description": "Company Name"
+															},
+															"profession": {
+																"type": "string",
+																"description": "Profession/Role"
+															},
+															"email": {
+																"type": "string",
+																"description": "Work Email"
+															}
+														},
+														"required": [
+															"displayName",
+															"companyName",
+															"profession",
+															"email"
+														],
+														"additionalProperties": false
+													}
+												}
+											},
+											"prompt": {
+												"role": "You are an onboarding assistant initiating a profile setup session. Your goal is to deliver a warm, personalized greeting, mention what setup entails, and prompt the user for the first missing or unconfirmed piece of information.",
+												"instructions": [
+													"Greet the user using their name if explicitly provided in the context; otherwise use a generic greeting like 'Hello!'. Never invent or assume names.",
+													"If a fact is INFERRED (e.g., company derived from email domain), do NOT ask for it from scratch. Instead, ask the user to confirm if it is correct.",
+													"If a fact is EXPLICITLY CONFIRMED or KNOWN, consider it set. Do NOT ask about it or confirm it again.",
+													"Prompt ONLY for the single highest-priority field that is unconfirmed or missing."
+												],
+												"constraints": [
+													"Output maximum 3 short, natural sentences.",
+													"Speak directly to the user in plain text.",
+													"Do NOT ask for information from scratch if it was already inferred—always phrase inferred data as a simple confirmation check.",
+													"NEVER invent, assume, or default to a name (like Alex) or company if not provided in context.",
+													"Do NOT include markdown code blocks, metadata, preamble, system notes, or section headers in the output."
+												]
+											},
+											"greetingStaticText": "Hello! To get your profile set up, could you please tell me your full name?",
+											"greetingIsDynamic": true,
+											"greetingPrompt": ""
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		"gates_terms": {
+			"data": {
+				"terms": {
+					"type": "remote",
+					"url": "/_docs/terms.md"
+				}
+			},
+			"config": {
+				"groups": [
+					{
+						"items": [
+							{
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"dataKey": "terms",
+										"contentConfig": {
+											"contentType": "Markdown",
+											"scrollable": true
+										}
+									},
+									{
+										"type": "cardAction",
+										"sx": {
+											"justifyContent": "center"
+										},
+										"buttons": [
+											{
+												"label": "Sign Out",
+												"variant": "outlined",
+												"color": "error",
+												"actionConfig": {
+													"type": "LOGOUT"
+												}
+											},
+											{
+												"actionConfig": {
+													"type": "SAVE_TO_FIRESTORE",
+													"collection": "users",
+													"document": "${uid}",
+													"data": {
+														"hasAcceptedTerms": true,
+														"hasAcceptedTermsAt": "${now}"
+													}
+												},
+												"label": "Accept",
+												"variant": "outlined"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		"pages_about": {
+			"data": {
+				"background": {
+					"background": {
+						"style": {
+							"--bg-image": "url(/_assets/network_pattern_hd.png)",
+							"--bg-image-dark": "url(/_assets/network_pattern_121212_hd.png)"
+						}
+					}
+				},
+				"header": {
+					"title": {
+						"text": [
+							{
+								"text": "About Ketrik",
+								"vx": {
+									"size": "md",
+									"lineBreak": true
+								}
+							},
+							{
+								"text": "Story of the AI-native Shell",
+								"vx": {
+									"size": "lg",
+									"color": "blue"
+								}
+							}
+						]
+					},
+					"subtitle": {
+						"text": [
+							{
+								"text": "We started Ketrik on a simple premise: innovation should move fast, not take months to rebuild from scratch. Our schema-driven shell wraps around your existing data pipelines and workflows, creating a single command surface where autonomous agents help you see, understand, and act."
+							}
+						]
+					}
+				},
+				"ketrikstory": {
+					"type": "remote",
+					"url": "/_docs/about.md"
+				},
+				"minifaq": [
+					{
+						"id": "panel1",
+						"question": "Is Ketrik a self-service product or a custom service?",
+						"answer": "Ketrik is an operational MVP built on a flexible, schema-driven platform and delivered as a founder-led service. While the core shell and agent runtime are fully live, we work directly with early clients to configure and adapt the views, data connections, and agent behaviors around how their business actually operates.",
+						"category": "shell",
+						"iconName": "BuildOutlined",
+						"badge": "Delivery"
+					},
+					{
+						"id": "panel2",
+						"question": "Who is Ketrik built for right now?",
+						"answer": "Ketrik is currently being piloted with brokers, consultants, and SaaS teams who need a living command surface around their operations. We work directly with founders and domain experts through hands-on pilots and consulting engagements—co-designing the shell, event triggers, and agent workflows around real, active data streams.",
+						"category": "shell",
+						"iconName": "PersonOutlineOutlined",
+						"badge": "Target Audience"
+					},
+					{
+						"id": "panel3",
+						"question": "How do I discuss a pilot, partnership, or engagement?",
+						"answer": "If you have custom requirements, want to explore a pilot, or are interested in a consulting engagement, reach out directly on LinkedIn. We’re happy to talk through your use case and see if Ketrik is a fit for your team.",
+						"category": "shell",
+						"iconName": "ChatOutlined",
+						"badge": "Contact"
+					}
+				],
+				"cta": {
+					"title": {
+						"text": [
+							{
+								"text": "Contact Us",
+								"vx": {
+									"size": "md"
+								}
+							}
+						]
+					},
+					"subtitle": {
+						"text": [
+							{
+								"text": "Want to see Ketrik in action or explore how it could fit your business? You can already try our live demo version today."
+							},
+							{
+								"text": "Ketrik is currently being piloted with brokers, consultants, and SaaS teams, operating as an MVP and founder-led project built in close collaboration with a small group of early users. Rather than offering a finished, off-the-shelf product, we tailor the shell and agent behaviors around your specific business needs."
+							},
+							{
+								"text": "If you have custom requirements or would like to discuss a potential partnership or consulting engagement, reach out directly on LinkedIn — we'd be happy to talk through your use case."
+							}
+						]
+					},
+					"button": {
+						"href": "https://www.linkedin.com/in/vytkan",
+						"text": "Talk to Us on LinkedIn",
+						"target": "_blank"
+					}
+				}
+			},
+			"config": {
+				"disableGutter": true,
+				"hideFullSizeToggle": true,
+				"isFullSize": false,
+				"maxWidth": "md",
+				"groups": [
+					{
+						"itemSize": {
+							"sm": 12
+						},
+						"items": [
+							{
+								"id": "about",
+								"cardType": "noCard",
+								"cardConfig": [
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "basic",
+											"vx": {
+												"titleWrapper": {},
+												"subtitle": {},
+												"sectionWrapper": {
+													"hasNoMargin": true,
+													"addTopMargin": false
+												},
+												"featuresGrid": {
+													"size": 2,
+													"color": "blue"
+												}
+											}
+										},
+										"dataKey": "header",
+										"type": "cardContent"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "ketrikstory",
+										"contentConfig": {
+											"contentType": "Markdown"
+										}
+									},
+									{
+										"dataKey": "minifaq",
+										"contentConfig": {
+											"contentType": "KetrikMiniFaq"
+										},
+										"type": "cardContent"
+									},
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "basic",
+											"vx": {
+												"subtitle": {
+													"maxWidth": "md",
+													"center": true,
+													"italic": true
+												},
+												"titleWrapper": {
+													"center": true,
+													"isVertical": true
+												},
+												"title": {
+													"size": "lg"
+												},
+												"sectionWrapper": {
+													"hasNoMargin": false
+												},
+												"buttonWrapper": {
+													"center": true
+												},
+												"button": {
+													"color": "primary",
+													"radius": "full",
+													"size": "lg"
+												}
+											}
+										},
+										"dataKey": "cta",
+										"type": "cardContent"
+									}
+								]
+							},
+							{
+								"id": "background",
+								"cardType": "noCard",
+								"cardConfig": [
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "background",
+											"vx": {
+												"background": {
+													"layout": "fullScreen"
+												}
+											}
+										},
+										"dataKey": "background",
+										"type": "cardContent"
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		"pages_articles": {
+			"data": {
+				"background": {
+					"background": {
+						"style": {
+							"--bg-image": "url(/_assets/network_pattern_hd.png)",
+							"--bg-image-dark": "url(/_assets/network_pattern_121212_hd.png)"
+						}
+					}
+				},
+				"header": {
+					"title": {
+						"text": [
+							{
+								"text": "Ketrik Articles & Insights",
+								"vx": {
+									"size": "md"
+								}
+							}
+						]
+					},
+					"subtitle": {
+						"text": [
+							{
+								"text": "Thoughts on AI-native architecture, tech strategy, and building Ketrik"
+							}
+						]
+					}
+				},
+				"articles": {
+					"type": "remote",
+					"url": "/_docs/articles.md"
+				}
+			},
+			"config": {
+				"disableGutter": true,
+				"hideFullSizeToggle": true,
+				"isFullSize": false,
+				"maxWidth": "md",
+				"groups": [
+					{
+						"itemSize": {
+							"sm": 12
+						},
+						"items": [
+							{
+								"id": "aricles",
+								"cardType": "noCard",
+								"cardConfig": [
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "basic",
+											"vx": {
+												"titleWrapper": {
+													"center": true,
+													"isVertical": true
+												},
+												"title": {
+													"size": "md"
+												},
+												"subtitle": {
+													"maxWidth": "md",
+													"center": true,
+													"italic": true
+												},
+												"featuresGrid": {
+													"size": 3,
+													"color": "blue"
+												},
+												"sectionWrapper": {
+													"hasNoMargin": true,
+													"addTopMargin": false
+												},
+												"background": {
+													"layout": "fullScreen"
+												}
+											}
+										},
+										"dataKey": "header",
+										"type": "cardContent"
+									},
+									{
+										"type": "cardContent",
+										"dataKey": "articles",
+										"contentConfig": {
+											"contentType": "Markdown"
+										}
+									}
+								]
+							},
+							{
+								"id": "background",
+								"cardType": "noCard",
+								"cardConfig": [
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "background",
+											"vx": {
+												"background": {
+													"layout": "fullScreen"
+												}
+											}
+										},
+										"dataKey": "background",
+										"type": "cardContent"
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		"pages_articles_3": {
+			"data": {
+				"background": {
+					"background": {
+						"style": {
+							"--bg-image": "url(/_assets/network_pattern_hd.png)",
+							"--bg-image-dark": "url(/_assets/network_pattern_121212_hd.png)"
+						}
+					}
+				},
+				"article": {
+					"type": "remote",
+					"url": "/_docs/articles/${slug}.md"
+				}
+			},
+			"config": {
+				"disableGutter": true,
+				"hideFullSizeToggle": true,
+				"isFullSize": false,
+				"maxWidth": "md",
+				"groups": [
+					{
+						"itemSize": {
+							"sm": 12
+						},
+						"items": [
+							{
+								"id": "aricle",
+								"cardType": "noCard",
+								"cardConfig": [
+									{
+										"type": "cardContent",
+										"dataKey": "article",
+										"contentConfig": {
+											"contentType": "Markdown"
+										}
+									}
+								]
+							},
+							{
+								"id": "background",
+								"cardType": "noCard",
+								"cardConfig": [
+									{
+										"contentConfig": {
+											"contentType": "Marketing",
+											"panel": "background",
+											"vx": {
+												"background": {
+													"layout": "fullScreen"
+												}
+											}
+										},
+										"dataKey": "background",
+										"type": "cardContent"
+									}
+								]
+							}
+						]
+					}
+				]
 			}
 		},
 		"pages_faq": {
@@ -541,7 +1086,11 @@
 				},
 				"faq": {
 					"categories": [
-						{ "id": "all", "title": "All Questions", "iconName": "QuizOutlined" },
+						{
+							"id": "all",
+							"title": "All Questions",
+							"iconName": "QuizOutlined"
+						},
 						{
 							"id": "general",
 							"title": "General & Platform",
@@ -563,7 +1112,6 @@
 							"iconName": "SmartToyOutlined"
 						}
 					],
-
 					"items": [
 						{
 							"id": "q1",
@@ -613,7 +1161,6 @@
 							"iconName": "TuneOutlined",
 							"badge": "Customization"
 						},
-
 						{
 							"id": "q7",
 							"question": "What are Ketrik Agents actually doing behind the scenes?",
@@ -622,7 +1169,6 @@
 							"iconName": "VisibilityOutlined",
 							"badge": "Monitoring"
 						},
-
 						{
 							"id": "q8",
 							"question": "How do agents know what needs my attention versus routine tasks?",
@@ -736,7 +1282,6 @@
 						}
 					}
 				},
-
 				"pricing": {
 					"title": {
 						"text": [
@@ -761,17 +1306,14 @@
 						"text": [
 							{
 								"text": "You pay only for your data complexity and operational scope — a setup fee to integrate your workflows, plus an ongoing fee to maintain them. Never a per-seat fee. ",
-
 								"text1": "You pay only for the data complexity and operational scope deployed for your business — a setup fee to connect your data and workflows, plus an ongoing fee to keep them running. Never a per-seat fee."
 							}
 						]
 					},
-
 					"featuresGrid1": {
 						"ds": [
 							{
 								"title": "Setup fee",
-
 								"description": "Custom architecture and workflow design. Connecting your live data feeds, APIs, and databases. Setting up AI Agent rules for the decisions you want automated."
 							},
 							{
@@ -781,9 +1323,10 @@
 						]
 					}
 				},
-
-				"eraAiMarkdown": { "type": "remote", "url": "/_docs/pricing.md" },
-
+				"eraAiMarkdown": {
+					"type": "remote",
+					"url": "/_docs/pricing.md"
+				},
 				"eraAi": {
 					"title": {
 						"text": [
@@ -800,7 +1343,6 @@
 							{
 								"text": "Generative AI has broken pricing models built around hours logged. That model existed because changes were slow — not because they were complex. A client asking for a tweaked validation rule or a moved button wasn't a hard problem, but finding the right code, changing it safely, and testing it took time. Hours were the honest unit to bill, because time was genuinely the bottleneck. AI removes that bottleneck: the same change now takes minutes, not hours. But that just exposes the real problem — the code AI produces still needs to fit the business, and speed alone doesn't guarantee that."
 							},
-
 							{
 								"text": "The question was never whether AI should write code — it already does, and that's not going back. The real issue is AI slop: code that runs but wasn't architected, doesn't fit the business, and creates more rework than it saves. This isn't a new problem in software. The same argument played out in the 2000s with TDD — writing tests before code wasn't about slowing developers down, it was about making sure what got built actually worked."
 							},
@@ -813,7 +1355,6 @@
 						]
 					}
 				},
-
 				"finalCTA": {
 					"title": {
 						"text": [
@@ -847,7 +1388,6 @@
 							"iconName": "MonetizationOnOutlined",
 							"badge": "Pricing"
 						},
-
 						{
 							"id": "panel3",
 							"question": "How are setup fees calculated?",
@@ -897,7 +1437,6 @@
 							{
 								"id": "pricing",
 								"cardType": "noCard",
-
 								"cardConfig": [
 									{
 										"contentConfig": {
@@ -905,7 +1444,6 @@
 											"panel": "basic",
 											"vx": {
 												"titleWrapper": {},
-
 												"subtitle": {},
 												"sectionWrapper": {
 													"hasNoMargin": true,
@@ -927,7 +1465,6 @@
 											"contentType": "Markdown"
 										}
 									},
-
 									{
 										"dataKey": "pricingFaq",
 										"contentConfig": {
@@ -939,7 +1476,6 @@
 										"contentConfig": {
 											"contentType": "Marketing",
 											"panel": "basic",
-
 											"vx": {
 												"subtitle": {
 													"maxWidth": "md",
@@ -995,187 +1531,22 @@
 				]
 			}
 		},
-		"pages_articles": {
+		"pages_privacy": {
 			"data": {
-				"background": {
-					"background": {
-						"style": {
-							"--bg-image": "url(/_assets/network_pattern_hd.png)",
-							"--bg-image-dark": "url(/_assets/network_pattern_121212_hd.png)"
-						}
-					}
-				},
-				"header": {
-					"title": {
-						"text": [
-							{
-								"text": "Ketrik Articles & Insights",
-								"vx": {
-									"size": "md"
-								}
-							}
-						]
-					},
-					"subtitle": {
-						"text": [
-							{
-								"text": "Thoughts on AI-native architecture, tech strategy, and building Ketrik"
-							}
-						]
-					}
-				},
-				"articles": {
-					"type": "remote",
-					"url": "/_docs/articles.md"
-				}
+				"type": "remote",
+				"url": "/_docs/privacy.md"
 			},
-			"config": {
-				"disableGutter": true,
-				"hideFullSizeToggle": true,
-				"isFullSize": false,
-				"maxWidth": "md",
-				"groups": [
-					{
-						"itemSize": {
-							"sm": 12
-						},
-						"items": [
-							{
-								"id": "aricles",
-								"cardType": "noCard",
-
-								"cardConfig": [
-									{
-										"contentConfig": {
-											"contentType": "Marketing",
-											"panel": "basic",
-											"vx": {
-												"titleWrapper": {
-													"center": true,
-													"isVertical": true
-												},
-												"title": {
-													"size": "md"
-												},
-												"subtitle": {
-													"maxWidth": "md",
-													"center": true,
-													"italic": true
-												},
-												"featuresGrid": {
-													"size": 3,
-													"color": "blue"
-												},
-												"sectionWrapper": {
-													"hasNoMargin": true,
-													"addTopMargin": false
-												},
-												"background": {
-													"layout": "fullScreen"
-												}
-											}
-										},
-										"dataKey": "header",
-										"type": "cardContent"
-									},
-									{
-										"type": "cardContent",
-										"dataKey": "articles",
-										"contentConfig": {
-											"contentType": "Markdown"
-										}
-									}
-								]
-							},
-							{
-								"id": "background",
-								"cardType": "noCard",
-								"cardConfig": [
-									{
-										"contentConfig": {
-											"contentType": "Marketing",
-											"panel": "background",
-											"vx": {
-												"background": {
-													"layout": "fullScreen"
-												}
-											}
-										},
-										"dataKey": "background",
-										"type": "cardContent"
-									}
-								]
-							}
-						]
+			"renderComponent": {
+				"component": "Markdown",
+				"container": {
+					"maxWidth": "md",
+					"sx": {
+						"mt": 5
 					}
-				]
+				},
+				"props": {}
 			}
 		},
-
-		"pages_articles_3": {
-			"data": {
-				"background": {
-					"background": {
-						"style": {
-							"--bg-image": "url(/_assets/network_pattern_hd.png)",
-							"--bg-image-dark": "url(/_assets/network_pattern_121212_hd.png)"
-						}
-					}
-				},
-				"article": {
-					"type": "remote",
-					"url": "/_docs/articles/${slug}.md"
-				}
-			},
-			"config": {
-				"disableGutter": true,
-				"hideFullSizeToggle": true,
-				"isFullSize": false,
-				"maxWidth": "md",
-				"groups": [
-					{
-						"itemSize": {
-							"sm": 12
-						},
-						"items": [
-							{
-								"id": "aricle",
-								"cardType": "noCard",
-								"cardConfig": [
-									{
-										"type": "cardContent",
-										"dataKey": "article",
-										"contentConfig": {
-											"contentType": "Markdown"
-										}
-									}
-								]
-							},
-							{
-								"id": "background",
-								"cardType": "noCard",
-								"cardConfig": [
-									{
-										"contentConfig": {
-											"contentType": "Marketing",
-											"panel": "background",
-											"vx": {
-												"background": {
-													"layout": "fullScreen"
-												}
-											}
-										},
-										"dataKey": "background",
-										"type": "cardContent"
-									}
-								]
-							}
-						]
-					}
-				]
-			}
-		},
-
 		"pages_research": {
 			"data": "## Computer Vision Papers\n\n* [Attention Is All You Need](https://arxiv.org/abs/1706.03762) — *Vaswani et al. (2017)*\n  * **Key takeaway:** Introduced the Transformer architecture.",
 			"renderComponent": {
@@ -1183,220 +1554,10 @@
 				"container": {}
 			}
 		},
-		"pages_about": {
-			"data": {
-				"background": {
-					"background": {
-						"style": {
-							"--bg-image": "url(/_assets/network_pattern_hd.png)",
-							"--bg-image-dark": "url(/_assets/network_pattern_121212_hd.png)"
-						}
-					}
-				},
-
-				"header": {
-					"title": {
-						"text": [
-							{
-								"text": "About Ketrik",
-								"vx": {
-									"size": "md",
-									"lineBreak": true
-								}
-							},
-							{
-								"text": "Story of the AI-native Shell",
-								"vx": {
-									"size": "lg",
-									"color": "blue"
-								}
-							}
-						]
-					},
-					"subtitle": {
-						"text": [
-							{
-								"text": "We started Ketrik on a simple premise: innovation should move fast, not take months to rebuild from scratch. Our schema-driven shell wraps around your existing data pipelines and workflows, creating a single command surface where autonomous agents help you see, understand, and act."
-							}
-						]
-					}
-				},
-
-				"ketrikstory": { "type": "remote", "url": "/_docs/about.md" },
-				"minifaq": [
-					{
-						"id": "panel1",
-						"question": "Is Ketrik a self-service product or a custom service?",
-						"answer": "Ketrik is an operational MVP built on a flexible, schema-driven platform and delivered as a founder-led service. While the core shell and agent runtime are fully live, we work directly with early clients to configure and adapt the views, data connections, and agent behaviors around how their business actually operates.",
-						"category": "shell",
-						"iconName": "BuildOutlined",
-						"badge": "Delivery"
-					},
-					{
-						"id": "panel2",
-						"question": "Who is Ketrik built for right now?",
-						"answer": "Ketrik is currently being piloted with brokers, consultants, and SaaS teams who need a living command surface around their operations. We work directly with founders and domain experts through hands-on pilots and consulting engagements—co-designing the shell, event triggers, and agent workflows around real, active data streams.",
-						"category": "shell",
-						"iconName": "PersonOutlineOutlined",
-						"badge": "Target Audience"
-					},
-					{
-						"id": "panel3",
-						"question": "How do I discuss a pilot, partnership, or engagement?",
-						"answer": "If you have custom requirements, want to explore a pilot, or are interested in a consulting engagement, reach out directly on LinkedIn. We’re happy to talk through your use case and see if Ketrik is a fit for your team.",
-						"category": "shell",
-						"iconName": "ChatOutlined",
-						"badge": "Contact"
-					}
-				],
-
-				"cta": {
-					"title": {
-						"text": [
-							{
-								"text": "Contact Us",
-								"vx": {
-									"size": "md"
-								}
-							}
-						]
-					},
-					"subtitle": {
-						"text": [
-							{
-								"text": "Want to see Ketrik in action or explore how it could fit your business? You can already try our live demo version today."
-							},
-							{
-								"text": "Ketrik is currently being piloted with brokers, consultants, and SaaS teams, operating as an MVP and founder-led project built in close collaboration with a small group of early users. Rather than offering a finished, off-the-shelf product, we tailor the shell and agent behaviors around your specific business needs."
-							},
-							{
-								"text": "If you have custom requirements or would like to discuss a potential partnership or consulting engagement, reach out directly on LinkedIn — we'd be happy to talk through your use case."
-							}
-						]
-					},
-					"button": {
-						"href": "https://www.linkedin.com/in/vytkan",
-						"text": "Talk to Us on LinkedIn",
-						"target": "_blank"
-					}
-				}
-			},
-			"config": {
-				"disableGutter": true,
-				"hideFullSizeToggle": true,
-				"isFullSize": false,
-				"maxWidth": "md",
-				"groups": [
-					{
-						"itemSize": {
-							"sm": 12
-						},
-						"items": [
-							{
-								"id": "about",
-								"cardType": "noCard",
-
-								"cardConfig": [
-									{
-										"contentConfig": {
-											"contentType": "Marketing",
-											"panel": "basic",
-											"vx": {
-												"titleWrapper": {},
-
-												"subtitle": {},
-												"sectionWrapper": {
-													"hasNoMargin": true,
-													"addTopMargin": false
-												},
-												"featuresGrid": {
-													"size": 2,
-													"color": "blue"
-												}
-											}
-										},
-										"dataKey": "header",
-										"type": "cardContent"
-									},
-									{
-										"type": "cardContent",
-										"dataKey": "ketrikstory",
-										"contentConfig": {
-											"contentType": "Markdown"
-										}
-									},
-
-									{
-										"dataKey": "minifaq",
-										"contentConfig": {
-											"contentType": "KetrikMiniFaq"
-										},
-										"type": "cardContent"
-									},
-									{
-										"contentConfig": {
-											"contentType": "Marketing",
-											"panel": "basic",
-
-											"vx": {
-												"subtitle": {
-													"maxWidth": "md",
-													"center": true,
-													"italic": true
-												},
-												"titleWrapper": {
-													"center": true,
-													"isVertical": true
-												},
-												"title": {
-													"size": "lg"
-												},
-												"sectionWrapper": {
-													"hasNoMargin": false
-												},
-												"buttonWrapper": {
-													"center": true
-												},
-												"button": {
-													"color": "primary",
-													"radius": "full",
-													"size": "lg"
-												}
-											}
-										},
-										"dataKey": "cta",
-										"type": "cardContent"
-									}
-								]
-							},
-							{
-								"id": "background",
-								"cardType": "noCard",
-								"cardConfig": [
-									{
-										"contentConfig": {
-											"contentType": "Marketing",
-											"panel": "background",
-											"vx": {
-												"background": {
-													"layout": "fullScreen"
-												}
-											}
-										},
-										"dataKey": "background",
-										"type": "cardContent"
-									}
-								]
-							}
-						]
-					}
-				]
-			}
-		},
-		"pages_privacy": {
+		"pages_terms": {
 			"data": {
 				"type": "remote",
-				"url": "/_docs/privacy.md"
+				"url": "/_docs/terms.md"
 			},
 			"renderComponent": {
 				"component": "Markdown",
@@ -1423,204 +1584,6 @@
 					}
 				},
 				"props": {}
-			}
-		},
-		"pages_terms": {
-			"data": {
-				"type": "remote",
-				"url": "/_docs/terms.md"
-			},
-			"renderComponent": {
-				"component": "Markdown",
-				"container": {
-					"maxWidth": "md",
-					"sx": {
-						"mt": 5
-					}
-				},
-				"props": {}
-			}
-		},
-		"terms": {
-			"data": {
-				"type": "remote",
-				"url": "/_docs/terms.md"
-			},
-			"renderComponent": {
-				"component": "Markdown",
-				"container": {
-					"maxWidth": "md",
-					"sx": {
-						"mt": 5
-					}
-				},
-				"props": {}
-			}
-		},
-		"gates_terms": {
-			"data": {
-				"terms": {
-					"type": "remote",
-					"url": "/_docs/terms.md"
-				}
-			},
-			"config": {
-				"groups": [
-					{
-						"items": [
-							{
-								"cardConfig": [
-									{
-										"type": "cardContent",
-										"dataKey": "terms",
-										"contentConfig": {
-											"contentType": "Markdown",
-											"scrollable": true
-										}
-									},
-									{
-										"type": "cardAction",
-										"sx": {
-											"justifyContent": "center"
-										},
-										"buttons": [
-											{
-												"label": "Sign Out",
-												"variant": "outlined",
-												"color": "error",
-												"actionConfig": {
-													"type": "LOGOUT"
-												}
-											},
-											{
-												"actionConfig": {
-													"type": "SAVE_TO_FIRESTORE",
-													"collection": "users",
-													"document": "${uid}",
-													"data": {
-														"hasAcceptedTerms": true,
-														"hasAcceptedTermsAt": "${now}"
-													}
-												},
-												"label": "Accept",
-												"variant": "outlined"
-											}
-										]
-									}
-								]
-							}
-						]
-					}
-				]
-			}
-		},
-		"gates_chatbot": {
-			"data": {
-				"profile": true
-			},
-			"config": {
-				"childComponent": "DisplayCards",
-				"disableGutters": true,
-				"groups": [
-					{
-						"itemSize": {
-							"xs": 12
-						},
-						"items": [
-							{
-								"cardProps": {
-									"sx": {
-										"p": "0px",
-										"m": 0,
-										"border": "none"
-									}
-								},
-								"cardConfig": [
-									{
-										"type": "cardContent",
-										"actionConfig": {
-											"type": "SAVE_TO_FIRESTORE",
-											"collection": "users",
-											"document": "${uid}",
-											"variable1": "onboarding",
-											"data": {
-												"hasCompletedOnboarding": true,
-												"hasCompletedOnboardingAt": "${now}"
-											}
-										},
-										"contentConfig": {
-											"contentType": "Chatbot",
-											"scrollable": true,
-											"sx": {
-												"minHeight": "65vh",
-												"p": "0px!important",
-												"m": 0
-											},
-											"inputConfig": {
-												"initialMode": "auto",
-												"maxHeight": 280,
-												"maxLength": 500,
-												"placeholder": "Type your answer..."
-											},
-											"tools": {
-												"save_user_profile": {
-													"description": "Submit final user profile data after all fields are collected and confirmed.",
-													"inputSchema": {
-														"type": "object",
-														"properties": {
-															"displayName": {
-																"type": "string",
-																"description": "Name"
-															},
-															"companyName": {
-																"type": "string",
-																"description": "Company Name"
-															},
-															"profession": {
-																"type": "string",
-																"description": "Profession/Role"
-															},
-															"email": {
-																"type": "string",
-																"description": "Work Email"
-															}
-														},
-														"required": [
-															"displayName",
-															"companyName",
-															"profession",
-															"email"
-														],
-														"additionalProperties": false
-													}
-												}
-											},
-											"prompt": {
-												"role": "You are an onboarding assistant initiating a profile setup session. Your goal is to deliver a warm, personalized greeting, mention what setup entails, and prompt the user for the first missing or unconfirmed piece of information.",
-												"instructions": [
-													"Greet the user using their name if explicitly provided in the context; otherwise use a generic greeting like 'Hello!'. Never invent or assume names.",
-													"If a fact is INFERRED (e.g., company derived from email domain), do NOT ask for it from scratch. Instead, ask the user to confirm if it is correct.",
-													"If a fact is EXPLICITLY CONFIRMED or KNOWN, consider it set. Do NOT ask about it or confirm it again.",
-													"Prompt ONLY for the single highest-priority field that is unconfirmed or missing."
-												],
-												"constraints": [
-													"Output maximum 3 short, natural sentences.",
-													"Speak directly to the user in plain text.",
-													"Do NOT ask for information from scratch if it was already inferred—always phrase inferred data as a simple confirmation check.",
-													"NEVER invent, assume, or default to a name (like Alex) or company if not provided in context.",
-													"Do NOT include markdown code blocks, metadata, preamble, system notes, or section headers in the output."
-												]
-											},
-											"greetingStaticText": "Hello! To get your profile set up, could you please tell me your full name?",
-											"greetingIsDynamic": true,
-											"greetingPrompt": ""
-										}
-									}
-								]
-							}
-						]
-					}
-				]
 			}
 		},
 		"profile": {
@@ -1665,7 +1628,10 @@
 														"type": "string"
 													}
 												},
-												"required": ["endDate", "startDate"],
+												"required": [
+													"endDate",
+													"startDate"
+												],
 												"type": "object"
 											},
 											"uiSchema": {
@@ -1681,7 +1647,10 @@
 													},
 													"ui:placeholder": "Start Date"
 												},
-												"ui:order": ["startDate", "endDate"]
+												"ui:order": [
+													"startDate",
+													"endDate"
+												]
 											}
 										}
 									}
@@ -1697,7 +1666,11 @@
 											"schema": {
 												"title": "Firebase Auth Settings",
 												"type": "object",
-												"required": ["apiKey", "authDomain", "projectId"],
+												"required": [
+													"apiKey",
+													"authDomain",
+													"projectId"
+												],
 												"properties": {
 													"apiKey": {
 														"type": "string",
@@ -1707,7 +1680,9 @@
 													"authDomain": {
 														"type": "string",
 														"title": "Auth Domain",
-														"examples": ["your-app.firebaseapp.com"]
+														"examples": [
+															"your-app.firebaseapp.com"
+														]
 													},
 													"projectId": {
 														"type": "string",
@@ -1728,7 +1703,11 @@
 													"persistenceType": {
 														"type": "string",
 														"title": "Auth Persistence",
-														"enum": ["LOCAL", "SESSION", "NONE"],
+														"enum": [
+															"LOCAL",
+															"SESSION",
+															"NONE"
+														],
 														"default": "LOCAL"
 													},
 													"enableEmailPassword": {
@@ -1780,6 +1759,22 @@
 						]
 					}
 				]
+			}
+		},
+		"terms": {
+			"data": {
+				"type": "remote",
+				"url": "/_docs/terms.md"
+			},
+			"renderComponent": {
+				"component": "Markdown",
+				"container": {
+					"maxWidth": "md",
+					"sx": {
+						"mt": 5
+					}
+				},
+				"props": {}
 			}
 		}
 	},
@@ -2056,7 +2051,10 @@
 			"emailVerifyEnabled": true,
 			"mfaRequired": true
 		},
-		"authProviders": ["credentials", "google"],
+		"authProviders": [
+			"credentials",
+			"google"
+		],
 		"logo": "/_assets/ketrik.png",
 		"title": {
 			"main": "Ketrik ",
@@ -2076,7 +2074,6 @@
 		"layoutWithFooterHero": true,
 		"layoutStickyStackEnabled": true,
 		"layoutMobileStickyStackEnabled": true,
-
 		"dashboardDefaults": {
 			"config": {
 				"isFullSize": true
