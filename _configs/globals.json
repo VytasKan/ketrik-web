@@ -939,11 +939,7 @@
 										"contentConfig": {
 											"contentType": "Marketing",
 											"panel": "basic",
-											"sx": {
-												"borderTop": "1px solid",
 
-												"borderColor": "divider"
-											},
 											"vx": {
 												"subtitle": {
 													"maxWidth": "md",

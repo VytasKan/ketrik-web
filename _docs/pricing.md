@@ -12,7 +12,7 @@ Generative AI is reshaping how value is defined in traditional billing.
 
 The question was never whether AI should write code — it already does, and there's no reversing that. The real issue is **AI slop**: code that runs but isn't architected, doesn't fit the business, and creates more rework than it saves.
 
-Today, expert judgment serves that exact purpose. It shifts the work away from manual execution and toward system integrity:
+Today, expert judgment shifts away from manual execution and toward system integrity:
 
 - **Architecting** the core system design
 - **Encoding** deep domain knowledge
