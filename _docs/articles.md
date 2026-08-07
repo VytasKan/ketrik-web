@@ -1,3 +1,13 @@
+2026 August | Vytas Kancleris | Ketrik Reaserch
+
+#### [Why Code Generation Alone Misses the Point](/articles/code-generation-vs-execution)
+
+Generative AI tools focus heavily on producing raw code, but execution drag happens at the workflow level. Here is why embedding expert judgment by default transforms output quality.
+
+`Architecture`
+
+---
+
 ### [Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)
 
 ##### `Architecture` | Aug 2026
