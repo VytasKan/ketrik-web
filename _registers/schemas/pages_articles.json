@@ -71,9 +71,6 @@
 										"sectionWrapper": {
 											"hasNoMargin": true,
 											"addTopMargin": false
-										},
-										"background": {
-											"layout": "fullScreen"
 										}
 									}
 								},

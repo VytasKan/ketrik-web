@@ -1,6 +1,29 @@
+## Articles & Insights
+
+_Thoughts on AI-native architecture, tech strategy, and building Ketrik._
+
+### [State Management in Agentic Systems](/pages/articles/when-the-state-machine-stopped-being-a-graph)
+
+**Architecture** · Aug 2026 · [🎧 Listen with AI](#)
+
+Traditional state machines assume deterministic human input. When autonomous agents drive real-time execution, state must handle non-deterministic output while maintaining strict security boundaries.
+
+### [The Fallacy of Line-by-Line Code Generation](/articles/2026-07-fallacy-code-gen)
+
+**Strategy** · Jul 2026 · [🎧 Listen with AI](#)
+
+Why typing code faster misses the core bottleneck of enterprise software scale, and how shifting to autonomous execution engines changes development economics.
+
+### [Bootstrapping a Platform Engine in 2026](/articles/2026-06-bootstrapping-engine)
+
+**Field Notes** · Jun 2026 · [🎧 Listen with AI](#)
+
+Practical decisions behind building Ketrik's real-time telemetry ingestion pipelines without adding unnecessary infrastructure complexity.
+
 ---
 
 ### [The Hidden Cost of Line-by-Line Code Generation](#)
+
 `Strategy` · `5 min read`
 
 Most AI code assistants accelerate typing rather than solving architectural complexity. Here is why shifting to autonomous execution engines changes the unit economics of software development.
