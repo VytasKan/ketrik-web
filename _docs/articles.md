@@ -115,3 +115,67 @@ Seat-based SaaS pricing model is breaking down. A look at how value-based execut
 
 **Date:** Nov 04, 2025 | **Topic:** Founder Notes | **Read time:** 10 min  
 Reflections on architectural trade-offs, cloud infrastructure overhead, and why technical debt is rarely the reason platforms fail.
+
+---
+
+Systems engineering, platform strategy, and autonomous execution.
+
+---
+
+## 2026
+
+[![Alex Chen](https://media.licdn.com/dms/image/avatar.jpg)](https://www.linkedin.com/in/alexchen) **Alex Chen** · Verified Aug 7, 2026
+
+### [Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)
+
+> Cold navigations should not feel faster than warm navigations. This pattern re-introduces progressive reveal as an explicit scheduling mechanism, not a side effect of module loading.
+
+`Ready to implement` · `React 19+` · `Registry Pattern`
+
+Prereq: [Async Rendering Fundamentals](/articles/async-rendering) → [Module Federation](/articles/module-federation)
+
+---
+
+[![Alex Chen](https://media.licdn.com/dms/image/avatar.jpg)](https://www.linkedin.com/in/alexchen) **Alex Chen** · Verified Aug 1, 2026
+
+### [The Hidden Cost of Line-by-Line Code Generation](/articles/code-generation-vs-execution)
+
+> Autonomous execution changes unit economics at the workflow layer, not the token layer. Code generation is a local optimum; execution engines are the global one.
+
+`Conceptual` · `Agentic Systems` · `Unit Economics`
+
+Prereq: [LLM Orchestration Basics](/articles/llm-orchestration)
+
+---
+
+[![Alex Chen](https://media.licdn.com/dms/image/avatar.jpg)](https://www.linkedin.com/in/alexchen) **Alex Chen** · Verified Jul 28, 2026
+
+### [Rethinking Software Pricing in the Age of Autonomous Agents](/articles/saas-pricing-agentic-era)
+
+> Seat-based pricing collapses when agents do the work. Value-based execution metrics realign platform incentives with client outcomes.
+
+`Deep theory` · `Business Model` · `SaaS`
+
+Prereq: [Agent Cost Benchmarks](/articles/agent-costs) → [Enterprise Procurement](/articles/enterprise-procurement)
+
+---
+
+## 2025
+
+[![Alex Chen](https://media.licdn.com/dms/image/avatar.jpg)](https://www.linkedin.com/in/alexchen) **Alex Chen** · Superseded by [2026 Platform Guide](/articles/platform-2026)
+
+### [Bootstrapping Platform Services in 2026](/articles/bootstrapping-platform)
+
+> Early governance is cheaper than late governance. The template shows where to insert policy hooks before velocity makes them politically impossible.
+
+`Ready to implement` · `Platform Engineering` · `Governance`
+
+---
+
+[![Alex Chen](https://media.licdn.com/dms/image/avatar.jpg)](https://www.linkedin.com/in/alexchen) **Alex Chen** · Verified Jul 15, 2026
+
+### [Lessons from 10 Years of Building Enterprise SaaS](/articles/decade-of-saas-lessons)
+
+> Platforms fail from misaligned incentives, not technical debt. The architecture is rarely the bottleneck.
+
+`Conceptual` · `Founder Notes`
