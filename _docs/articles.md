@@ -1,6 +1,6 @@
 2026 August | Vytas Kancleris | Ketrik Reaserch
 
-#### [Why Code Generation Alone Misses the Point](/articles/code-generation-vs-execution)
+### [Why Code Generation Alone Misses the Point](/articles/code-generation-vs-execution)
 
 Generative AI tools focus heavily on producing raw code, but execution drag happens at the workflow level. Here is why embedding expert judgment by default transforms output quality.
 
@@ -17,6 +17,72 @@ Generative AI tools focus heavily on producing raw code, but execution drag happ
 Client-side scheduling pattern for progressively revealing heavy, dynamically-resolved React components. Addresses the asymmetry between cold-load and warm-navigation rendering paths in registry-driven UI systems.
 
 ---
+
+- `Architecture` · 2026-08-07 · Ketrik Research
+
+    **[Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)**
+
+    Cold navigations should not feel faster than warm navigations. This pattern re-introduces progressive reveal as an explicit scheduling mechanism.
+
+- `Strategy` · 2026-08-01
+
+    **[The Hidden Cost of Line-by-Line Code Generation](/articles/code-generation-vs-execution)**
+
+    Why autonomous execution engines change unit economics at the workflow layer.
+
+- `Business` · 2026-07-28
+
+    **[Rethinking Software Pricing in the Age of Autonomous Agents](/articles/saas-pricing-agentic-era)**
+
+    Seat-based pricing collapses when agents do the work.
+
+---
+
+> `Architecture` · 2026-08-07
+>
+> **[Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)**
+>
+> Cold navigations should not feel faster than warm navigations. This pattern re-introduces progressive reveal as an explicit scheduling mechanism.
+
+> `Strategy` · 2026-08-01
+>
+> **[The Hidden Cost of Line-by-Line Code Generation](/articles/code-generation-vs-execution)**
+>
+> Why autonomous execution engines change unit economics at the workflow layer.
+
+---
+
+## 2026
+
+### Architecture
+
+- [Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue) · 2026-08-07
+- [Deterministic Rules in Non-Deterministic Systems](/articles/deterministic-rules) · 2026-07-15
+
+### Strategy
+
+- [The Hidden Cost of Line-by-Line Code Generation](/articles/code-generation-vs-execution) · 2026-08-01
+- [Rethinking Software Pricing](/articles/saas-pricing) · 2026-07-28
+
+### Business
+
+- [Lessons from 10 Years of Enterprise SaaS](/articles/decade-saas) · 2026-06-10
+
+---
+
+- [ ] `Architecture` · 2026-08-07
+
+    **[Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)**
+
+    Cold navigations should not feel faster than warm navigations.
+
+- [x] `Strategy` · 2026-08-01
+
+    **[The Hidden Cost of Line-by-Line Code Generation](/articles/code-generation-vs-execution)**
+
+    Why autonomous execution engines change unit economics.
+
+    ***
 
 **Jun 2026**
 
