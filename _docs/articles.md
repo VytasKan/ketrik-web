@@ -6,7 +6,7 @@ Client-side scheduling pattern for progressively revealing heavy, dynamically-re
 
 ---
 
-`Strategy` · Jun 2026
+Jun 2026 `Strategy`
 
 ### [The Hidden Cost of Line-by-Line Code Generation](/articles/code-generation-vs-execution)
 
