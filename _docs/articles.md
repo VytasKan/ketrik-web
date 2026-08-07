@@ -1,6 +1,34 @@
-## Articles & Insights
+---
 
-_Thoughts on AI-native architecture, tech strategy, and building Ketrik._
+## 2026
+
+### [Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)
+
+`Architecture`
+
+Client-side scheduling pattern for progressively revealing heavy, dynamically-resolved React components. Addresses the asymmetry between cold-load and warm-navigation rendering paths in registry-driven UI systems.
+
+### [The Hidden Cost of Line-by-Line Code Generation](/articles/code-generation-vs-execution)
+
+`Strategy`
+
+Why autonomous execution engines change the unit economics of software development more than code completion ever could.
+
+### [Rethinking Software Pricing in the Age of Autonomous Agents](/articles/saas-pricing-agentic-era)
+
+`Business`
+
+Seat-based SaaS pricing is breaking down. Value-based execution metrics align incentives between platforms and enterprise clients.
+
+---
+
+## 2025
+
+### [Lessons from 10 Years of Building Enterprise SaaS](/articles/decade-of-saas-lessons)
+
+`Founder Notes`
+
+Reflections on architectural trade-offs and why technical debt is rarely the reason platforms fail.
 
 ### [State Management in Agentic Systems](/pages/articles/when-the-state-machine-stopped-being-a-graph)
 
