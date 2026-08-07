@@ -1,4 +1,4 @@
-`Architecture` | Aug 2026
+##### `Architecture` | Aug 2026
 
 ### [Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)
 
@@ -6,7 +6,7 @@ Client-side scheduling pattern for progressively revealing heavy, dynamically-re
 
 ---
 
-Jun 2026 `Strategy`
+#### Jun 2026 `Strategy`
 
 ### [The Hidden Cost of Line-by-Line Code Generation](/articles/code-generation-vs-execution)
 
