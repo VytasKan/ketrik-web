@@ -6,11 +6,13 @@ Client-side scheduling pattern for progressively revealing heavy, dynamically-re
 
 ---
 
-#### Jun 2026 `Strategy`
+**Jun 2026**
 
 ### [The Hidden Cost of Line-by-Line Code Generation](/articles/code-generation-vs-execution)
 
-Why autonomous execution engines change the unit economics of software development more than code completion ever could.
+`Strategy` | Why autonomous execution engines change the unit economics of software development more than code completion ever could.
+
+---
 
 ### [Rethinking Software Pricing in the Age of Autonomous Agents](/articles/saas-pricing-agentic-era)
 
