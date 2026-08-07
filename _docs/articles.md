@@ -124,7 +124,7 @@ Systems engineering, platform strategy, and autonomous execution.
 
 ## 2026
 
-[![Alex Chen](https://media.licdn.com/dms/image/v2/C4E03AQG1ZZQAgG40iA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516291804190?e=1787788800&v=beta&t=v1iO06Gn-6TZjI89I7eMoxjc-qWOgCSl-5Cow8Zu7to) **Vytas Kancleris** · Verified Aug 7, 2026
+**Vytas Kancleris** · Verified Aug 7, 2026
 
 ### [Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)
 
@@ -179,3 +179,81 @@ Prereq: [Agent Cost Benchmarks](/articles/agent-costs) → [Enterprise Procureme
 > Platforms fail from misaligned incentives, not technical debt. The architecture is rarely the bottleneck.
 
 `Conceptual` · `Founder Notes`
+
+---
+
+**KR-2026-08-07**
+
+### [Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)
+
+`Architecture` · Verified Aug 7, 2026
+
+> Cold navigations should not feel faster than warm navigations. This pattern re-introduces progressive reveal as an explicit scheduling mechanism, not a side effect of module loading.
+
+---
+
+`Verified` · Aug 2026
+
+### [Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)
+
+`Architecture` · `React 19+` · `Registry Pattern`
+
+Cold navigations should not feel faster than warm navigations. This pattern re-introduces progressive reveal as an explicit scheduling mechanism, not a side effect of module loading.
+
+---
+
+> Cold navigations should not feel faster than warm navigations.
+
+### [Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)
+
+`Architecture` · Aug 2026 · Ketrik Research
+
+---
+
+**[Alex Chen](https://linkedin.com/in/alexchen)** · Ketrik Research · Aug 7, 2026
+
+### [Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)
+
+`Architecture` · `Ready to implement`
+
+Cold navigations should not feel faster than warm navigations. This pattern re-introduces progressive reveal as an explicit scheduling mechanism, not a side effect of module loading.
+
+---
+
+**Ketrik Research** · Aug 2026 · `Architecture`
+
+### [Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)
+
+Cold navigations should not feel faster than warm navigations. This pattern re-introduces progressive reveal as an explicit scheduling mechanism, not a side effect of module loading.
+
+`Implementation-ready` · `React 19+`
+
+---
+
+### [Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue) `Architecture`
+
+Aug 2026 · Cold navigations should not feel faster than warm navigations. Re-introduces progressive reveal as explicit scheduling.
+
+---
+
+#### Architecture
+
+**[Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)**
+
+Aug 2026 · Cold navigations should not feel faster than warm navigations. This pattern re-introduces progressive reveal as an explicit scheduling mechanism.
+
+---
+
+### [Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)
+
+Aug 2026 · Progressive reveal as explicit scheduling in registry-driven React systems.
+
+---
+
+`Verified` `Architecture` `Implementation` `React 19+`
+
+### [Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)
+
+**Ketrik Research** · Aug 7, 2026
+
+> Cold navigations should not feel faster than warm navigations.
