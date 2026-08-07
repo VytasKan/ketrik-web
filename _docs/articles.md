@@ -1,16 +1,14 @@
----
-
-## 2026
+`Architecture` | Aug 2026
 
 ### [Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)
 
-`Architecture`
-
 Client-side scheduling pattern for progressively revealing heavy, dynamically-resolved React components. Addresses the asymmetry between cold-load and warm-navigation rendering paths in registry-driven UI systems.
 
-### [The Hidden Cost of Line-by-Line Code Generation](/articles/code-generation-vs-execution)
+---
 
-`Strategy`
+`Strategy` · Jun 2026
+
+### [The Hidden Cost of Line-by-Line Code Generation](/articles/code-generation-vs-execution)
 
 Why autonomous execution engines change the unit economics of software development more than code completion ever could.
 
@@ -19,8 +17,6 @@ Why autonomous execution engines change the unit economics of software developme
 `Business`
 
 Seat-based SaaS pricing is breaking down. Value-based execution metrics align incentives between platforms and enterprise clients.
-
----
 
 ## 2025
 
