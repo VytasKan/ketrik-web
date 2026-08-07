@@ -24,11 +24,15 @@ Client-side scheduling pattern for progressively revealing heavy, dynamically-re
 
     Cold navigations should not feel faster than warm navigations. This pattern re-introduces progressive reveal as an explicit scheduling mechanism.
 
+    ***
+
 - `Strategy` · 2026-08-01
 
     **[The Hidden Cost of Line-by-Line Code Generation](/articles/code-generation-vs-execution)**
 
     Why autonomous execution engines change unit economics at the workflow layer.
+
+    ***
 
 - `Business` · 2026-07-28
 
@@ -36,7 +40,7 @@ Client-side scheduling pattern for progressively revealing heavy, dynamically-re
 
     Seat-based pricing collapses when agents do the work.
 
----
+    ***
 
 > `Architecture` · 2026-08-07
 >
