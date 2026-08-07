@@ -124,7 +124,7 @@ Systems engineering, platform strategy, and autonomous execution.
 
 ## 2026
 
-[![Alex Chen](https://media.licdn.com/dms/image/avatar.jpg)](https://www.linkedin.com/in/alexchen) **Alex Chen** · Verified Aug 7, 2026
+[![Alex Chen](https://media.licdn.com/dms/image/v2/C4E03AQG1ZZQAgG40iA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516291804190?e=1787788800&v=beta&t=v1iO06Gn-6TZjI89I7eMoxjc-qWOgCSl-5Cow8Zu7to) **Vytas Kancleris** · Verified Aug 7, 2026
 
 ### [Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)
 
