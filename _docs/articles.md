@@ -1,17 +1,17 @@
 `1 August 2026 ` · `Working Paper` · `Architecture`
 ![](/_assets/paper1_diagram.svg)
 
-### [The Topology is the Output: How AI Decoupled State Machines from Graphs](/pages/articles/the-topology-is-the-output]
+## [The Topology is the Output: How AI Decoupled State Machines from Graphs](/pages/articles/the-topology-is-the-output)
 
 How AI broke the rule that has stood since the 90s: _first you draw the map, then you run the system_
 
 ---
 
+`1 August 2026 ` · `Working Paper` · `Architecture`
+
 ![](/_assets/paper1_diagram.svg)
 
-> **2026-08-07** |`Architecture` | 2026-08-07
-
-### [The Topology is the Output: How AI Decoupled State Machines from Graphs](/articles/when-the-state-machine-stopped-being-a-graph)
+## [The Topology is the Output: How AI Decoupled State Machines from Graphs](/articles/when-the-state-machine-stopped-being-a-graph)
 
 How AI broke the rule that has stood since the 90s: _first you draw the map, then you run the system_
 
