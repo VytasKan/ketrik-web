@@ -85,11 +85,8 @@ Generative AI tools focus heavily on producing raw code, but execution drag happ
 ---
 
 **2026 August** | Vytas Kancleris | Ketrik Reaserch
-
-### [Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)
-
-##### `Architecture` | Aug 2026
-
+**[Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)**
+`Architecture` | Aug 2026
 Client-side scheduling pattern for progressively revealing heavy, dynamically-resolved React components. Addresses the asymmetry between cold-load and warm-navigation rendering paths in registry-driven UI systems.
 
 ---
