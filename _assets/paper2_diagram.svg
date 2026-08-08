@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <!-- Background gradient -->
+    <radialGradient id="bg-center" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0d1f1a"/>
+      <stop offset="100%" stop-color="#050a0f"/>
+    </radialGradient>
+
+    <!-- Glow effects -->
+    <radialGradient id="glow-cyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00e5c4" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#00e5c4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-purple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#b967ff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#b967ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-amber" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffb800" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ffb800" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-red" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff4757" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ff4757" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glow-strong" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Event particle gradient -->
+    <linearGradient id="event-stream" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e5c4" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00e5c4" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00e5c4" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1200" height="750" fill="url(#bg-center)"/>
+
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="800" fill="#00e5c4" letter-spacing="3" filter="url(#glow)">THE STATE MACHINE AS THE SYSTEM</text>
+  <text x="600" y="78" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#7aa" font-style="italic">Persistent topology in the age of autonomous agents</text>
+
+  <!-- CENTRAL STATE MACHINE: The glowing database cylinder -->
+  <g transform="translate(600, 380)">
+    <!-- Outer glow -->
+    <ellipse cx="0" cy="0" rx="140" ry="100" fill="url(#glow-cyan)" opacity="0.6"/>
+
+    <!-- Cylinder body -->
+    <ellipse cx="0" cy="-30" rx="100" ry="40" fill="none" stroke="#00e5c4" stroke-width="3" filter="url(#glow)"/>
+    <path d="M -100 -30 L -100 30 A 100 40 0 0 0 100 30 L 100 -30" fill="none" stroke="#00e5c4" stroke-width="2.5" opacity="0.8"/>
+    <ellipse cx="0" cy="30" rx="100" ry="40" fill="none" stroke="#00e5c4" stroke-width="2" opacity="0.5"/>
+
+    <!-- Internal state lines -->
+    <line x1="-60" y1="-10" x2="60" y2="-10" stroke="#00e5c4" stroke-width="1" opacity="0.4"/>
+    <line x1="-60" y1="5" x2="60" y2="5" stroke="#00e5c4" stroke-width="1" opacity="0.4"/>
+    <line x1="-60" y1="20" x2="60" y2="20" stroke="#00e5c4" stroke-width="1" opacity="0.4"/>
+
+    <!-- Label -->
+    <text x="0" y="-5" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#00e5c4" filter="url(#glow)">STATE MACHINE</text>
+    <text x="0" y="12" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#7aa">Event-sourced database</text>
+    <text x="0" y="55" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#5a8a80" font-weight="600">THE SHARED SUBSTRATE</text>
+  </g>
+
+  <!-- AGENTS: Orbiting nodes around the state machine -->
+
+  <!-- Agent 1: Financial Analyst (top-left) -->
+  <g transform="translate(280, 220)">
+    <circle cx="0" cy="0" r="45" fill="url(#glow-purple)" opacity="0.7"/>
+    <circle cx="0" cy="0" r="18" fill="#b967ff" filter="url(#glow-strong)"/>
+    <text x="0" y="4" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#fff">A1</text>
+    <text x="0" y="45" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#b967ff" font-weight="600">Financial Analyst</text>
+    <text x="0" y="58" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#7a6a9a">Background service</text>
+    <!-- Connection to state machine -->
+    <path d="M 30 10 Q 150 80 320 200" stroke="#b967ff" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4,3"/>
+  </g>
+
+  <!-- Agent 2: Security Monitor (top-right) -->
+  <g transform="translate(920, 220)">
+    <circle cx="0" cy="0" r="45" fill="url(#glow-purple)" opacity="0.7"/>
+    <circle cx="0" cy="0" r="18" fill="#b967ff" filter="url(#glow-strong)"/>
+    <text x="0" y="4" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#fff">A2</text>
+    <text x="0" y="45" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#b967ff" font-weight="600">Security Monitor</text>
+    <text x="0" y="58" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#7a6a9a">Background service</text>
+    <!-- Connection to state machine -->
+    <path d="M -30 10 Q -150 80 -320 200" stroke="#b967ff" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4,3"/>
+  </g>
+
+  <!-- Agent 3: Compliance Reviewer (bottom-left) -->
+  <g transform="translate(280, 540)">
+    <circle cx="0" cy="0" r="45" fill="url(#glow-purple)" opacity="0.7"/>
+    <circle cx="0" cy="0" r="18" fill="#b967ff" filter="url(#glow-strong)"/>
+    <text x="0" y="4" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#fff">A3</text>
+    <text x="0" y="45" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#b967ff" font-weight="600">Compliance Reviewer</text>
+    <text x="0" y="58" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#7a6a9a">Background service</text>
+    <!-- Connection to state machine -->
+    <path d="M 30 -10 Q 150 -80 320 -200" stroke="#b967ff" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4,3"/>
+  </g>
+
+  <!-- Agent 4: Logistics Coordinator (bottom-right) -->
+  <g transform="translate(920, 540)">
+    <circle cx="0" cy="0" r="45" fill="url(#glow-purple)" opacity="0.7"/>
+    <circle cx="0" cy="0" r="18" fill="#b967ff" filter="url(#glow-strong)"/>
+    <text x="0" y="4" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#fff">A4</text>
+    <text x="0" y="45" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#b967ff" font-weight="600">Logistics Coordinator</text>
+    <text x="0" y="58" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#7a6a9a">Background service</text>
+    <!-- Connection to state machine -->
+    <path d="M -30 -10 Q -150 -80 -320 -200" stroke="#b967ff" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4,3"/>
+  </g>
+
+  <!-- HUMAN APPROVAL GATE (right side) -->
+  <g transform="translate(1050, 380)">
+    <!-- Gate structure -->
+    <rect x="-40" y="-60" width="80" height="120" rx="8" fill="none" stroke="#ffb800" stroke-width="3" filter="url(#glow)"/>
+    <rect x="-40" y="-60" width="80" height="120" rx="8" fill="url(#glow-amber)" opacity="0.2"/>
+
+    <!-- Gate arch -->
+    <path d="M -40 -60 L -40 -20 Q 0 10 40 -20 L 40 -60" fill="none" stroke="#ffb800" stroke-width="2.5" filter="url(#glow)"/>
+
+    <!-- Human icon -->
+    <circle cx="0" cy="-35" r="12" fill="#ffb800" filter="url(#glow)"/>
+    <path d="M -15 -10 Q 0 5 15 -10" stroke="#ffb800" stroke-width="2" fill="none"/>
+
+    <!-- Status lights -->
+    <circle cx="-25" cy="20" r="5" fill="#00e5c4" filter="url(#glow)"/>
+    <circle cx="0" cy="20" r="5" fill="#ffb800" filter="url(#glow)"/>
+    <circle cx="25" cy="20" r="5" fill="#ff4757" filter="url(#glow)"/>
+
+    <!-- Label -->
+    <text x="0" y="55" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#ffb800" font-weight="700">HUMAN GATE</text>
+    <text x="0" y="70" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9a8a60">First-class state transition</text>
+
+    <!-- Connection to state machine -->
+    <path d="M -40 0 L -450 0" stroke="#ffb800" stroke-width="2" fill="none" opacity="0.6" stroke-dasharray="6,4" filter="url(#glow)"/>
+
+    <!-- Event particles flowing toward gate -->
+    <circle cx="-80" cy="0" r="3" fill="#ffb800" opacity="0.9"/>
+    <circle cx="-160" cy="0" r="3" fill="#ffb800" opacity="0.7"/>
+    <circle cx="-240" cy="0" r="3" fill="#ffb800" opacity="0.5"/>
+    <circle cx="-320" cy="0" r="3" fill="#ffb800" opacity="0.3"/>
+  </g>
+
+  <!-- EVENT STREAMS: Flowing particles -->
+
+  <!-- Stream 1: Agent 1 to State Machine -->
+  <g>
+    <circle cx="380" cy="280" r="3" fill="#00e5c4" opacity="0.9"/>
+    <circle cx="430" cy="310" r="3" fill="#00e5c4" opacity="0.7"/>
+    <circle cx="480" cy="335" r="3" fill="#00e5c4" opacity="0.5"/>
+    <circle cx="530" cy="355" r="3" fill="#00e5c4" opacity="0.3"/>
+    <!-- Arrow direction indicator -->
+    <path d="M 380 280 L 420 305" stroke="#00e5c4" stroke-width="1" opacity="0.4" marker-end="url(#arrow-cyan)"/>
+  </g>
+
+  <!-- Stream 2: State Machine to Agent 2 -->
+  <g>
+    <circle cx="700" cy="300" r="3" fill="#b967ff" opacity="0.3"/>
+    <circle cx="750" cy="280" r="3" fill="#b967ff" opacity="0.5"/>
+    <circle cx="800" cy="260" r="3" fill="#b967ff" opacity="0.7"/>
+    <circle cx="850" cy="240" r="3" fill="#b967ff" opacity="0.9"/>
+  </g>
+
+  <!-- Stream 3: Agent 3 to State Machine -->
+  <g>
+    <circle cx="380" cy="480" r="3" fill="#00e5c4" opacity="0.9"/>
+    <circle cx="430" cy="450" r="3" fill="#00e5c4" opacity="0.7"/>
+    <circle cx="480" cy="425" r="3" fill="#00e5c4" opacity="0.5"/>
+    <circle cx="530" cy="405" r="3" fill="#00e5c4" opacity="0.3"/>
+  </g>
+
+  <!-- Stream 4: State Machine to Agent 4 -->
+  <g>
+    <circle cx="700" cy="460" r="3" fill="#b967ff" opacity="0.3"/>
+    <circle cx="750" cy="480" r="3" fill="#b967ff" opacity="0.5"/>
+    <circle cx="800" cy="500" r="3" fill="#b967ff" opacity="0.7"/>
+    <circle cx="850" cy="520" r="3" fill="#b967ff" opacity="0.9"/>
+  </g>
+
+  <!-- TASK CARDS floating in the system -->
+  <g transform="translate(420, 320)">
+    <rect x="-35" y="-12" width="70" height="24" rx="4" fill="none" stroke="#00e5c4" stroke-width="1.5" opacity="0.7"/>
+    <text x="0" y="4" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#00e5c4">task: verify_revenue</text>
+  </g>
+
+  <g transform="translate(720, 420)">
+    <rect x="-40" y="-12" width="80" height="24" rx="4" fill="none" stroke="#b967ff" stroke-width="1.5" opacity="0.7"/>
+    <text x="0" y="4" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#b967ff">task: check_inventory</text>
+  </g>
+
+  <g transform="translate(620, 280)">
+    <rect x="-45" y="-12" width="90" height="24" rx="4" fill="none" stroke="#ffb800" stroke-width="1.5" opacity="0.7"/>
+    <text x="0" y="4" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#ffb800">task: awaiting_approval</text>
+  </g>
+
+  <!-- LEGEND -->
+  <g transform="translate(80, 680)">
+    <text x="0" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#ccc">LEGEND:</text>
+
+    <circle cx="80" cy="-4" r="6" fill="#00e5c4" filter="url(#glow)"/>
+    <text x="95" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#8aa">Task creation</text>
+
+    <circle cx="200" cy="-4" r="6" fill="#b967ff" filter="url(#glow)"/>
+    <text x="215" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#8aa">Task consumption</text>
+
+    <rect x="320" y="-10" width="20" height="16" rx="3" fill="none" stroke="#ffb800" stroke-width="2"/>
+    <text x="350" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#8aa">Human approval gate</text>
+
+    <line x1="480" y1="-4" x2="520" y2="-4" stroke="#b967ff" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <text x="530" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#8aa">Pull-based subscription</text>
+  </g>
+
+  <!-- Bottom quote -->
+  <text x="600" y="735" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#ccc" font-style="italic">"The graph computes itself."</text>
+</svg>
