@@ -1,3 +1,79 @@
+> `Architecture` · 2026-08-07
+>
+> **[Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)**
+>
+> Cold navigations should not feel faster than warm navigations. This pattern re-introduces progressive reveal as an explicit scheduling mechanism, not a side effect of module loading.
+>
+> — Ketrik Research
+
+> `Strategy` · 2026-08-01
+>
+> **[The Hidden Cost of Line-by-Line Code Generation](/articles/code-generation-vs-execution)**
+>
+> Why autonomous execution engines change unit economics at the workflow layer, not the token layer.
+>
+> — Ketrik Research
+
+`Architecture` · 2026-08-07
+
+**[Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)**
+
+> Cold navigations should not feel faster than warm navigations.
+
+Ketrik Research
+
+---
+
+`Strategy` · 2026-08-01
+
+**[The Hidden Cost of Line-by-Line Code Generation](/articles/code-generation-vs-execution)**
+
+> Why autonomous execution engines change unit economics at the workflow layer, not the token layer.
+
+Ketrik Research
+
+> `Architecture` · 2026-08-07
+>
+> **[Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)**
+>
+> > Cold navigations should not feel faster than warm navigations.
+>
+> Ketrik Research
+
+> `Strategy` · 2026-08-01
+>
+> **[The Hidden Cost of Line-by-Line Code Generation](/articles/code-generation-vs-execution)**
+>
+> > Why autonomous execution engines change unit economics at the workflow layer.
+>
+> Ketrik Research
+
+- > `Architecture` · 2026-08-07
+  >
+  > **[Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)**
+  >
+  > Cold navigations should not feel faster than warm navigations.
+
+- > `Strategy` · 2026-08-01
+  >
+  > **[The Hidden Cost of Line-by-Line Code Generation](/articles/code-generation-vs-execution)**
+  >
+  > Why autonomous execution engines change unit economics.
+
+- > `Business` · 2026-07-28
+  >
+  > **[Rethinking Software Pricing in the Age of Autonomous Agents](/articles/saas-pricing-agentic-era)**
+  >
+  > Seat-based pricing collapses when agents do the work.
+
+`Architecture` · 2026-08-07<br>
+**[Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)**<br>
+Cold navigations should not feel faster than warm navigations. — _Ketrik Research_
+
+`Strategy` · 2026-08-01<br>
+**[The Hidden Cost of Line-by-Line Code Generation](/articles/code-generation-vs-execution)**<br>
+Why autonomous execution engines change unit economics. — _Ketrik Research_
+
 2026 August | Vytas Kancleris | Ketrik Reaserch
 
 ### [Why Code Generation Alone Misses the Point](/articles/code-generation-vs-execution)
