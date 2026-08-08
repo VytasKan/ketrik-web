@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2100 900" width="2100" height="900">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2100 740" width="2100" height="740">
   <defs>
     <style>
       <![CDATA[
@@ -18,7 +18,6 @@
         --text-title-right: #ff9e4a;
         --text-sub-right: #b08060;
         --text-swarm-title: #ffbe6a;
-        --text-quote: #cccccc;
 
         --right-node-primary: #ff9e4a;
         --right-node-secondary: #ff7e2a;
@@ -45,7 +44,6 @@
           --text-title-right: #ea580c;
           --text-sub-right: #9a3412;
           --text-swarm-title: #c2410c;
-          --text-quote: #334155;
 
           --right-node-primary: #ea580c;
           --right-node-secondary: #c2410c;
@@ -75,7 +73,6 @@
         --text-title-right: #ea580c;
         --text-sub-right: #9a3412;
         --text-swarm-title: #c2410c;
-        --text-quote: #334155;
 
         --right-node-primary: #ea580c;
         --right-node-secondary: #c2410c;
@@ -100,7 +97,6 @@
       .text-title-right { fill: var(--text-title-right); }
       .text-sub-right { fill: var(--text-sub-right); }
       .text-swarm-title { fill: var(--text-swarm-title); }
-      .text-quote { fill: var(--text-quote); }
 
       .right-node-p { fill: var(--right-node-primary); }
       .right-node-s { fill: var(--right-node-secondary); }
@@ -147,81 +143,83 @@
     </filter>
   </defs>
 
-  <!-- Background split (21:9 ultrawide ratio -> 2100x900) -->
-  <rect x="0" y="0" width="1050" height="900" fill="url(#bg-left)"/>
-  <rect x="1050" y="0" width="1050" height="900" fill="url(#bg-right)"/>
+  <!-- Background split (21:9 ultrawide ratio cropped to 2100x740) -->
+  <rect x="0" y="0" width="1050" height="740" fill="url(#bg-left)"/>
+  <rect x="1050" y="0" width="1050" height="740" fill="url(#bg-right)"/>
 
   <!-- Divider line -->
-  <line x1="1050" y1="90" x2="1050" y2="810" class="divider" stroke-width="1" stroke-dasharray="8,8"/>
+  <line x1="1050" y1="70" x2="1050" y2="710" class="divider" stroke-width="1" stroke-dasharray="8,8"/>
 
-  <!-- LEFT SIDE: The Old World (Centered in Left Panel x: 0-1050 -> Center at x=525) -->
-  <text x="525" y="80" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="37" font-weight="700" class="text-title-left" letter-spacing="2">THE OLD WORLD</text>
-  <text x="525" y="120" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="20" class="text-sub-left">Human draws the map. System follows it.</text>
+  <!-- LEFT SIDE: Main Header -->
+  <text x="525" y="70" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="700" class="text-title-left" letter-spacing="2">THE OLD WORLD</text>
+  <text x="525" y="118" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="34" class="text-sub-left">Human draws the map. System follows it.</text>
 
-  <!-- Grid topology (Centered at x=525) -->
-  <g transform="translate(405, 170)">
-    <text x="120" y="-20" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" class="text-sub-left" font-weight="600">GRID COMPUTING</text>
+  <!-- LEFT SIDE: 3 Topologies Arranged Horizontally across Left Side (Centers: x=195, x=525, x=855) -->
+
+  <!-- 1. Grid topology (Left: x=195 -> translate x=85, y=340) -->
+  <g transform="translate(85, 340)">
+    <text x="110" y="-30" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="30" class="text-sub-left" font-weight="600">GRID COMPUTING</text>
     <!-- Grid lines -->
-    <line x1="0" y1="0" x2="240" y2="0" class="grid-line" stroke-width="1"/>
-    <line x1="0" y1="50" x2="240" y2="50" class="grid-line" stroke-width="1"/>
-    <line x1="0" y1="100" x2="240" y2="100" class="grid-line" stroke-width="1"/>
-    <line x1="0" y1="150" x2="240" y2="150" class="grid-line" stroke-width="1"/>
-    <line x1="0" y1="0" x2="0" y2="150" class="grid-line" stroke-width="1"/>
-    <line x1="60" y1="0" x2="60" y2="150" class="grid-line" stroke-width="1"/>
-    <line x1="120" y1="0" x2="120" y2="150" class="grid-line" stroke-width="1"/>
-    <line x1="180" y1="0" x2="180" y2="150" class="grid-line" stroke-width="1"/>
-    <line x1="240" y1="0" x2="240" y2="150" class="grid-line" stroke-width="1"/>
+    <line x1="0" y1="0" x2="220" y2="0" class="grid-line" stroke-width="1"/>
+    <line x1="0" y1="55" x2="220" y2="55" class="grid-line" stroke-width="1"/>
+    <line x1="0" y1="110" x2="220" y2="110" class="grid-line" stroke-width="1"/>
+    <line x1="0" y1="165" x2="220" y2="165" class="grid-line" stroke-width="1"/>
+    <line x1="0" y1="0" x2="0" y2="165" class="grid-line" stroke-width="1"/>
+    <line x1="55" y1="0" x2="55" y2="165" class="grid-line" stroke-width="1"/>
+    <line x1="110" y1="0" x2="110" y2="165" class="grid-line" stroke-width="1"/>
+    <line x1="165" y1="0" x2="165" y2="165" class="grid-line" stroke-width="1"/>
+    <line x1="220" y1="0" x2="220" y2="165" class="grid-line" stroke-width="1"/>
     <!-- Nodes -->
-    <circle cx="30" cy="25" r="7" class="grid-node" opacity="0.8"/>
-    <circle cx="90" cy="25" r="7" class="grid-node" opacity="0.8"/>
-    <circle cx="150" cy="25" r="7" class="grid-node" opacity="0.8"/>
-    <circle cx="210" cy="25" r="7" class="grid-node" opacity="0.8"/>
-    <circle cx="30" cy="75" r="7" class="grid-node" opacity="0.8"/>
-    <circle cx="90" cy="75" r="7" class="grid-node" opacity="0.8"/>
-    <circle cx="150" cy="75" r="7" class="grid-node" opacity="0.8"/>
-    <circle cx="210" cy="75" r="7" class="grid-node" opacity="0.8"/>
-    <circle cx="30" cy="125" r="7" class="grid-node" opacity="0.8"/>
-    <circle cx="90" cy="125" r="7" class="grid-node" opacity="0.8"/>
-    <circle cx="150" cy="125" r="7" class="grid-node" opacity="0.8"/>
-    <circle cx="210" cy="125" r="7" class="grid-node" opacity="0.8"/>
+    <circle cx="27.5" cy="27.5" r="7" class="grid-node" opacity="0.8"/>
+    <circle cx="82.5" cy="27.5" r="7" class="grid-node" opacity="0.8"/>
+    <circle cx="137.5" cy="27.5" r="7" class="grid-node" opacity="0.8"/>
+    <circle cx="192.5" cy="27.5" r="7" class="grid-node" opacity="0.8"/>
+    <circle cx="27.5" cy="82.5" r="7" class="grid-node" opacity="0.8"/>
+    <circle cx="82.5" cy="82.5" r="7" class="grid-node" opacity="0.8"/>
+    <circle cx="137.5" cy="82.5" r="7" class="grid-node" opacity="0.8"/>
+    <circle cx="192.5" cy="82.5" r="7" class="grid-node" opacity="0.8"/>
+    <circle cx="27.5" cy="137.5" r="7" class="grid-node" opacity="0.8"/>
+    <circle cx="82.5" cy="137.5" r="7" class="grid-node" opacity="0.8"/>
+    <circle cx="137.5" cy="137.5" r="7" class="grid-node" opacity="0.8"/>
+    <circle cx="192.5" cy="137.5" r="7" class="grid-node" opacity="0.8"/>
   </g>
 
-  <!-- Star topology (Centered at x=525) -->
-  <g transform="translate(405, 400)">
-    <text x="120" y="-20" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" class="text-sub-left" font-weight="600">MAPREDUCE</text>
-    <circle cx="120" cy="75" r="12" fill="#4a9eff" filter="url(#glow)"/>
-    <circle cx="30" cy="25" r="7" class="grid-node"/>
-    <circle cx="210" cy="25" r="7" class="grid-node"/>
-    <circle cx="30" cy="125" r="7" class="grid-node"/>
-    <circle cx="210" cy="125" r="7" class="grid-node"/>
-    <line x1="120" y1="75" x2="30" y2="25" stroke="#4a9eff" stroke-width="1.5" opacity="0.5"/>
-    <line x1="120" y1="75" x2="210" y2="25" stroke="#4a9eff" stroke-width="1.5" opacity="0.5"/>
-    <line x1="120" y1="75" x2="30" y2="125" stroke="#4a9eff" stroke-width="1.5" opacity="0.5"/>
-    <line x1="120" y1="75" x2="210" y2="125" stroke="#4a9eff" stroke-width="1.5" opacity="0.5"/>
+  <!-- 2. Star topology (Center: x=525 -> translate x=415, y=340) -->
+  <g transform="translate(415, 340)">
+    <text x="110" y="-30" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="30" class="text-sub-left" font-weight="600">MAPREDUCE</text>
+    <circle cx="110" cy="82.5" r="14" fill="#4a9eff" filter="url(#glow)"/>
+    <circle cx="27.5" cy="27.5" r="7" class="grid-node"/>
+    <circle cx="192.5" cy="27.5" r="7" class="grid-node"/>
+    <circle cx="27.5" cy="137.5" r="7" class="grid-node"/>
+    <circle cx="192.5" cy="137.5" r="7" class="grid-node"/>
+    <line x1="110" y1="82.5" x2="27.5" y2="27.5" stroke="#4a9eff" stroke-width="1.8" opacity="0.6"/>
+    <line x1="110" y1="82.5" x2="192.5" y2="27.5" stroke="#4a9eff" stroke-width="1.8" opacity="0.6"/>
+    <line x1="110" y1="82.5" x2="27.5" y2="137.5" stroke="#4a9eff" stroke-width="1.8" opacity="0.6"/>
+    <line x1="110" y1="82.5" x2="192.5" y2="137.5" stroke="#4a9eff" stroke-width="1.8" opacity="0.6"/>
   </g>
 
-  <!-- Circle/loop topology (Centered at x=525) -->
-  <g transform="translate(405, 620)">
-    <text x="120" y="-20" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" class="text-sub-left" font-weight="600">AGENT LOOP</text>
-    <ellipse cx="120" cy="75" rx="85" ry="60" fill="none" stroke="#4a9eff" stroke-width="2" opacity="0.4" stroke-dasharray="6,4"/>
-    <circle cx="120" cy="15" r="9" fill="#4a9eff" filter="url(#glow)"/>
-    <circle cx="185" cy="55" r="7" class="grid-node"/>
-    <circle cx="165" cy="120" r="7" class="grid-node"/>
-    <circle cx="75" cy="120" r="7" class="grid-node"/>
-    <circle cx="55" cy="55" r="7" class="grid-node"/>
-    <path d="M 120 24 L 178 51" stroke="#4a9eff" stroke-width="1.5" opacity="0.5"/>
-    <path d="M 178 61 L 163 112" stroke="#4a9eff" stroke-width="1.5" opacity="0.5"/>
-    <path d="M 153 120 L 87 120" stroke="#4a9eff" stroke-width="1.5" opacity="0.5"/>
-    <path d="M 67 112 L 60 63" stroke="#4a9eff" stroke-width="1.5" opacity="0.5"/>
-    <path d="M 62 47 L 108 22" stroke="#4a9eff" stroke-width="1.5" opacity="0.5"/>
+  <!-- 3. Circle/loop topology (Right of Left Panel: x=855 -> translate x=745, y=340) -->
+  <g transform="translate(745, 340)">
+    <text x="110" y="-30" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="30" class="text-sub-left" font-weight="600">AGENT LOOP</text>
+    <ellipse cx="110" cy="82.5" rx="80" ry="60" fill="none" stroke="#4a9eff" stroke-width="2" opacity="0.4" stroke-dasharray="6,4"/>
+    <circle cx="110" cy="22.5" r="9" fill="#4a9eff" filter="url(#glow)"/>
+    <circle cx="175" cy="62.5" r="7" class="grid-node"/>
+    <circle cx="155" cy="127.5" r="7" class="grid-node"/>
+    <circle cx="65" cy="127.5" r="7" class="grid-node"/>
+    <circle cx="45" cy="62.5" r="7" class="grid-node"/>
+    <path d="M 110 31.5 L 168 58.5" stroke="#4a9eff" stroke-width="1.8" opacity="0.6"/>
+    <path d="M 168 68.5 L 153 119.5" stroke="#4a9eff" stroke-width="1.8" opacity="0.6"/>
+    <path d="M 143 127.5 L 77 127.5" stroke="#4a9eff" stroke-width="1.8" opacity="0.6"/>
+    <path d="M 57 119.5 L 50 70.5" stroke="#4a9eff" stroke-width="1.8" opacity="0.6"/>
+    <path d="M 52 54.5 L 98 29.5" stroke="#4a9eff" stroke-width="1.8" opacity="0.6"/>
   </g>
 
-  <!-- RIGHT SIDE: The New World (Centered in Right Panel x: 1050-2100 -> Center at x=1575) -->
-  <text x="1575" y="80" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="37" font-weight="700" class="text-title-right" letter-spacing="2">THE NEW WORLD</text>
-  <text x="1575" y="120" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="20" class="text-sub-right">Model computes the map. Topology is the output.</text>
+  <!-- RIGHT SIDE: Main Header -->
+  <text x="1575" y="70" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="700" class="text-title-right" letter-spacing="2">THE NEW WORLD</text>
+  <text x="1575" y="118" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="34" class="text-sub-right">Model computes the map. Topology is the output.</text>
 
   <!-- Neural network / emergent topology (Centered at x=1575 -> translate x=1275) -->
-  <g transform="translate(1275, 160)">
+  <g transform="translate(1275, 150)">
     <!-- Background glow -->
     <ellipse cx="300" cy="270" rx="260" ry="230" fill="url(#glow-amber)" class="right-bg-glow"/>
 
@@ -261,18 +259,16 @@
   </g>
 
   <!-- Transition arrow (Centered at divider x=1050) -->
-  <g transform="translate(1000, 430)">
-    <path d="M 0 -35 L 100 0 L 0 35 Z" fill="url(#arrow-grad)" opacity="0.9" filter="url(#glow)"/>
-    <text x="50" y="7" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" fill="#fff">AI</text>
+  <g transform="translate(975, 410)">
+    <path d="M 0 -52.5 L 150 0 L 0 52.5 Z" fill="url(#arrow-grad)" opacity="0.9" filter="url(#glow)"/>
+    <!-- AI text shifted left inside the triangle: x=40 -->
+    <text x="40" y="14" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="45" font-weight="700" fill="#fff">AI</text>
   </g>
 
   <!-- Labels on right (Centered at x=1575) -->
-  <g transform="translate(1355, 620)">
-    <text x="220" y="0" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="700" class="text-swarm-title">KIMI AGENT SWARM</text>
-    <text x="220" y="36" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="19" class="text-sub-right">Topology computed at runtime</text>
-    <text x="220" y="66" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="19" class="text-sub-right">No blueprint. No menu. Just emergence.</text>
+  <g transform="translate(1355, 600)">
+    <text x="220" y="0" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="700" class="text-swarm-title">KIMI AGENT SWARM</text>
+    <text x="220" y="48" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="33" class="text-sub-right">Topology computed at runtime</text>
+    <text x="220" y="90" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="33" class="text-sub-right">No blueprint. No menu. Just emergence.</text>
   </g>
-
-  <!-- Bottom quote (Centered at x=1050) -->
-  <text x="1050" y="850" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="600" class="text-quote" font-style="italic">&quot;The state machine stopped being a graph.&quot;</text>
 </svg>

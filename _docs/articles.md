@@ -1,4 +1,4 @@
-`**2026-08-07** · Architecture · Working Paper`
+`1 August 2026 ` | `Working Paper` · `Architecture`
 ![](/_assets/paper1_diagram.svg)
 
 ### [The Topology is the Output: How AI Decoupled State Machines from Graphs](/pages/articles/the-topology-is-the-output

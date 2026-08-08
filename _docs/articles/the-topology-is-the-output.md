@@ -1,20 +1,16 @@
+`1 August 2026` | `WORKING PAPER`
+
 # The Topology is the Output: How AI Decoupled State Machines from Graphs
 
-_V. Kancleris, Ketrik_
+_V. Kancleris, Ketrik Lab_
 
 ## Abstract
 
 For three decades, distributed systems engineering has followed one rule: first you draw the topology, then you write the code that traverses it. The graph was the plan, and the plan was the graph. This paper traces how that rule was broken — not by better frameworks, but by a fundamental shift in where the transition function lives. We compare five generations of distributed systems — from grid computing and MapReduce through agent loops, model-selected menus, and finally learned agent swarms — and show that Kimi Agent Swarm represents a new class of system in which the state machine is decoupled from the topology. The topology is no longer designed; it is computed by the model at runtime. We explain the mechanism (Parallel-Agent Reinforcement Learning), the runtime architecture (a model-driven loop where SPAWN and FINISH are the only state-changing transitions), and the three constraints that had to fall before this became possible.
 
----
-
----
-
 > **Two ways to read this article**
 >
 > Each section below has two parts. **"The Simple Story"** explains the idea in plain language. **"The Computer Science"** adds the code, the math, and the systems-engineering details. Read whichever you need — or both.
-
----
 
 ## 1. The Rule Since the 90s
 
