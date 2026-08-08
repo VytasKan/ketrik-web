@@ -1,10 +1,54 @@
 ![](/_assets/paper1_diagram.svg)
 
-### [The Topology is the Output: How AI Decoupled State Machines from Graphs](/articles/when-the-state-machine-stopped-being-a-graph)
+### [The Topology is the Output: How AI Decoupled State Machines from Graphs](/pages//articles/when-the-state-machine-stopped-being-a-graph)
 
 How AI broke the rule that has stood since the 90s: _first you draw the map, then you run the system_
 
 `Architecture` · 2026-08-07
+
+---
+
+**2026-08-07**
+
+### [The Topology is the Output: How AI Decoupled State Machines from Graphs](/pages//articles/when-the-state-machine-stopped-being-a-graph)
+
+![](/_assets/paper1_diagram.svg)
+
+How AI broke the rule that has stood since the 90s: _first you draw the map, then you run the system_
+
+`Architecture` ·
+
+---
+
+**2026-08-07**
+
+![](/_assets/paper1_diagram.svg)
+
+### [The Topology is the Output: How AI Decoupled State Machines from Graphs](/pages//articles/when-the-state-machine-stopped-being-a-graph)
+
+How AI broke the rule that has stood since the 90s: _first you draw the map, then you run the system_
+
+`Architecture`
+
+---
+
+**2026-08-07**
+
+![](/_assets/paper1_diagram.svg)
+
+### [The Topology is the Output: How AI Decoupled State Machines from Graphs](/pages//articles/when-the-state-machine-stopped-being-a-graph)
+
+How AI broke the rule that has stood since the 90s: _first you draw the map, then you run the system_
+
+---
+
+> **2026-08-07**
+>
+> ![](/_assets/paper1_diagram.svg)
+
+> ### [The Topology is the Output: How AI Decoupled State Machines from Graphs](/pages//articles/when-the-state-machine-stopped-being-a-graph)
+>
+> How AI broke the rule that has stood since the 90s: _first you draw the map, then you run the system_
 
 ---
 
@@ -52,7 +96,7 @@ Ketrik Research
 
 > `Strategy` · 2026-08-01
 >
-> **[The Hidden Cost of Line-by-Line Code Generation](/articles/code-generation-vs-execution)**
+> **[The Hidden Cost of Line-by-Line Code Generation](/pages/articles/code-generation-vs-execution)**
 >
 > > Why autonomous execution engines change unit economics at the workflow layer.
 >
