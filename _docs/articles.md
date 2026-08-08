@@ -43,19 +43,19 @@ How AI broke the rule that has stood since the 90s: _first you draw the map, the
 ---
 
 > **2026-08-07**
->
-> ![](/_assets/paper1_diagram.svg)
 
-> ### [The Topology is the Output: How AI Decoupled State Machines from Graphs](/pages//articles/when-the-state-machine-stopped-being-a-graph)
->
-> How AI broke the rule that has stood since the 90s: _first you draw the map, then you run the system_
+![](/_assets/paper1_diagram.svg)
+
+### [The Topology is the Output: How AI Decoupled State Machines from Graphs](/pages//articles/when-the-state-machine-stopped-being-a-graph)
+
+How AI broke the rule that has stood since the 90s: _first you draw the map, then you run the system_
 
 ---
 
 > `Architecture` · 2026-08-07
->
-> **[Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)**
->
+
+**[Cooperative Sequential Rendering for Registry-Resolved Component Trees](/articles/sequential-render-queue)**
+
 > Cold navigations should not feel faster than warm navigations. This pattern re-introduces progressive reveal as an explicit scheduling mechanism, not a side effect of module loading.
 >
 > — Ketrik Research
