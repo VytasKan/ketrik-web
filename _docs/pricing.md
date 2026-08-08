@@ -6,7 +6,7 @@ Generative AI is reshaping how value is defined in traditional billing.
 
 **Fixed pricing** was designed to manage execution risk. Historically, task complexity and delivery times were highly variable — a feature might take a senior engineer one hour or a junior four. Flat quotes allowed teams to hedge that variance and assign execution to available hands.
 
-> AI destabilizes both models because raw execution is now instant. The bottleneck is no longer coding speed — **it is expert judgment.** We are no longer paying for the speed of writing code. We are paying for the judgment required to build the right system.
+AI destabilizes both models because raw execution is now instant. The bottleneck is no longer coding speed — **it is expert judgment.** We are no longer paying for the speed of writing code. We are paying for the judgment required to build the right system.
 
 ### The Rise of "AI Slop"
 
