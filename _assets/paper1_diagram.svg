@@ -17,7 +17,15 @@
         
         --text-title-right: #ff9e4a;
         --text-sub-right: #b08060;
+        --text-swarm-title: #ffbe6a;
         --text-quote: #cccccc;
+
+        --right-node-primary: #ff9e4a;
+        --right-node-secondary: #ff7e2a;
+        --right-node-highlight: #ffbe6a;
+        --right-connection-primary: #ff9e4a;
+        --right-connection-highlight: #ffbe6a;
+        --right-glow-opacity: 0.6;
       }
 
       /* MUI Light Mode and prefers-color-scheme: light */
@@ -31,12 +39,20 @@
           --text-title-left: #1e3a8a;
           --text-sub-left: #475569;
           --grid-line: #cbd5e1;
-          --grid-node: #64748b;
+          --grid-node: #475569;
           --divider-line: #cbd5e1;
           
-          --text-title-right: #c2410c;
+          --text-title-right: #ea580c;
           --text-sub-right: #9a3412;
+          --text-swarm-title: #c2410c;
           --text-quote: #334155;
+
+          --right-node-primary: #ea580c;
+          --right-node-secondary: #c2410c;
+          --right-node-highlight: #9a3412;
+          --right-connection-primary: #ea580c;
+          --right-connection-highlight: #c2410c;
+          --right-glow-opacity: 0.25;
         }
       }
 
@@ -53,12 +69,20 @@
         --text-title-left: #1e3a8a;
         --text-sub-left: #475569;
         --grid-line: #cbd5e1;
-        --grid-node: #64748b;
+        --grid-node: #475569;
         --divider-line: #cbd5e1;
         
-        --text-title-right: #c2410c;
+        --text-title-right: #ea580c;
         --text-sub-right: #9a3412;
+        --text-swarm-title: #c2410c;
         --text-quote: #334155;
+
+        --right-node-primary: #ea580c;
+        --right-node-secondary: #c2410c;
+        --right-node-highlight: #9a3412;
+        --right-connection-primary: #ea580c;
+        --right-connection-highlight: #c2410c;
+        --right-glow-opacity: 0.25;
       }
 
       /* Class helper styling */
@@ -75,7 +99,15 @@
 
       .text-title-right { fill: var(--text-title-right); }
       .text-sub-right { fill: var(--text-sub-right); }
+      .text-swarm-title { fill: var(--text-swarm-title); }
       .text-quote { fill: var(--text-quote); }
+
+      .right-node-p { fill: var(--right-node-primary); }
+      .right-node-s { fill: var(--right-node-secondary); }
+      .right-node-h { fill: var(--right-node-highlight); }
+      .right-conn-p { stroke: var(--right-connection-primary); }
+      .right-conn-h { stroke: var(--right-connection-highlight); }
+      .right-bg-glow { opacity: var(--right-glow-opacity); }
       ]]>
     </style>
 
@@ -191,41 +223,41 @@
   <!-- Neural network / emergent topology (Centered at x=1575 -> translate x=1275) -->
   <g transform="translate(1275, 160)">
     <!-- Background glow -->
-    <ellipse cx="300" cy="270" rx="260" ry="230" fill="url(#glow-amber)" opacity="0.6"/>
+    <ellipse cx="300" cy="270" rx="260" ry="230" fill="url(#glow-amber)" class="right-bg-glow"/>
 
     <!-- Organic nodes -->
-    <circle cx="160" cy="100" r="10" fill="#ff9e4a" filter="url(#glow-strong)"/>
-    <circle cx="380" cy="70" r="9" fill="#ff7e2a" filter="url(#glow)"/>
-    <circle cx="460" cy="180" r="11" fill="#ff9e4a" filter="url(#glow-strong)"/>
-    <circle cx="410" cy="310" r="9" fill="#ff7e2a" filter="url(#glow)"/>
-    <circle cx="240" cy="390" r="10" fill="#ff9e4a" filter="url(#glow-strong)"/>
-    <circle cx="110" cy="280" r="9" fill="#ff7e2a" filter="url(#glow)"/>
-    <circle cx="220" cy="200" r="13" fill="#ffbe6a" filter="url(#glow-strong)"/>
-    <circle cx="330" cy="230" r="10" fill="#ff9e4a" filter="url(#glow)"/>
-    <circle cx="300" cy="120" r="8" fill="#ff7e2a" filter="url(#glow)"/>
-    <circle cx="140" cy="180" r="9" fill="#ff9e4a" filter="url(#glow)"/>
-    <circle cx="430" cy="250" r="8" fill="#ffbe6a" filter="url(#glow)"/>
-    <circle cx="180" cy="310" r="9" fill="#ff7e2a" filter="url(#glow)"/>
+    <circle cx="160" cy="100" r="10" class="right-node-p" filter="url(#glow-strong)"/>
+    <circle cx="380" cy="70" r="9" class="right-node-s" filter="url(#glow)"/>
+    <circle cx="460" cy="180" r="11" class="right-node-p" filter="url(#glow-strong)"/>
+    <circle cx="410" cy="310" r="9" class="right-node-s" filter="url(#glow)"/>
+    <circle cx="240" cy="390" r="10" class="right-node-p" filter="url(#glow-strong)"/>
+    <circle cx="110" cy="280" r="9" class="right-node-s" filter="url(#glow)"/>
+    <circle cx="220" cy="200" r="13" class="right-node-h" filter="url(#glow-strong)"/>
+    <circle cx="330" cy="230" r="10" class="right-node-p" filter="url(#glow)"/>
+    <circle cx="300" cy="120" r="8" class="right-node-s" filter="url(#glow)"/>
+    <circle cx="140" cy="180" r="9" class="right-node-p" filter="url(#glow)"/>
+    <circle cx="430" cy="250" r="8" class="right-node-h" filter="url(#glow)"/>
+    <circle cx="180" cy="310" r="9" class="right-node-s" filter="url(#glow)"/>
 
     <!-- Organic connections -->
-    <path d="M 160 100 Q 250 70 380 70" stroke="#ff9e4a" stroke-width="1.8" fill="none" opacity="0.6" filter="url(#glow)"/>
-    <path d="M 380 70 Q 440 120 460 180" stroke="#ff9e4a" stroke-width="1.8" fill="none" opacity="0.6" filter="url(#glow)"/>
-    <path d="M 460 180 Q 450 250 410 310" stroke="#ff9e4a" stroke-width="1.8" fill="none" opacity="0.6" filter="url(#glow)"/>
-    <path d="M 410 310 Q 330 350 240 390" stroke="#ff9e4a" stroke-width="1.8" fill="none" opacity="0.6" filter="url(#glow)"/>
-    <path d="M 240 390 Q 170 340 110 280" stroke="#ff9e4a" stroke-width="1.8" fill="none" opacity="0.6" filter="url(#glow)"/>
-    <path d="M 110 280 Q 120 200 140 180" stroke="#ff9e4a" stroke-width="1.8" fill="none" opacity="0.6" filter="url(#glow)"/>
-    <path d="M 220 200 Q 180 140 160 100" stroke="#ffbe6a" stroke-width="2.2" fill="none" opacity="0.8" filter="url(#glow)"/>
-    <path d="M 220 200 Q 270 160 300 120" stroke="#ffbe6a" stroke-width="2.2" fill="none" opacity="0.8" filter="url(#glow)"/>
-    <path d="M 220 200 Q 280 210 330 230" stroke="#ffbe6a" stroke-width="2.2" fill="none" opacity="0.8" filter="url(#glow)"/>
-    <path d="M 330 230 Q 380 200 380 70" stroke="#ff9e4a" stroke-width="1.8" fill="none" opacity="0.6" filter="url(#glow)"/>
-    <path d="M 330 230 Q 380 260 430 250" stroke="#ff9e4a" stroke-width="1.8" fill="none" opacity="0.6" filter="url(#glow)"/>
-    <path d="M 140 180 Q 180 190 220 200" stroke="#ff9e4a" stroke-width="1.8" fill="none" opacity="0.6" filter="url(#glow)"/>
-    <path d="M 180 310 Q 200 250 220 200" stroke="#ff9e4a" stroke-width="1.8" fill="none" opacity="0.6" filter="url(#glow)"/>
-    <path d="M 300 120 Q 310 170 330 230" stroke="#ff9e4a" stroke-width="1.8" fill="none" opacity="0.6" filter="url(#glow)"/>
+    <path d="M 160 100 Q 250 70 380 70" class="right-conn-p" stroke-width="2.2" fill="none" opacity="0.8" filter="url(#glow)"/>
+    <path d="M 380 70 Q 440 120 460 180" class="right-conn-p" stroke-width="2.2" fill="none" opacity="0.8" filter="url(#glow)"/>
+    <path d="M 460 180 Q 450 250 410 310" class="right-conn-p" stroke-width="2.2" fill="none" opacity="0.8" filter="url(#glow)"/>
+    <path d="M 410 310 Q 330 350 240 390" class="right-conn-p" stroke-width="2.2" fill="none" opacity="0.8" filter="url(#glow)"/>
+    <path d="M 240 390 Q 170 340 110 280" class="right-conn-p" stroke-width="2.2" fill="none" opacity="0.8" filter="url(#glow)"/>
+    <path d="M 110 280 Q 120 200 140 180" class="right-conn-p" stroke-width="2.2" fill="none" opacity="0.8" filter="url(#glow)"/>
+    <path d="M 220 200 Q 180 140 160 100" class="right-conn-h" stroke-width="2.8" fill="none" opacity="0.9" filter="url(#glow)"/>
+    <path d="M 220 200 Q 270 160 300 120" class="right-conn-h" stroke-width="2.8" fill="none" opacity="0.9" filter="url(#glow)"/>
+    <path d="M 220 200 Q 280 210 330 230" class="right-conn-h" stroke-width="2.8" fill="none" opacity="0.9" filter="url(#glow)"/>
+    <path d="M 330 230 Q 380 200 380 70" class="right-conn-p" stroke-width="2.2" fill="none" opacity="0.8" filter="url(#glow)"/>
+    <path d="M 330 230 Q 380 260 430 250" class="right-conn-p" stroke-width="2.2" fill="none" opacity="0.8" filter="url(#glow)"/>
+    <path d="M 140 180 Q 180 190 220 200" class="right-conn-p" stroke-width="2.2" fill="none" opacity="0.8" filter="url(#glow)"/>
+    <path d="M 180 310 Q 200 250 220 200" class="right-conn-p" stroke-width="2.2" fill="none" opacity="0.8" filter="url(#glow)"/>
+    <path d="M 300 120 Q 310 170 330 230" class="right-conn-p" stroke-width="2.2" fill="none" opacity="0.8" filter="url(#glow)"/>
 
     <!-- Central orchestrator glow -->
-    <circle cx="270" cy="210" r="32" fill="url(#glow-amber)" opacity="0.8"/>
-    <circle cx="270" cy="210" r="10" fill="#ffbe6a" filter="url(#glow-strong)"/>
+    <circle cx="270" cy="210" r="32" fill="url(#glow-amber)" class="right-bg-glow"/>
+    <circle cx="270" cy="210" r="10" class="right-node-h" filter="url(#glow-strong)"/>
   </g>
 
   <!-- Transition arrow (Centered at divider x=1050) -->
@@ -236,7 +268,7 @@
 
   <!-- Labels on right (Centered at x=1575) -->
   <g transform="translate(1355, 620)">
-    <text x="220" y="0" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="700" fill="#ffbe6a">KIMI AGENT SWARM</text>
+    <text x="220" y="0" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="700" class="text-swarm-title">KIMI AGENT SWARM</text>
     <text x="220" y="36" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="19" class="text-sub-right">Topology computed at runtime</text>
     <text x="220" y="66" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="19" class="text-sub-right">No blueprint. No menu. Just emergence.</text>
   </g>
