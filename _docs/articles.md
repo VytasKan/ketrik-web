@@ -1,6 +1,6 @@
 ![](/_assets/paper1_diagram.svg)
 
-> **2026-08-07**
+> **2026-08-07** ·`Architecture` · 2026-08-07
 
 ### [The Topology is the Output: How AI Decoupled State Machines from Graphs](/pages//articles/when-the-state-machine-stopped-being-a-graph)
 
@@ -10,7 +10,7 @@ How AI broke the rule that has stood since the 90s: _first you draw the map, the
 
 ![](/_assets/paper1_diagram.svg)
 
-> **2026-08-07**
+> **2026-08-07** |`Architecture` | 2026-08-07
 
 ### [The Topology is the Output: How AI Decoupled State Machines from Graphs](/pages//articles/when-the-state-machine-stopped-being-a-graph)
 
