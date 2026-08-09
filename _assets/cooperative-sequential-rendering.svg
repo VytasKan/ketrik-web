@@ -280,15 +280,16 @@
 
     <text x="42" y="200" class="lane">Path A</text>
     <text x="42" y="228" class="sub">Cold load</text>
-    <text x="42" y="254" class="tiny">async imports create</text>
-    <text x="42" y="274" class="tiny">incidental stagger</text>
+    <text x="42" y="248" class="tiny">async imports</text>
+    <text x="42" y="268" class="tiny">create incidental</text>
+    <text x="42" y="288" class="tiny">stagger</text>
 
     <line x1="220" y1="245" x2="1340" y2="245" class="axis" marker-end="url(#arrow)"></line>
-    <text x="220" y="285" text-anchor="middle" class="tiny">mount</text>
+    <text x="220" y="295" text-anchor="middle" class="tiny">mount</text>
 
-    <rect x="240" y="215" width="190" height="60" rx="10" fill="var(--skeleton-bg)" stroke="var(--skeleton-border)"></rect>
-    <text x="335" y="240" text-anchor="middle" class="small" font-weight="600" fill="var(--skeleton-text)">Suspense fallback</text>
-    <text x="335" y="260" text-anchor="middle" class="tiny">skeletons</text>
+    <rect x="240" y="215" width="230" height="60" rx="10" fill="var(--skeleton-bg)" stroke="var(--skeleton-border)"></rect>
+    <text x="355" y="240" text-anchor="middle" class="small" font-weight="600" fill="var(--skeleton-text)">Suspense fallback</text>
+    <text x="355" y="260" text-anchor="middle" class="tiny">skeletons</text>
 
     <text x="850" y="172" text-anchor="middle" class="tiny">
       imports resolve at different times
@@ -332,35 +333,35 @@
     <text x="42" y="510" class="tiny">already cached</text>
 
     <line x1="220" y1="455" x2="1340" y2="455" class="axis" marker-end="url(#arrow)"></line>
-    <text x="220" y="495" text-anchor="middle" class="tiny">mount</text>
+    <text x="220" y="500" text-anchor="middle" class="tiny">mount</text>
 
-    <rect x="240" y="425" width="180" height="60" rx="10" fill="var(--cache-bg)" stroke="var(--cache-border)"></rect>
-    <text x="330" y="450" text-anchor="middle" class="small" font-weight="600" fill="var(--cache-text)">module cache hit</text>
-    <text x="330" y="468" text-anchor="middle" class="tiny">no pending promise</text>
+    <rect x="250" y="425" width="220" height="60" rx="10" fill="var(--cache-bg)" stroke="var(--cache-border)"></rect>
+    <text x="360" y="450" text-anchor="middle" class="small" font-weight="600" fill="var(--cache-text)">module cache hit</text>
+    <text x="360" y="468" text-anchor="middle" class="tiny">no pending promise</text>
 
-    <rect x="440" y="425" width="600" height="60" rx="10" fill="var(--render-bg)" stroke="var(--render-border)"></rect>
+    <rect x="490" y="425" width="600" height="60" rx="10" fill="var(--render-bg)" stroke="var(--render-border)"></rect>
 
-    <text x="740" y="410" text-anchor="middle" class="small" font-weight="600">
+    <text x="790" y="410" text-anchor="middle" class="small" font-weight="600">
       Synchronous render: N component calls + N data-shaping steps
     </text>
 
-    <rect x="445" y="430" width="142" height="50" rx="8" fill="var(--render-inner-bg)" stroke="var(--render-border)"></rect>
-    <text x="516" y="462" text-anchor="middle" class="small" font-weight="700" fill="var(--render-text)">C0</text>
+    <rect x="495" y="430" width="142" height="50" rx="8" fill="var(--render-inner-bg)" stroke="var(--render-border)"></rect>
+    <text x="566" y="462" text-anchor="middle" class="small" font-weight="700" fill="var(--render-text)">C0</text>
 
-    <rect x="592" y="430" width="142" height="50" rx="8" fill="var(--render-inner-bg)" stroke="var(--render-border)"></rect>
-    <text x="663" y="462" text-anchor="middle" class="small" font-weight="700" fill="var(--render-text)">C1</text>
+    <rect x="642" y="430" width="142" height="50" rx="8" fill="var(--render-inner-bg)" stroke="var(--render-border)"></rect>
+    <text x="713" y="462" text-anchor="middle" class="small" font-weight="700" fill="var(--render-text)">C1</text>
 
-    <rect x="739" y="430" width="142" height="50" rx="8" fill="var(--render-inner-bg)" stroke="var(--render-border)"></rect>
-    <text x="810" y="462" text-anchor="middle" class="small" font-weight="700" fill="var(--render-text)">C2</text>
+    <rect x="789" y="430" width="142" height="50" rx="8" fill="var(--render-inner-bg)" stroke="var(--render-border)"></rect>
+    <text x="860" y="462" text-anchor="middle" class="small" font-weight="700" fill="var(--render-text)">C2</text>
 
-    <rect x="886" y="430" width="142" height="50" rx="8" fill="var(--render-inner-bg)" stroke="var(--render-border)"></rect>
-    <text x="957" y="462" text-anchor="middle" class="small" font-weight="700" fill="var(--render-text)">C3</text>
+    <rect x="936" y="430" width="142" height="50" rx="8" fill="var(--render-inner-bg)" stroke="var(--render-border)"></rect>
+    <text x="1007" y="462" text-anchor="middle" class="small" font-weight="700" fill="var(--render-text)">C3</text>
 
-    <rect x="1070" y="425" width="190" height="60" rx="10" fill="var(--painted-bg)" stroke="var(--painted-border)"></rect>
-    <text x="1165" y="450" text-anchor="middle" class="small" font-weight="700" fill="var(--painted-text)">all cards</text>
-    <text x="1165" y="470" text-anchor="middle" class="small" font-weight="700" fill="var(--painted-text)">paint together</text>
+    <rect x="1120" y="425" width="190" height="60" rx="10" fill="var(--painted-bg)" stroke="var(--painted-border)"></rect>
+    <text x="1215" y="450" text-anchor="middle" class="small" font-weight="700" fill="var(--painted-text)">all cards</text>
+    <text x="1215" y="470" text-anchor="middle" class="small" font-weight="700" fill="var(--painted-text)">paint together</text>
 
-    <line x1="1050" y1="415" x2="1050" y2="495" stroke="var(--commit-line)" stroke-width="3.5"></line>
+    <line x1="1100" y1="415" x2="1100" y2="495" stroke="var(--commit-line)" stroke-width="3.5"></line>
 
     <text x="240" y="534" class="small">
       Warm navigation loses staggered reveal because nothing suspends and everything commits in one pass.
@@ -378,7 +379,7 @@
     <text x="42" y="726" class="tiny">queue order</text>
 
     <line x1="220" y1="700" x2="1340" y2="700" class="axis" marker-end="url(#arrow)"></line>
-    <text x="220" y="740" text-anchor="middle" class="tiny">mount</text>
+    <text x="220" y="745" text-anchor="middle" class="tiny">mount</text>
 
     <rect x="240" y="590" width="670" height="62" rx="10" fill="var(--queue-info-bg)" stroke="var(--queue-info-border)"></rect>
     <text x="256" y="615" class="small" font-weight="600">
@@ -388,9 +389,9 @@
       tasks are token-cancelled on unmount
     </text>
 
-    <rect x="240" y="670" width="190" height="60" rx="10" fill="var(--skeleton-bg)" stroke="var(--skeleton-border)"></rect>
-    <text x="335" y="695" text-anchor="middle" class="small" font-weight="600" fill="var(--skeleton-text)">skeletons commit</text>
-    <text x="335" y="715" text-anchor="middle" class="tiny">immediate shell</text>
+    <rect x="240" y="670" width="230" height="60" rx="10" fill="var(--skeleton-bg)" stroke="var(--skeleton-border)"></rect>
+    <text x="355" y="695" text-anchor="middle" class="small" font-weight="600" fill="var(--skeleton-text)">skeletons commit</text>
+    <text x="355" y="715" text-anchor="middle" class="tiny">immediate shell</text>
 
     <rect x="480" y="670" width="95" height="60" rx="10" fill="var(--painted-bg)" stroke="var(--painted-border)"></rect>
     <text x="527" y="706" text-anchor="middle" class="small" font-weight="700" fill="var(--painted-text)">C0</text>
