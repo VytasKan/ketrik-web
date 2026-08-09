@@ -223,12 +223,12 @@
       }
 
       .small {
-        font-size: 17px;
+        font-size: 22px;
         fill: var(--small-color);
       }
 
       .tiny {
-        font-size: 16px;
+        font-size: 20px;
         fill: var(--tiny-color);
       }
 

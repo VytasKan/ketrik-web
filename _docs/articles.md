@@ -1,8 +1,6 @@
 `10 August 2026` · `WORKING PAPER`
 ![](/_assets/paper2_diagram.svg)
 
-### [The State Machine as the System: Persistent Topology in the Age of Autonomous Agents](/pages/articles/state-machine-as-the-system)
-
 ### The State Machine as the System: Persistent Topology in the Age of Autonomous Agents
 
 This paper argues that instead of using short-lived AI swarms that discard task data after single queries, long-running agent systems require a persistent, event-sourced state machine as a durable shared coordination layer. In this architecture, continuous background agents autonomously claim tasks from the shared store, generate predictive work items, and treat human approvals as explicit state transitions. **Ketrik** provides the practical implementation of this vision through its event-driven task substrate, capability-based agent leases, and built-in human governance gates.
