@@ -2061,7 +2061,7 @@
 	"notifications": {
 		"alerts": [
 			{
-				"id": "ketrik_paper_state_machine_2026",
+				"id": "ketrik_paper_state_machine_2026_08",
 				"category": "system_operational",
 				"title": "Ketrik Architecture Whitepaper",
 				"body": "⚡ Ketrik Architecture: How Ketrik powers long-running agent swarms with an event-driven task substrate, capability leases, and human governance.",
@@ -2082,7 +2082,7 @@
 					"validFrom": "2026-08-09T00:00:00Z",
 					"displayAsSingleUntil": "2026-08-15T00:00:00Z",
 					"validUntil": "2027-08-09T23:59:59Z",
-					"isDismissible": true
+					"isDismissible": false
 				},
 				"actionLog": []
 			}
