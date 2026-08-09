@@ -1625,7 +1625,10 @@
 														"type": "string"
 													}
 												},
-												"required": ["endDate", "startDate"],
+												"required": [
+													"endDate",
+													"startDate"
+												],
 												"type": "object"
 											},
 											"uiSchema": {
@@ -1641,7 +1644,10 @@
 													},
 													"ui:placeholder": "Start Date"
 												},
-												"ui:order": ["startDate", "endDate"]
+												"ui:order": [
+													"startDate",
+													"endDate"
+												]
 											}
 										}
 									}
@@ -1657,7 +1663,11 @@
 											"schema": {
 												"title": "Firebase Auth Settings",
 												"type": "object",
-												"required": ["apiKey", "authDomain", "projectId"],
+												"required": [
+													"apiKey",
+													"authDomain",
+													"projectId"
+												],
 												"properties": {
 													"apiKey": {
 														"type": "string",
@@ -1667,7 +1677,9 @@
 													"authDomain": {
 														"type": "string",
 														"title": "Auth Domain",
-														"examples": ["your-app.firebaseapp.com"]
+														"examples": [
+															"your-app.firebaseapp.com"
+														]
 													},
 													"projectId": {
 														"type": "string",
@@ -1688,7 +1700,11 @@
 													"persistenceType": {
 														"type": "string",
 														"title": "Auth Persistence",
-														"enum": ["LOCAL", "SESSION", "NONE"],
+														"enum": [
+															"LOCAL",
+															"SESSION",
+															"NONE"
+														],
 														"default": "LOCAL"
 													},
 													"enableEmailPassword": {
@@ -2032,7 +2048,10 @@
 			"emailVerifyEnabled": true,
 			"mfaRequired": true
 		},
-		"authProviders": ["credentials", "google"],
+		"authProviders": [
+			"credentials",
+			"google"
+		],
 		"logo": "/_assets/ketrik.png",
 		"title": {
 			"main": "Ketrik ",

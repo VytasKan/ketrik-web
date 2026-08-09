@@ -20,7 +20,12 @@ function loadJsonDirOrFile(dirPath, fallbackFilePath) {
 				const filePath = path.join(dirPath, file);
 				try {
 					const content = JSON.parse(fs.readFileSync(filePath, "utf8"));
-					if (files.length === 1 && (file === "navs.json" || file === "configs.json")) {
+					if (
+						files.length === 1 &&
+						(file === "navs.json" ||
+							file === "configs.json" ||
+							file === "notifications.json")
+					) {
 						result = content;
 					} else {
 						Object.assign(result, content);
@@ -76,11 +81,17 @@ function assembleGlobals() {
 	const configsFallback = path.join(CONFIGS_DIR, "configs.json");
 	const configs = loadJsonDirOrFile(configsDir, configsFallback);
 
-	// 4. Assemble into final object
+	// 4. Read notifications from _registers/notifications (or fallback _configs/notifications.json)
+	const notificationsDir = path.join(REGISTERS_DIR, "notifications");
+	const notificationsFallback = path.join(CONFIGS_DIR, "notifications.json");
+	const notifications = loadJsonDirOrFile(notificationsDir, notificationsFallback);
+
+	// 5. Assemble into final object
 	const globalsData = {
 		schemas,
 		navs,
 		configs,
+		notifications,
 	};
 
 	// Ensure output directory exists

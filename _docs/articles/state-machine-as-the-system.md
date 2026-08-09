@@ -2,7 +2,7 @@
 
 # The State Machine as the System: Persistent Topology in the Age of Autonomous Agents
 
-From computed graphs to persistent coordination substrates — where task state is external, human approval is a first-class transition, and agents create anticipatory work
+_V. Kancleris, Ketrik Research_
 
 > **Two ways to read this article**
 >
@@ -43,7 +43,10 @@ These are not one-shot questions. They are long-running processes with human jud
 A swarm-style architecture is session-bound and synchronous:
 
 $$
-\text{Query} \rightarrow \text{Compute Graph } G_q \rightarrow \text{Execute } G_q \rightarrow \text{Answer} \rightarrow \text{Discard } G_q
+\begin{aligned}
+\text{Query} &\rightarrow \text{Compute Graph } G_q \rightarrow \text{Execute } G_q \\
+&\rightarrow \text{Answer} \rightarrow \text{Discard } G_q
+\end{aligned}
 $$
 
 The effective state machine is the orchestrator’s context window: a transient structure that exists only during the execution of the query. There is no durable state between sessions. There is no mechanism for a human to pause the graph, inspect it, and approve a state transition. There is no way for Agent A to leave a task for Agent B that Agent B will pick up hours later.
