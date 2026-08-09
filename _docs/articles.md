@@ -5,6 +5,8 @@
 
 How AI broke the rule that has stood since the 90s: _first you draw the map, then you run the system_
 
+[Read -->](/pages/articles/paper2)
+
 ---
 
 `1 August 2026` · `WORKING PAPER`
