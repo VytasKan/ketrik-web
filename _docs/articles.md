@@ -1,4 +1,13 @@
-`1 August 2026 ` · `Working Paper` · `Architecture`
+`10 August 2026` · `WORKING PAPER`
+![](/_assets/paper2_diagram.svg)
+
+### [The State Machine as the System: Persistent Topology in the Age of Autonomous Agents](/pages/articles/the-topology-is-the-output)
+
+How AI broke the rule that has stood since the 90s: _first you draw the map, then you run the system_
+
+---
+
+`1 August 2026` · `WORKING PAPER`
 ![](/_assets/paper1_diagram.svg)
 
 ### [The Topology is the Output: How AI Decoupled State Machines from Graphs](/pages/articles/the-topology-is-the-output)

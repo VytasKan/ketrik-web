@@ -1,27 +1,289 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580" width="1200" height="580">
   <defs>
+    <style>
+      <![CDATA[
+      /* Default / Dark Theme Colors */
+      :root {
+        --bg-start: #0d1f1a;
+        --bg-end: #050a0f;
+        
+        --title-fill: #00e5c4;
+        --subtitle-fill: #7aa;
+        
+        --sm-stroke: #00e5c4;
+        --sm-title-fill: #00e5c4;
+        --sm-sub-fill: #7aa;
+        --sm-substrate-fill: #5a8a80;
+        --sm-glow-opacity: 0.6;
+
+        --agent-node-fill: #b967ff;
+        --agent-node-text: #ffffff;
+        --agent-title-fill: #b967ff;
+        --agent-sub-fill: #7a6a9a;
+        --agent-conn-stroke: #b967ff;
+        --agent-glow-opacity: 0.7;
+
+        --gate-stroke: #ffb800;
+        --gate-title-fill: #ffb800;
+        --gate-sub-fill: #9a8a60;
+        --gate-conn-stroke: #ffb800;
+        --gate-particle-fill: #ffb800;
+        --gate-glow-opacity: 0.2;
+
+        --status-ok: #00e5c4;
+        --status-warn: #ffb800;
+        --status-alert: #ff4757;
+
+        --stream-cyan-fill: #00e5c4;
+        --stream-purple-fill: #b967ff;
+
+        --card-bg-cyan: rgba(13, 31, 26, 0.85);
+        --card-bg-purple: rgba(25, 15, 35, 0.85);
+        --card-bg-amber: rgba(35, 25, 10, 0.85);
+
+        --legend-header-fill: #cccccc;
+        --legend-text-fill: #88aaaa;
+        --quote-fill: #cccccc;
+
+        --glow-cyan-color: #00e5c4;
+        --glow-purple-color: #b967ff;
+        --glow-amber-color: #ffb800;
+        --glow-red-color: #ff4757;
+      }
+
+      /* MUI Light Mode and prefers-color-scheme: light */
+      @media (prefers-color-scheme: light) {
+        :root {
+          --bg-start: #f0fdfa;
+          --bg-end: #e2e8f0;
+          
+          --title-fill: #0f766e;
+          --subtitle-fill: #475569;
+          
+          --sm-stroke: #0d9488;
+          --sm-title-fill: #0f766e;
+          --sm-sub-fill: #475569;
+          --sm-substrate-fill: #334155;
+          --sm-glow-opacity: 0.25;
+
+          --agent-node-fill: #7c3aed;
+          --agent-node-text: #ffffff;
+          --agent-title-fill: #6d28d9;
+          --agent-sub-fill: #475569;
+          --agent-conn-stroke: #8b5cf6;
+          --agent-glow-opacity: 0.25;
+
+          --gate-stroke: #d97706;
+          --gate-title-fill: #b45309;
+          --gate-sub-fill: #78350f;
+          --gate-conn-stroke: #d97706;
+          --gate-particle-fill: #d97706;
+          --gate-glow-opacity: 0.15;
+
+          --status-ok: #0d9488;
+          --status-warn: #d97706;
+          --status-alert: #dc2626;
+
+          --stream-cyan-fill: #0d9488;
+          --stream-purple-fill: #7c3aed;
+
+          --card-bg-cyan: rgba(255, 255, 255, 0.95);
+          --card-bg-purple: rgba(255, 255, 255, 0.95);
+          --card-bg-amber: rgba(255, 255, 255, 0.95);
+
+          --legend-header-fill: #1e293b;
+          --legend-text-fill: #475569;
+          --quote-fill: #334155;
+
+          --glow-cyan-color: #0d9488;
+          --glow-purple-color: #7c3aed;
+          --glow-amber-color: #d97706;
+          --glow-red-color: #dc2626;
+        }
+      }
+
+      /* Explicit MUI Light Mode Selectors */
+      [data-mui-color-scheme="light"] svg,
+      .mui-mode-light svg,
+      html[data-theme="light"] svg,
+      body.light-mode svg,
+      svg.light-theme {
+        --bg-start: #f0fdfa;
+        --bg-end: #e2e8f0;
+        
+        --title-fill: #0f766e;
+        --subtitle-fill: #475569;
+        
+        --sm-stroke: #0d9488;
+        --sm-title-fill: #0f766e;
+        --sm-sub-fill: #475569;
+        --sm-substrate-fill: #334155;
+        --sm-glow-opacity: 0.25;
+
+        --agent-node-fill: #7c3aed;
+        --agent-node-text: #ffffff;
+        --agent-title-fill: #6d28d9;
+        --agent-sub-fill: #475569;
+        --agent-conn-stroke: #8b5cf6;
+        --agent-glow-opacity: 0.25;
+
+        --gate-stroke: #d97706;
+        --gate-title-fill: #b45309;
+        --gate-sub-fill: #78350f;
+        --gate-conn-stroke: #d97706;
+        --gate-particle-fill: #d97706;
+        --gate-glow-opacity: 0.15;
+
+        --status-ok: #0d9488;
+        --status-warn: #d97706;
+        --status-alert: #dc2626;
+
+        --stream-cyan-fill: #0d9488;
+        --stream-purple-fill: #7c3aed;
+
+        --card-bg-cyan: rgba(255, 255, 255, 0.95);
+        --card-bg-purple: rgba(255, 255, 255, 0.95);
+        --card-bg-amber: rgba(255, 255, 255, 0.95);
+
+        --legend-header-fill: #1e293b;
+        --legend-text-fill: #475569;
+        --quote-fill: #334155;
+
+        --glow-cyan-color: #0d9488;
+        --glow-purple-color: #7c3aed;
+        --glow-amber-color: #d97706;
+        --glow-red-color: #dc2626;
+      }
+
+      /* Explicit MUI Dark Mode Selectors */
+      [data-mui-color-scheme="dark"] svg,
+      .mui-mode-dark svg,
+      html[data-theme="dark"] svg,
+      body.dark-mode svg,
+      svg.dark-theme {
+        --bg-start: #0d1f1a;
+        --bg-end: #050a0f;
+        
+        --title-fill: #00e5c4;
+        --subtitle-fill: #7aa;
+        
+        --sm-stroke: #00e5c4;
+        --sm-title-fill: #00e5c4;
+        --sm-sub-fill: #7aa;
+        --sm-substrate-fill: #5a8a80;
+        --sm-glow-opacity: 0.6;
+
+        --agent-node-fill: #b967ff;
+        --agent-node-text: #ffffff;
+        --agent-title-fill: #b967ff;
+        --agent-sub-fill: #7a6a9a;
+        --agent-conn-stroke: #b967ff;
+        --agent-glow-opacity: 0.7;
+
+        --gate-stroke: #ffb800;
+        --gate-title-fill: #ffb800;
+        --gate-sub-fill: #9a8a60;
+        --gate-conn-stroke: #ffb800;
+        --gate-particle-fill: #ffb800;
+        --gate-glow-opacity: 0.2;
+
+        --status-ok: #00e5c4;
+        --status-warn: #ffb800;
+        --status-alert: #ff4757;
+
+        --stream-cyan-fill: #00e5c4;
+        --stream-purple-fill: #b967ff;
+
+        --card-bg-cyan: rgba(13, 31, 26, 0.85);
+        --card-bg-purple: rgba(25, 15, 35, 0.85);
+        --card-bg-amber: rgba(35, 25, 10, 0.85);
+
+        --legend-header-fill: #cccccc;
+        --legend-text-fill: #88aaaa;
+        --quote-fill: #cccccc;
+
+        --glow-cyan-color: #00e5c4;
+        --glow-purple-color: #b967ff;
+        --glow-amber-color: #ffb800;
+        --glow-red-color: #ff4757;
+      }
+
+      /* Helper classes */
+      .bg-stop-0 { stop-color: var(--bg-start); }
+      .bg-stop-100 { stop-color: var(--bg-end); }
+
+      .glow-cyan-stop { stop-color: var(--glow-cyan-color); }
+      .glow-purple-stop { stop-color: var(--glow-purple-color); }
+      .glow-amber-stop { stop-color: var(--glow-amber-color); }
+      .glow-red-stop { stop-color: var(--glow-red-color); }
+
+      .title-text { fill: var(--title-fill); }
+      .subtitle-text { fill: var(--subtitle-fill); }
+
+      .sm-glow { fill: url(#glow-cyan); opacity: var(--sm-glow-opacity); }
+      .sm-stroke { stroke: var(--sm-stroke); }
+      .sm-title { fill: var(--sm-title-fill); }
+      .sm-sub { fill: var(--sm-sub-fill); }
+      .sm-substrate { fill: var(--sm-substrate-fill); }
+
+      .agent-glow { fill: url(#glow-purple); opacity: var(--agent-glow-opacity); }
+      .agent-node { fill: var(--agent-node-fill); }
+      .agent-text { fill: var(--agent-node-text); }
+      .agent-title { fill: var(--agent-title-fill); }
+      .agent-sub { fill: var(--agent-sub-fill); }
+      .agent-conn { stroke: var(--agent-conn-stroke); }
+
+      .gate-stroke { stroke: var(--gate-stroke); }
+      .gate-glow { fill: url(#glow-amber); opacity: var(--gate-glow-opacity); }
+      .gate-icon-fill { fill: var(--gate-stroke); }
+      .gate-title { fill: var(--gate-title-fill); }
+      .gate-sub { fill: var(--gate-sub-fill); }
+      .gate-conn { stroke: var(--gate-conn-stroke); }
+      .gate-particle { fill: var(--gate-particle-fill); }
+
+      .status-ok { fill: var(--status-ok); }
+      .status-warn { fill: var(--status-warn); }
+      .status-alert { fill: var(--status-alert); }
+
+      .stream-cyan { fill: var(--stream-cyan-fill); stroke: var(--stream-cyan-fill); }
+      .stream-purple { fill: var(--stream-purple-fill); stroke: var(--stream-purple-fill); }
+
+      .card-cyan-bg { fill: var(--card-bg-cyan); stroke: var(--stream-cyan-fill); }
+      .card-purple-bg { fill: var(--card-bg-purple); stroke: var(--stream-purple-fill); }
+      .card-amber-bg { fill: var(--card-bg-amber); stroke: var(--gate-stroke); }
+
+      .card-cyan-text { fill: var(--sm-title-fill); }
+      .card-purple-text { fill: var(--agent-title-fill); }
+      .card-amber-text { fill: var(--gate-title-fill); }
+
+      .legend-header { fill: var(--legend-header-fill); }
+      .legend-text { fill: var(--legend-text-fill); }
+      .quote-text { fill: var(--quote-fill); }
+      ]]>
+    </style>
+
     <!-- Background gradient -->
     <radialGradient id="bg-center" cx="50%" cy="50%" r="70%">
-      <stop offset="0%" stop-color="#0d1f1a"/>
-      <stop offset="100%" stop-color="#050a0f"/>
+      <stop offset="0%" class="bg-stop-0"/>
+      <stop offset="100%" class="bg-stop-100"/>
     </radialGradient>
 
     <!-- Glow effects -->
     <radialGradient id="glow-cyan" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#00e5c4" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#00e5c4" stop-opacity="0"/>
+      <stop offset="0%" class="glow-cyan-stop" stop-opacity="0.5"/>
+      <stop offset="100%" class="glow-cyan-stop" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="glow-purple" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#b967ff" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#b967ff" stop-opacity="0"/>
+      <stop offset="0%" class="glow-purple-stop" stop-opacity="0.4"/>
+      <stop offset="100%" class="glow-purple-stop" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="glow-amber" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ffb800" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#ffb800" stop-opacity="0"/>
+      <stop offset="0%" class="glow-amber-stop" stop-opacity="0.4"/>
+      <stop offset="100%" class="glow-amber-stop" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="glow-red" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ff4757" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#ff4757" stop-opacity="0"/>
+      <stop offset="0%" class="glow-red-stop" stop-opacity="0.4"/>
+      <stop offset="100%" class="glow-red-stop" stop-opacity="0"/>
     </radialGradient>
 
     <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
@@ -41,187 +303,184 @@
 
     <!-- Event particle gradient -->
     <linearGradient id="event-stream" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00e5c4" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#00e5c4" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#00e5c4" stop-opacity="0"/>
+      <stop offset="0%" class="glow-cyan-stop" stop-opacity="0"/>
+      <stop offset="50%" class="glow-cyan-stop" stop-opacity="0.8"/>
+      <stop offset="100%" class="glow-cyan-stop" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
   <!-- Background -->
-  <rect x="0" y="0" width="1200" height="750" fill="url(#bg-center)"/>
+  <rect x="0" y="0" width="1200" height="580" fill="url(#bg-center)"/>
 
   <!-- Title -->
-  <text x="600" y="50" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="800" fill="#00e5c4" letter-spacing="3" filter="url(#glow)">THE STATE MACHINE AS THE SYSTEM</text>
-  <text x="600" y="78" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#7aa" font-style="italic">Persistent topology in the age of autonomous agents</text>
+  <text x="600" y="55" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="42" font-weight="800" class="title-text" letter-spacing="3">KETRIK: THE STATE MACHINE AS THE SYSTEM</text>
+  <text x="600" y="92" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="21" class="subtitle-text" font-style="italic">Persistent topology in the age of autonomous agents</text>
 
   <!-- CENTRAL STATE MACHINE: The glowing database cylinder -->
-  <g transform="translate(600, 380)">
+  <g transform="translate(600, 300)">
     <!-- Outer glow -->
-    <ellipse cx="0" cy="0" rx="140" ry="100" fill="url(#glow-cyan)" opacity="0.6"/>
+    <ellipse cx="0" cy="0" rx="140" ry="100" class="sm-glow"/>
 
     <!-- Cylinder body -->
-    <ellipse cx="0" cy="-30" rx="100" ry="40" fill="none" stroke="#00e5c4" stroke-width="3" filter="url(#glow)"/>
-    <path d="M -100 -30 L -100 30 A 100 40 0 0 0 100 30 L 100 -30" fill="none" stroke="#00e5c4" stroke-width="2.5" opacity="0.8"/>
-    <ellipse cx="0" cy="30" rx="100" ry="40" fill="none" stroke="#00e5c4" stroke-width="2" opacity="0.5"/>
+    <ellipse cx="0" cy="-30" rx="100" ry="40" fill="none" class="sm-stroke" stroke-width="3"/>
+    <path d="M -100 -30 L -100 30 A 100 40 0 0 0 100 30 L 100 -30" fill="none" class="sm-stroke" stroke-width="2.5" opacity="0.8"/>
+    <ellipse cx="0" cy="30" rx="100" ry="40" fill="none" class="sm-stroke" stroke-width="2" opacity="0.5"/>
 
     <!-- Internal state lines -->
-    <line x1="-60" y1="-10" x2="60" y2="-10" stroke="#00e5c4" stroke-width="1" opacity="0.4"/>
-    <line x1="-60" y1="5" x2="60" y2="5" stroke="#00e5c4" stroke-width="1" opacity="0.4"/>
-    <line x1="-60" y1="20" x2="60" y2="20" stroke="#00e5c4" stroke-width="1" opacity="0.4"/>
+    <line x1="-60" y1="-10" x2="60" y2="-10" class="sm-stroke" stroke-width="1" opacity="0.4"/>
+    <line x1="-60" y1="5" x2="60" y2="5" class="sm-stroke" stroke-width="1" opacity="0.4"/>
+    <line x1="-60" y1="20" x2="60" y2="20" class="sm-stroke" stroke-width="1" opacity="0.4"/>
 
     <!-- Label -->
-    <text x="0" y="-5" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#00e5c4" filter="url(#glow)">STATE MACHINE</text>
-    <text x="0" y="12" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#7aa">Event-sourced database</text>
-    <text x="0" y="55" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#5a8a80" font-weight="600">THE SHARED SUBSTRATE</text>
+    <text x="0" y="-35" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="21" font-weight="700" class="sm-title">STATE MACHINE</text>
+    <text x="0" y="-14" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" class="sm-sub">Event-sourced database</text>
+    <text x="0" y="35" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" class="sm-substrate" font-weight="600">THE SHARED SUBSTRATE</text>
   </g>
 
   <!-- AGENTS: Orbiting nodes around the state machine -->
 
   <!-- Agent 1: Financial Analyst (top-left) -->
-  <g transform="translate(280, 220)">
-    <circle cx="0" cy="0" r="45" fill="url(#glow-purple)" opacity="0.7"/>
-    <circle cx="0" cy="0" r="18" fill="#b967ff" filter="url(#glow-strong)"/>
-    <text x="0" y="4" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#fff">A1</text>
-    <text x="0" y="45" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#b967ff" font-weight="600">Financial Analyst</text>
-    <text x="0" y="58" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#7a6a9a">Background service</text>
+  <g transform="translate(280, 140)">
+    <circle cx="0" cy="0" r="45" class="agent-glow"/>
+    <circle cx="0" cy="0" r="20" class="agent-node" filter="url(#glow-strong)"/>
+    <text x="0" y="5" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700" class="agent-text">A1</text>
+    <text x="0" y="48" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" class="agent-title" font-weight="600">Financial Analyst</text>
+    <text x="0" y="66" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" class="agent-sub">Background service</text>
     <!-- Connection to state machine -->
-    <path d="M 30 10 Q 150 80 320 200" stroke="#b967ff" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4,3"/>
+    <path d="M 30 10 Q 150 80 320 200" class="agent-conn" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4,3"/>
   </g>
 
   <!-- Agent 2: Security Monitor (top-right) -->
-  <g transform="translate(920, 220)">
-    <circle cx="0" cy="0" r="45" fill="url(#glow-purple)" opacity="0.7"/>
-    <circle cx="0" cy="0" r="18" fill="#b967ff" filter="url(#glow-strong)"/>
-    <text x="0" y="4" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#fff">A2</text>
-    <text x="0" y="45" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#b967ff" font-weight="600">Security Monitor</text>
-    <text x="0" y="58" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#7a6a9a">Background service</text>
+  <g transform="translate(920, 140)">
+    <circle cx="0" cy="0" r="45" class="agent-glow"/>
+    <circle cx="0" cy="0" r="20" class="agent-node" filter="url(#glow-strong)"/>
+    <text x="0" y="5" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700" class="agent-text">A2</text>
+    <text x="0" y="48" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" class="agent-title" font-weight="600">Security Monitor</text>
+    <text x="0" y="66" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" class="agent-sub">Background service</text>
     <!-- Connection to state machine -->
-    <path d="M -30 10 Q -150 80 -320 200" stroke="#b967ff" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4,3"/>
+    <path d="M -30 10 Q -150 80 -320 200" class="agent-conn" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4,3"/>
   </g>
 
   <!-- Agent 3: Compliance Reviewer (bottom-left) -->
-  <g transform="translate(280, 540)">
-    <circle cx="0" cy="0" r="45" fill="url(#glow-purple)" opacity="0.7"/>
-    <circle cx="0" cy="0" r="18" fill="#b967ff" filter="url(#glow-strong)"/>
-    <text x="0" y="4" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#fff">A3</text>
-    <text x="0" y="45" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#b967ff" font-weight="600">Compliance Reviewer</text>
-    <text x="0" y="58" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#7a6a9a">Background service</text>
+  <g transform="translate(280, 460)">
+    <circle cx="0" cy="0" r="45" class="agent-glow"/>
+    <circle cx="0" cy="0" r="20" class="agent-node" filter="url(#glow-strong)"/>
+    <text x="0" y="5" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700" class="agent-text">A3</text>
+    <text x="0" y="48" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" class="agent-title" font-weight="600">Compliance Reviewer</text>
+    <text x="0" y="66" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" class="agent-sub">Background service</text>
     <!-- Connection to state machine -->
-    <path d="M 30 -10 Q 150 -80 320 -200" stroke="#b967ff" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4,3"/>
+    <path d="M 30 -10 Q 150 -80 320 -200" class="agent-conn" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4,3"/>
   </g>
 
   <!-- Agent 4: Logistics Coordinator (bottom-right) -->
-  <g transform="translate(920, 540)">
-    <circle cx="0" cy="0" r="45" fill="url(#glow-purple)" opacity="0.7"/>
-    <circle cx="0" cy="0" r="18" fill="#b967ff" filter="url(#glow-strong)"/>
-    <text x="0" y="4" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" fill="#fff">A4</text>
-    <text x="0" y="45" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#b967ff" font-weight="600">Logistics Coordinator</text>
-    <text x="0" y="58" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#7a6a9a">Background service</text>
+  <g transform="translate(920, 460)">
+    <circle cx="0" cy="0" r="45" class="agent-glow"/>
+    <circle cx="0" cy="0" r="20" class="agent-node" filter="url(#glow-strong)"/>
+    <text x="0" y="5" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700" class="agent-text">A4</text>
+    <text x="0" y="48" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" class="agent-title" font-weight="600">Logistics Coordinator</text>
+    <text x="0" y="66" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" class="agent-sub">Background service</text>
     <!-- Connection to state machine -->
-    <path d="M -30 -10 Q -150 -80 -320 -200" stroke="#b967ff" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4,3"/>
+    <path d="M -30 -10 Q -150 -80 -320 -200" class="agent-conn" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4,3"/>
   </g>
 
   <!-- HUMAN APPROVAL GATE (right side) -->
-  <g transform="translate(1050, 380)">
+  <g transform="translate(1050, 300)">
     <!-- Gate structure -->
-    <rect x="-40" y="-60" width="80" height="120" rx="8" fill="none" stroke="#ffb800" stroke-width="3" filter="url(#glow)"/>
-    <rect x="-40" y="-60" width="80" height="120" rx="8" fill="url(#glow-amber)" opacity="0.2"/>
+    <rect x="-40" y="-60" width="80" height="120" rx="8" fill="none" class="gate-stroke" stroke-width="3"/>
+    <rect x="-40" y="-60" width="80" height="120" rx="8" class="gate-glow"/>
 
     <!-- Gate arch -->
-    <path d="M -40 -60 L -40 -20 Q 0 10 40 -20 L 40 -60" fill="none" stroke="#ffb800" stroke-width="2.5" filter="url(#glow)"/>
+    <path d="M -40 -60 L -40 -20 Q 0 10 40 -20 L 40 -60" fill="none" class="gate-stroke" stroke-width="2.5"/>
 
     <!-- Human icon -->
-    <circle cx="0" cy="-35" r="12" fill="#ffb800" filter="url(#glow)"/>
-    <path d="M -15 -10 Q 0 5 15 -10" stroke="#ffb800" stroke-width="2" fill="none"/>
+    <circle cx="0" cy="-35" r="12" class="gate-icon-fill"/>
+    <path d="M -15 -10 Q 0 5 15 -10" class="gate-stroke" stroke-width="2" fill="none"/>
 
     <!-- Status lights -->
-    <circle cx="-25" cy="20" r="5" fill="#00e5c4" filter="url(#glow)"/>
-    <circle cx="0" cy="20" r="5" fill="#ffb800" filter="url(#glow)"/>
-    <circle cx="25" cy="20" r="5" fill="#ff4757" filter="url(#glow)"/>
+    <circle cx="-25" cy="20" r="5" class="status-ok"/>
+    <circle cx="0" cy="20" r="5" class="status-warn"/>
+    <circle cx="25" cy="20" r="5" class="status-alert"/>
 
     <!-- Label -->
-    <text x="0" y="55" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#ffb800" font-weight="700">HUMAN GATE</text>
-    <text x="0" y="70" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#9a8a60">First-class state transition</text>
+    <text x="0" y="80" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16.5" class="gate-title" font-weight="700">HUMAN GATE</text>
+    <text x="0" y="98" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" class="gate-sub">First-class state transition</text>
 
     <!-- Connection to state machine -->
-    <path d="M -40 0 L -450 0" stroke="#ffb800" stroke-width="2" fill="none" opacity="0.6" stroke-dasharray="6,4" filter="url(#glow)"/>
+    <path d="M -40 0 L -450 0" class="gate-conn" stroke-width="2" fill="none" opacity="0.6" stroke-dasharray="6,4"/>
 
     <!-- Event particles flowing toward gate -->
-    <circle cx="-80" cy="0" r="3" fill="#ffb800" opacity="0.9"/>
-    <circle cx="-160" cy="0" r="3" fill="#ffb800" opacity="0.7"/>
-    <circle cx="-240" cy="0" r="3" fill="#ffb800" opacity="0.5"/>
-    <circle cx="-320" cy="0" r="3" fill="#ffb800" opacity="0.3"/>
+    <circle cx="-80" cy="0" r="3" class="gate-particle" opacity="0.9"/>
+    <circle cx="-160" cy="0" r="3" class="gate-particle" opacity="0.7"/>
+    <circle cx="-240" cy="0" r="3" class="gate-particle" opacity="0.5"/>
+    <circle cx="-320" cy="0" r="3" class="gate-particle" opacity="0.3"/>
   </g>
 
   <!-- EVENT STREAMS: Flowing particles -->
 
   <!-- Stream 1: Agent 1 to State Machine -->
   <g>
-    <circle cx="380" cy="280" r="3" fill="#00e5c4" opacity="0.9"/>
-    <circle cx="430" cy="310" r="3" fill="#00e5c4" opacity="0.7"/>
-    <circle cx="480" cy="335" r="3" fill="#00e5c4" opacity="0.5"/>
-    <circle cx="530" cy="355" r="3" fill="#00e5c4" opacity="0.3"/>
+    <circle cx="380" cy="200" r="3" class="stream-cyan" opacity="0.9"/>
+    <circle cx="430" cy="230" r="3" class="stream-cyan" opacity="0.7"/>
+    <circle cx="480" cy="255" r="3" class="stream-cyan" opacity="0.5"/>
+    <circle cx="530" cy="275" r="3" class="stream-cyan" opacity="0.3"/>
     <!-- Arrow direction indicator -->
-    <path d="M 380 280 L 420 305" stroke="#00e5c4" stroke-width="1" opacity="0.4" marker-end="url(#arrow-cyan)"/>
+    <path d="M 380 200 L 420 225" class="stream-cyan" stroke-width="1" opacity="0.4"/>
   </g>
 
   <!-- Stream 2: State Machine to Agent 2 -->
   <g>
-    <circle cx="700" cy="300" r="3" fill="#b967ff" opacity="0.3"/>
-    <circle cx="750" cy="280" r="3" fill="#b967ff" opacity="0.5"/>
-    <circle cx="800" cy="260" r="3" fill="#b967ff" opacity="0.7"/>
-    <circle cx="850" cy="240" r="3" fill="#b967ff" opacity="0.9"/>
+    <circle cx="700" cy="220" r="3" class="stream-purple" opacity="0.3"/>
+    <circle cx="750" cy="200" r="3" class="stream-purple" opacity="0.5"/>
+    <circle cx="800" cy="180" r="3" class="stream-purple" opacity="0.7"/>
+    <circle cx="850" cy="160" r="3" class="stream-purple" opacity="0.9"/>
   </g>
 
   <!-- Stream 3: Agent 3 to State Machine -->
   <g>
-    <circle cx="380" cy="480" r="3" fill="#00e5c4" opacity="0.9"/>
-    <circle cx="430" cy="450" r="3" fill="#00e5c4" opacity="0.7"/>
-    <circle cx="480" cy="425" r="3" fill="#00e5c4" opacity="0.5"/>
-    <circle cx="530" cy="405" r="3" fill="#00e5c4" opacity="0.3"/>
+    <circle cx="380" cy="400" r="3" class="stream-cyan" opacity="0.9"/>
+    <circle cx="430" cy="370" r="3" class="stream-cyan" opacity="0.7"/>
+    <circle cx="480" cy="345" r="3" class="stream-cyan" opacity="0.5"/>
+    <circle cx="530" cy="325" r="3" class="stream-cyan" opacity="0.3"/>
   </g>
 
   <!-- Stream 4: State Machine to Agent 4 -->
   <g>
-    <circle cx="700" cy="460" r="3" fill="#b967ff" opacity="0.3"/>
-    <circle cx="750" cy="480" r="3" fill="#b967ff" opacity="0.5"/>
-    <circle cx="800" cy="500" r="3" fill="#b967ff" opacity="0.7"/>
-    <circle cx="850" cy="520" r="3" fill="#b967ff" opacity="0.9"/>
+    <circle cx="700" cy="380" r="3" class="stream-purple" opacity="0.3"/>
+    <circle cx="750" cy="400" r="3" class="stream-purple" opacity="0.5"/>
+    <circle cx="800" cy="420" r="3" class="stream-purple" opacity="0.7"/>
+    <circle cx="850" cy="440" r="3" class="stream-purple" opacity="0.9"/>
   </g>
 
   <!-- TASK CARDS floating in the system -->
-  <g transform="translate(420, 320)">
-    <rect x="-35" y="-12" width="70" height="24" rx="4" fill="none" stroke="#00e5c4" stroke-width="1.5" opacity="0.7"/>
-    <text x="0" y="4" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#00e5c4">task: verify_revenue</text>
+  <g transform="translate(420, 240)">
+    <rect x="-75" y="-16" width="150" height="30" rx="5" class="card-cyan-bg" stroke-width="1.5"/>
+    <text x="0" y="3" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" class="card-cyan-text">task: verify_revenue</text>
   </g>
 
-  <g transform="translate(720, 420)">
-    <rect x="-40" y="-12" width="80" height="24" rx="4" fill="none" stroke="#b967ff" stroke-width="1.5" opacity="0.7"/>
-    <text x="0" y="4" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#b967ff">task: check_inventory</text>
+  <g transform="translate(720, 410)">
+    <rect x="-80" y="-16" width="160" height="30" rx="5" class="card-purple-bg" stroke-width="1.5"/>
+    <text x="0" y="3" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" class="card-purple-text">task: check_inventory</text>
   </g>
 
-  <g transform="translate(620, 280)">
-    <rect x="-45" y="-12" width="90" height="24" rx="4" fill="none" stroke="#ffb800" stroke-width="1.5" opacity="0.7"/>
-    <text x="0" y="4" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#ffb800">task: awaiting_approval</text>
+  <g transform="translate(720, 200)">
+    <rect x="-85" y="-16" width="170" height="30" rx="5" class="card-amber-bg" stroke-width="1.5"/>
+    <text x="0" y="3" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" class="card-amber-text">task: awaiting_approval</text>
   </g>
 
   <!-- LEGEND -->
-  <g transform="translate(80, 680)">
-    <text x="0" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#ccc">LEGEND:</text>
+  <g transform="translate(50, 555)">
+    <text x="0" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" class="legend-header">LEGEND:</text>
 
-    <circle cx="80" cy="-4" r="6" fill="#00e5c4" filter="url(#glow)"/>
-    <text x="95" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#8aa">Task creation</text>
+    <circle cx="110" cy="-6" r="7" class="status-ok" filter="url(#glow)"/>
+    <text x="125" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="15" class="legend-text">Task creation</text>
 
-    <circle cx="200" cy="-4" r="6" fill="#b967ff" filter="url(#glow)"/>
-    <text x="215" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#8aa">Task consumption</text>
+    <circle cx="270" cy="-6" r="7" class="agent-node" filter="url(#glow)"/>
+    <text x="285" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="15" class="legend-text">Task consumption</text>
 
-    <rect x="320" y="-10" width="20" height="16" rx="3" fill="none" stroke="#ffb800" stroke-width="2"/>
-    <text x="350" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#8aa">Human approval gate</text>
+    <rect x="445" y="-14" width="24" height="18" rx="3" fill="none" class="gate-stroke" stroke-width="2"/>
+    <text x="480" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="15" class="legend-text">Human approval gate</text>
 
-    <line x1="480" y1="-4" x2="520" y2="-4" stroke="#b967ff" stroke-width="1.5" stroke-dasharray="4,3"/>
-    <text x="530" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#8aa">Pull-based subscription</text>
+    <line x1="680" y1="-6" x2="725" y2="-6" class="agent-conn" stroke-width="2" stroke-dasharray="4,3"/>
+    <text x="738" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="15" class="legend-text">Pull-based subscription</text>
   </g>
-
-  <!-- Bottom quote -->
-  <text x="600" y="735" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#ccc" font-style="italic">"The graph computes itself."</text>
 </svg>
