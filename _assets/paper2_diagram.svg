@@ -54,8 +54,8 @@
       /* MUI Light Mode and prefers-color-scheme: light */
       @media (prefers-color-scheme: light) {
         :root {
-          --bg-start: #f0fdfa;
-          --bg-end: #e2e8f0;
+          --bg-start: #ffffff;
+          --bg-end: #f8fafc;
           
           --title-fill: #0f766e;
           --subtitle-fill: #475569;
@@ -108,8 +108,8 @@
       html[data-theme="light"] svg,
       body.light-mode svg,
       svg.light-theme {
-        --bg-start: #f0fdfa;
-        --bg-end: #e2e8f0;
+        --bg-start: #ffffff;
+        --bg-end: #f8fafc;
         
         --title-fill: #0f766e;
         --subtitle-fill: #475569;
