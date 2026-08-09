@@ -7,11 +7,11 @@ How AI broke the rule that has stood since the 90s: _first you draw the map, the
 
 [**Read article →**](/pages/articles/paper2)
 
-[`Read article →`](/pages/articles/paper2)
+[**`Read article`**](/pages/articles/paper2)
 
 [**Read article →**](/pages/articles/paper2)
 
-[**Read article →**](/pages/articles/paper2)
+[**Read article >>>**](/pages/articles/paper2)
 
 ---
 
