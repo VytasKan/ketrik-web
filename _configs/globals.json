@@ -2061,76 +2061,28 @@
 	"notifications": {
 		"alerts": [
 			{
-				"id": "server_maintenance_2026_05ss1",
+				"id": "ketrik_paper_state_machine_2026",
 				"category": "system_operational",
-				"title": "Planned Maintenance Scheduled",
-				"body": "⚠️ Planned Maintenance: Databases will be offline tonight from 11 PM to 12 AM UTC.",
+				"title": "Ketrik Architecture Whitepaper",
+				"body": "⚡ Ketrik Architecture: How Ketrik powers long-running agent swarms with an event-driven task substrate, capability leases, and human governance.",
 				"status": "unread",
-				"createdAt": "2026-05-21T06:00:00Z",
+				"createdAt": "2026-08-09T00:00:00Z",
 				"readAt": null,
 				"actionConfig": {
 					"type": "NAVIGATE",
 					"payload": {
-						"actionLabel": "View Details",
-						"actionUrl": "/status/maintenance-info",
+						"actionLabel": "Read Paper",
+						"actionUrl": "/pages/articles",
 						"openInNewTab": false
 					}
 				},
 				"metadata": {
 					"layoutType": "time_sensitive",
-					"severity": "warning",
-					"validFrom": "2026-05-21T06:00:00Z",
-					"displayAsSingleUntil": "2026-05-21T14:00:00Z",
-					"validUntil": "2026-08-22T23:00:00Z",
+					"severity": "info",
+					"validFrom": "2026-08-09T00:00:00Z",
+					"displayAsSingleUntil": "2026-08-15T00:00:00Z",
+					"validUntil": "2027-08-09T23:59:59Z",
 					"isDismissible": true
-				},
-				"actionLog": []
-			},
-			{
-				"id": "flash_sale_may_202611",
-				"category": "billing_invoice",
-				"title": "Memorial Day Early Access Sale",
-				"body": "🚀 Memorial Day Early Access: Use code PREHEAT26 for 15% off all checkout items!",
-				"status": "unread",
-				"createdAt": "2026-05-20T00:00:00Z",
-				"readAt": null,
-				"actionConfig": {
-					"type": "NAVIGATE",
-					"payload": {
-						"actionLabel": "Shop Sale",
-						"actionUrl": "/collections/early-access",
-						"openInNewTab": false
-					}
-				},
-				"metadata": {
-					"layoutType": "general",
-					"severity": "dark",
-					"validFrom": "2026-05-20T00:00:00Z",
-					"displayAsSingleUntil": "",
-					"validUntil": "2026-08-27T23:59:59Z",
-					"isDismissible": true
-				},
-				"actionLog": []
-			},
-			{
-				"id": "major_outage_2026_05_211",
-				"category": "system_operational",
-				"title": "Critical Checkout Delay Warning",
-				"body": "🚨 Critical Alert: We are experiencing processing delays on credit card checkouts. Our team is actively investigating.",
-				"status": "unread",
-				"createdAt": "2026-05-21T09:30:00Z",
-				"readAt": null,
-				"actionConfig": {
-					"type": "NONE",
-					"payload": {}
-				},
-				"metadata": {
-					"layoutType": "emergency",
-					"severity": "error",
-					"validFrom": "2026-05-21T09:30:00Z",
-					"displayAsSingleUntil": "",
-					"validUntil": "2026-08-28T19:30:00Z",
-					"isDismissible": false
 				},
 				"actionLog": []
 			}
