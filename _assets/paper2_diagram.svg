@@ -341,46 +341,42 @@
 
   <!-- Agent 1: Financial Analyst (top-left) -->
   <g transform="translate(280, 140)">
-    <circle cx="0" cy="0" r="45" class="agent-glow"/>
-    <circle cx="0" cy="0" r="20" class="agent-node" filter="url(#glow-strong)"/>
+    <circle cx="0" cy="0" r="20" class="agent-node"/>
     <text x="0" y="5" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700" class="agent-text">A1</text>
     <text x="0" y="48" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" class="agent-title" font-weight="600">Financial Analyst</text>
     <text x="0" y="66" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" class="agent-sub">Background service</text>
     <!-- Connection to state machine -->
-    <path d="M 30 10 Q 150 80 320 200" class="agent-conn" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4,3"/>
+    <path d="M 20 13 Q 160 80 220 115" class="agent-conn" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4,3"/>
   </g>
 
   <!-- Agent 2: Security Monitor (top-right) -->
   <g transform="translate(920, 140)">
-    <circle cx="0" cy="0" r="45" class="agent-glow"/>
-    <circle cx="0" cy="0" r="20" class="agent-node" filter="url(#glow-strong)"/>
+    <circle cx="0" cy="0" r="20" class="agent-node"/>
     <text x="0" y="5" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700" class="agent-text">A2</text>
     <text x="0" y="48" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" class="agent-title" font-weight="600">Security Monitor</text>
     <text x="0" y="66" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" class="agent-sub">Background service</text>
     <!-- Connection to state machine -->
-    <path d="M -30 10 Q -150 80 -320 200" class="agent-conn" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4,3"/>
+    <path d="M -220 115 Q -160 80 -20 13" class="agent-conn" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4,3"/>
   </g>
 
   <!-- Agent 3: Compliance Reviewer (bottom-left) -->
   <g transform="translate(280, 460)">
-    <circle cx="0" cy="0" r="45" class="agent-glow"/>
-    <circle cx="0" cy="0" r="20" class="agent-node" filter="url(#glow-strong)"/>
+    <circle cx="0" cy="0" r="20" class="agent-node"/>
     <text x="0" y="5" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700" class="agent-text">A3</text>
     <text x="0" y="48" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" class="agent-title" font-weight="600">Compliance Reviewer</text>
     <text x="0" y="66" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" class="agent-sub">Background service</text>
     <!-- Connection to state machine -->
-    <path d="M 30 -10 Q 150 -80 320 -200" class="agent-conn" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4,3"/>
+    <path d="M 20 -13 Q 160 -80 220 -115" class="agent-conn" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4,3"/>
   </g>
 
   <!-- Agent 4: Logistics Coordinator (bottom-right) -->
   <g transform="translate(920, 460)">
-    <circle cx="0" cy="0" r="45" class="agent-glow"/>
-    <circle cx="0" cy="0" r="20" class="agent-node" filter="url(#glow-strong)"/>
+    <circle cx="0" cy="0" r="20" class="agent-node"/>
     <text x="0" y="5" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700" class="agent-text">A4</text>
     <text x="0" y="48" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" class="agent-title" font-weight="600">Logistics Coordinator</text>
     <text x="0" y="66" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" class="agent-sub">Background service</text>
     <!-- Connection to state machine -->
-    <path d="M -30 -10 Q -150 -80 -320 -200" class="agent-conn" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4,3"/>
+    <path d="M -220 -115 Q -160 -80 -20 -13" class="agent-conn" stroke-width="1.5" fill="none" opacity="0.5" stroke-dasharray="4,3"/>
   </g>
 
   <!-- HUMAN APPROVAL GATE (right side) -->
@@ -419,36 +415,34 @@
 
   <!-- Stream 1: Agent 1 to State Machine -->
   <g>
-    <circle cx="380" cy="200" r="3" class="stream-cyan" opacity="0.9"/>
-    <circle cx="430" cy="230" r="3" class="stream-cyan" opacity="0.7"/>
-    <circle cx="480" cy="255" r="3" class="stream-cyan" opacity="0.5"/>
-    <circle cx="530" cy="275" r="3" class="stream-cyan" opacity="0.3"/>
-    <!-- Arrow direction indicator -->
-    <path d="M 380 200 L 420 225" class="stream-cyan" stroke-width="1" opacity="0.4"/>
+    <circle cx="353" cy="179" r="3" class="stream-cyan" opacity="0.9"/>
+    <circle cx="399" cy="202" r="3" class="stream-cyan" opacity="0.7"/>
+    <circle cx="439" cy="222" r="3" class="stream-cyan" opacity="0.5"/>
+    <circle cx="473" cy="240" r="3" class="stream-cyan" opacity="0.3"/>
   </g>
 
   <!-- Stream 2: State Machine to Agent 2 -->
   <g>
-    <circle cx="700" cy="220" r="3" class="stream-purple" opacity="0.3"/>
-    <circle cx="750" cy="200" r="3" class="stream-purple" opacity="0.5"/>
-    <circle cx="800" cy="180" r="3" class="stream-purple" opacity="0.7"/>
-    <circle cx="850" cy="160" r="3" class="stream-purple" opacity="0.9"/>
+    <circle cx="727" cy="240" r="3" class="stream-purple" opacity="0.3"/>
+    <circle cx="761" cy="222" r="3" class="stream-purple" opacity="0.5"/>
+    <circle cx="801" cy="202" r="3" class="stream-purple" opacity="0.7"/>
+    <circle cx="847" cy="179" r="3" class="stream-purple" opacity="0.9"/>
   </g>
 
   <!-- Stream 3: Agent 3 to State Machine -->
   <g>
-    <circle cx="380" cy="400" r="3" class="stream-cyan" opacity="0.9"/>
-    <circle cx="430" cy="370" r="3" class="stream-cyan" opacity="0.7"/>
-    <circle cx="480" cy="345" r="3" class="stream-cyan" opacity="0.5"/>
-    <circle cx="530" cy="325" r="3" class="stream-cyan" opacity="0.3"/>
+    <circle cx="353" cy="421" r="3" class="stream-cyan" opacity="0.9"/>
+    <circle cx="399" cy="398" r="3" class="stream-cyan" opacity="0.7"/>
+    <circle cx="439" cy="378" r="3" class="stream-cyan" opacity="0.5"/>
+    <circle cx="473" cy="360" r="3" class="stream-cyan" opacity="0.3"/>
   </g>
 
   <!-- Stream 4: State Machine to Agent 4 -->
   <g>
-    <circle cx="700" cy="380" r="3" class="stream-purple" opacity="0.3"/>
-    <circle cx="750" cy="400" r="3" class="stream-purple" opacity="0.5"/>
-    <circle cx="800" cy="420" r="3" class="stream-purple" opacity="0.7"/>
-    <circle cx="850" cy="440" r="3" class="stream-purple" opacity="0.9"/>
+    <circle cx="727" cy="360" r="3" class="stream-purple" opacity="0.3"/>
+    <circle cx="761" cy="378" r="3" class="stream-purple" opacity="0.5"/>
+    <circle cx="801" cy="398" r="3" class="stream-purple" opacity="0.7"/>
+    <circle cx="847" cy="421" r="3" class="stream-purple" opacity="0.9"/>
   </g>
 
   <!-- TASK CARDS floating in the system -->
@@ -462,7 +456,7 @@
     <text x="0" y="3" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" class="card-purple-text">task: check_inventory</text>
   </g>
 
-  <g transform="translate(720, 200)">
+  <g transform="translate(860, 300)">
     <rect x="-85" y="-16" width="170" height="30" rx="5" class="card-amber-bg" stroke-width="1.5"/>
     <text x="0" y="3" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" class="card-amber-text">task: awaiting_approval</text>
   </g>
@@ -474,7 +468,7 @@
     <circle cx="110" cy="-6" r="7" class="status-ok" filter="url(#glow)"/>
     <text x="125" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="15" class="legend-text">Task creation</text>
 
-    <circle cx="270" cy="-6" r="7" class="agent-node" filter="url(#glow)"/>
+    <circle cx="270" cy="-6" r="7" class="agent-node"/>
     <text x="285" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="15" class="legend-text">Task consumption</text>
 
     <rect x="445" y="-14" width="24" height="18" rx="3" fill="none" class="gate-stroke" stroke-width="2"/>

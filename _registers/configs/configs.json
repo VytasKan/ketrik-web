@@ -25,7 +25,7 @@
 	],
 	"authConfig": {
 		"emailVerifyEnabled": true,
-		"mfaRequired": true
+		"mfaRequired": false
 	},
 	"authProviders": ["credentials", "google"],
 	"logo": "/_assets/ketrik.png",
@@ -51,5 +51,6 @@
 		"config": {
 			"isFullSize": true
 		}
-	}
+	},
+	"footerCredit": {}
 }
