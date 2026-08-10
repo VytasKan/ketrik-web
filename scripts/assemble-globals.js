@@ -6,7 +6,7 @@ const path = require("path");
 const ROOT_DIR = path.resolve(__dirname, "..");
 const REGISTERS_DIR = path.join(ROOT_DIR, "_registers");
 const CONFIGS_DIR = path.join(ROOT_DIR, "_configs");
-const OUTPUT_FILE = path.join(CONFIGS_DIR, "globals-assembled.json");
+const OUTPUT_FILE = path.join(CONFIGS_DIR, "globals.json");
 
 // Helper to read directory of JSON files or single JSON file
 function loadJsonDirOrFile(dirPath, fallbackFilePath) {

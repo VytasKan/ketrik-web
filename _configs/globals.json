@@ -994,14 +994,6 @@
 		},
 		"pages_articles_3": {
 			"data": {
-				"background": {
-					"background": {
-						"style": {
-							"--bg-image": "url(/_assets/network_pattern_hd.png)",
-							"--bg-image-dark": "url(/_assets/network_pattern_121212_hd.png)"
-						}
-					}
-				},
 				"article": {
 					"type": "remote",
 					"url": "/_docs/articles/${slug}.md"
@@ -1028,25 +1020,6 @@
 										"contentConfig": {
 											"contentType": "Markdown"
 										}
-									}
-								]
-							},
-							{
-								"id": "background",
-								"cardType": "noCard",
-								"cardConfig": [
-									{
-										"contentConfig": {
-											"contentType": "Marketing",
-											"panel": "background",
-											"vx": {
-												"background": {
-													"layout": "fullScreen"
-												}
-											}
-										},
-										"dataKey": "background",
-										"type": "cardContent"
 									}
 								]
 							}
@@ -1625,7 +1598,10 @@
 														"type": "string"
 													}
 												},
-												"required": ["endDate", "startDate"],
+												"required": [
+													"endDate",
+													"startDate"
+												],
 												"type": "object"
 											},
 											"uiSchema": {
@@ -1641,7 +1617,10 @@
 													},
 													"ui:placeholder": "Start Date"
 												},
-												"ui:order": ["startDate", "endDate"]
+												"ui:order": [
+													"startDate",
+													"endDate"
+												]
 											}
 										}
 									}
@@ -1657,7 +1636,11 @@
 											"schema": {
 												"title": "Firebase Auth Settings",
 												"type": "object",
-												"required": ["apiKey", "authDomain", "projectId"],
+												"required": [
+													"apiKey",
+													"authDomain",
+													"projectId"
+												],
 												"properties": {
 													"apiKey": {
 														"type": "string",
@@ -1667,7 +1650,9 @@
 													"authDomain": {
 														"type": "string",
 														"title": "Auth Domain",
-														"examples": ["your-app.firebaseapp.com"]
+														"examples": [
+															"your-app.firebaseapp.com"
+														]
 													},
 													"projectId": {
 														"type": "string",
@@ -1688,7 +1673,11 @@
 													"persistenceType": {
 														"type": "string",
 														"title": "Auth Persistence",
-														"enum": ["LOCAL", "SESSION", "NONE"],
+														"enum": [
+															"LOCAL",
+															"SESSION",
+															"NONE"
+														],
 														"default": "LOCAL"
 													},
 													"enableEmailPassword": {
@@ -2030,9 +2019,12 @@
 		],
 		"authConfig": {
 			"emailVerifyEnabled": true,
-			"mfaRequired": true
+			"mfaRequired": false
 		},
-		"authProviders": ["credentials", "google"],
+		"authProviders": [
+			"credentials",
+			"google"
+		],
 		"logo": "/_assets/ketrik.png",
 		"title": {
 			"main": "Ketrik ",
@@ -2056,7 +2048,8 @@
 			"config": {
 				"isFullSize": true
 			}
-		}
+		},
+		"footerCredit": {}
 	},
 	"notifications": {
 		"alerts": [
@@ -2064,7 +2057,7 @@
 				"id": "ketrik_paper_state_machine_2026_08",
 				"category": "system_operational",
 				"title": "Ketrik Architecture Whitepaper",
-				"body": "⚡ Ketrik Architecture: How Ketrik powers long-running agent swarms with an event-driven task substrate, capability leases, and human governance.",
+				"body": "⚡ Curious about the Ketrik Architecture? Read the whitepaper to see how it orchestrates AI agents, runs long tasks, and keeps humans in control.",
 				"status": "unread",
 				"createdAt": "2026-08-09T00:00:00Z",
 				"readAt": null,
