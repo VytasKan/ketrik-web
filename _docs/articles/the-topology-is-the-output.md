@@ -656,3 +656,5 @@ This direction raises new research questions: how persistent agent state should 
 - Tiwari, S., Gottesman, O., & Konidaris, G. (2025). _Geometry of Neural Reinforcement Learning in Continuous State and Action Spaces._ arXiv:2507.20853.
 - Wang, Y., Gao, Q., & Pajic, M. (2022). _Learning Monotone Dynamics by Neural Networks._ American Control Conference (ACC).
 - Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I., Narasimhan, K., & Cao, Y. (2023). _ReAct: Synergizing Reasoning and Acting in Language Models._ International Conference on Learning Representations (ICLR).
+
+[<<< Back to all articles](/pages/articles)

@@ -1,13 +1,5 @@
 {
 	"data": {
-		"background": {
-			"background": {
-				"style": {
-					"--bg-image": "url(/_assets/network_pattern_hd.png)",
-					"--bg-image-dark": "url(/_assets/network_pattern_121212_hd.png)"
-				}
-			}
-		},
 		"article": {
 			"type": "remote",
 			"url": "/_docs/articles/${slug}.md"
@@ -34,25 +26,6 @@
 								"contentConfig": {
 									"contentType": "Markdown"
 								}
-							}
-						]
-					},
-					{
-						"id": "background",
-						"cardType": "noCard",
-						"cardConfig": [
-							{
-								"contentConfig": {
-									"contentType": "Marketing",
-									"panel": "background",
-									"vx": {
-										"background": {
-											"layout": "fullScreen"
-										}
-									}
-								},
-								"dataKey": "background",
-								"type": "cardContent"
 							}
 						]
 					}

@@ -185,15 +185,21 @@ The agent that created the task can move on to other work. Another agent can pic
 
 ### The Computer Science
 
-Human approval is modeled as a set of explicit states and transitions:
+Formally, human governance in an event-sourced state machine is modeled as a deterministic transition function $\delta: S \times \Sigma \to S$, where human interactions are elevated from external side-effects to first-class event alphabet inputs $\sigma \in \Sigma$:
 
 $$
-\delta(s_{awaiting}, \sigma_{human\_approve}) = s_{approved}
+\delta(s_{\text{awaiting}}, \sigma) = \begin{cases} 
+s_{\text{approved}} & \text{if } \sigma = \sigma_{\text{human\_approve}} \\ 
+s_{\text{rejected}} & \text{if } \sigma = \sigma_{\text{human\_reject}} \\ 
+s_{\text{escalated}} & \text{if } \sigma = \sigma_{\text{timeout\_escalate}} 
+\end{cases}
 $$
 
-$$
-\delta(s_{awaiting}, \sigma_{human\_reject}) = s_{rejected}
-$$
+This formalization provides three structural guarantees:
+
+1. **Zero Resource Holding**: Because $s_{\text{awaiting}}$ is a persistent state in $S$, agent execution suspends without holding process threads, memory allocations, or open network connections while awaiting input.
+2. **Immutable Audit Trajectories**: Every human decision $\sigma$ is an immutable event appended to the event log, creating a mathematically provable audit trail of human-in-the-loop governance.
+3. **Adaptive Topology**: The transition function $\delta$ deterministically routes workflow execution or compensating tasks based on human input without breaking system invariants.
 
 Approval should not be merely a boolean decision. An approval request should include context:
 
@@ -715,6 +721,4 @@ Generation 5 made topology computable. Generation 6 makes it governable.
 
 - Google. (2026). _Google Antigravity SDK._ https://github.com/google-antigravity/antigravity-sdk-python
 
-```
-
-```
+[<<< Back to all articles](/pages/articles)
