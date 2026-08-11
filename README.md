@@ -4,7 +4,7 @@ This repository contains public web assets, global configurations, content schem
 
 ## Repository Overview
 
-`ketrik-web` serves as the public distribution hub and schema registry for the Ketrik platform. It houses static resources, public documentation, UI assets, and configuration schemas consumed across Ketrik services and web applications.
+`ketrik-web` serves as the public repository for the Ketrik web application (`ketrik.com`). It stores static resources, public documentation, UI assets, and configuration schemas specifically used by the Ketrik web.
 
 ## Directory Structure
 
@@ -25,4 +25,4 @@ node scripts/assemble-globals.js
 
 ---
 
-*© Ketrik. All rights reserved.*
+_© Ketrik. All rights reserved._
