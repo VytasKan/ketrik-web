@@ -27,7 +27,7 @@
 		"emailVerifyEnabled": true,
 		"mfaRequired": false
 	},
-	"authProviders": ["credentials", "google"],
+	"authProviders": ["magic", "google"],
 	"logo": "/_assets/ketrik.png",
 	"title": {
 		"main": "Ketrik ",

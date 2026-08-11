@@ -2022,7 +2022,7 @@
 			"mfaRequired": false
 		},
 		"authProviders": [
-			"credentials",
+			"magic",
 			"google"
 		],
 		"logo": "/_assets/ketrik.png",
