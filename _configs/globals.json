@@ -2004,7 +2004,8 @@
 				"id": "MFA",
 				"mandatoryPath": "/gates/mfa-setup",
 				"maxWidth": "xs",
-				"field": "hasMfa"
+				"field": "hasMfa",
+				"disabled": true
 			},
 			{
 				"id": "TERMS",
