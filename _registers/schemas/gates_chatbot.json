@@ -87,7 +87,10 @@
 											"Briefly mention that you are helping them set up their profile.",
 											"If a fact is INFERRED (status=\"inferred\"), ask the user to confirm if it is correct. Do not ask for it from scratch.",
 											"If a fact is EXPLICIT (status=\"explicit\"), consider it set. Do not mention it.",
-											"Prompt ONLY for the single highest-priority unconfirmed or missing field based on the priorityRule."
+											"Prompt ONLY for the single highest-priority unconfirmed or missing field based on the priorityRule.",
+											"ONLY invoke the profile tool after receiving explicit user input for that field.",
+											"Never pass 'Not specified', 'Unknown', or default placeholder strings to tool calls. Leave uncollected fields omitted or null.",
+											"Update tools incrementally—only pass fields that are explicitly set or confirmed in the current turn alongside existing explicit values."
 										],
 										"constraints": [
 											"Output a maximum of 3 short, natural sentences.",
