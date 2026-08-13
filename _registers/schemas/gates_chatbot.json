@@ -37,7 +37,7 @@
 									"scrollable": true,
 									"sx": {
 										"minHeight": { "xs": "30vh", "md": "65dvh" },
-										"maxHeight": { "xs": "85vh", "md": "65dvh" },
+										"maxHeight": { "xs": "75vh", "md": "65dvh" },
 										"p": "0px!important"
 									},
 									"inputConfig": {

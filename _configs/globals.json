@@ -643,11 +643,11 @@
 										"dataKey": "terms",
 										"sx": {
 											"minHeight": {
-												"xs": "85vh",
+												"xs": "80vh",
 												"md": "65dvh"
 											},
 											"maxHeight": {
-												"xs": "85vh",
+												"xs": "80vh",
 												"md": "65dvh"
 											}
 										},
