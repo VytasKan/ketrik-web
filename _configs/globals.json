@@ -547,7 +547,7 @@
 											"scrollable": true,
 											"sx": {
 												"minHeight": {
-													"xs": "10vh",
+													"xs": "30vh",
 													"md": "65dvh"
 												},
 												"maxHeight": {
@@ -641,6 +641,16 @@
 									{
 										"type": "cardContent",
 										"dataKey": "terms",
+										"sx": {
+											"minHeight": {
+												"xs": "85vh",
+												"md": "65dvh"
+											},
+											"maxHeight": {
+												"xs": "85vh",
+												"md": "65dvh"
+											}
+										},
 										"contentConfig": {
 											"contentType": "Markdown",
 											"scrollable": true
