@@ -538,7 +538,7 @@
 											"document": "${uid}",
 											"variable1": "onboarding",
 											"data": {
-												"hasCompletedOnboarding": true,
+												"hasCompletedOnboarding1": true,
 												"hasCompletedOnboardingAt": "${now}"
 											}
 										},
@@ -595,27 +595,32 @@
 													}
 												}
 											},
-											"prompt": {
-												"role": "You are an onboarding assistant initiating a profile setup session. Your goal is to deliver a warm, personalized greeting, mention what setup entails, and prompt the user for the first missing or unconfirmed piece of information.",
-												"instructions": [
-													"Always prioritize confirming INFERRED data before asking for MISSING fields. Once all inferences are confirmed, move to missing fields.",
-													"Greet the user using their name if explicitly provided; otherwise use a generic greeting like 'Hello!'.",
-													"Briefly mention that you are helping them set up their profile.",
-													"If a fact is INFERRED (status=\"inferred\"), ask the user to confirm if it is correct. Do not ask for it from scratch.",
-													"If a fact is EXPLICIT (status=\"explicit\"), consider it set. Do not mention it.",
-													"Prompt ONLY for the single highest-priority unconfirmed or missing field based on the priorityRule."
-												],
-												"constraints": [
-													"Output maximum 3 short, natural sentences.",
-													"Speak directly to the user in plain text.",
-													"Do NOT ask for information from scratch if it was already inferred—always phrase inferred data as a simple confirmation check.",
-													"NEVER invent, assume, or default to a name (like Alex) or company if not provided in context.",
-													"Do NOT include markdown code blocks, metadata, preamble, system notes, or section headers in the output."
-												]
-											},
-											"greetingStaticText": "Hello! To get your profile set up, could you please tell me your full name?",
-											"greetingIsDynamic": true,
-											"greetingPrompt": ""
+											"required": [
+												{
+													"field_id": "email",
+													"label": "Email Address",
+													"type": "email",
+													"validation_rule": "Must be a valid, properly formatted email address."
+												},
+												{
+													"field_id": "displayName",
+													"label": "Display Name",
+													"type": "string",
+													"validation_rule": "Must be a realistic name or handle. Reject profanity."
+												},
+												{
+													"field_id": "companyName",
+													"label": "Company Name",
+													"type": "string",
+													"validation_rule": "Must be a legitimate business or organization name."
+												},
+												{
+													"field_id": "profession",
+													"label": "Profession",
+													"type": "string",
+													"validation_rule": "Must be a realistic, recognizable human job title or career. Reject joke answers, objects, or nonsensical responses (e.g., 'moon', 'ninja', 'potato')."
+												}
+											]
 										}
 									}
 								]
