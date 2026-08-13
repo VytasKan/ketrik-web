@@ -14,11 +14,12 @@
 							{
 								"type": "cardContent",
 								"dataKey": "terms",
-								"sx": {
-									"minHeight": { "xs": "80vh", "md": "65dvh" },
-									"maxHeight": { "xs": "80vh", "md": "65dvh" }
-								},
+
 								"contentConfig": {
+									"sx": {
+										"minHeight": { "xs": "80vh", "md": "65dvh" },
+										"maxHeight": { "xs": "80vh", "md": "65dvh" }
+									},
 									"contentType": "Markdown",
 									"scrollable": true
 								}

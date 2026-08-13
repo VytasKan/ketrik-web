@@ -551,7 +551,7 @@
 													"md": "65dvh"
 												},
 												"maxHeight": {
-													"xs": "85vh",
+													"xs": "75vh",
 													"md": "65dvh"
 												},
 												"p": "0px!important"
@@ -641,17 +641,17 @@
 									{
 										"type": "cardContent",
 										"dataKey": "terms",
-										"sx": {
-											"minHeight": {
-												"xs": "80vh",
-												"md": "65dvh"
-											},
-											"maxHeight": {
-												"xs": "80vh",
-												"md": "65dvh"
-											}
-										},
 										"contentConfig": {
+											"sx": {
+												"minHeight": {
+													"xs": "80vh",
+													"md": "65dvh"
+												},
+												"maxHeight": {
+													"xs": "80vh",
+													"md": "65dvh"
+												}
+											},
 											"contentType": "Markdown",
 											"scrollable": true
 										}
