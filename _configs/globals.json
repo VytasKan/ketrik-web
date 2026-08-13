@@ -546,7 +546,10 @@
 											"contentType": "Chatbot",
 											"scrollable": true,
 											"sx": {
-												"minHeight": "65vh",
+												"minHeight": {
+													"sx": "85svh",
+													"md": "65dvh"
+												},
 												"p": "0px!important",
 												"m": 0
 											},
@@ -590,23 +593,21 @@
 												}
 											},
 											"prompt": {
-												"role": "You are an onboarding assistant initiating a profile setup session. Your goal is to deliver a warm, personalized greeting, mention what setup entails, and guide the user through profile creation one step at a time.",
+												"role": "You are an onboarding assistant initiating a profile setup session. Your goal is to deliver a warm, personalized greeting, mention what setup entails, and prompt the user for the first missing or unconfirmed piece of information.",
 												"instructions": [
 													"Always prioritize confirming INFERRED data before asking for MISSING fields. Once all inferences are confirmed, move to missing fields.",
 													"Greet the user using their name if explicitly provided; otherwise use a generic greeting like 'Hello!'.",
 													"Briefly mention that you are helping them set up their profile.",
 													"If a fact is INFERRED (status=\"inferred\"), ask the user to confirm if it is correct. Do not ask for it from scratch.",
 													"If a fact is EXPLICIT (status=\"explicit\"), consider it set. Do not mention it.",
-													"Prompt ONLY for the single highest-priority unconfirmed or missing field based on the priorityRule.",
-													"ONLY invoke the profile tool after receiving explicit user input for that field.",
-													"Never pass 'Not specified', 'Unknown', or default placeholder strings to tool calls. Leave uncollected fields omitted or null.",
-													"Update tools incrementally—only pass fields that are explicitly set or confirmed in the current turn alongside existing explicit values."
+													"Prompt ONLY for the single highest-priority unconfirmed or missing field based on the priorityRule."
 												],
 												"constraints": [
-													"Output a maximum of 3 short, natural sentences.",
+													"Output maximum 3 short, natural sentences.",
 													"Speak directly to the user in plain text.",
-													"NEVER invent, assume, or default to a name or company if not provided.",
-													"Do NOT include markdown, metadata, preamble, or section headers."
+													"Do NOT ask for information from scratch if it was already inferred—always phrase inferred data as a simple confirmation check.",
+													"NEVER invent, assume, or default to a name (like Alex) or company if not provided in context.",
+													"Do NOT include markdown code blocks, metadata, preamble, system notes, or section headers in the output."
 												]
 											},
 											"greetingStaticText": "Hello! To get your profile set up, could you please tell me your full name?",
@@ -1602,7 +1603,10 @@
 														"type": "string"
 													}
 												},
-												"required": ["endDate", "startDate"],
+												"required": [
+													"endDate",
+													"startDate"
+												],
 												"type": "object"
 											},
 											"uiSchema": {
@@ -1618,7 +1622,10 @@
 													},
 													"ui:placeholder": "Start Date"
 												},
-												"ui:order": ["startDate", "endDate"]
+												"ui:order": [
+													"startDate",
+													"endDate"
+												]
 											}
 										}
 									}
@@ -1634,7 +1641,11 @@
 											"schema": {
 												"title": "Firebase Auth Settings",
 												"type": "object",
-												"required": ["apiKey", "authDomain", "projectId"],
+												"required": [
+													"apiKey",
+													"authDomain",
+													"projectId"
+												],
 												"properties": {
 													"apiKey": {
 														"type": "string",
@@ -1644,7 +1655,9 @@
 													"authDomain": {
 														"type": "string",
 														"title": "Auth Domain",
-														"examples": ["your-app.firebaseapp.com"]
+														"examples": [
+															"your-app.firebaseapp.com"
+														]
 													},
 													"projectId": {
 														"type": "string",
@@ -1665,7 +1678,11 @@
 													"persistenceType": {
 														"type": "string",
 														"title": "Auth Persistence",
-														"enum": ["LOCAL", "SESSION", "NONE"],
+														"enum": [
+															"LOCAL",
+															"SESSION",
+															"NONE"
+														],
 														"default": "LOCAL"
 													},
 													"enableEmailPassword": {
@@ -2010,7 +2027,10 @@
 			"emailVerifyEnabled": true,
 			"mfaRequired": false
 		},
-		"authProviders": ["magic", "google"],
+		"authProviders": [
+			"magic",
+			"google"
+		],
 		"logo": "/_assets/ketrik.png",
 		"title": {
 			"main": "Ketrik ",
