@@ -36,9 +36,9 @@
 									"contentType": "Chatbot",
 									"scrollable": true,
 									"sx": {
-										"minHeight": { "sx": "85svh", "md": "65dvh" },
-										"p": "0px!important",
-										"m": 0
+										"minHeight": { "xs": "10vh", "md": "65dvh" },
+										"maxHeight": { "xs": "85vh", "md": "65dvh" },
+										"p": "0px!important"
 									},
 									"inputConfig": {
 										"initialMode": "auto",

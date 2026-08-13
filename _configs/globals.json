@@ -547,11 +547,14 @@
 											"scrollable": true,
 											"sx": {
 												"minHeight": {
-													"sx": "85svh",
+													"xs": "10vh",
 													"md": "65dvh"
 												},
-												"p": "0px!important",
-												"m": 0
+												"maxHeight": {
+													"xs": "85vh",
+													"md": "65dvh"
+												},
+												"p": "0px!important"
 											},
 											"inputConfig": {
 												"initialMode": "auto",
