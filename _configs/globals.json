@@ -538,7 +538,7 @@
 											"document": "${uid}",
 											"variable1": "onboarding",
 											"data": {
-												"hasCompletedOnboarding1": true,
+												"hasCompletedOnboarding": true,
 												"hasCompletedOnboardingAt": "${now}"
 											}
 										},
