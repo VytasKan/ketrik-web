@@ -48,7 +48,7 @@
 									},
 									"tools": {
 										"save_user_profile": {
-											"description": "Submit final user profile data after all fields are collected and confirmed.",
+											"description": "Submit final user profile data after all fields are collected and user confirmed.",
 											"inputSchema": {
 												"type": "object",
 												"properties": {
