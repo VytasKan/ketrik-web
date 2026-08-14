@@ -570,19 +570,19 @@
 														"properties": {
 															"displayName": {
 																"type": "string",
-																"description": "Name"
+																"description": "Must be a realistic name or handle. Reject profanity."
 															},
 															"companyName": {
 																"type": "string",
-																"description": "Company Name"
+																"description": "Must be a legitimate business or organization name. "
 															},
 															"profession": {
 																"type": "string",
-																"description": "Profession/Role"
+																"description": "Must be a realistic, recognizable human job title or career. Reject joke answers, objects, or nonsensical responses (e.g., 'moon', 'ninja', 'potato')."
 															},
 															"email": {
 																"type": "string",
-																"description": "Work Email"
+																"description": "Must be a valid, properly formatted email address."
 															}
 														},
 														"required": [
@@ -612,7 +612,7 @@
 													"field_id": "companyName",
 													"label": "Company Name",
 													"type": "string",
-													"validation_rule": "Must be a legitimate business or organization name."
+													"validation_rule": "Must be a legitimate business or organization name. "
 												},
 												{
 													"field_id": "profession",
