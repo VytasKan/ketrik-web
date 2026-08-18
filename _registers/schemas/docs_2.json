@@ -1,0 +1,36 @@
+{
+	"data": {
+		"article": {
+			"type": "remote",
+			"url": "/_docs/docs/${slug}.md"
+		}
+	},
+	"config": {
+		"disableGutter": true,
+		"hideFullSizeToggle": true,
+		"isFullSize": false,
+		"maxWidth": "md",
+		"groups": [
+			{
+				"itemSize": {
+					"sm": 12
+				},
+				"items": [
+					{
+						"id": "aricle",
+						"cardType": "noCard",
+						"cardConfig": [
+							{
+								"type": "cardContent",
+								"dataKey": "article",
+								"contentConfig": {
+									"contentType": "Markdown"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
