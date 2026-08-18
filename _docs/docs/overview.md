@@ -79,32 +79,4 @@ The platform is designed around three distinct deployment and architecture solut
 
 ## Architecture Summary
 
-```mermaid
-flowchart TD
-    subgraph Solutions["Platform Application Solutions"]
-        PublicApp["web-public\n(Marketing & Docs)"]
-        PrivateApp["web-private\n(Dashboard & SaaS)"]
-        HybridApp["web-hybrid\n(Unified Public + Private)"]
-    end
-
-    subgraph CoreLayouts["@repo/ketrik Layout Primitives"]
-        RootLayout["RootLayout"]
-        PublicLayout["PublicLayout"]
-        AuthLayout["AuthLayout"]
-        DashboardLayout["DashboardLayout"]
-        PrivateAuthLayout["PrivateAuthorizationLayout"]
-    end
-
-    PublicApp --> RootLayout
-    PublicApp --> PublicLayout
-
-    PrivateApp --> RootLayout
-    PrivateApp --> AuthLayout
-    PrivateApp --> DashboardLayout
-
-    HybridApp --> RootLayout
-    HybridApp --> PublicLayout
-    HybridApp --> AuthLayout
-    HybridApp --> PrivateAuthLayout
-    HybridApp --> DashboardLayout
-```
+![Platform Solutions Flowchart](/_assets/platform_solutions_flowchart_1787067608050.jpg)
