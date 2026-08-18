@@ -508,10 +508,6 @@
 				"isFullSize": false
 			}
 		},
-		"dashboard": {
-			"data": {},
-			"config": {}
-		},
 		"docs_2": {
 			"data": {
 				"article": {
@@ -1342,51 +1338,11 @@
 								"text1": "You pay only for the data complexity and operational scope deployed for your business — a setup fee to connect your data and workflows, plus an ongoing fee to keep them running. Never a per-seat fee."
 							}
 						]
-					},
-					"featuresGrid1": {
-						"ds": [
-							{
-								"title": "Setup fee",
-								"description": "Custom architecture and workflow design. Connecting your live data feeds, APIs, and databases. Setting up AI Agent rules for the decisions you want automated."
-							},
-							{
-								"title": "Ongoing fee",
-								"description": "Real-time data processing and platform hosting. Ongoing performance tuning and AI Agent updates. Support to keep the platform aligned as you scale."
-							}
-						]
 					}
 				},
 				"eraAiMarkdown": {
 					"type": "remote",
 					"url": "/_docs/pricing.md"
-				},
-				"eraAi": {
-					"title": {
-						"text": [
-							{
-								"text": "Pricing in the AI era",
-								"vx": {
-									"size": "sm"
-								}
-							}
-						]
-					},
-					"subtitle": {
-						"text": [
-							{
-								"text": "Generative AI has broken pricing models built around hours logged. That model existed because changes were slow — not because they were complex. A client asking for a tweaked validation rule or a moved button wasn't a hard problem, but finding the right code, changing it safely, and testing it took time. Hours were the honest unit to bill, because time was genuinely the bottleneck. AI removes that bottleneck: the same change now takes minutes, not hours. But that just exposes the real problem — the code AI produces still needs to fit the business, and speed alone doesn't guarantee that."
-							},
-							{
-								"text": "The question was never whether AI should write code — it already does, and that's not going back. The real issue is AI slop: code that runs but wasn't architected, doesn't fit the business, and creates more rework than it saves. This isn't a new problem in software. The same argument played out in the 2000s with TDD — writing tests before code wasn't about slowing developers down, it was about making sure what got built actually worked."
-							},
-							{
-								"text": "Expert judgment plays that role now: not writing every line, but architecting the system, encoding domain knowledge, and evaluating what AI produces so it becomes a real product instead of a pile of generated code nobody can build on."
-							},
-							{
-								"text": "Ketrik Shell and Ketrik AI Agents carry that judgment by default — connected to your data, workflows, and business rules from the start. That's what you're actually paying for: not code generation, but a platform that already knows how to turn it into a working product."
-							}
-						]
-					}
 				},
 				"finalCTA": {
 					"title": {
@@ -1621,13 +1577,9 @@
 		},
 		"profile": {
 			"data": {
-				"profile": {
-					"name": "Vytas",
-					"startDate": "2026-10-10"
-				}
+				"profile": true
 			},
 			"config": {
-				"childComponent": "DisplayCards",
 				"header": "Profile",
 				"isFullSize": false,
 				"maxWidth": "md",
@@ -1650,139 +1602,31 @@
 											"contentType": "DataForm",
 											"schema": {
 												"properties": {
-													"endDate": {
-														"format": "date",
-														"title": "To",
-														"type": "string"
+													"displayName": {
+														"type": "string",
+														"title": "Display Name"
 													},
-													"startDate": {
-														"format": "date",
-														"title": "From",
-														"type": "string"
+													"comapnyName": {
+														"type": "string",
+														"title": "Company Name"
+													},
+													"profession": {
+														"type": "string",
+														"title": "Profession"
 													}
 												},
 												"required": [
-													"endDate",
-													"startDate"
+													"displayName",
+													"comapnyName",
+													"profession"
 												],
 												"type": "object"
 											},
 											"uiSchema": {
-												"endDate": {
-													"ui:options": {
-														"label": true
-													},
-													"ui:placeholder": "End Date"
-												},
-												"startDate": {
-													"ui:options": {
-														"label": true
-													},
-													"ui:placeholder": "Start Date"
-												},
 												"ui:order": [
-													"startDate",
-													"endDate"
-												]
-											}
-										}
-									}
-								]
-							},
-							{
-								"cardConfig": [
-									{
-										"type": "cardContent",
-										"dataKey": "profile",
-										"contentConfig": {
-											"contentType": "DataForm",
-											"schema": {
-												"title": "Firebase Auth Settings",
-												"type": "object",
-												"required": [
-													"apiKey",
-													"authDomain",
-													"projectId"
-												],
-												"properties": {
-													"apiKey": {
-														"type": "string",
-														"title": "API Key",
-														"default": ""
-													},
-													"authDomain": {
-														"type": "string",
-														"title": "Auth Domain",
-														"examples": [
-															"your-app.firebaseapp.com"
-														]
-													},
-													"projectId": {
-														"type": "string",
-														"title": "Project ID"
-													},
-													"storageBucket": {
-														"type": "string",
-														"title": "Storage Bucket"
-													},
-													"messagingSenderId": {
-														"type": "string",
-														"title": "Messaging Sender ID"
-													},
-													"appId": {
-														"type": "string",
-														"title": "App ID"
-													},
-													"persistenceType": {
-														"type": "string",
-														"title": "Auth Persistence",
-														"enum": [
-															"LOCAL",
-															"SESSION",
-															"NONE"
-														],
-														"default": "LOCAL"
-													},
-													"enableEmailPassword": {
-														"type": "boolean",
-														"title": "Enable Email/Password Login",
-														"default": true
-													},
-													"mfaRequired": {
-														"type": "boolean",
-														"title": "Require Multi-Factor Authentication",
-														"default": false
-													}
-												}
-											},
-											"uiSchema": {
-												"apiKey": {
-													"ui:widget": "password",
-													"ui:help": "Found in your Firebase Console project settings.",
-													"ui:placeholder": "AIzaSy..."
-												},
-												"authDomain": {
-													"ui:placeholder": "project-id.firebaseapp.com"
-												},
-												"persistenceType": {
-													"ui:widget": "radio",
-													"ui:options": {
-														"inline": true
-													}
-												},
-												"enableEmailPassword": {
-													"ui:widget": "checkbox"
-												},
-												"ui:order": [
-													"projectId",
-													"apiKey",
-													"authDomain",
-													"appId",
-													"storageBucket",
-													"messagingSenderId",
-													"persistenceType",
-													"*",
-													"mfaRequired"
+													"displayName",
+													"comapnyName",
+													"profession"
 												]
 											}
 										}
