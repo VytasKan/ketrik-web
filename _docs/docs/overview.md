@@ -1,16 +1,18 @@
-# Application Solutions Overview
+# Solutions Overview
 
 The platform is designed around three distinct deployment and architecture solutions: **`web-public`**, **`web-private`**, and **`web-hybrid`**. Each application solution serves specific business, routing, performance, and security requirements.
 
 ---
 
-## High-Level Comparison
+## Capability Matrix
 
-| Solution          | Target Audience                                                         | Layouts & Routing                                                                                         | Auth / Access Control                                              | Primary Use Cases                                                              |
-| :---------------- | :---------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------- | :----------------------------------------------------------------------------- |
-| **`web-public`**  | Unauthenticated public visitors, prospective customers, search crawlers | `RootLayout`, `PublicLayout`                                                                              | None (Publicly open, optimized for SEO & caching)                  | Landing pages, marketing websites, public documentation, knowledge bases       |
-| **`web-private`** | Authenticated users, internal teams, admins, enterprise operators       | `RootLayout`, `AuthLayout`, `DashboardLayout`                                                             | Strict authentication required for application areas               | SaaS dashboards, back-office panels, administrative portals, analytics hubs    |
-| **`web-hybrid`**  | Unified user journeys requiring seamless public & private transitions   | `RootLayout`, `PublicLayout`, `AuthLayout`, `DashboardLayout`, `PrivateAuthorizationLayout`, `GateLayout` | Dynamic / Per-route (Public front with gated/protected back areas) | All-in-one platforms, unified product + portal sites, multi-tenant hybrid apps |
+| Feature / Capability        | `web-public`  | `web-private` | `web-hybrid` |
+| :-------------------------- | :-----------: | :-----------: | :----------: |
+| **Public Landing & SEO**    |      ✅       |      ❌       |      ✅      |
+| **Auth & Protected Routes** |      ❌       |      ✅       |      ✅      |
+| **Dashboard Layout**        |      ❌       |      ✅       |      ✅      |
+| **Dynamic Multi-Tenancy**   |      ❌       |   Optional    |      ✅      |
+| **Deployment Footprint**    | Static / Fast | Secure / App  |  All-in-one  |
 
 ---
 
