@@ -29,7 +29,7 @@
 												"type": "string",
 												"title": "Display Name"
 											},
-											"comapnyName": {
+											"companyName": {
 												"type": "string",
 												"title": "Company Name"
 											},
@@ -38,11 +38,11 @@
 												"title": "Profession"
 											}
 										},
-										"required": ["displayName", "comapnyName", "profession"],
+										"required": ["displayName", "companyName", "profession"],
 										"type": "object"
 									},
 									"uiSchema": {
-										"ui:order": ["displayName", "comapnyName", "profession"]
+										"ui:order": ["displayName", "companyName", "profession"]
 									}
 								}
 							}
