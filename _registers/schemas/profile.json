@@ -12,6 +12,7 @@
 				"itemSize": 12,
 				"items": [
 					{
+						"header": "Profile",
 						"cardConfig": [
 							{
 								"type": "cardContent",
@@ -33,16 +34,31 @@
 												"type": "string",
 												"title": "Company Name"
 											},
+											"companyUrl": {
+												"type": "string",
+												"title": "Company URL",
+												"format": "uri"
+											},
 											"profession": {
 												"type": "string",
 												"title": "Profession"
 											}
 										},
-										"required": ["displayName", "companyName", "profession"],
+										"required": [
+											"displayName",
+											"companyName",
+											"companyUrl",
+											"profession"
+										],
 										"type": "object"
 									},
 									"uiSchema": {
-										"ui:order": ["displayName", "companyName", "profession"]
+										"ui:order": [
+											"displayName",
+											"profession",
+											"companyName",
+											"companyUrl"
+										]
 									}
 								}
 							}

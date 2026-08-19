@@ -1,7 +1,0 @@
-{
-	"data": "## Computer Vision Papers\n\n* [Attention Is All You Need](https://arxiv.org/abs/1706.03762) — *Vaswani et al. (2017)*\n  * **Key takeaway:** Introduced the Transformer architecture.",
-	"renderComponent": {
-		"component": "Markdown",
-		"container": {}
-	}
-}

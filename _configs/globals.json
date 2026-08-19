@@ -679,6 +679,7 @@
 						"itemSize": 12,
 						"items": [
 							{
+								"cardType": "noCard",
 								"cardConfig": [
 									{
 										"type": "cardContent",
@@ -725,9 +726,9 @@
 											"uiSchema": {
 												"ui:order": [
 													"displayName",
+													"profession",
 													"companyName",
-													"companyUrl",
-													"profession"
+													"companyUrl"
 												]
 											}
 										}
@@ -1609,13 +1610,6 @@
 				"props": {}
 			}
 		},
-		"pages_research": {
-			"data": "## Computer Vision Papers\n\n* [Attention Is All You Need](https://arxiv.org/abs/1706.03762) — *Vaswani et al. (2017)*\n  * **Key takeaway:** Introduced the Transformer architecture.",
-			"renderComponent": {
-				"component": "Markdown",
-				"container": {}
-			}
-		},
 		"pages_terms": {
 			"data": {
 				"type": "remote",
@@ -1662,6 +1656,7 @@
 						"itemSize": 12,
 						"items": [
 							{
+								"header": "Profile",
 								"cardConfig": [
 									{
 										"type": "cardContent",
@@ -1683,6 +1678,11 @@
 														"type": "string",
 														"title": "Company Name"
 													},
+													"companyUrl": {
+														"type": "string",
+														"title": "Company URL",
+														"format": "uri"
+													},
 													"profession": {
 														"type": "string",
 														"title": "Profession"
@@ -1691,6 +1691,7 @@
 												"required": [
 													"displayName",
 													"companyName",
+													"companyUrl",
 													"profession"
 												],
 												"type": "object"
@@ -1698,8 +1699,9 @@
 											"uiSchema": {
 												"ui:order": [
 													"displayName",
+													"profession",
 													"companyName",
-													"profession"
+													"companyUrl"
 												]
 											}
 										}

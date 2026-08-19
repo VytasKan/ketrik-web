@@ -11,6 +11,7 @@
 				"itemSize": 12,
 				"items": [
 					{
+						"cardType": "noCard",
 						"cardConfig": [
 							{
 								"type": "cardContent",
@@ -57,9 +58,9 @@
 									"uiSchema": {
 										"ui:order": [
 											"displayName",
+											"profession",
 											"companyName",
-											"companyUrl",
-											"profession"
+											"companyUrl"
 										]
 									}
 								}
