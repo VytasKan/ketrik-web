@@ -682,6 +682,10 @@
 								"cardType": "noCard",
 								"cardConfig": [
 									{
+										"type": "cardHeader",
+										"title": "Confirm your details"
+									},
+									{
 										"type": "cardContent",
 										"dataKey": "profile",
 										"actionConfig": {
@@ -708,7 +712,7 @@
 													"companyUrl": {
 														"type": "string",
 														"title": "Company URL",
-														"format": "uri"
+														"pattern": "^(https?:\\/\\/)?([a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,}(\\/.*)?$"
 													},
 													"profession": {
 														"type": "string",
@@ -1681,7 +1685,7 @@
 													"companyUrl": {
 														"type": "string",
 														"title": "Company URL",
-														"format": "uri"
+														"pattern": "^(https?:\\/\\/)?([a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,}(\\/.*)?$"
 													},
 													"profession": {
 														"type": "string",
