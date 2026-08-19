@@ -22,6 +22,11 @@
 			"id": "CHATBOT",
 			"mandatoryPath": "/gates/chatbot",
 			"field": "hasCompletedOnboarding"
+		},
+		{
+			"id": "CONFIRM",
+			"mandatoryPath": "/gates/confirm",
+			"field": "hasConfirmedOnboarding"
 		}
 	],
 	"authConfig": {

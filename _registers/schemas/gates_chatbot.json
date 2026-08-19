@@ -3,22 +3,12 @@
 		"profile": true
 	},
 	"config": {
-		"childComponent": "DisplayCards",
 		"disableGutters": true,
 		"groups": [
 			{
-				"itemSize": {
-					"xs": 12
-				},
+				"itemSize": 12,
 				"items": [
 					{
-						"cardProps": {
-							"sx": {
-								"p": "0px",
-								"m": 0,
-								"border": "none"
-							}
-						},
 						"cardConfig": [
 							{
 								"type": "cardContent",
@@ -54,19 +44,23 @@
 												"properties": {
 													"displayName": {
 														"type": "string",
-														"description": "Must be a realistic name or handle. Reject profanity."
+														"description": "User's full name or preferred handle. Must be a realistic human name or professional alias. Reject offensive terms or profanity."
 													},
 													"companyName": {
 														"type": "string",
-														"description": "Must be a legitimate business or organization name. "
+														"description": "Official company, organization, or business entity name. Reject placeholder names or generic email provider domains (e.g., 'gmail')."
 													},
 													"profession": {
 														"type": "string",
-														"description": "Must be a realistic, recognizable human job title or career. Reject joke answers, objects, or nonsensical responses (e.g., 'moon', 'ninja', 'potato')."
+														"description": "User's professional title, role, or occupation (e.g., 'Software Engineer', 'Product Manager'). Reject joke answers, inanimate objects, or nonsensical responses."
 													},
 													"email": {
 														"type": "string",
-														"description": "Must be a valid, properly formatted email address."
+														"description": "Primary contact email address. Must be a valid, properly formatted email address (e.g., name@company.com). Read-only if already present from the user session/profile."
+													},
+													"companyUrl": {
+														"type": "string",
+														"description": "Optional official company website or URL (e.g., 'https://company.com' or 'company.com')."
 													}
 												},
 												"required": [
@@ -84,7 +78,8 @@
 											"field_id": "email",
 											"label": "Email Address",
 											"type": "email",
-											"validation_rule": "Must be a valid, properly formatted email address."
+											"readOnly": true,
+											"validation_rule": "Must be a valid, properly formatted email address. If an email is already present from authentication or session, it is read-only and must not be changed."
 										},
 										{
 											"field_id": "displayName",
@@ -96,13 +91,19 @@
 											"field_id": "companyName",
 											"label": "Company Name",
 											"type": "string",
-											"validation_rule": "Must be a legitimate business or organization name. "
+											"validation_rule": "Must be a legitimate business or organization name. Reject generic email provider names (e.g., 'gmail')."
 										},
 										{
 											"field_id": "profession",
 											"label": "Profession",
 											"type": "string",
 											"validation_rule": "Must be a realistic, recognizable human job title or career. Reject joke answers, objects, or nonsensical responses (e.g., 'moon', 'ninja', 'potato')."
+										},
+										{
+											"field_id": "companyUrl",
+											"label": "Company Website",
+											"type": "url",
+											"validation_rule": "Optional. If provided, must be a valid company website address or domain (e.g., https://company.com or company.com)."
 										}
 									]
 								}

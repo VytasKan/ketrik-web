@@ -1,0 +1,73 @@
+{
+	"data": {
+		"profile": true
+	},
+	"config": {
+		"disableGutters": true,
+
+		"groups": [
+			{
+				"id": "profile",
+				"itemSize": 12,
+				"items": [
+					{
+						"cardConfig": [
+							{
+								"type": "cardContent",
+								"dataKey": "profile",
+								"actionConfig": {
+									"type": "SAVE_TO_FIRESTORE",
+									"collection": "users",
+									"document": "${uid}",
+									"data": {
+										"hasConfirmedOnboarding": true,
+										"hasConfirmedOnboardingAt": "${now}"
+									}
+								},
+								"contentConfig": {
+									"contentType": "DataForm",
+									"schema": {
+										"properties": {
+											"displayName": {
+												"type": "string",
+												"title": "Display Name"
+											},
+											"companyName": {
+												"type": "string",
+												"title": "Company Name"
+											},
+											"companyUrl": {
+												"type": "string",
+												"title": "Company URL",
+												"format": "uri"
+											},
+											"profession": {
+												"type": "string",
+												"title": "Profession"
+											}
+										},
+										"required": [
+											"displayName",
+											"companyName",
+											"companyUrl",
+											"profession"
+										],
+										"type": "object"
+									},
+									"uiSchema": {
+										"ui:order": [
+											"displayName",
+											"companyName",
+											"companyUrl",
+											"profession"
+										]
+									}
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
