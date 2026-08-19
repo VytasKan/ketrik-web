@@ -565,7 +565,9 @@
 											"variable1": "onboarding",
 											"data": {
 												"hasCompletedOnboarding": true,
-												"hasCompletedOnboardingAt": "${now}"
+												"hasCompletedOnboardingAt": "${now}",
+												"hasConfirmedOnboarding": false,
+												"hasConfirmedOnboardingAt": "${now}"
 											}
 										},
 										"contentConfig": {
