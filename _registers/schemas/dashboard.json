@@ -1,0 +1,837 @@
+{
+	"data": {
+		"hero_concept": {
+			"title": "Ketrik Shell: The Code-First & Agentic-First Operational Hub",
+			"subtext": "Operational views in Ketrik are declared as structured, serializable layout data. This architecture gives developers full programmatic control to script, version, and orchestrate views in code, while enabling autonomous agents to generate layouts from natural language, detect anomalies, and dynamically adapt UI surfaces during live operations.",
+			"desktop_svg": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 300' width='100%' height='100%' style='font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;'><style>:root{--bg-box:rgba(15,23,42,0.04);--stroke-box:rgba(56,189,248,0.4);--stroke-agent:rgba(16,185,129,0.4);--stroke-mid:rgba(148,163,184,0.3);--bg-mid:rgba(15,23,42,0.03);--txt-title-dev:%230284c7;--txt-title-agent:%23059669;--txt-main:%23334155;--txt-sub:%2364748b;--txt-prop:%23db2777;--txt-val:%2316a34a;--badge-bg:rgba(15,23,42,0.05);--badge-border:rgba(148,163,184,0.25);}@media(prefers-color-scheme:dark){:root{--bg-box:rgba(17,24,39,0.7);--stroke-box:%2338bdf8;--stroke-agent:%2334d399;--stroke-mid:%2364748b;--bg-mid:rgba(30,41,59,0.7);--txt-title-dev:%2338bdf8;--txt-title-agent:%2334d399;--txt-main:%23f1f5f9;--txt-sub:%2394a3b8;--txt-prop:%23f472b6;--txt-val:%234ade80;--badge-bg:rgba(15,23,42,0.8);--badge-border:%23334155;}}</style><rect x='30' y='20' width='250' height='260' rx='10' fill='var(--bg-box)' stroke='var(--stroke-box)' stroke-width='1.5'/><text x='50' y='55' fill='var(--txt-title-dev)' font-size='14' font-weight='bold'>DEVELOPER PLANE</text><text x='50' y='85' fill='var(--txt-sub)' font-size='11'>// Declarative Schema</text><text x='50' y='115' fill='var(--txt-main)' font-size='12'>AppSchema {</text><text x='65' y='135' fill='var(--txt-prop)' font-size='12'>  layout: 'responsive',</text><text x='65' y='155' fill='var(--txt-title-dev)' font-size='12'>  components: ['Hero', 'KPI'],</text><text x='65' y='175' fill='var(--txt-val)' font-size='12'>  dataKey: 'stream_v1'</text><text x='50' y='195' fill='var(--txt-main)' font-size='12'>}</text><text x='50' y='245' fill='var(--txt-sub)' font-size='11'>[Code Viewport]</text><path d='M 280 128 L 365 128' stroke='var(--txt-title-dev)' stroke-width='2' stroke-dasharray='4'/><path d='M 365 158 L 280 158' stroke='var(--txt-title-agent)' stroke-width='2' stroke-dasharray='4'/><rect x='365' y='75' width='170' height='150' rx='8' fill='var(--bg-mid)' stroke='var(--stroke-mid)' stroke-width='1.5'/><text x='385' y='108' fill='var(--txt-main)' font-size='12' font-weight='bold'>DATA</text><text x='385' y='133' fill='var(--txt-title-dev)' font-size='11'>&gt; Live Ingest</text><text x='385' y='163' fill='var(--txt-title-agent)' font-size='11'>&lt; State Sync</text><text x='385' y='188' fill='%23d97706' font-size='10'>Bi-directional</text><text x='385' y='208' fill='var(--txt-sub)' font-size='8.5' font-style='italic'>* Conceptual schematic</text><path d='M 535 128 L 620 128' stroke='var(--txt-title-dev)' stroke-width='2' stroke-dasharray='4'/><path d='M 620 158 L 535 158' stroke='var(--txt-title-agent)' stroke-width='2' stroke-dasharray='4'/><rect x='620' y='20' width='250' height='260' rx='10' fill='var(--bg-box)' stroke='var(--stroke-agent)' stroke-width='1.5'/><text x='640' y='55' fill='var(--txt-title-agent)' font-size='14' font-weight='bold'>AGENTIC PLANE</text><text x='640' y='85' fill='var(--txt-sub)' font-size='11'>// Autonomous Observer</text><rect x='640' y='105' width='210' height='45' rx='6' fill='var(--badge-bg)' stroke='var(--badge-border)'/><text x='650' y='125' fill='var(--txt-sub)' font-size='11'>Anomaly: <tspan fill='var(--txt-title-agent)' font-weight='bold'>0.012 (Nominal)</tspan></text><text x='650' y='140' fill='var(--txt-sub)' font-size='10'>Boundary: &lt; 0.05</text><rect x='640' y='160' width='210' height='45' rx='6' fill='var(--badge-bg)' stroke='var(--badge-border)'/><text x='650' y='180' fill='var(--txt-sub)' font-size='11'>Triggers: <tspan fill='var(--txt-title-dev)' font-weight='bold'>0 Queued</tspan></text><text x='650' y='195' fill='var(--txt-sub)' font-size='10'>Rules Active: 14</text><text x='640' y='245' fill='var(--txt-sub)' font-size='11'>[Agent Observer]</text></svg>",
+			"mobile_svg": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 690' width='100%' height='100%' style='font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;'><style>:root{--bg-box:rgba(15,23,42,0.04);--stroke-box:rgba(56,189,248,0.4);--stroke-agent:rgba(16,185,129,0.4);--stroke-mid:rgba(148,163,184,0.3);--bg-mid:rgba(15,23,42,0.03);--txt-title-dev:%230284c7;--txt-title-agent:%23059669;--txt-main:%23334155;--txt-sub:%2364748b;--txt-prop:%23db2777;--txt-val:%2316a34a;--badge-bg:rgba(15,23,42,0.05);--badge-border:rgba(148,163,184,0.25);}@media(prefers-color-scheme:dark){:root{--bg-box:rgba(17,24,39,0.7);--stroke-box:%2338bdf8;--stroke-agent:%2334d399;--stroke-mid:%2364748b;--bg-mid:rgba(30,41,59,0.7);--txt-title-dev:%2338bdf8;--txt-title-agent:%2334d399;--txt-main:%23f1f5f9;--txt-sub:%2394a3b8;--txt-prop:%23f472b6;--txt-val:%234ade80;--badge-bg:rgba(15,23,42,0.8);--badge-border:%23334155;}}</style><rect x='20' y='20' width='320' height='210' rx='8' fill='var(--bg-box)' stroke='var(--stroke-box)' stroke-width='1.5'/><text x='40' y='50' fill='var(--txt-title-dev)' font-size='14' font-weight='bold'>DEVELOPER PLANE</text><text x='40' y='72' fill='var(--txt-sub)' font-size='11'>// Declarative Schema</text><text x='40' y='96' fill='var(--txt-main)' font-size='12'>AppSchema {</text><text x='55' y='116' fill='var(--txt-prop)' font-size='12'>  layout: 'responsive',</text><text x='55' y='136' fill='var(--txt-title-dev)' font-size='12'>  components: ['Hero', 'KPI'],</text><text x='55' y='156' fill='var(--txt-val)' font-size='12'>  dataKey: 'stream_v1'</text><text x='40' y='176' fill='var(--txt-main)' font-size='12'>}</text><text x='40' y='212' fill='var(--txt-sub)' font-size='11'>[Code Viewport]</text><path d='M 160 235 L 160 265' stroke='var(--txt-title-dev)' stroke-width='2' stroke-dasharray='4'/><path d='M 200 265 L 200 235' stroke='var(--txt-title-agent)' stroke-width='2' stroke-dasharray='4'/><rect x='60' y='270' width='240' height='145' rx='8' fill='var(--bg-mid)' stroke='var(--stroke-mid)' stroke-width='1.5'/><text x='80' y='302' fill='var(--txt-main)' font-size='12' font-weight='bold'>DATA</text><text x='80' y='327' fill='var(--txt-title-dev)' font-size='11'>&gt; Live Ingest</text><text x='80' y='347' fill='var(--txt-title-agent)' font-size='11'>&lt; State Sync</text><text x='80' y='377' fill='%23d97706' font-size='10'>Bi-directional</text><text x='80' y='398' fill='var(--txt-sub)' font-size='9' font-style='italic'>* Conceptual schematic (representative)</text><path d='M 160 420 L 160 450' stroke='var(--txt-title-dev)' stroke-width='2' stroke-dasharray='4'/><path d='M 200 450 L 200 420' stroke='var(--txt-title-agent)' stroke-width='2' stroke-dasharray='4'/><rect x='20' y='455' width='320' height='210' rx='8' fill='var(--bg-box)' stroke='var(--stroke-agent)' stroke-width='1.5'/><text x='40' y='485' fill='var(--txt-title-agent)' font-size='14' font-weight='bold'>AGENTIC PLANE</text><text x='40' y='507' fill='var(--txt-sub)' font-size='11'>// Autonomous Observer</text><rect x='40' y='523' width='280' height='45' rx='6' fill='var(--badge-bg)' stroke='var(--badge-border)'/><text x='50' y='543' fill='var(--txt-sub)' font-size='11'>Anomaly: <tspan fill='var(--txt-title-agent)' font-weight='bold'>0.012 (Nominal)</tspan></text><text x='50' y='558' fill='var(--txt-sub)' font-size='10'>Boundary: &lt; 0.05</text><rect x='40' y='578' width='280' height='45' rx='6' fill='var(--badge-bg)' stroke='var(--badge-border)'/><text x='50' y='598' fill='var(--txt-sub)' font-size='11'>Triggers: <tspan fill='var(--txt-title-dev)' font-weight='bold'>0 Queued</tspan></text><text x='50' y='613' fill='var(--txt-sub)' font-size='10'>Rules Active: 14</text><text x='40' y='651' fill='var(--txt-sub)' font-size='11'>[Agent Observer]</text></svg>"
+		},
+		"dev_plane_metric": {
+			"v": 64,
+			"v0": 48,
+			"change": 33.3
+		},
+		"stream_telemetry": {
+			"v": 142500,
+			"v0": 120000,
+			"change": 18.75
+		},
+		"agent_anomaly_score": {
+			"v": 0.012,
+			"v0": 0.045,
+			"change": -73.3
+		},
+		"agent_trigger_queue": {
+			"v": 3,
+			"v0": 12,
+			"change": -75.0
+		},
+
+		"sandbox_status": {
+			"title": "Interactive Layout Sandbox",
+			"description": "Write JSON schemas, enter prompt instructions, and render live UI widgets inside the canvas buffer in real time.",
+			"mounted_widgets": 4,
+			"mounted_widgets_prev": 2
+		},
+		"simulator_metrics": {
+			"title": "Real-Time Event & Telemetry Simulator",
+			"description": "Dial synthetic event throughput and inject operational chaos into the stream.",
+			"throughput": 12500,
+			"throughput_prev": 1000,
+			"active_anomalies": 0,
+			"active_anomalies_prev": 3
+		},
+		"workflow_agent": {
+			"title": "Workflow Agent",
+			"role": "Automates operational sequences and runbooks",
+			"capability": "Listens to telemetry triggers and auto-dispatches backend actions or state updates.",
+			"v": 142,
+			"v0": 118,
+			"change": 20.34
+		},
+		"voice_agent": {
+			"title": "Voice & Speech Agent",
+			"role": "Natural language voice command interface",
+			"capability": "Hands-free operator control: \"Ketrik, isolate Europe stream and expand latency chart.\"",
+			"v": 98.4,
+			"v0": 96.1,
+			"change": 2.39
+		},
+		"observer_agent": {
+			"title": "Telemetry Observer Agent",
+			"role": "Background anomaly and drift detector",
+			"capability": "Continuously computes variance and flags threshold breaches on live charts.",
+			"v": 0.008,
+			"v0": 0.024,
+			"change": -66.67
+		},
+		"triage_agent": {
+			"title": "Incident Triage Agent",
+			"role": "Dynamic layout mutator during critical events",
+			"capability": "Generates and injects temporary diagnostic tables and approval buttons when alerts fire.",
+			"v": 5,
+			"v0": 1,
+			"change": 400.0
+		},
+		"fin_risk_blueprint": {
+			"title": "Financial Risk & Market Matrix",
+			"description": "Candlestick charts, order-book depth gauges, exposure limits, and automated circuit-breaker action nodes.",
+			"v": 1280,
+			"v0": 1140,
+			"change": 12.28,
+			"preview_svg": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' width='100%' height='100%' style='background:%230b0f19; font-family:monospace;'><rect x='10' y='10' width='380' height='140' rx='6' fill='%23111827' stroke='%2338bdf8' stroke-width='1.5'/><text x='25' y='32' fill='%2338bdf8' font-size='11' font-weight='bold'>MARKET_MATRIX_V3</text><text x='300' y='32' fill='%2334d399' font-size='10'>CIRCUIT: READY</text><rect x='40' y='55' width='6' height='40' fill='%2334d399'/><line x1='43' y1='45' x2='43' y2='105' stroke='%2334d399' stroke-width='1.5'/><rect x='60' y='70' width='6' height='30' fill='%23f43f5e'/><line x1='63' y1='60' x2='63' y2='115' stroke='%23f43f5e' stroke-width='1.5'/><rect x='80' y='50' width='6' height='55' fill='%2334d399'/><line x1='83' y1='40' x2='83' y2='120' stroke='%2334d399' stroke-width='1.5'/><path d='M 120 120 L 160 95 L 200 105 L 240 70 L 280 85 L 320 50 L 360 40' fill='none' stroke='%23fbbf24' stroke-width='2'/><text x='25' y='138' fill='%2394a3b8' font-size='10'>Exposure: 42.4% | Max Limit: 65%</text></svg>"
+		},
+		"marketing_funnel_blueprint": {
+			"title": "Marketing Telemetry & Funnel Ops",
+			"description": "High-frequency event ingestion, live conversion variance ribbons, and campaign spend velocity meters.",
+			"v": 940,
+			"v0": 820,
+			"change": 14.63,
+			"preview_svg": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' width='100%' height='100%' style='background:%230b0f19; font-family:monospace;'><rect x='10' y='10' width='380' height='140' rx='6' fill='%23111827' stroke='%23818cf8' stroke-width='1.5'/><text x='25' y='32' fill='%23818cf8' font-size='11' font-weight='bold'>FUNNEL_STREAM_OPS</text><text x='290' y='32' fill='%23f8fafc' font-size='10'>VELOCITY: $4.2k/hr</text><path d='M 30 50 L 370 50 L 320 85 L 80 85 Z' fill='rgba(129,140,248,0.2)' stroke='%23818cf8' stroke-width='1.5'/><path d='M 80 90 L 320 90 L 270 125 L 130 125 Z' fill='rgba(52,211,153,0.2)' stroke='%2334d399' stroke-width='1.5'/><text x='155' y='72' fill='%23f8fafc' font-size='10'>142k Ingested</text><text x='170' y='112' fill='%2334d399' font-size='10'>12.4% CVR</text></svg>"
+		},
+		"infra_pipeline_blueprint": {
+			"title": "Infrastructure & Data Pipeline Health",
+			"description": "Node cluster topologies, WebSocket connection pools, memory/CPU saturation sparklines, and dead-letter queue tables.",
+			"v": 2150,
+			"v0": 1900,
+			"change": 13.16,
+			"preview_svg": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' width='100%' height='100%' style='background:%230b0f19; font-family:monospace;'><rect x='10' y='10' width='380' height='140' rx='6' fill='%23111827' stroke='%2334d399' stroke-width='1.5'/><text x='25' y='32' fill='%2334d399' font-size='11' font-weight='bold'>CLUSTER_TOPOLOGY</text><text x='305' y='32' fill='%2334d399' font-size='10'>DLQ: 0 (NOMINAL)</text><circle cx='60' cy='85' r='18' fill='%231e293b' stroke='%2338bdf8' stroke-width='1.5'/><text x='52' y='89' fill='%2338bdf8' font-size='10'>N1</text><circle cx='140' cy='60' r='18' fill='%231e293b' stroke='%2334d399' stroke-width='1.5'/><text x='132' y='64' fill='%2334d399' font-size='10'>N2</text><circle cx='140' cy='110' r='18' fill='%231e293b' stroke='%2334d399' stroke-width='1.5'/><text x='132' y='114' fill='%2334d399' font-size='10'>N3</text><circle cx='220' cy='85' r='18' fill='%231e293b' stroke='%23818cf8' stroke-width='1.5'/><text x='212' y='89' fill='%23818cf8' font-size='10'>N4</text><line x1='78' y1='80' x2='122' y2='65' stroke='%2364748b' stroke-dasharray='3'/><line x1='78' y1='90' x2='122' y2='105' stroke='%2364748b' stroke-dasharray='3'/><line x1='158' y1='65' x2='202' y2='80' stroke='%2364748b' stroke-dasharray='3'/><line x1='158' y1='105' x2='202' y2='90' stroke='%2364748b' stroke-dasharray='3'/><text x='260' y='75' fill='%2394a3b8' font-size='10'>CPU: 28%</text><text x='260' y='95' fill='%2394a3b8' font-size='10'>MEM: 41%</text><text x='260' y='115' fill='%2338bdf8' font-size='10'>WSS: 12.8k</text></svg>"
+		},
+		"trading_exec_blueprint": {
+			"title": "Trading & Execution Telemetry",
+			"description": "Sub-millisecond tick streaming, slippage distribution histograms, and MT5 worker health indicators.",
+			"v": 3410,
+			"v0": 2850,
+			"change": 19.65,
+			"preview_svg": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160' width='100%' height='100%' style='background:%230b0f19; font-family:monospace;'><rect x='10' y='10' width='380' height='140' rx='6' fill='%23111827' stroke='%23f59e0b' stroke-width='1.5'/><text x='25' y='32' fill='%23f59e0b' font-size='11' font-weight='bold'>MT5_EXECUTION_ENGINE</text><text x='290' y='32' fill='%2334d399' font-size='10'>LATENCY: 0.42ms</text><rect x='40' y='100' width='20' height='30' fill='%23334155'/><rect x='70' y='80' width='20' height='50' fill='%23334155'/><rect x='100' y='50' width='20' height='80' fill='%23f59e0b'/><rect x='130' y='70' width='20' height='60' fill='%23334155'/><rect x='160' y='110' width='20' height='20' fill='%23334155'/><text x='200' y='70' fill='%23f8fafc' font-size='10'>Slippage: &lt;0.1 pip (94%)</text><text x='200' y='90' fill='%2334d399' font-size='10'>Worker Nodes: 16/16</text><text x='200' y='110' fill='%2338bdf8' font-size='10'>Tick Stream: 82k/s</text></svg>"
+		}
+	},
+	"config": {
+		"childComponent": "DisplayCards",
+		"groups": [
+			{
+				"id": "zone_1_hero_banner",
+				"itemSize": 12,
+				"items": [
+					{
+						"cardType": "card",
+						"cardProps": {
+							"raised": true,
+							"sx": {
+								"background": "linear-gradient(135deg, rgba(241, 245, 249, 0.9) 0%, rgba(226, 232, 240, 0.6) 50%, rgba(241, 245, 249, 0.9) 100%)",
+								"border": "1px solid",
+								"borderColor": "divider",
+								"borderRadius": "16px",
+								"boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.05)",
+								"p": 1,
+								"mb": 3,
+								"@media (prefers-color-scheme: dark)": {
+									"background": "linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%)",
+									"border": "1px solid rgba(148, 163, 184, 0.15)",
+									"boxShadow": "0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.3)"
+								},
+								"[data-mui-color-scheme='dark'] &": {
+									"background": "linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%)",
+									"border": "1px solid rgba(148, 163, 184, 0.15)",
+									"boxShadow": "0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.3)"
+								}
+							}
+						},
+						"cardConfig": [
+							{
+								"type": "cardHeader",
+								"dataKey": "hero_concept",
+								"map": {
+									"title": "title",
+									"subtext": "subheader"
+								}
+							},
+
+							{
+								"type": "cardMedia",
+								"dataKey": "hero_concept",
+								"map": { "desktop_svg": "image" },
+								"component": "img",
+								"sx": {
+									"display": { "xs": "none", "md": "block" },
+									"width": "100%",
+									"height": "auto",
+									"objectFit": "contain",
+									"pl": { "lg": "10%" },
+									"pr": { "lg": "10%" }
+								}
+							},
+							{
+								"type": "cardMedia",
+								"dataKey": "hero_concept",
+								"map": { "mobile_svg": "image" },
+								"component": "img",
+								"sx": {
+									"display": { "xs": "block", "md": "none" },
+									"width": "100%",
+									"height": "auto",
+									"objectFit": "contain",
+									"p": 1
+								}
+							}
+						]
+					}
+				]
+			},
+
+			{
+				"id": "zone_1_split_schematic_metrics",
+				"header": "Dual-Runtime Telemetry Plane",
+				"disable": true,
+				"itemSize": { "xs": 12, "sm": 6, "md": 3 },
+				"itemDefaults": {
+					"cardType": "card",
+					"cardProps": {
+						"raised": true,
+						"sx": {
+							"height": "100%",
+							"backgroundColor": "background.paper",
+							"border": "1px solid",
+							"borderColor": "divider",
+							"borderRadius": "12px"
+						}
+					}
+				},
+				"items": [
+					{
+						"cardConfig": [
+							{
+								"type": "cardHeader",
+								"title": "Developer Plane",
+								"subheader": "Active Declarative Slots",
+								"sx": { "color": "info.main" }
+							},
+							{
+								"type": "cardContent",
+								"dataKey": "dev_plane_metric",
+								"contentConfig": {
+									"contentType": "StatContent",
+									"subVariant": "TrendSub",
+									"title": "Widget Geometry",
+									"sub": "active schema nodes",
+									"format": { "style": "decimal", "notation": "standard" },
+									"trendFormat": {
+										"style": "percent",
+										"maximumFractionDigits": 1
+									}
+								}
+							}
+						]
+					},
+					{
+						"cardConfig": [
+							{
+								"type": "cardHeader",
+								"title": "Bi-Directional Stream",
+								"subheader": "Ingest Line Velocity",
+								"sx": { "color": "primary.main" }
+							},
+							{
+								"type": "cardContent",
+								"dataKey": "stream_telemetry",
+								"contentConfig": {
+									"contentType": "StatContent",
+									"subVariant": "TrendSub",
+									"title": "Events / Sec",
+									"sub": "vs. baseline stream",
+									"format": { "style": "decimal", "notation": "compact" },
+									"trendFormat": {
+										"style": "percent",
+										"maximumFractionDigits": 1
+									}
+								}
+							}
+						]
+					},
+					{
+						"cardConfig": [
+							{
+								"type": "cardHeader",
+								"title": "Agentic Plane",
+								"subheader": "Real-time Anomaly Index",
+								"sx": { "color": "success.main" }
+							},
+							{
+								"type": "cardContent",
+								"dataKey": "agent_anomaly_score",
+								"contentConfig": {
+									"contentType": "StatContent",
+									"subVariant": "TrendSub",
+									"title": "Observer Anomaly Score",
+									"sub": "safe rule boundary: <0.05",
+									"format": {
+										"style": "decimal",
+										"maximumFractionDigits": 3
+									},
+									"trendFormat": {
+										"style": "percent",
+										"maximumFractionDigits": 1
+									},
+									"trendUpper": 0,
+									"trendLower": -10
+								}
+							}
+						]
+					},
+					{
+						"cardType": "actionCard",
+						"cardActionUrl": "/agent-runtime/action-queues",
+						"cardProps": {
+							"raised": true,
+							"sx": {
+								"height": "100%",
+								"backgroundColor": "background.paper",
+								"border": "1px solid rgba(244, 63, 94, 0.4)",
+								"borderRadius": "12px"
+							}
+						},
+						"cardConfig": [
+							{
+								"type": "cardHeader",
+								"title": "Trigger Queue",
+								"subheader": "Active Autonomous Actions",
+								"sx": { "color": "error.main" }
+							},
+							{
+								"type": "cardContent",
+								"dataKey": "agent_trigger_queue",
+								"contentConfig": {
+									"contentType": "StatContent",
+									"subVariant": "TrendSub",
+									"title": "Pending Dispatches",
+									"sub": "queue target: 0",
+									"format": { "style": "decimal", "notation": "standard" },
+									"trendFormat": {
+										"style": "percent",
+										"maximumFractionDigits": 1
+									},
+									"trendUpper": 0,
+									"trendLower": -50
+								}
+							},
+							{
+								"type": "cardAction",
+								"buttons": [
+									{
+										"label": "Inspect Queue",
+										"color": "warning",
+										"variant": "outlined",
+										"actionType": "nav"
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+
+			{
+				"id": "workspace_intro_card",
+				"itemSize": 12,
+				"header": "Workspaces",
+				"items": [
+					{
+						"cardType": "card",
+						"cardProps": {
+							"raised": true
+						},
+						"cardConfig": [
+							{
+								"type": "cardHeader",
+								"subheader": "You can create and explore custom workspaces to design example dashboards, experiment with layout schemas, and showcase KPI views."
+							},
+							{
+								"type": "cardAction",
+								"sx": { "px": 2, "pb": 1.5, "pt": 0.5, "gap": 1 },
+								"buttons": [
+									{
+										"label": "View  Workspaces",
+										"variant": "contained",
+										"color": "primary",
+										"actionType": "nav",
+										"href": "/workspace"
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "playground_split_console",
+				"itemSize": { "xs": 12, "md": 6 },
+				"header": "The Playground ",
+				"items": [
+					{
+						"cardConfig": [
+							{
+								"type": "cardHeader",
+								"dataKey": "sandbox_status",
+								"map": {
+									"title": "title",
+									"description": "subheader"
+								},
+								"sx": {
+									"& .MuiCardHeader-title": {
+										"color": "#38bdf8",
+										"fontSize": "1.15rem",
+										"fontWeight": 600
+									}
+								}
+							},
+
+							{
+								"type": "cardAction",
+								"sx": { "px": 2, "pb": 2, "gap": 1, "flexWrap": "wrap" },
+								"buttons": [
+									{
+										"label": "Prompt-to-UI",
+										"variant": "contained",
+										"color": "primary",
+										"actionType": "callback",
+										"href": "/"
+									}
+								]
+							}
+						]
+					},
+					{
+						"cardConfig": [
+							{
+								"type": "cardHeader",
+								"dataKey": "simulator_metrics",
+								"map": {
+									"title": "title",
+									"description": "subheader"
+								},
+								"sx": {
+									"& .MuiCardHeader-title": {
+										"color": "#f59e0b",
+										"fontSize": "1.15rem",
+										"fontWeight": 600
+									},
+									"& .MuiCardHeader-subheader": {
+										"color": "#94a3b8",
+										"fontSize": "0.85rem",
+										"mt": 0.5
+									}
+								}
+							},
+
+							{
+								"type": "cardAction",
+								"sx": { "px": 2, "pb": 2, "gap": 1, "flexWrap": "wrap" },
+								"buttons": [
+									{
+										"label": "Activate",
+										"variant": "outlined",
+										"color": "warning",
+										"actionType": "callback",
+										"href": "/"
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "agent_capability_grid",
+				"header": "Autonomous Runtime Agents",
+				"itemSize": { "xs": 12, "sm": 6, "lg": 3 },
+				"itemDefaults": {
+					"cardType": "card",
+					"cardProps": {
+						"sx": {
+							"minHeight": 1
+						}
+					}
+				},
+				"items": [
+					{
+						"cardConfig": [
+							{
+								"type": "cardHeader",
+								"dataKey": "workflow_agent",
+								"map": {
+									"title": "title",
+									"role": "subheader"
+								},
+								"sx": {
+									"& .MuiCardHeader-title": {
+										"color": "#38bdf8",
+										"fontSize": "1.05rem",
+										"fontWeight": 600
+									},
+									"& .MuiCardHeader-subheader": {
+										"fontSize": "0.8rem"
+									}
+								}
+							}
+						]
+					},
+					{
+						"cardConfig": [
+							{
+								"type": "cardHeader",
+								"dataKey": "voice_agent",
+								"map": {
+									"title": "title",
+									"role": "subheader"
+								},
+								"sx": {
+									"& .MuiCardHeader-title": {
+										"color": "#818cf8",
+										"fontSize": "1.05rem",
+										"fontWeight": 600
+									},
+									"& .MuiCardHeader-subheader": {
+										"fontSize": "0.8rem"
+									}
+								}
+							}
+						]
+					},
+					{
+						"cardConfig": [
+							{
+								"type": "cardHeader",
+								"dataKey": "observer_agent",
+								"map": {
+									"title": "title",
+									"role": "subheader"
+								},
+								"sx": {
+									"& .MuiCardHeader-title": {
+										"color": "#34d399",
+										"fontSize": "1.05rem",
+										"fontWeight": 600
+									},
+									"& .MuiCardHeader-subheader": {
+										"fontSize": "0.8rem"
+									}
+								}
+							}
+						]
+					},
+					{
+						"cardConfig": [
+							{
+								"type": "cardHeader",
+								"dataKey": "triage_agent",
+								"map": {
+									"title": "title",
+									"role": "subheader"
+								},
+								"sx": {
+									"& .MuiCardHeader-title": {
+										"color": "#f43f5e",
+										"fontSize": "1.05rem",
+										"fontWeight": 600
+									},
+									"& .MuiCardHeader-subheader": {
+										"fontSize": "0.8rem"
+									}
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "blueprints_gallery_grid",
+				"header": "Production Solution Blueprints",
+				"itemSize": { "xs": 12, "md": 6 },
+				"itemDefaults": {
+					"cardType": "actionCard",
+					"cardProps": {
+						"raised": true
+					}
+				},
+				"items": [
+					{
+						"cardActionUrl": "/blueprints/deploy/financial-risk-matrix",
+						"cardConfig": [
+							{
+								"type": "cardHeader",
+								"dataKey": "fin_risk_blueprint",
+								"map": {
+									"title": "title",
+									"description": "subheader"
+								},
+								"sx": {
+									"& .MuiCardHeader-title": {
+										"color": "#38bdf8",
+										"fontSize": "1.1rem",
+										"fontWeight": 600
+									},
+									"& .MuiCardHeader-subheader": {
+										"color": "#94a3b8",
+										"fontSize": "0.85rem",
+										"mt": 0.5,
+										"lineHeight": 1.4
+									}
+								}
+							},
+							{
+								"type": "cardMedia",
+								"dataKey": "fin_risk_blueprint",
+								"map": { "preview_svg": "image" },
+								"component": "img",
+								"sx": {
+									"width": "100%",
+									"height": "auto",
+									"objectFit": "contain",
+									"px": 2,
+									"pb": 1
+								}
+							},
+							{
+								"type": "cardContent",
+								"dataKey": "fin_risk_blueprint",
+								"contentConfig": {
+									"contentType": "StatContent",
+									"subVariant": "TrendSub",
+									"title": "Active Production Deployments",
+									"sub": "tenant instances",
+									"format": { "style": "decimal" },
+									"trendFormat": { "style": "percent" }
+								}
+							},
+							{
+								"type": "cardAction",
+								"sx": { "px": 2, "pb": 2, "borderTop": "1px solid #1e293b" },
+								"buttons": [
+									{
+										"label": "Deploy to Workspace",
+										"variant": "contained",
+										"color": "primary",
+										"actionType": "nav"
+									},
+									{
+										"label": "Preview Blueprint Spec",
+										"variant": "outlined",
+										"color": "info",
+										"actionType": "callback"
+									}
+								]
+							}
+						]
+					},
+					{
+						"cardActionUrl": "/blueprints/deploy/marketing-funnel-ops",
+						"cardConfig": [
+							{
+								"type": "cardHeader",
+								"dataKey": "marketing_funnel_blueprint",
+								"map": {
+									"title": "title",
+									"description": "subheader"
+								},
+								"sx": {
+									"& .MuiCardHeader-title": {
+										"color": "#818cf8",
+										"fontSize": "1.1rem",
+										"fontWeight": 600
+									},
+									"& .MuiCardHeader-subheader": {
+										"color": "#94a3b8",
+										"fontSize": "0.85rem",
+										"mt": 0.5,
+										"lineHeight": 1.4
+									}
+								}
+							},
+							{
+								"type": "cardMedia",
+								"dataKey": "marketing_funnel_blueprint",
+								"map": { "preview_svg": "image" },
+								"component": "img",
+								"sx": {
+									"width": "100%",
+									"height": "auto",
+									"objectFit": "contain",
+									"px": 2,
+									"pb": 1
+								}
+							},
+							{
+								"type": "cardContent",
+								"dataKey": "marketing_funnel_blueprint",
+								"contentConfig": {
+									"contentType": "StatContent",
+									"subVariant": "TrendSub",
+									"title": "Active Production Deployments",
+									"sub": "tenant instances",
+									"format": { "style": "decimal" },
+									"trendFormat": { "style": "percent" }
+								}
+							},
+							{
+								"type": "cardAction",
+								"sx": { "px": 2, "pb": 2, "borderTop": "1px solid #1e293b" },
+								"buttons": [
+									{
+										"label": "Deploy to Workspace",
+										"variant": "contained",
+										"color": "primary",
+										"actionType": "nav"
+									},
+									{
+										"label": "Preview Blueprint Spec",
+										"variant": "outlined",
+										"color": "info",
+										"actionType": "callback"
+									}
+								]
+							}
+						]
+					},
+					{
+						"cardActionUrl": "/blueprints/deploy/infra-pipeline-health",
+						"cardConfig": [
+							{
+								"type": "cardHeader",
+								"dataKey": "infra_pipeline_blueprint",
+								"map": {
+									"title": "title",
+									"description": "subheader"
+								},
+								"sx": {
+									"& .MuiCardHeader-title": {
+										"color": "#34d399",
+										"fontSize": "1.1rem",
+										"fontWeight": 600
+									},
+									"& .MuiCardHeader-subheader": {
+										"color": "#94a3b8",
+										"fontSize": "0.85rem",
+										"mt": 0.5,
+										"lineHeight": 1.4
+									}
+								}
+							},
+							{
+								"type": "cardMedia",
+								"dataKey": "infra_pipeline_blueprint",
+								"map": { "preview_svg": "image" },
+								"component": "img",
+								"sx": {
+									"width": "100%",
+									"height": "auto",
+									"objectFit": "contain",
+									"px": 2,
+									"pb": 1
+								}
+							},
+							{
+								"type": "cardContent",
+								"dataKey": "infra_pipeline_blueprint",
+								"contentConfig": {
+									"contentType": "StatContent",
+									"subVariant": "TrendSub",
+									"title": "Active Production Deployments",
+									"sub": "tenant instances",
+									"format": { "style": "decimal" },
+									"trendFormat": { "style": "percent" }
+								}
+							},
+							{
+								"type": "cardAction",
+								"sx": { "px": 2, "pb": 2, "borderTop": "1px solid #1e293b" },
+								"buttons": [
+									{
+										"label": "Deploy to Workspace",
+										"variant": "contained",
+										"color": "primary",
+										"actionType": "nav"
+									},
+									{
+										"label": "Preview Blueprint Spec",
+										"variant": "outlined",
+										"color": "info",
+										"actionType": "callback"
+									}
+								]
+							}
+						]
+					},
+					{
+						"cardActionUrl": "/blueprints/deploy/trading-execution-telemetry",
+						"cardConfig": [
+							{
+								"type": "cardHeader",
+								"dataKey": "trading_exec_blueprint",
+								"map": {
+									"title": "title",
+									"description": "subheader"
+								},
+								"sx": {
+									"& .MuiCardHeader-title": {
+										"color": "#f59e0b",
+										"fontSize": "1.1rem",
+										"fontWeight": 600
+									},
+									"& .MuiCardHeader-subheader": {
+										"color": "#94a3b8",
+										"fontSize": "0.85rem",
+										"mt": 0.5,
+										"lineHeight": 1.4
+									}
+								}
+							},
+							{
+								"type": "cardMedia",
+								"dataKey": "trading_exec_blueprint",
+								"map": { "preview_svg": "image" },
+								"component": "img",
+								"sx": {
+									"width": "100%",
+									"height": "auto",
+									"objectFit": "contain",
+									"px": 2,
+									"pb": 1
+								}
+							},
+							{
+								"type": "cardContent",
+								"dataKey": "trading_exec_blueprint",
+								"contentConfig": {
+									"contentType": "StatContent",
+									"subVariant": "TrendSub",
+									"title": "Active Production Deployments",
+									"sub": "tenant instances",
+									"format": { "style": "decimal" },
+									"trendFormat": { "style": "percent" }
+								}
+							},
+							{
+								"type": "cardAction",
+								"sx": { "px": 2, "pb": 2, "borderTop": "1px solid #1e293b" },
+								"buttons": [
+									{
+										"label": "Deploy to Workspace",
+										"variant": "contained",
+										"color": "primary",
+										"actionType": "nav"
+									},
+									{
+										"label": "Preview Blueprint Spec",
+										"variant": "outlined",
+										"color": "info",
+										"actionType": "callback"
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
